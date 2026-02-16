@@ -24,11 +24,11 @@
       },
       "primaryRegion": "tachelhit",
       "regions": [
-        "tachelhit",
-        "kabyle",
         "tarifit",
         "central-atlas",
-        "tuareg"
+        "tachelhit",
+        "tuareg",
+        "kabyle"
       ],
       "media": [
         "tattoo",
@@ -162,10 +162,10 @@
       },
       "primaryRegion": "tachelhit",
       "regions": [
-        "tachelhit",
-        "kabyle",
         "tarifit",
-        "central-atlas"
+        "central-atlas",
+        "kabyle",
+        "tachelhit"
       ],
       "subRegions": [
         "souss",
@@ -301,11 +301,11 @@
       },
       "primaryRegion": "tachelhit",
       "regions": [
-        "tachelhit",
-        "kabyle",
         "tarifit",
         "central-atlas",
-        "tuareg"
+        "tachelhit",
+        "tuareg",
+        "kabyle"
       ],
       "media": [
         "jewelry",
@@ -441,11 +441,11 @@
       },
       "primaryRegion": "tachelhit",
       "regions": [
-        "tachelhit",
-        "kabyle",
         "tarifit",
         "central-atlas",
-        "tuareg"
+        "tachelhit",
+        "tuareg",
+        "kabyle"
       ],
       "media": [
         "carpet",
@@ -572,9 +572,9 @@
       },
       "primaryRegion": "tachelhit",
       "regions": [
-        "tachelhit",
+        "tarifit",
         "kabyle",
-        "tarifit"
+        "tachelhit"
       ],
       "subRegions": [
         "souss",
@@ -686,9 +686,9 @@
       },
       "primaryRegion": "tachelhit",
       "regions": [
-        "tachelhit",
+        "central-atlas",
         "kabyle",
-        "central-atlas"
+        "tachelhit"
       ],
       "media": [
         "carpet",
@@ -787,10 +787,10 @@
       },
       "primaryRegion": "tuareg",
       "regions": [
+        "central-atlas",
         "tuareg",
-        "tachelhit",
         "kabyle",
-        "central-atlas"
+        "tachelhit"
       ],
       "media": [
         "tattoo",
@@ -897,11 +897,11 @@
       },
       "primaryRegion": "tachelhit",
       "regions": [
-        "tachelhit",
-        "kabyle",
         "tarifit",
         "central-atlas",
-        "tuareg"
+        "tachelhit",
+        "tuareg",
+        "kabyle"
       ],
       "media": [
         "carpet",
@@ -1007,10 +1007,10 @@
       },
       "primaryRegion": "tachelhit",
       "regions": [
-        "tachelhit",
-        "kabyle",
+        "central-atlas",
         "tuareg",
-        "central-atlas"
+        "kabyle",
+        "tachelhit"
       ],
       "media": [
         "carpet",
@@ -1122,9 +1122,9 @@
       },
       "primaryRegion": "tachelhit",
       "regions": [
-        "tachelhit",
         "tarifit",
-        "central-atlas"
+        "central-atlas",
+        "tachelhit"
       ],
       "subRegions": [
         "anti-atlas",
@@ -1241,9 +1241,9 @@
       },
       "primaryRegion": "tachelhit",
       "regions": [
-        "tachelhit",
         "tarifit",
-        "kabyle"
+        "kabyle",
+        "tachelhit"
       ],
       "subRegions": [
         "anti-atlas",
@@ -1347,10 +1347,10 @@
       },
       "primaryRegion": "tachelhit",
       "regions": [
-        "tachelhit",
+        "central-atlas",
         "tuareg",
         "kabyle",
-        "central-atlas"
+        "tachelhit"
       ],
       "media": [
         "carpet",
@@ -1447,10 +1447,7 @@
         "altText": "The bee represents community, fertility, and abundance. In Amazigh culture, the bee symbolizes the i"
       },
       "sources": [
-        {
-          "type": "ethnographic",
-          "text": "Documented in Amazigh textile and pottery traditions"
-        }
+        "Documented in Amazigh textile and pottery traditions"
       ],
       "attestedUsage": [
         {
@@ -1488,8 +1485,8 @@
       ],
       "primaryRegion": "tachelhit",
       "regions": [
-        "Middle Atlas",
-        "High Atlas"
+        "central-atlas",
+        "tachelhit"
       ],
       "status": "active",
       "statusNotes": "",
@@ -1522,10 +1519,7 @@
         "altText": "The diamond or lozenge shape represents the protective eye, warding off the evil eye (tiṭṭ n lḥasad)"
       },
       "sources": [
-        {
-          "type": "ethnographic",
-          "text": "Documented in Amazigh textile and pottery traditions"
-        }
+        "Documented in Amazigh textile and pottery traditions"
       ],
       "attestedUsage": [
         {
@@ -1564,7 +1558,7 @@
       ],
       "primaryRegion": "tachelhit",
       "regions": [
-        "Pan-Amazigh"
+        "tachelhit"
       ],
       "status": "active",
       "statusNotes": "",
@@ -1597,10 +1591,7 @@
         "altText": "The zigzag line represents water — rivers, rain, and the life-giving force that sustains all. In a d"
       },
       "sources": [
-        {
-          "type": "ethnographic",
-          "text": "Documented in Amazigh textile and pottery traditions"
-        }
+        "Documented in Amazigh textile and pottery traditions"
       ],
       "attestedUsage": [
         {
@@ -1637,9 +1628,7 @@
       ],
       "primaryRegion": "tachelhit",
       "regions": [
-        "Souss",
-        "Draa Valley",
-        "Saharan regions"
+        "tachelhit"
       ],
       "status": "active",
       "statusNotes": "",
@@ -1672,10 +1661,7 @@
         "altText": "The cross represents the four cardinal directions and cosmic balance. It symbolizes the intersection"
       },
       "sources": [
-        {
-          "type": "ethnographic",
-          "text": "Documented in Amazigh textile and pottery traditions"
-        }
+        "Documented in Amazigh textile and pottery traditions"
       ],
       "attestedUsage": [
         {
@@ -1713,8 +1699,7 @@
       ],
       "primaryRegion": "tachelhit",
       "regions": [
-        "Pan-Amazigh",
-        "Tuareg"
+        "tachelhit"
       ],
       "status": "active",
       "statusNotes": "",
@@ -1746,10 +1731,7 @@
         "altText": "Triangles represent mountains — the Atlas ranges that are the ancestral homeland of the Amazigh peop"
       },
       "sources": [
-        {
-          "type": "ethnographic",
-          "text": "Documented in Amazigh textile and pottery traditions"
-        }
+        "Documented in Amazigh textile and pottery traditions"
       ],
       "attestedUsage": [
         {
@@ -1784,9 +1766,8 @@
       ],
       "primaryRegion": "tachelhit",
       "regions": [
-        "High Atlas",
-        "Middle Atlas",
-        "Anti-Atlas"
+        "central-atlas",
+        "tachelhit"
       ],
       "status": "active",
       "statusNotes": "",
@@ -1818,10 +1799,7 @@
         "altText": "The tree of life represents family lineage, growth, and the continuity of generations. Its branches "
       },
       "sources": [
-        {
-          "type": "ethnographic",
-          "text": "Documented in Amazigh textile and pottery traditions"
-        }
+        "Documented in Amazigh textile and pottery traditions"
       ],
       "attestedUsage": [
         {
@@ -1856,8 +1834,7 @@
       ],
       "primaryRegion": "tachelhit",
       "regions": [
-        "Souss",
-        "High Atlas"
+        "tachelhit"
       ],
       "status": "active",
       "statusNotes": "",
@@ -1889,10 +1866,7 @@
         "altText": "The snake represents rebirth, wisdom, and the cycle of life. Its ability to shed skin symbolizes tra"
       },
       "sources": [
-        {
-          "type": "ethnographic",
-          "text": "Documented in Amazigh textile and pottery traditions"
-        }
+        "Documented in Amazigh textile and pottery traditions"
       ],
       "attestedUsage": [
         {
@@ -1930,9 +1904,9 @@
       ],
       "primaryRegion": "tachelhit",
       "regions": [
-        "Souss",
-        "Rif",
-        "Sahara"
+        "tarifit",
+        "tuareg",
+        "tachelhit"
       ],
       "status": "active",
       "statusNotes": "",
@@ -1964,10 +1938,7 @@
         "altText": "The bride motif represents femininity, fertility, and the sacred transition of marriage. It embodies"
       },
       "sources": [
-        {
-          "type": "ethnographic",
-          "text": "Documented in Amazigh textile and pottery traditions"
-        }
+        "Documented in Amazigh textile and pottery traditions"
       ],
       "attestedUsage": [
         {
@@ -2005,8 +1976,8 @@
       ],
       "primaryRegion": "tachelhit",
       "regions": [
-        "Middle Atlas",
-        "High Atlas"
+        "central-atlas",
+        "tachelhit"
       ],
       "status": "active",
       "statusNotes": "",
@@ -2039,10 +2010,7 @@
         "altText": "The hand (khamsa, five) is a powerful protective symbol. The five fingers ward off evil, and the ope"
       },
       "sources": [
-        {
-          "type": "ethnographic",
-          "text": "Documented in Amazigh textile and pottery traditions"
-        }
+        "Documented in Amazigh textile and pottery traditions"
       ],
       "attestedUsage": [
         {
@@ -2080,8 +2048,7 @@
       ],
       "primaryRegion": "tachelhit",
       "regions": [
-        "Pan-Amazigh",
-        "Pan-North African"
+        "tachelhit"
       ],
       "status": "active",
       "statusNotes": "",
@@ -2113,10 +2080,7 @@
         "altText": "The path symbol represents life's journey, with its rises and descents mirroring the mountain passes"
       },
       "sources": [
-        {
-          "type": "ethnographic",
-          "text": "Documented in Amazigh textile and pottery traditions"
-        }
+        "Documented in Amazigh textile and pottery traditions"
       ],
       "attestedUsage": [
         {
@@ -2152,8 +2116,7 @@
       ],
       "primaryRegion": "tachelhit",
       "regions": [
-        "High Atlas",
-        "Anti-Atlas"
+        "tachelhit"
       ],
       "status": "active",
       "statusNotes": "",
@@ -2183,10 +2146,7 @@
         "altText": "The small fly or insect motif represents persistence and survival against all odds. The smallest cre"
       },
       "sources": [
-        {
-          "type": "ethnographic",
-          "text": "Documented in Amazigh textile and pottery traditions"
-        }
+        "Documented in Amazigh textile and pottery traditions"
       ],
       "attestedUsage": [
         {
@@ -2221,7 +2181,7 @@
       ],
       "primaryRegion": "tachelhit",
       "regions": [
-        "Pan-Amazigh"
+        "tachelhit"
       ],
       "status": "active",
       "statusNotes": "",
@@ -2253,10 +2213,7 @@
         "altText": "The comb represents the weaving loom and women's creative power. It symbolizes the act of creation —"
       },
       "sources": [
-        {
-          "type": "ethnographic",
-          "text": "Documented in Amazigh textile and pottery traditions"
-        }
+        "Documented in Amazigh textile and pottery traditions"
       ],
       "attestedUsage": [
         {
@@ -2291,9 +2248,8 @@
       ],
       "primaryRegion": "tachelhit",
       "regions": [
-        "Middle Atlas",
-        "High Atlas",
-        "Souss"
+        "central-atlas",
+        "tachelhit"
       ],
       "status": "active",
       "statusNotes": "",
@@ -2325,10 +2281,7 @@
         "altText": "Concentric circles or oval shapes represent layers of understanding. True knowledge, like an onion, "
       },
       "sources": [
-        {
-          "type": "ethnographic",
-          "text": "Documented in Amazigh textile and pottery traditions"
-        }
+        "Documented in Amazigh textile and pottery traditions"
       ],
       "attestedUsage": [
         {
@@ -2364,8 +2317,8 @@
       ],
       "primaryRegion": "tachelhit",
       "regions": [
-        "Rif",
-        "Middle Atlas"
+        "tarifit",
+        "central-atlas"
       ],
       "status": "active",
       "statusNotes": "",
@@ -2397,10 +2350,7 @@
         "altText": "The checkerboard pattern represents cultivated fields and the order imposed on nature through agricu"
       },
       "sources": [
-        {
-          "type": "ethnographic",
-          "text": "Documented in Amazigh textile and pottery traditions"
-        }
+        "Documented in Amazigh textile and pottery traditions"
       ],
       "attestedUsage": [
         {
@@ -2437,8 +2387,7 @@
       ],
       "primaryRegion": "tachelhit",
       "regions": [
-        "Souss",
-        "Draa Valley"
+        "tachelhit"
       ],
       "status": "active",
       "statusNotes": "",
@@ -2471,10 +2420,7 @@
         "altText": "The circular fibula with internal star represents the sun — source of all life and light. Worn by wo"
       },
       "sources": [
-        {
-          "type": "ethnographic",
-          "text": "Documented in Amazigh textile and pottery traditions"
-        }
+        "Documented in Amazigh textile and pottery traditions"
       ],
       "attestedUsage": [
         {
@@ -2509,9 +2455,8 @@
       ],
       "primaryRegion": "tachelhit",
       "regions": [
-        "Kabylie",
-        "Anti-Atlas",
-        "Souss"
+        "kabyle",
+        "tachelhit"
       ],
       "status": "active",
       "statusNotes": "",
@@ -2543,10 +2488,7 @@
         "altText": "Root patterns represent ancestral connection and cultural foundation. They grow downward into the ea"
       },
       "sources": [
-        {
-          "type": "ethnographic",
-          "text": "Documented in Amazigh textile and pottery traditions"
-        }
+        "Documented in Amazigh textile and pottery traditions"
       ],
       "attestedUsage": [
         {
@@ -2582,7 +2524,7 @@
       ],
       "primaryRegion": "tachelhit",
       "regions": [
-        "Pan-Amazigh"
+        "tachelhit"
       ],
       "status": "active",
       "statusNotes": "",
@@ -2614,10 +2556,7 @@
         "altText": "The spiral represents eternal movement, the cycle of seasons, and the passage of time. It has no beg"
       },
       "sources": [
-        {
-          "type": "ethnographic",
-          "text": "Documented in Amazigh textile and pottery traditions"
-        }
+        "Documented in Amazigh textile and pottery traditions"
       ],
       "attestedUsage": [
         {
@@ -2653,8 +2592,8 @@
       ],
       "primaryRegion": "tachelhit",
       "regions": [
-        "Sahara",
-        "Pan-Amazigh"
+        "tuareg",
+        "tachelhit"
       ],
       "status": "active",
       "statusNotes": "",
@@ -2687,10 +2626,7 @@
         "altText": "The rayed sun represents the annual cycle, warmth, and the Amazigh agricultural calendar. It marks Y"
       },
       "sources": [
-        {
-          "type": "ethnographic",
-          "text": "Documented in Amazigh textile and pottery traditions"
-        }
+        "Documented in Amazigh textile and pottery traditions"
       ],
       "attestedUsage": [
         {
@@ -2726,7 +2662,7 @@
       ],
       "primaryRegion": "tachelhit",
       "regions": [
-        "Pan-Amazigh"
+        "tachelhit"
       ],
       "status": "active",
       "statusNotes": "",

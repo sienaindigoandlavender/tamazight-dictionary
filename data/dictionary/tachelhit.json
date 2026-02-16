@@ -1,0 +1,5795 @@
+[
+  {
+    "id": "word-001",
+    "word": "akal",
+    "tifinagh": "ⴰⴽⴰⵍ",
+    "pronunciation": "/akal/",
+    "partOfSpeech": "noun",
+    "gender": "masculine",
+    "semanticFields": [
+      "nature",
+      "agriculture"
+    ],
+    "plural": "ikalan",
+    "pluralTifinagh": "ⵉⴽⴰⵍⴰⵏ",
+    "morphology": {
+      "root": "k-l",
+      "rootTifinagh": "ⴽ-ⵍ",
+      "pattern": "aCaC",
+      "state": "free"
+    },
+    "definitions": [
+      {
+        "meaning": "earth, land, ground, soil, territory",
+        "language": "en"
+      },
+      {
+        "meaning": "terre, sol, terrain, pays",
+        "language": "fr"
+      },
+      {
+        "meaning": "أرض، تراب، بلد",
+        "language": "ar"
+      },
+      {
+        "meaning": "tierra, suelo, terreno",
+        "language": "es"
+      }
+    ],
+    "etymology": {
+      "root": "k-l",
+      "rootTifinagh": "ⴽ-ⵍ",
+      "origin": "berber-common",
+      "cognates": [
+        {
+          "region": "kabyle",
+          "word": "akal",
+          "tifinagh": "ⴰⴽⴰⵍ"
+        },
+        {
+          "region": "tarifit",
+          "word": "akal",
+          "tifinagh": "ⴰⴽⴰⵍ"
+        },
+        {
+          "region": "tuareg",
+          "word": "akal",
+          "tifinagh": "ⴰⴽⴰⵍ"
+        }
+      ],
+      "notes": "Pan-Berber term found across all Amazigh varieties. One of the oldest attested Berber words."
+    },
+    "usageNotes": [
+      {
+        "type": "semantic",
+        "text": "Can refer to physical soil, land ownership, or homeland/country depending on context."
+      },
+      {
+        "type": "cultural",
+        "text": "Akal holds deep cultural significance as connection to ancestral land is central to Amazigh identity."
+      }
+    ],
+    "frequency": "common",
+    "examples": [
+      {
+        "text": "akal-inu iga amqqran",
+        "tifinagh": "ⴰⴽⴰⵍ ⵉⵏⵓ ⵉⴳⴰ ⴰⵎⵇⵇⵔⴰⵏ",
+        "translations": [
+          {
+            "language": "en",
+            "text": "My land is vast"
+          },
+          {
+            "language": "fr",
+            "text": "Ma terre est vaste"
+          }
+        ],
+        "source": {
+          "type": "oral",
+          "attribution": "Common expression"
+        }
+      },
+      {
+        "text": "ur illi akal bla aman",
+        "tifinagh": "ⵓⵔ ⵉⵍⵍⵉ ⴰⴽⴰⵍ ⴱⵍⴰ ⴰⵎⴰⵏ",
+        "translations": [
+          {
+            "language": "en",
+            "text": "There is no land without water"
+          },
+          {
+            "language": "fr",
+            "text": "Il n'y a pas de terre sans eau"
+          }
+        ],
+        "source": {
+          "type": "proverb",
+          "attribution": "Traditional Tachelhit proverb"
+        }
+      }
+    ],
+    "variants": [
+      {
+        "region": "kabyle",
+        "word": "akal",
+        "tifinagh": "ⴰⴽⴰⵍ",
+        "pronunciation": "/akal/"
+      },
+      {
+        "region": "central-atlas",
+        "word": "akal",
+        "tifinagh": "ⴰⴽⴰⵍ",
+        "pronunciation": "/akal/"
+      }
+    ],
+    "crossReferences": [
+      {
+        "type": "synonym",
+        "wordId": "word-008",
+        "word": "tamurt",
+        "tifinagh": "ⵜⴰⵎⵓⵔⵜ",
+        "notes": "tamurt emphasizes homeland/country"
+      },
+      {
+        "type": "see-also",
+        "wordId": "word-006",
+        "word": "adrar",
+        "tifinagh": "ⴰⴷⵔⴰⵔ"
+      }
+    ],
+    "relatedWords": [
+      "tamurt",
+      "adrar"
+    ],
+    "region": "tachelhit",
+    "isStandardForm": true
+  },
+  {
+    "id": "word-002",
+    "word": "aman",
+    "tifinagh": "ⴰⵎⴰⵏ",
+    "pronunciation": "/aman/",
+    "partOfSpeech": "noun",
+    "gender": "masculine",
+    "number": "plural",
+    "semanticFields": [
+      "nature"
+    ],
+    "morphology": {
+      "root": "m-n",
+      "rootTifinagh": "ⵎ-ⵏ",
+      "singulative": {
+        "word": "anu",
+        "tifinagh": "ⴰⵏⵓ"
+      }
+    },
+    "definitions": [
+      {
+        "meaning": "water (always plural in form)",
+        "language": "en"
+      },
+      {
+        "meaning": "eau (toujours au pluriel)",
+        "language": "fr"
+      },
+      {
+        "meaning": "ماء",
+        "language": "ar"
+      },
+      {
+        "meaning": "agua",
+        "language": "es"
+      }
+    ],
+    "etymology": {
+      "root": "m-n",
+      "origin": "berber-common",
+      "cognates": [
+        {
+          "region": "kabyle",
+          "word": "aman",
+          "tifinagh": "ⴰⵎⴰⵏ"
+        },
+        {
+          "region": "tarifit",
+          "word": "aman",
+          "tifinagh": "ⴰⵎⴰⵏ"
+        },
+        {
+          "region": "tuareg",
+          "word": "aman",
+          "tifinagh": "ⴰⵎⴰⵏ"
+        }
+      ],
+      "notes": "Universal across all Berber languages. The word is grammatically plural but can refer to any quantity of water."
+    },
+    "usageNotes": [
+      {
+        "type": "grammar",
+        "text": "Always takes plural agreement even when referring to a single body of water."
+      }
+    ],
+    "frequency": "common",
+    "examples": [
+      {
+        "text": "aman n tafukt",
+        "tifinagh": "ⴰⵎⴰⵏ ⵏ ⵜⴰⴼⵓⴽⵜ",
+        "translations": [
+          {
+            "language": "en",
+            "text": "rainwater (lit. water of the sun)"
+          },
+          {
+            "language": "fr",
+            "text": "eau de pluie (lit. eau du soleil)"
+          }
+        ],
+        "source": {
+          "type": "oral"
+        }
+      }
+    ],
+    "variants": [
+      {
+        "region": "kabyle",
+        "word": "aman",
+        "tifinagh": "ⴰⵎⴰⵏ",
+        "pronunciation": "/aman/"
+      }
+    ],
+    "region": "tachelhit",
+    "isStandardForm": true
+  },
+  {
+    "id": "word-003",
+    "word": "tafukt",
+    "tifinagh": "ⵜⴰⴼⵓⴽⵜ",
+    "pronunciation": "/tafukt/",
+    "partOfSpeech": "noun",
+    "gender": "feminine",
+    "semanticFields": [
+      "nature",
+      "time"
+    ],
+    "morphology": {
+      "root": "f-k",
+      "rootTifinagh": "ⴼ-ⴽ",
+      "pattern": "taCuCt",
+      "derivedForms": [
+        {
+          "type": "diminutive",
+          "word": "tafukkut",
+          "tifinagh": "ⵜⴰⴼⵓⴽⴽⵓⵜ",
+          "meaning": "little sun, sunbeam"
+        }
+      ]
+    },
+    "definitions": [
+      {
+        "meaning": "sun; day (as a unit of time)",
+        "language": "en"
+      },
+      {
+        "meaning": "soleil; jour (unité de temps)",
+        "language": "fr"
+      },
+      {
+        "meaning": "شمس، يوم",
+        "language": "ar"
+      },
+      {
+        "meaning": "sol, día",
+        "language": "es"
+      }
+    ],
+    "etymology": {
+      "root": "f-k",
+      "origin": "berber-common",
+      "cognates": [
+        {
+          "region": "kabyle",
+          "word": "tafukt",
+          "tifinagh": "ⵜⴰⴼⵓⴽⵜ"
+        },
+        {
+          "region": "central-atlas",
+          "word": "tafuyt",
+          "tifinagh": "ⵜⴰⴼⵓⵢⵜ"
+        }
+      ]
+    },
+    "usageNotes": [
+      {
+        "type": "semantic",
+        "text": "Can mean both the physical sun and a day as a time period."
+      }
+    ],
+    "frequency": "common",
+    "examples": [
+      {
+        "text": "tafukt tẓẓa",
+        "tifinagh": "ⵜⴰⴼⵓⴽⵜ ⵜⵥⵥⴰ",
+        "translations": [
+          {
+            "language": "en",
+            "text": "The sun is hot"
+          },
+          {
+            "language": "fr",
+            "text": "Le soleil est chaud"
+          }
+        ],
+        "source": {
+          "type": "oral"
+        }
+      }
+    ],
+    "variants": [
+      {
+        "region": "central-atlas",
+        "word": "tafuyt",
+        "tifinagh": "ⵜⴰⴼⵓⵢⵜ",
+        "pronunciation": "/tafujt/"
+      }
+    ],
+    "region": "tachelhit",
+    "isStandardForm": true
+  },
+  {
+    "id": "word-004",
+    "word": "ayyur",
+    "tifinagh": "ⴰⵢⵢⵓⵔ",
+    "pronunciation": "/ajjur/",
+    "partOfSpeech": "noun",
+    "gender": "masculine",
+    "semanticFields": [
+      "nature",
+      "time"
+    ],
+    "plural": "ayyurn",
+    "pluralTifinagh": "ⴰⵢⵢⵓⵔⵏ",
+    "morphology": {
+      "root": "y-r",
+      "rootTifinagh": "ⵢ-ⵔ"
+    },
+    "definitions": [
+      {
+        "meaning": "moon; month",
+        "language": "en"
+      },
+      {
+        "meaning": "lune; mois",
+        "language": "fr"
+      },
+      {
+        "meaning": "قمر، شهر",
+        "language": "ar"
+      },
+      {
+        "meaning": "luna, mes",
+        "language": "es"
+      }
+    ],
+    "etymology": {
+      "root": "y-r",
+      "origin": "berber-common",
+      "cognates": [
+        {
+          "region": "kabyle",
+          "word": "aggur",
+          "tifinagh": "ⴰⴳⴳⵓⵔ"
+        },
+        {
+          "region": "tuareg",
+          "word": "ayur",
+          "tifinagh": "ⴰⵢⵓⵔ"
+        }
+      ]
+    },
+    "frequency": "common",
+    "region": "tachelhit",
+    "isStandardForm": true
+  },
+  {
+    "id": "word-005",
+    "word": "itri",
+    "tifinagh": "ⵉⵜⵔⵉ",
+    "pronunciation": "/itri/",
+    "partOfSpeech": "noun",
+    "gender": "masculine",
+    "semanticFields": [
+      "nature"
+    ],
+    "plural": "itran",
+    "pluralTifinagh": "ⵉⵜⵔⴰⵏ",
+    "morphology": {
+      "root": "t-r",
+      "rootTifinagh": "ⵜ-ⵔ"
+    },
+    "definitions": [
+      {
+        "meaning": "star",
+        "language": "en"
+      },
+      {
+        "meaning": "étoile",
+        "language": "fr"
+      },
+      {
+        "meaning": "نجم",
+        "language": "ar"
+      },
+      {
+        "meaning": "estrella",
+        "language": "es"
+      }
+    ],
+    "etymology": {
+      "origin": "berber-common",
+      "cognates": [
+        {
+          "region": "kabyle",
+          "word": "itri",
+          "tifinagh": "ⵉⵜⵔⵉ"
+        }
+      ]
+    },
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-006",
+    "word": "adrar",
+    "tifinagh": "ⴰⴷⵔⴰⵔ",
+    "pronunciation": "/adrar/",
+    "partOfSpeech": "noun",
+    "gender": "masculine",
+    "semanticFields": [
+      "nature"
+    ],
+    "plural": "idrarn",
+    "pluralTifinagh": "ⵉⴷⵔⴰⵔⵏ",
+    "morphology": {
+      "root": "d-r-r",
+      "rootTifinagh": "ⴷ-ⵔ-ⵔ"
+    },
+    "definitions": [
+      {
+        "meaning": "mountain",
+        "language": "en"
+      },
+      {
+        "meaning": "montagne",
+        "language": "fr"
+      },
+      {
+        "meaning": "جبل",
+        "language": "ar"
+      },
+      {
+        "meaning": "montaña",
+        "language": "es"
+      }
+    ],
+    "etymology": {
+      "origin": "berber-common",
+      "notes": "This word gives its name to the Adrar region in Mauritania and Adrar des Ifoghas in Mali."
+    },
+    "frequency": "common",
+    "examples": [
+      {
+        "text": "adrar n Atlas",
+        "tifinagh": "ⴰⴷⵔⴰⵔ ⵏ ⴰⵜⵍⴰⵙ",
+        "translations": [
+          {
+            "language": "en",
+            "text": "Atlas Mountain"
+          },
+          {
+            "language": "fr",
+            "text": "Montagne de l'Atlas"
+          }
+        ],
+        "source": {
+          "type": "written"
+        }
+      }
+    ],
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-007",
+    "word": "asif",
+    "tifinagh": "ⴰⵙⵉⴼ",
+    "pronunciation": "/asif/",
+    "partOfSpeech": "noun",
+    "gender": "masculine",
+    "semanticFields": [
+      "nature"
+    ],
+    "plural": "isaffen",
+    "pluralTifinagh": "ⵉⵙⴰⴼⴼⵏ",
+    "morphology": {
+      "root": "s-f",
+      "rootTifinagh": "ⵙ-ⴼ"
+    },
+    "definitions": [
+      {
+        "meaning": "river, watercourse",
+        "language": "en"
+      },
+      {
+        "meaning": "rivière, fleuve, cours d'eau",
+        "language": "fr"
+      },
+      {
+        "meaning": "نهر",
+        "language": "ar"
+      },
+      {
+        "meaning": "río",
+        "language": "es"
+      }
+    ],
+    "etymology": {
+      "origin": "berber-common"
+    },
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-008",
+    "word": "tamurt",
+    "tifinagh": "ⵜⴰⵎⵓⵔⵜ",
+    "pronunciation": "/tamurt/",
+    "partOfSpeech": "noun",
+    "gender": "feminine",
+    "semanticFields": [
+      "nature",
+      "society"
+    ],
+    "plural": "timura",
+    "pluralTifinagh": "ⵜⵉⵎⵓⵔⴰ",
+    "morphology": {
+      "root": "m-r-t",
+      "rootTifinagh": "ⵎ-ⵔ-ⵜ"
+    },
+    "definitions": [
+      {
+        "meaning": "country, homeland, region, nation",
+        "language": "en"
+      },
+      {
+        "meaning": "pays, patrie, région, nation",
+        "language": "fr"
+      },
+      {
+        "meaning": "بلد، وطن",
+        "language": "ar"
+      },
+      {
+        "meaning": "país, patria, región",
+        "language": "es"
+      }
+    ],
+    "etymology": {
+      "origin": "berber-common",
+      "notes": "Emphasizes political/cultural territory more than physical land (cf. akal)."
+    },
+    "usageNotes": [
+      {
+        "type": "semantic",
+        "text": "While akal refers to physical land/soil, tamurt emphasizes the cultural and political sense of homeland or country."
+      }
+    ],
+    "frequency": "common",
+    "examples": [
+      {
+        "text": "tamurt-inu",
+        "tifinagh": "ⵜⴰⵎⵓⵔⵜ ⵉⵏⵓ",
+        "translations": [
+          {
+            "language": "en",
+            "text": "my country, my homeland"
+          },
+          {
+            "language": "fr",
+            "text": "mon pays, ma patrie"
+          }
+        ],
+        "source": {
+          "type": "oral"
+        }
+      }
+    ],
+    "crossReferences": [
+      {
+        "type": "compare",
+        "wordId": "word-001",
+        "word": "akal",
+        "tifinagh": "ⴰⴽⴰⵍ",
+        "notes": "akal = physical land; tamurt = homeland/country"
+      }
+    ],
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-009",
+    "word": "argaz",
+    "tifinagh": "ⴰⵔⴳⴰⵣ",
+    "pronunciation": "/argaz/",
+    "partOfSpeech": "noun",
+    "gender": "masculine",
+    "semanticFields": [
+      "family",
+      "society"
+    ],
+    "plural": "irgazn",
+    "pluralTifinagh": "ⵉⵔⴳⴰⵣⵏ",
+    "morphology": {
+      "root": "r-g-z",
+      "rootTifinagh": "ⵔ-ⴳ-ⵣ",
+      "feminine": {
+        "word": "tamghart",
+        "tifinagh": "ⵜⴰⵎⵖⴰⵔⵜ"
+      }
+    },
+    "definitions": [
+      {
+        "meaning": "man, husband",
+        "language": "en"
+      },
+      {
+        "meaning": "homme, mari",
+        "language": "fr"
+      },
+      {
+        "meaning": "رجل، زوج",
+        "language": "ar"
+      },
+      {
+        "meaning": "hombre, esposo",
+        "language": "es"
+      }
+    ],
+    "etymology": {
+      "origin": "berber-common"
+    },
+    "frequency": "common",
+    "crossReferences": [
+      {
+        "type": "antonym",
+        "wordId": "word-010",
+        "word": "tamghart",
+        "tifinagh": "ⵜⴰⵎⵖⴰⵔⵜ"
+      }
+    ],
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-010",
+    "word": "tamghart",
+    "tifinagh": "ⵜⴰⵎⵖⴰⵔⵜ",
+    "pronunciation": "/tamɣart/",
+    "partOfSpeech": "noun",
+    "gender": "feminine",
+    "semanticFields": [
+      "family",
+      "society"
+    ],
+    "plural": "timgharin",
+    "pluralTifinagh": "ⵜⵉⵎⵖⴰⵔⵉⵏ",
+    "definitions": [
+      {
+        "meaning": "woman, wife",
+        "language": "en"
+      },
+      {
+        "meaning": "femme, épouse",
+        "language": "fr"
+      },
+      {
+        "meaning": "امرأة، زوجة",
+        "language": "ar"
+      },
+      {
+        "meaning": "mujer, esposa",
+        "language": "es"
+      }
+    ],
+    "etymology": {
+      "origin": "berber-common"
+    },
+    "frequency": "common",
+    "crossReferences": [
+      {
+        "type": "antonym",
+        "wordId": "word-009",
+        "word": "argaz",
+        "tifinagh": "ⴰⵔⴳⴰⵣ"
+      }
+    ],
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-011",
+    "word": "afrux",
+    "tifinagh": "ⴰⴼⵔⵓⵅ",
+    "pronunciation": "/afrux/",
+    "partOfSpeech": "noun",
+    "gender": "masculine",
+    "semanticFields": [
+      "family"
+    ],
+    "plural": "ifrax",
+    "pluralTifinagh": "ⵉⴼⵔⴰⵅ",
+    "morphology": {
+      "root": "f-r-x",
+      "rootTifinagh": "ⴼ-ⵔ-ⵅ",
+      "feminine": {
+        "word": "tafrukht",
+        "tifinagh": "ⵜⴰⴼⵔⵓⵅⵜ"
+      }
+    },
+    "definitions": [
+      {
+        "meaning": "boy, male child",
+        "language": "en"
+      },
+      {
+        "meaning": "garçon, enfant (masculin)",
+        "language": "fr"
+      },
+      {
+        "meaning": "ولد، طفل",
+        "language": "ar"
+      },
+      {
+        "meaning": "niño, chico",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-012",
+    "word": "tafrukht",
+    "tifinagh": "ⵜⴰⴼⵔⵓⵅⵜ",
+    "pronunciation": "/tafruxt/",
+    "partOfSpeech": "noun",
+    "gender": "feminine",
+    "semanticFields": [
+      "family"
+    ],
+    "plural": "tifrax",
+    "pluralTifinagh": "ⵜⵉⴼⵔⴰⵅ",
+    "definitions": [
+      {
+        "meaning": "girl, female child",
+        "language": "en"
+      },
+      {
+        "meaning": "fille, enfant (féminin)",
+        "language": "fr"
+      },
+      {
+        "meaning": "بنت، طفلة",
+        "language": "ar"
+      },
+      {
+        "meaning": "niña, chica",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-013",
+    "word": "tigmmi",
+    "tifinagh": "ⵜⵉⴳⵎⵎⵉ",
+    "pronunciation": "/tigmmi/",
+    "partOfSpeech": "noun",
+    "gender": "feminine",
+    "semanticFields": [
+      "house"
+    ],
+    "plural": "tigmmiwin",
+    "pluralTifinagh": "ⵜⵉⴳⵎⵎⵉⵡⵉⵏ",
+    "definitions": [
+      {
+        "meaning": "house, home, dwelling",
+        "language": "en"
+      },
+      {
+        "meaning": "maison, foyer, demeure",
+        "language": "fr"
+      },
+      {
+        "meaning": "بيت، منزل",
+        "language": "ar"
+      },
+      {
+        "meaning": "casa, hogar",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-014",
+    "word": "aghrum",
+    "tifinagh": "ⴰⵖⵔⵓⵎ",
+    "pronunciation": "/aɣrum/",
+    "partOfSpeech": "noun",
+    "gender": "masculine",
+    "semanticFields": [
+      "food"
+    ],
+    "definitions": [
+      {
+        "meaning": "bread",
+        "language": "en"
+      },
+      {
+        "meaning": "pain",
+        "language": "fr"
+      },
+      {
+        "meaning": "خبز",
+        "language": "ar"
+      },
+      {
+        "meaning": "pan",
+        "language": "es"
+      }
+    ],
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Bread is central to Amazigh cuisine and culture. Traditional breads include tafarnout (flatbread) and various regional varieties."
+      }
+    ],
+    "frequency": "common",
+    "examples": [
+      {
+        "text": "aghrum d udi",
+        "tifinagh": "ⴰⵖⵔⵓⵎ ⴷ ⵓⴷⵉ",
+        "translations": [
+          {
+            "language": "en",
+            "text": "bread and butter"
+          },
+          {
+            "language": "fr",
+            "text": "pain et beurre"
+          }
+        ],
+        "source": {
+          "type": "oral"
+        }
+      }
+    ],
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-015",
+    "word": "udi",
+    "tifinagh": "ⵓⴷⵉ",
+    "pronunciation": "/udi/",
+    "partOfSpeech": "noun",
+    "gender": "masculine",
+    "semanticFields": [
+      "food"
+    ],
+    "definitions": [
+      {
+        "meaning": "butter (traditionally clarified butter)",
+        "language": "en"
+      },
+      {
+        "meaning": "beurre (traditionnellement clarifié)",
+        "language": "fr"
+      },
+      {
+        "meaning": "زبدة",
+        "language": "ar"
+      },
+      {
+        "meaning": "mantequilla",
+        "language": "es"
+      }
+    ],
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Traditional Amazigh butter is often clarified and aged, giving it a distinct flavor used in cooking and as a condiment."
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-016",
+    "word": "tament",
+    "tifinagh": "ⵜⴰⵎⵏⵜ",
+    "pronunciation": "/tamnt/",
+    "partOfSpeech": "noun",
+    "gender": "feminine",
+    "semanticFields": [
+      "food"
+    ],
+    "definitions": [
+      {
+        "meaning": "honey",
+        "language": "en"
+      },
+      {
+        "meaning": "miel",
+        "language": "fr"
+      },
+      {
+        "meaning": "عسل",
+        "language": "ar"
+      },
+      {
+        "meaning": "miel",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-017",
+    "word": "azalim",
+    "tifinagh": "ⴰⵣⴰⵍⵉⵎ",
+    "pronunciation": "/azalim/",
+    "partOfSpeech": "noun",
+    "gender": "masculine",
+    "semanticFields": [
+      "food",
+      "agriculture"
+    ],
+    "plural": "izalimn",
+    "pluralTifinagh": "ⵉⵣⴰⵍⵉⵎⵏ",
+    "definitions": [
+      {
+        "meaning": "onion",
+        "language": "en"
+      },
+      {
+        "meaning": "oignon",
+        "language": "fr"
+      },
+      {
+        "meaning": "بصل",
+        "language": "ar"
+      },
+      {
+        "meaning": "cebolla",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-018",
+    "word": "tifiyi",
+    "tifinagh": "ⵜⵉⴼⵉⵢⵉ",
+    "pronunciation": "/tifiji/",
+    "partOfSpeech": "noun",
+    "gender": "feminine",
+    "semanticFields": [
+      "food"
+    ],
+    "definitions": [
+      {
+        "meaning": "meat, flesh",
+        "language": "en"
+      },
+      {
+        "meaning": "viande, chair",
+        "language": "fr"
+      },
+      {
+        "meaning": "لحم",
+        "language": "ar"
+      },
+      {
+        "meaning": "carne",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-019",
+    "word": "azmmur",
+    "tifinagh": "ⴰⵣⵎⵎⵓⵔ",
+    "pronunciation": "/azmmur/",
+    "partOfSpeech": "noun",
+    "gender": "masculine",
+    "semanticFields": [
+      "food",
+      "agriculture"
+    ],
+    "definitions": [
+      {
+        "meaning": "olive tree; olives",
+        "language": "en"
+      },
+      {
+        "meaning": "olivier; olives",
+        "language": "fr"
+      },
+      {
+        "meaning": "زيتون",
+        "language": "ar"
+      },
+      {
+        "meaning": "olivo, aceitunas",
+        "language": "es"
+      }
+    ],
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Olive cultivation is ancient in the Amazigh world. Olive oil (zzit n uzmmur) is a staple of the traditional diet."
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-020",
+    "word": "awal",
+    "tifinagh": "ⴰⵡⴰⵍ",
+    "pronunciation": "/awal/",
+    "partOfSpeech": "noun",
+    "gender": "masculine",
+    "semanticFields": [
+      "abstract",
+      "society"
+    ],
+    "plural": "iwalen",
+    "pluralTifinagh": "ⵉⵡⴰⵍⵏ",
+    "morphology": {
+      "root": "w-l",
+      "rootTifinagh": "ⵡ-ⵍ"
+    },
+    "definitions": [
+      {
+        "meaning": "word, speech, language, discourse",
+        "language": "en"
+      },
+      {
+        "meaning": "mot, parole, langue, discours",
+        "language": "fr"
+      },
+      {
+        "meaning": "كلمة، كلام، لغة",
+        "language": "ar"
+      },
+      {
+        "meaning": "palabra, habla, lengua",
+        "language": "es"
+      }
+    ],
+    "etymology": {
+      "origin": "berber-common",
+      "notes": "Related to the name 'Amawal' (dictionary). The root w-l is associated with speech and language across Berber."
+    },
+    "frequency": "common",
+    "examples": [
+      {
+        "text": "awal amazigh",
+        "tifinagh": "ⴰⵡⴰⵍ ⴰⵎⴰⵣⵉⵖ",
+        "translations": [
+          {
+            "language": "en",
+            "text": "the Amazigh language"
+          },
+          {
+            "language": "fr",
+            "text": "la langue amazighe"
+          }
+        ],
+        "source": {
+          "type": "written"
+        }
+      }
+    ],
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-021",
+    "word": "ixf",
+    "tifinagh": "ⵉⵅⴼ",
+    "pronunciation": "/ixf/",
+    "partOfSpeech": "noun",
+    "gender": "masculine",
+    "semanticFields": [
+      "body"
+    ],
+    "plural": "ixfawn",
+    "pluralTifinagh": "ⵉⵅⴼⴰⵡⵏ",
+    "definitions": [
+      {
+        "meaning": "head; self (reflexive)",
+        "language": "en"
+      },
+      {
+        "meaning": "tête; soi-même (réflexif)",
+        "language": "fr"
+      },
+      {
+        "meaning": "رأس",
+        "language": "ar"
+      },
+      {
+        "meaning": "cabeza",
+        "language": "es"
+      }
+    ],
+    "usageNotes": [
+      {
+        "type": "grammar",
+        "text": "Used with possessive suffixes to form reflexive pronouns: ixf-inu (myself), ixf-nnk (yourself), etc."
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-022",
+    "word": "ul",
+    "tifinagh": "ⵓⵍ",
+    "pronunciation": "/ul/",
+    "partOfSpeech": "noun",
+    "gender": "masculine",
+    "semanticFields": [
+      "body",
+      "emotions"
+    ],
+    "plural": "ulawen",
+    "pluralTifinagh": "ⵓⵍⴰⵡⵏ",
+    "definitions": [
+      {
+        "meaning": "heart (physical and emotional)",
+        "language": "en"
+      },
+      {
+        "meaning": "cœur (physique et émotionnel)",
+        "language": "fr"
+      },
+      {
+        "meaning": "قلب",
+        "language": "ar"
+      },
+      {
+        "meaning": "corazón",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-023",
+    "word": "afus",
+    "tifinagh": "ⴰⴼⵓⵙ",
+    "pronunciation": "/afus/",
+    "partOfSpeech": "noun",
+    "gender": "masculine",
+    "semanticFields": [
+      "body"
+    ],
+    "plural": "ifassn",
+    "pluralTifinagh": "ⵉⴼⴰⵙⵙⵏ",
+    "definitions": [
+      {
+        "meaning": "hand; arm",
+        "language": "en"
+      },
+      {
+        "meaning": "main; bras",
+        "language": "fr"
+      },
+      {
+        "meaning": "يد",
+        "language": "ar"
+      },
+      {
+        "meaning": "mano",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-024",
+    "word": "adar",
+    "tifinagh": "ⴰⴷⴰⵔ",
+    "pronunciation": "/adar/",
+    "partOfSpeech": "noun",
+    "gender": "masculine",
+    "semanticFields": [
+      "body"
+    ],
+    "plural": "idarn",
+    "pluralTifinagh": "ⵉⴷⴰⵔⵏ",
+    "definitions": [
+      {
+        "meaning": "foot; leg",
+        "language": "en"
+      },
+      {
+        "meaning": "pied; jambe",
+        "language": "fr"
+      },
+      {
+        "meaning": "قدم، رجل",
+        "language": "ar"
+      },
+      {
+        "meaning": "pie, pierna",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-025",
+    "word": "tit",
+    "tifinagh": "ⵜⵉⵜ",
+    "pronunciation": "/tit/",
+    "partOfSpeech": "noun",
+    "gender": "feminine",
+    "semanticFields": [
+      "body"
+    ],
+    "plural": "tiṭṭawin",
+    "pluralTifinagh": "ⵜⵉⵟⵟⴰⵡⵉⵏ",
+    "definitions": [
+      {
+        "meaning": "eye",
+        "language": "en"
+      },
+      {
+        "meaning": "œil",
+        "language": "fr"
+      },
+      {
+        "meaning": "عين",
+        "language": "ar"
+      },
+      {
+        "meaning": "ojo",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-026",
+    "word": "amzwaru",
+    "tifinagh": "ⴰⵎⵣⵡⴰⵔⵓ",
+    "pronunciation": "/amzwaru/",
+    "partOfSpeech": "adjective",
+    "semanticFields": [
+      "abstract"
+    ],
+    "definitions": [
+      {
+        "meaning": "first",
+        "language": "en"
+      },
+      {
+        "meaning": "premier",
+        "language": "fr"
+      },
+      {
+        "meaning": "أول",
+        "language": "ar"
+      },
+      {
+        "meaning": "primero",
+        "language": "es"
+      }
+    ],
+    "etymology": {
+      "derivedFrom": "zwar (to precede)"
+    },
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-027",
+    "word": "amggaru",
+    "tifinagh": "ⴰⵎⴳⴳⴰⵔⵓ",
+    "pronunciation": "/amggaru/",
+    "partOfSpeech": "adjective",
+    "semanticFields": [
+      "abstract"
+    ],
+    "definitions": [
+      {
+        "meaning": "last, final",
+        "language": "en"
+      },
+      {
+        "meaning": "dernier",
+        "language": "fr"
+      },
+      {
+        "meaning": "آخر",
+        "language": "ar"
+      },
+      {
+        "meaning": "último",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "crossReferences": [
+      {
+        "type": "antonym",
+        "wordId": "word-026",
+        "word": "amzwaru",
+        "tifinagh": "ⴰⵎⵣⵡⴰⵔⵓ"
+      }
+    ],
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-028",
+    "word": "amqqran",
+    "tifinagh": "ⴰⵎⵇⵇⵔⴰⵏ",
+    "pronunciation": "/amqqran/",
+    "partOfSpeech": "adjective",
+    "semanticFields": [
+      "abstract"
+    ],
+    "morphology": {
+      "feminine": {
+        "word": "tamqqrant",
+        "tifinagh": "ⵜⴰⵎⵇⵇⵔⴰⵏⵜ"
+      }
+    },
+    "definitions": [
+      {
+        "meaning": "big, large, great, important",
+        "language": "en"
+      },
+      {
+        "meaning": "grand, gros, important",
+        "language": "fr"
+      },
+      {
+        "meaning": "كبير",
+        "language": "ar"
+      },
+      {
+        "meaning": "grande, importante",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "crossReferences": [
+      {
+        "type": "antonym",
+        "wordId": "word-029",
+        "word": "amẓẓyan",
+        "tifinagh": "ⴰⵎⵥⵥⵢⴰⵏ"
+      }
+    ],
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-029",
+    "word": "amẓẓyan",
+    "tifinagh": "ⴰⵎⵥⵥⵢⴰⵏ",
+    "pronunciation": "/amẓẓjan/",
+    "partOfSpeech": "adjective",
+    "semanticFields": [
+      "abstract"
+    ],
+    "morphology": {
+      "feminine": {
+        "word": "tamẓẓyant",
+        "tifinagh": "ⵜⴰⵎⵥⵥⵢⴰⵏⵜ"
+      }
+    },
+    "definitions": [
+      {
+        "meaning": "small, little, young, minor",
+        "language": "en"
+      },
+      {
+        "meaning": "petit, jeune, mineur",
+        "language": "fr"
+      },
+      {
+        "meaning": "صغير",
+        "language": "ar"
+      },
+      {
+        "meaning": "pequeño, joven",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "crossReferences": [
+      {
+        "type": "antonym",
+        "wordId": "word-028",
+        "word": "amqqran",
+        "tifinagh": "ⴰⵎⵇⵇⵔⴰⵏ"
+      }
+    ],
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-030",
+    "word": "azgzaw",
+    "tifinagh": "ⴰⵣⴳⵣⴰⵡ",
+    "pronunciation": "/azgzaw/",
+    "partOfSpeech": "adjective",
+    "semanticFields": [
+      "abstract"
+    ],
+    "morphology": {
+      "feminine": {
+        "word": "tazgzawt",
+        "tifinagh": "ⵜⴰⵣⴳⵣⴰⵡⵜ"
+      }
+    },
+    "definitions": [
+      {
+        "meaning": "green; blue (traditionally same word)",
+        "language": "en"
+      },
+      {
+        "meaning": "vert; bleu (traditionnellement même mot)",
+        "language": "fr"
+      },
+      {
+        "meaning": "أخضر، أزرق",
+        "language": "ar"
+      },
+      {
+        "meaning": "verde, azul",
+        "language": "es"
+      }
+    ],
+    "usageNotes": [
+      {
+        "type": "semantic",
+        "text": "Traditionally, azgzaw covers both green and blue. Modern usage sometimes distinguishes blue with borrowed terms."
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-031",
+    "word": "taddart",
+    "tifinagh": "ⵜⴰⴷⴷⴰⵔⵜ",
+    "pronunciation": "/taddart/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "architecture",
+      "community"
+    ],
+    "definitions": [
+      {
+        "meaning": "house, village",
+        "language": "en"
+      },
+      {
+        "meaning": "maison, village",
+        "language": "fr"
+      },
+      {
+        "meaning": "بيت، قرية",
+        "language": "ar"
+      },
+      {
+        "meaning": "casa, pueblo",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "plural": "tiddar",
+    "pluralTifinagh": "ⵜⵉⴷⴷⴰⵔ",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "In Tachelhit, taddart can mean both a single house and a small village, reflecting the communal nature of Amazigh settlement."
+      }
+    ]
+  },
+  {
+    "id": "word-032",
+    "word": "targa",
+    "tifinagh": "ⵜⴰⵔⴳⴰ",
+    "pronunciation": "/targa/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "agriculture",
+      "water"
+    ],
+    "definitions": [
+      {
+        "meaning": "irrigation canal, water channel",
+        "language": "en"
+      },
+      {
+        "meaning": "canal d'irrigation, séguia",
+        "language": "fr"
+      },
+      {
+        "meaning": "ساقية، قناة ري",
+        "language": "ar"
+      },
+      {
+        "meaning": "canal de riego",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "plural": "tirga",
+    "pluralTifinagh": "ⵜⵉⵔⴳⴰ",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Essential to oasis agriculture. The communal management of tirga is a cornerstone of Amazigh social organization."
+      }
+    ]
+  },
+  {
+    "id": "word-033",
+    "word": "tafaska",
+    "tifinagh": "ⵜⴰⴼⴰⵙⴽⴰ",
+    "pronunciation": "/tafaska/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "religion",
+      "culture"
+    ],
+    "definitions": [
+      {
+        "meaning": "feast, festival (especially Eid al-Adha)",
+        "language": "en"
+      },
+      {
+        "meaning": "fête, fête du sacrifice",
+        "language": "fr"
+      },
+      {
+        "meaning": "عيد، عيد الأضحى",
+        "language": "ar"
+      },
+      {
+        "meaning": "fiesta, festividad",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Primarily refers to Eid al-Adha (the feast of sacrifice), one of the most important celebrations in Amazigh culture."
+      }
+    ]
+  },
+  {
+    "id": "word-034",
+    "word": "agadir",
+    "tifinagh": "ⴰⴳⴰⴷⵉⵔ",
+    "pronunciation": "/agadir/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "architecture",
+      "agriculture"
+    ],
+    "definitions": [
+      {
+        "meaning": "fortified granary, collective storehouse",
+        "language": "en"
+      },
+      {
+        "meaning": "grenier fortifié, grenier collectif",
+        "language": "fr"
+      },
+      {
+        "meaning": "مخزن محصن، أكادير",
+        "language": "ar"
+      },
+      {
+        "meaning": "granero fortificado",
+        "language": "es"
+      }
+    ],
+    "frequency": "uncommon",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "iguddar",
+    "pluralTifinagh": "ⵉⴳⵓⴷⴷⴰⵔ",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Collective granaries (iguddar) are icons of Amazigh architecture in southern Morocco. The city of Agadir takes its name from this word."
+      }
+    ]
+  },
+  {
+    "id": "word-035",
+    "word": "anrar",
+    "tifinagh": "ⴰⵏⵔⴰⵔ",
+    "pronunciation": "/anrar/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "agriculture"
+    ],
+    "definitions": [
+      {
+        "meaning": "threshing floor",
+        "language": "en"
+      },
+      {
+        "meaning": "aire de battage",
+        "language": "fr"
+      },
+      {
+        "meaning": "بيدر",
+        "language": "ar"
+      },
+      {
+        "meaning": "era de trilla",
+        "language": "es"
+      }
+    ],
+    "frequency": "uncommon",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "inrarn",
+    "pluralTifinagh": "ⵉⵏⵔⴰⵔⵏ",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "A communal space where grain is threshed after harvest. Often doubles as a gathering place for celebrations."
+      }
+    ]
+  },
+  {
+    "id": "word-036",
+    "word": "afella",
+    "tifinagh": "ⴰⴼⴻⵍⵍⴰ",
+    "pronunciation": "/afəlla/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "nature",
+      "direction"
+    ],
+    "definitions": [
+      {
+        "meaning": "top, summit, above",
+        "language": "en"
+      },
+      {
+        "meaning": "sommet, haut, dessus",
+        "language": "fr"
+      },
+      {
+        "meaning": "قمة، أعلى",
+        "language": "ar"
+      },
+      {
+        "meaning": "cumbre, arriba",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-037",
+    "word": "agemmaḍ",
+    "tifinagh": "ⴰⴳⴻⵎⵎⴰⴹ",
+    "pronunciation": "/agəmmaḍ/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "direction"
+    ],
+    "definitions": [
+      {
+        "meaning": "side, direction",
+        "language": "en"
+      },
+      {
+        "meaning": "côté, direction",
+        "language": "fr"
+      },
+      {
+        "meaning": "جهة، اتجاه",
+        "language": "ar"
+      },
+      {
+        "meaning": "lado, dirección",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-038",
+    "word": "azaghar",
+    "tifinagh": "ⴰⵣⴰⴳⵀⴰⵔ",
+    "pronunciation": "/azaɣar/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "nature",
+      "geography"
+    ],
+    "definitions": [
+      {
+        "meaning": "plain, flatland",
+        "language": "en"
+      },
+      {
+        "meaning": "plaine",
+        "language": "fr"
+      },
+      {
+        "meaning": "سهل",
+        "language": "ar"
+      },
+      {
+        "meaning": "llanura",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "izughran",
+    "pluralTifinagh": "ⵉⵣⵓⴳⵀⵔⴰⵏ"
+  },
+  {
+    "id": "word-039",
+    "word": "tizi",
+    "tifinagh": "ⵜⵉⵣⵉ",
+    "pronunciation": "/tizi/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "nature",
+      "geography"
+    ],
+    "definitions": [
+      {
+        "meaning": "mountain pass, col",
+        "language": "en"
+      },
+      {
+        "meaning": "col, passage de montagne",
+        "language": "fr"
+      },
+      {
+        "meaning": "ممر جبلي",
+        "language": "ar"
+      },
+      {
+        "meaning": "puerto de montaña",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "plural": "tizwa",
+    "pluralTifinagh": "ⵜⵉⵣⵡⴰ",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Tizi n'Test and Tizi n'Tichka are two of the most famous mountain passes in Morocco, both named with this Tamazight word."
+      }
+    ]
+  },
+  {
+    "id": "word-040",
+    "word": "anu",
+    "tifinagh": "ⴰⵏⵓ",
+    "pronunciation": "/anu/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "water",
+      "agriculture"
+    ],
+    "definitions": [
+      {
+        "meaning": "well, water source",
+        "language": "en"
+      },
+      {
+        "meaning": "puits, source d'eau",
+        "language": "fr"
+      },
+      {
+        "meaning": "بئر",
+        "language": "ar"
+      },
+      {
+        "meaning": "pozo",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "una",
+    "pluralTifinagh": "ⵓⵏⴰ"
+  },
+  {
+    "id": "word-041",
+    "word": "baba",
+    "tifinagh": "ⴱⴰⴱⴰ",
+    "pronunciation": "/baba/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "family"
+    ],
+    "definitions": [
+      {
+        "meaning": "father",
+        "language": "en"
+      },
+      {
+        "meaning": "père",
+        "language": "fr"
+      },
+      {
+        "meaning": "أب",
+        "language": "ar"
+      },
+      {
+        "meaning": "padre",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-042",
+    "word": "yemma",
+    "tifinagh": "ⵢⴻⵎⵎⴰ",
+    "pronunciation": "/yəmma/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "family"
+    ],
+    "definitions": [
+      {
+        "meaning": "mother",
+        "language": "en"
+      },
+      {
+        "meaning": "mère",
+        "language": "fr"
+      },
+      {
+        "meaning": "أم",
+        "language": "ar"
+      },
+      {
+        "meaning": "madre",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "One of the most emotionally significant words in Tamazight. Yemma carries deep cultural weight and respect."
+      }
+    ]
+  },
+  {
+    "id": "word-043",
+    "word": "ayyaw",
+    "tifinagh": "ⴰⵢⵢⴰⵡ",
+    "pronunciation": "/ayyaw/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "family"
+    ],
+    "definitions": [
+      {
+        "meaning": "grandson, descendant",
+        "language": "en"
+      },
+      {
+        "meaning": "petit-fils, descendant",
+        "language": "fr"
+      },
+      {
+        "meaning": "حفيد",
+        "language": "ar"
+      },
+      {
+        "meaning": "nieto",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "ayyawn",
+    "pluralTifinagh": "ⴰⵢⵢⴰⵡⵏ"
+  },
+  {
+    "id": "word-044",
+    "word": "tawja",
+    "tifinagh": "ⵜⴰⵡⵊⴰ",
+    "pronunciation": "/tawja/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "family",
+      "community"
+    ],
+    "definitions": [
+      {
+        "meaning": "family, household",
+        "language": "en"
+      },
+      {
+        "meaning": "famille, ménage",
+        "language": "fr"
+      },
+      {
+        "meaning": "عائلة",
+        "language": "ar"
+      },
+      {
+        "meaning": "familia",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-045",
+    "word": "amddakl",
+    "tifinagh": "ⴰⵎⴷⴷⴰⴽⵍ",
+    "pronunciation": "/amddakəl/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "social"
+    ],
+    "definitions": [
+      {
+        "meaning": "friend, companion",
+        "language": "en"
+      },
+      {
+        "meaning": "ami, compagnon",
+        "language": "fr"
+      },
+      {
+        "meaning": "صديق",
+        "language": "ar"
+      },
+      {
+        "meaning": "amigo",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "imddukkal",
+    "pluralTifinagh": "ⵉⵎⴷⴷⵓⴽⴽⴰⵍ"
+  },
+  {
+    "id": "word-046",
+    "word": "anmuggar",
+    "tifinagh": "ⴰⵏⵎⵓⴳⴳⴰⵔ",
+    "pronunciation": "/anmuggar/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "culture",
+      "community"
+    ],
+    "definitions": [
+      {
+        "meaning": "gathering, festival, moussem",
+        "language": "en"
+      },
+      {
+        "meaning": "rassemblement, festival, moussem",
+        "language": "fr"
+      },
+      {
+        "meaning": "موسم، تجمع",
+        "language": "ar"
+      },
+      {
+        "meaning": "reunión, festival",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Annual festivals combining religious pilgrimage with trade, music, and communal celebration. Central to Amazigh cultural life."
+      }
+    ]
+  },
+  {
+    "id": "word-047",
+    "word": "tajmaεt",
+    "tifinagh": "ⵜⴰⵊⵎⴰⵄⵜ",
+    "pronunciation": "/tajmaɛt/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "governance",
+      "community"
+    ],
+    "definitions": [
+      {
+        "meaning": "village assembly, council",
+        "language": "en"
+      },
+      {
+        "meaning": "assemblée villageoise, conseil",
+        "language": "fr"
+      },
+      {
+        "meaning": "جماعة القرية",
+        "language": "ar"
+      },
+      {
+        "meaning": "asamblea del pueblo",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "The traditional democratic decision-making body of Amazigh communities. Decisions require consensus."
+      }
+    ]
+  },
+  {
+    "id": "word-048",
+    "word": "amghar",
+    "tifinagh": "ⴰⵎⴳⵀⴰⵔ",
+    "pronunciation": "/amɣar/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "governance",
+      "community"
+    ],
+    "definitions": [
+      {
+        "meaning": "elder, chief, leader",
+        "language": "en"
+      },
+      {
+        "meaning": "ancien, chef",
+        "language": "fr"
+      },
+      {
+        "meaning": "شيخ، زعيم",
+        "language": "ar"
+      },
+      {
+        "meaning": "anciano, jefe",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "imgharn",
+    "pluralTifinagh": "ⵉⵎⴳⵀⴰⵔⵏ",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "The amghar leads by respect and consensus, not by force. The role is often rotational among families."
+      }
+    ]
+  },
+  {
+    "id": "word-049",
+    "word": "taglla",
+    "tifinagh": "ⵜⴰⴳⵍⵍⴰ",
+    "pronunciation": "/tagəlla/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "food"
+    ],
+    "definitions": [
+      {
+        "meaning": "bread (traditional flatbread)",
+        "language": "en"
+      },
+      {
+        "meaning": "pain (galette traditionnelle)",
+        "language": "fr"
+      },
+      {
+        "meaning": "خبز تقليدي",
+        "language": "ar"
+      },
+      {
+        "meaning": "pan tradicional",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "The staple bread baked in a traditional clay oven (tafarnawt). Breaking bread together is a sacred act of hospitality."
+      }
+    ]
+  },
+  {
+    "id": "word-050",
+    "word": "seksu",
+    "tifinagh": "ⵙⴻⴽⵙⵓ",
+    "pronunciation": "/səksu/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "food"
+    ],
+    "definitions": [
+      {
+        "meaning": "couscous",
+        "language": "en"
+      },
+      {
+        "meaning": "couscous",
+        "language": "fr"
+      },
+      {
+        "meaning": "كسكس",
+        "language": "ar"
+      },
+      {
+        "meaning": "cuscús",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "The word 'couscous' derives from the Berber. Friday couscous is a ritual meal shared with family and neighbors."
+      }
+    ]
+  },
+  {
+    "id": "word-051",
+    "word": "taqbuct",
+    "tifinagh": "ⵜⴰⵇⴱⵓⵛⵜ",
+    "pronunciation": "/taqbuʃt/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "food"
+    ],
+    "definitions": [
+      {
+        "meaning": "tagine (clay cooking pot)",
+        "language": "en"
+      },
+      {
+        "meaning": "tajine (plat de cuisson en terre)",
+        "language": "fr"
+      },
+      {
+        "meaning": "طاجين",
+        "language": "ar"
+      },
+      {
+        "meaning": "tajín",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-052",
+    "word": "argan",
+    "tifinagh": "ⴰⵔⴳⴰⵏ",
+    "pronunciation": "/argan/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "agriculture",
+      "food"
+    ],
+    "definitions": [
+      {
+        "meaning": "argan tree, argan",
+        "language": "en"
+      },
+      {
+        "meaning": "arganier, argan",
+        "language": "fr"
+      },
+      {
+        "meaning": "أركان",
+        "language": "ar"
+      },
+      {
+        "meaning": "argán",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Endemic to southwestern Morocco. Women's cooperatives have long managed argan oil production—an ancient tradition now globally recognized."
+      }
+    ]
+  },
+  {
+    "id": "word-053",
+    "word": "tazart",
+    "tifinagh": "ⵜⴰⵣⴰⵔⵜ",
+    "pronunciation": "/tazart/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "agriculture",
+      "food"
+    ],
+    "definitions": [
+      {
+        "meaning": "fig, fig tree",
+        "language": "en"
+      },
+      {
+        "meaning": "figue, figuier",
+        "language": "fr"
+      },
+      {
+        "meaning": "تين",
+        "language": "ar"
+      },
+      {
+        "meaning": "higo, higuera",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "plural": "tizarin",
+    "pluralTifinagh": "ⵜⵉⵣⴰⵔⵉⵏ"
+  },
+  {
+    "id": "word-054",
+    "word": "tazdayt",
+    "tifinagh": "ⵜⴰⵣⴷⴰⵢⵜ",
+    "pronunciation": "/tazdayt/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "agriculture"
+    ],
+    "definitions": [
+      {
+        "meaning": "date palm",
+        "language": "en"
+      },
+      {
+        "meaning": "palmier dattier",
+        "language": "fr"
+      },
+      {
+        "meaning": "نخلة",
+        "language": "ar"
+      },
+      {
+        "meaning": "palmera datilera",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "plural": "tizdayin",
+    "pluralTifinagh": "ⵜⵉⵣⴷⴰⵢⵉⵏ"
+  },
+  {
+    "id": "word-055",
+    "word": "lmal",
+    "tifinagh": "ⵍⵎⴰⵍ",
+    "pronunciation": "/lmal/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "agriculture",
+      "animals"
+    ],
+    "definitions": [
+      {
+        "meaning": "livestock, cattle",
+        "language": "en"
+      },
+      {
+        "meaning": "bétail",
+        "language": "fr"
+      },
+      {
+        "meaning": "ماشية",
+        "language": "ar"
+      },
+      {
+        "meaning": "ganado",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-056",
+    "word": "izimmr",
+    "tifinagh": "ⵉⵣⵉⵎⵎⵔ",
+    "pronunciation": "/izimmər/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "animals",
+      "food"
+    ],
+    "definitions": [
+      {
+        "meaning": "lamb, sheep",
+        "language": "en"
+      },
+      {
+        "meaning": "agneau, mouton",
+        "language": "fr"
+      },
+      {
+        "meaning": "خروف",
+        "language": "ar"
+      },
+      {
+        "meaning": "cordero, oveja",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "izamrn",
+    "pluralTifinagh": "ⵉⵣⴰⵎⵔⵏ"
+  },
+  {
+    "id": "word-057",
+    "word": "tiskrt",
+    "tifinagh": "ⵜⵉⵙⴽⵔⵜ",
+    "pronunciation": "/tiskərt/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "food",
+      "agriculture"
+    ],
+    "definitions": [
+      {
+        "meaning": "salt",
+        "language": "en"
+      },
+      {
+        "meaning": "sel",
+        "language": "fr"
+      },
+      {
+        "meaning": "ملح",
+        "language": "ar"
+      },
+      {
+        "meaning": "sal",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-058",
+    "word": "azzar",
+    "tifinagh": "ⴰⵣⵣⴰⵔ",
+    "pronunciation": "/azzar/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "food",
+      "agriculture"
+    ],
+    "definitions": [
+      {
+        "meaning": "root, roots",
+        "language": "en"
+      },
+      {
+        "meaning": "racine, racines",
+        "language": "fr"
+      },
+      {
+        "meaning": "جذر",
+        "language": "ar"
+      },
+      {
+        "meaning": "raíz",
+        "language": "es"
+      }
+    ],
+    "frequency": "uncommon",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-059",
+    "word": "agharas",
+    "tifinagh": "ⴰⴳⵀⴰⵔⴰⵙ",
+    "pronunciation": "/aɣaras/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "travel",
+      "geography"
+    ],
+    "definitions": [
+      {
+        "meaning": "road, path, way",
+        "language": "en"
+      },
+      {
+        "meaning": "route, chemin",
+        "language": "fr"
+      },
+      {
+        "meaning": "طريق",
+        "language": "ar"
+      },
+      {
+        "meaning": "camino",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "ighuras",
+    "pluralTifinagh": "ⵉⴳⵀⵓⵔⴰⵙ"
+  },
+  {
+    "id": "word-060",
+    "word": "imi",
+    "tifinagh": "ⵉⵎⵉ",
+    "pronunciation": "/imi/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "body"
+    ],
+    "definitions": [
+      {
+        "meaning": "mouth, opening, entrance",
+        "language": "en"
+      },
+      {
+        "meaning": "bouche, ouverture, entrée",
+        "language": "fr"
+      },
+      {
+        "meaning": "فم، مدخل",
+        "language": "ar"
+      },
+      {
+        "meaning": "boca, entrada",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Also used metaphorically for the entrance of a valley, cave, or building. Imi n'Ouadar means 'mouth of the valley.'"
+      }
+    ]
+  },
+  {
+    "id": "word-061",
+    "word": "anzarn",
+    "tifinagh": "ⴰⵏⵣⴰⵔⵏ",
+    "pronunciation": "/anzarn/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "body"
+    ],
+    "definitions": [
+      {
+        "meaning": "nose",
+        "language": "en"
+      },
+      {
+        "meaning": "nez",
+        "language": "fr"
+      },
+      {
+        "meaning": "أنف",
+        "language": "ar"
+      },
+      {
+        "meaning": "nariz",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "inzarn",
+    "pluralTifinagh": "ⵉⵏⵣⴰⵔⵏ"
+  },
+  {
+    "id": "word-062",
+    "word": "amzzugh",
+    "tifinagh": "ⴰⵎⵣⵣⵓⴳⵀ",
+    "pronunciation": "/amzzuɣ/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "body"
+    ],
+    "definitions": [
+      {
+        "meaning": "ear",
+        "language": "en"
+      },
+      {
+        "meaning": "oreille",
+        "language": "fr"
+      },
+      {
+        "meaning": "أذن",
+        "language": "ar"
+      },
+      {
+        "meaning": "oreja",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "imzzughn",
+    "pluralTifinagh": "ⵉⵎⵣⵣⵓⴳⵀⵏ"
+  },
+  {
+    "id": "word-063",
+    "word": "ighss",
+    "tifinagh": "ⵉⴳⵀⵙⵙ",
+    "pronunciation": "/iɣss/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "body"
+    ],
+    "definitions": [
+      {
+        "meaning": "bone",
+        "language": "en"
+      },
+      {
+        "meaning": "os",
+        "language": "fr"
+      },
+      {
+        "meaning": "عظم",
+        "language": "ar"
+      },
+      {
+        "meaning": "hueso",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "ighsan",
+    "pluralTifinagh": "ⵉⴳⵀⵙⴰⵏ"
+  },
+  {
+    "id": "word-064",
+    "word": "idammn",
+    "tifinagh": "ⵉⴷⴰⵎⵎⵏ",
+    "pronunciation": "/idammən/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "body"
+    ],
+    "definitions": [
+      {
+        "meaning": "blood",
+        "language": "en"
+      },
+      {
+        "meaning": "sang",
+        "language": "fr"
+      },
+      {
+        "meaning": "دم",
+        "language": "ar"
+      },
+      {
+        "meaning": "sangre",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-065",
+    "word": "azggwagh",
+    "tifinagh": "ⴰⵣⴳⴳⵡⴰⴳⵀ",
+    "pronunciation": "/azggʷaɣ/",
+    "partOfSpeech": "adjective",
+    "semanticFields": [
+      "color"
+    ],
+    "definitions": [
+      {
+        "meaning": "red",
+        "language": "en"
+      },
+      {
+        "meaning": "rouge",
+        "language": "fr"
+      },
+      {
+        "meaning": "أحمر",
+        "language": "ar"
+      },
+      {
+        "meaning": "rojo",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-066",
+    "word": "awragh",
+    "tifinagh": "ⴰⵡⵔⴰⴳⵀ",
+    "pronunciation": "/awraɣ/",
+    "partOfSpeech": "adjective",
+    "semanticFields": [
+      "color"
+    ],
+    "definitions": [
+      {
+        "meaning": "yellow",
+        "language": "en"
+      },
+      {
+        "meaning": "jaune",
+        "language": "fr"
+      },
+      {
+        "meaning": "أصفر",
+        "language": "ar"
+      },
+      {
+        "meaning": "amarillo",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-067",
+    "word": "aberkan",
+    "tifinagh": "ⴰⴱⴻⵔⴽⴰⵏ",
+    "pronunciation": "/abərkan/",
+    "partOfSpeech": "adjective",
+    "semanticFields": [
+      "color"
+    ],
+    "definitions": [
+      {
+        "meaning": "black, dark",
+        "language": "en"
+      },
+      {
+        "meaning": "noir, sombre",
+        "language": "fr"
+      },
+      {
+        "meaning": "أسود",
+        "language": "ar"
+      },
+      {
+        "meaning": "negro",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "plural": "ibrkann",
+    "pluralTifinagh": "ⵉⴱⵔⴽⴰⵏⵏ"
+  },
+  {
+    "id": "word-068",
+    "word": "amllal",
+    "tifinagh": "ⴰⵎⵍⵍⴰⵍ",
+    "pronunciation": "/amllal/",
+    "partOfSpeech": "adjective",
+    "semanticFields": [
+      "color"
+    ],
+    "definitions": [
+      {
+        "meaning": "white",
+        "language": "en"
+      },
+      {
+        "meaning": "blanc",
+        "language": "fr"
+      },
+      {
+        "meaning": "أبيض",
+        "language": "ar"
+      },
+      {
+        "meaning": "blanco",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-069",
+    "word": "ass",
+    "tifinagh": "ⴰⵙⵙ",
+    "pronunciation": "/ass/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "time"
+    ],
+    "definitions": [
+      {
+        "meaning": "day",
+        "language": "en"
+      },
+      {
+        "meaning": "jour",
+        "language": "fr"
+      },
+      {
+        "meaning": "يوم",
+        "language": "ar"
+      },
+      {
+        "meaning": "día",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "ussan",
+    "pluralTifinagh": "ⵓⵙⵙⴰⵏ"
+  },
+  {
+    "id": "word-070",
+    "word": "iḍ",
+    "tifinagh": "ⵉⴹ",
+    "pronunciation": "/iḍ/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "time"
+    ],
+    "definitions": [
+      {
+        "meaning": "night",
+        "language": "en"
+      },
+      {
+        "meaning": "nuit",
+        "language": "fr"
+      },
+      {
+        "meaning": "ليل",
+        "language": "ar"
+      },
+      {
+        "meaning": "noche",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "uḍan",
+    "pluralTifinagh": "ⵓⴹⴰⵏ"
+  },
+  {
+    "id": "word-071",
+    "word": "asggwas",
+    "tifinagh": "ⴰⵙⴳⴳⵡⴰⵙ",
+    "pronunciation": "/asggʷas/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "time"
+    ],
+    "definitions": [
+      {
+        "meaning": "year",
+        "language": "en"
+      },
+      {
+        "meaning": "an, année",
+        "language": "fr"
+      },
+      {
+        "meaning": "سنة",
+        "language": "ar"
+      },
+      {
+        "meaning": "año",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "isggwasn",
+    "pluralTifinagh": "ⵉⵙⴳⴳⵡⴰⵙⵏ",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Yennayer (Amazigh New Year, January 13) marks the start of the agricultural calendar and is now an official holiday in Morocco."
+      }
+    ]
+  },
+  {
+    "id": "word-072",
+    "word": "tafsut",
+    "tifinagh": "ⵜⴰⴼⵙⵓⵜ",
+    "pronunciation": "/tafsut/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "time",
+      "nature"
+    ],
+    "definitions": [
+      {
+        "meaning": "spring (season)",
+        "language": "en"
+      },
+      {
+        "meaning": "printemps",
+        "language": "fr"
+      },
+      {
+        "meaning": "ربيع",
+        "language": "ar"
+      },
+      {
+        "meaning": "primavera",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-073",
+    "word": "anebdu",
+    "tifinagh": "ⴰⵏⴻⴱⴷⵓ",
+    "pronunciation": "/anəbdu/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "time",
+      "nature"
+    ],
+    "definitions": [
+      {
+        "meaning": "summer",
+        "language": "en"
+      },
+      {
+        "meaning": "été",
+        "language": "fr"
+      },
+      {
+        "meaning": "صيف",
+        "language": "ar"
+      },
+      {
+        "meaning": "verano",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-074",
+    "word": "amwan",
+    "tifinagh": "ⴰⵎⵡⴰⵏ",
+    "pronunciation": "/amwan/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "time",
+      "nature"
+    ],
+    "definitions": [
+      {
+        "meaning": "autumn",
+        "language": "en"
+      },
+      {
+        "meaning": "automne",
+        "language": "fr"
+      },
+      {
+        "meaning": "خريف",
+        "language": "ar"
+      },
+      {
+        "meaning": "otoño",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-075",
+    "word": "taghrst",
+    "tifinagh": "ⵜⴰⴳⵀⵔⵙⵜ",
+    "pronunciation": "/taɣrəst/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "time",
+      "nature"
+    ],
+    "definitions": [
+      {
+        "meaning": "winter",
+        "language": "en"
+      },
+      {
+        "meaning": "hiver",
+        "language": "fr"
+      },
+      {
+        "meaning": "شتاء",
+        "language": "ar"
+      },
+      {
+        "meaning": "invierno",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-076",
+    "word": "unẓar",
+    "tifinagh": "ⵓⵏⵥⴰⵔ",
+    "pronunciation": "/unẓar/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "nature",
+      "weather"
+    ],
+    "definitions": [
+      {
+        "meaning": "rain",
+        "language": "en"
+      },
+      {
+        "meaning": "pluie",
+        "language": "fr"
+      },
+      {
+        "meaning": "مطر",
+        "language": "ar"
+      },
+      {
+        "meaning": "lluvia",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-077",
+    "word": "adfl",
+    "tifinagh": "ⴰⴷⴼⵍ",
+    "pronunciation": "/adfl/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "nature",
+      "weather"
+    ],
+    "definitions": [
+      {
+        "meaning": "snow",
+        "language": "en"
+      },
+      {
+        "meaning": "neige",
+        "language": "fr"
+      },
+      {
+        "meaning": "ثلج",
+        "language": "ar"
+      },
+      {
+        "meaning": "nieve",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-078",
+    "word": "aḍu",
+    "tifinagh": "ⴰⴹⵓ",
+    "pronunciation": "/aḍu/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "nature",
+      "weather"
+    ],
+    "definitions": [
+      {
+        "meaning": "wind",
+        "language": "en"
+      },
+      {
+        "meaning": "vent",
+        "language": "fr"
+      },
+      {
+        "meaning": "ريح",
+        "language": "ar"
+      },
+      {
+        "meaning": "viento",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-079",
+    "word": "aghilas",
+    "tifinagh": "ⴰⴳⵀⵉⵍⴰⵙ",
+    "pronunciation": "/aɣilas/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "animals"
+    ],
+    "definitions": [
+      {
+        "meaning": "lion",
+        "language": "en"
+      },
+      {
+        "meaning": "lion",
+        "language": "fr"
+      },
+      {
+        "meaning": "أسد",
+        "language": "ar"
+      },
+      {
+        "meaning": "león",
+        "language": "es"
+      }
+    ],
+    "frequency": "uncommon",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "ighilas",
+    "pluralTifinagh": "ⵉⴳⵀⵉⵍⴰⵙ",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "The Barbary lion (izm n watlas) once roamed the Atlas Mountains. Though extinct in the wild, it remains a powerful symbol of Amazigh strength."
+      }
+    ]
+  },
+  {
+    "id": "word-080",
+    "word": "ayyul",
+    "tifinagh": "ⴰⵢⵢⵓⵍ",
+    "pronunciation": "/ayyul/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "animals"
+    ],
+    "definitions": [
+      {
+        "meaning": "donkey",
+        "language": "en"
+      },
+      {
+        "meaning": "âne",
+        "language": "fr"
+      },
+      {
+        "meaning": "حمار",
+        "language": "ar"
+      },
+      {
+        "meaning": "burro",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "iyyal",
+    "pluralTifinagh": "ⵉⵢⵢⴰⵍ",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Essential working animal in mountain communities. Treated with respect in Amazigh culture."
+      }
+    ]
+  },
+  {
+    "id": "word-081",
+    "word": "algham",
+    "tifinagh": "ⴰⵍⴳⵀⴰⵎ",
+    "pronunciation": "/alɣam/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "animals"
+    ],
+    "definitions": [
+      {
+        "meaning": "camel, dromedary",
+        "language": "en"
+      },
+      {
+        "meaning": "chameau, dromadaire",
+        "language": "fr"
+      },
+      {
+        "meaning": "جمل",
+        "language": "ar"
+      },
+      {
+        "meaning": "camello",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "ilghman",
+    "pluralTifinagh": "ⵉⵍⴳⵀⵎⴰⵏ"
+  },
+  {
+    "id": "word-082",
+    "word": "aydi",
+    "tifinagh": "ⴰⵢⴷⵉ",
+    "pronunciation": "/aydi/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "animals"
+    ],
+    "definitions": [
+      {
+        "meaning": "dog",
+        "language": "en"
+      },
+      {
+        "meaning": "chien",
+        "language": "fr"
+      },
+      {
+        "meaning": "كلب",
+        "language": "ar"
+      },
+      {
+        "meaning": "perro",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "iḍan",
+    "pluralTifinagh": "ⵉⴹⴰⵏ"
+  },
+  {
+    "id": "word-083",
+    "word": "tamucct",
+    "tifinagh": "ⵜⴰⵎⵓⵛⵛⵜ",
+    "pronunciation": "/tamušt/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "animals"
+    ],
+    "definitions": [
+      {
+        "meaning": "cat",
+        "language": "en"
+      },
+      {
+        "meaning": "chat",
+        "language": "fr"
+      },
+      {
+        "meaning": "قط",
+        "language": "ar"
+      },
+      {
+        "meaning": "gato",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "plural": "timuccin",
+    "pluralTifinagh": "ⵜⵉⵎⵓⵛⵛⵉⵏ"
+  },
+  {
+    "id": "word-084",
+    "word": "tghat",
+    "tifinagh": "ⵜⴳⵀⴰⵜ",
+    "pronunciation": "/tɣat/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "animals",
+      "agriculture"
+    ],
+    "definitions": [
+      {
+        "meaning": "goat",
+        "language": "en"
+      },
+      {
+        "meaning": "chèvre",
+        "language": "fr"
+      },
+      {
+        "meaning": "عنزة",
+        "language": "ar"
+      },
+      {
+        "meaning": "cabra",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "plural": "tighatin",
+    "pluralTifinagh": "ⵜⵉⴳⵀⴰⵜⵉⵏ"
+  },
+  {
+    "id": "word-085",
+    "word": "tazzwit",
+    "tifinagh": "ⵜⴰⵣⵣⵡⵉⵜ",
+    "pronunciation": "/tazzwit/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "animals",
+      "food"
+    ],
+    "definitions": [
+      {
+        "meaning": "bee",
+        "language": "en"
+      },
+      {
+        "meaning": "abeille",
+        "language": "fr"
+      },
+      {
+        "meaning": "نحلة",
+        "language": "ar"
+      },
+      {
+        "meaning": "abeja",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "plural": "tizzwa",
+    "pluralTifinagh": "ⵜⵉⵣⵣⵡⴰ"
+  },
+  {
+    "id": "word-086",
+    "word": "aztta",
+    "tifinagh": "ⴰⵣⵜⵜⴰ",
+    "pronunciation": "/azətta/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "craft",
+      "culture"
+    ],
+    "definitions": [
+      {
+        "meaning": "weaving, loom, woven cloth",
+        "language": "en"
+      },
+      {
+        "meaning": "tissage, métier à tisser",
+        "language": "fr"
+      },
+      {
+        "meaning": "نسيج، نول",
+        "language": "ar"
+      },
+      {
+        "meaning": "tejido, telar",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Weaving is traditionally women's art in Amazigh culture. Each region has distinct patterns encoding identity, protection, and blessing."
+      }
+    ]
+  },
+  {
+    "id": "word-087",
+    "word": "taḥruyt",
+    "tifinagh": "ⵜⴰⵃⵔⵓⵢⵜ",
+    "pronunciation": "/taḥruyt/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "craft",
+      "textile"
+    ],
+    "definitions": [
+      {
+        "meaning": "carpet, rug",
+        "language": "en"
+      },
+      {
+        "meaning": "tapis",
+        "language": "fr"
+      },
+      {
+        "meaning": "زربية",
+        "language": "ar"
+      },
+      {
+        "meaning": "alfombra",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-088",
+    "word": "taznirt",
+    "tifinagh": "ⵜⴰⵣⵏⵉⵔⵜ",
+    "pronunciation": "/taznirt/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "craft"
+    ],
+    "definitions": [
+      {
+        "meaning": "fibula, brooch (traditional jewelry)",
+        "language": "en"
+      },
+      {
+        "meaning": "fibule, broche traditionnelle",
+        "language": "fr"
+      },
+      {
+        "meaning": "مشبك تقليدي",
+        "language": "ar"
+      },
+      {
+        "meaning": "fíbula, broche",
+        "language": "es"
+      }
+    ],
+    "frequency": "uncommon",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Silver fibulae are key elements of Amazigh women's dress, with designs varying by region and carrying symbolic meaning."
+      }
+    ]
+  },
+  {
+    "id": "word-089",
+    "word": "aḥidus",
+    "tifinagh": "ⴰⵃⵉⴷⵓⵙ",
+    "pronunciation": "/aḥidus/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "music",
+      "culture"
+    ],
+    "definitions": [
+      {
+        "meaning": "collective dance and song (Middle/High Atlas)",
+        "language": "en"
+      },
+      {
+        "meaning": "danse et chant collectif",
+        "language": "fr"
+      },
+      {
+        "meaning": "أحيدوس",
+        "language": "ar"
+      },
+      {
+        "meaning": "danza y canto colectivo",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "A circular dance form where men and women perform together, accompanied by drums and group singing. Central to celebrations."
+      }
+    ]
+  },
+  {
+    "id": "word-090",
+    "word": "ahwac",
+    "tifinagh": "ⴰⵀⵡⴰⵛ",
+    "pronunciation": "/ahwaʃ/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "music",
+      "culture"
+    ],
+    "definitions": [
+      {
+        "meaning": "collective dance (Souss region)",
+        "language": "en"
+      },
+      {
+        "meaning": "danse collective (région du Souss)",
+        "language": "fr"
+      },
+      {
+        "meaning": "أحواش",
+        "language": "ar"
+      },
+      {
+        "meaning": "danza colectiva",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Similar to aḥidus but specific to the Souss and Anti-Atlas regions. Features call-and-response singing with complex rhythms."
+      }
+    ]
+  },
+  {
+    "id": "word-091",
+    "word": "inzad",
+    "tifinagh": "ⵉⵏⵣⴰⴷ",
+    "pronunciation": "/inzad/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "music"
+    ],
+    "definitions": [
+      {
+        "meaning": "single-stringed fiddle (Tuareg)",
+        "language": "en"
+      },
+      {
+        "meaning": "violon monocorde (touareg)",
+        "language": "fr"
+      },
+      {
+        "meaning": "إمزاد",
+        "language": "ar"
+      },
+      {
+        "meaning": "violín monocorde",
+        "language": "es"
+      }
+    ],
+    "frequency": "uncommon",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "A UNESCO-recognized instrument played exclusively by Tuareg women. The imzad accompanies poetry and storytelling."
+      }
+    ]
+  },
+  {
+    "id": "word-092",
+    "word": "tallunt",
+    "tifinagh": "ⵜⴰⵍⵍⵓⵏⵜ",
+    "pronunciation": "/tallunt/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "music"
+    ],
+    "definitions": [
+      {
+        "meaning": "drum, frame drum",
+        "language": "en"
+      },
+      {
+        "meaning": "tambour, tambourin",
+        "language": "fr"
+      },
+      {
+        "meaning": "طبل",
+        "language": "ar"
+      },
+      {
+        "meaning": "tambor",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-093",
+    "word": "tilelli",
+    "tifinagh": "ⵜⵉⵍⴻⵍⵍⵉ",
+    "pronunciation": "/tiləlli/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "abstract",
+      "identity"
+    ],
+    "definitions": [
+      {
+        "meaning": "freedom, liberty",
+        "language": "en"
+      },
+      {
+        "meaning": "liberté",
+        "language": "fr"
+      },
+      {
+        "meaning": "حرية",
+        "language": "ar"
+      },
+      {
+        "meaning": "libertad",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "A word of deep significance. Amazigh means 'free person' and tilelli is the state of being that defines Amazigh identity."
+      }
+    ]
+  },
+  {
+    "id": "word-094",
+    "word": "tuggas",
+    "tifinagh": "ⵜⵓⴳⴳⴰⵙ",
+    "pronunciation": "/tuggas/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "abstract"
+    ],
+    "definitions": [
+      {
+        "meaning": "courage, bravery",
+        "language": "en"
+      },
+      {
+        "meaning": "courage, bravoure",
+        "language": "fr"
+      },
+      {
+        "meaning": "شجاعة",
+        "language": "ar"
+      },
+      {
+        "meaning": "valentía",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-095",
+    "word": "tamusni",
+    "tifinagh": "ⵜⴰⵎⵓⵙⵏⵉ",
+    "pronunciation": "/tamusni/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "abstract",
+      "knowledge"
+    ],
+    "definitions": [
+      {
+        "meaning": "knowledge, wisdom",
+        "language": "en"
+      },
+      {
+        "meaning": "connaissance, sagesse",
+        "language": "fr"
+      },
+      {
+        "meaning": "معرفة، حكمة",
+        "language": "ar"
+      },
+      {
+        "meaning": "conocimiento, sabiduría",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-096",
+    "word": "tayri",
+    "tifinagh": "ⵜⴰⵢⵔⵉ",
+    "pronunciation": "/tayri/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "emotion"
+    ],
+    "definitions": [
+      {
+        "meaning": "love",
+        "language": "en"
+      },
+      {
+        "meaning": "amour",
+        "language": "fr"
+      },
+      {
+        "meaning": "حب",
+        "language": "ar"
+      },
+      {
+        "meaning": "amor",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-097",
+    "word": "laεfu",
+    "tifinagh": "ⵍⴰⵄⴼⵓ",
+    "pronunciation": "/laɛfu/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "abstract"
+    ],
+    "definitions": [
+      {
+        "meaning": "peace, calm",
+        "language": "en"
+      },
+      {
+        "meaning": "paix, calme",
+        "language": "fr"
+      },
+      {
+        "meaning": "سلام، هدوء",
+        "language": "ar"
+      },
+      {
+        "meaning": "paz, calma",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-098",
+    "word": "tannayt",
+    "tifinagh": "ⵜⴰⵏⵏⴰⵢⵜ",
+    "pronunciation": "/tannayt/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "abstract"
+    ],
+    "definitions": [
+      {
+        "meaning": "vision, sight, opinion",
+        "language": "en"
+      },
+      {
+        "meaning": "vision, vue, opinion",
+        "language": "fr"
+      },
+      {
+        "meaning": "رأي، رؤية",
+        "language": "ar"
+      },
+      {
+        "meaning": "visión, opinión",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-099",
+    "word": "tirrugza",
+    "tifinagh": "ⵜⵉⵔⵔⵓⴳⵣⴰ",
+    "pronunciation": "/tirrugza/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "abstract",
+      "identity"
+    ],
+    "definitions": [
+      {
+        "meaning": "masculinity, manhood, honor",
+        "language": "en"
+      },
+      {
+        "meaning": "virilité, honneur",
+        "language": "fr"
+      },
+      {
+        "meaning": "رجولة، شرف",
+        "language": "ar"
+      },
+      {
+        "meaning": "masculinidad, honor",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "More than physical masculinity—encompasses honor, generosity, keeping one's word, and protecting the vulnerable."
+      }
+    ]
+  },
+  {
+    "id": "word-100",
+    "word": "yan",
+    "tifinagh": "ⵢⴰⵏ",
+    "pronunciation": "/yan/",
+    "partOfSpeech": "numeral",
+    "semanticFields": [
+      "numbers"
+    ],
+    "definitions": [
+      {
+        "meaning": "one (1)",
+        "language": "en"
+      },
+      {
+        "meaning": "un (1)",
+        "language": "fr"
+      },
+      {
+        "meaning": "واحد",
+        "language": "ar"
+      },
+      {
+        "meaning": "uno",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-101",
+    "word": "sin",
+    "tifinagh": "ⵙⵉⵏ",
+    "pronunciation": "/sin/",
+    "partOfSpeech": "numeral",
+    "semanticFields": [
+      "numbers"
+    ],
+    "definitions": [
+      {
+        "meaning": "two (2)",
+        "language": "en"
+      },
+      {
+        "meaning": "deux (2)",
+        "language": "fr"
+      },
+      {
+        "meaning": "اثنان",
+        "language": "ar"
+      },
+      {
+        "meaning": "dos",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-102",
+    "word": "kraḍ",
+    "tifinagh": "ⴽⵔⴰⴹ",
+    "pronunciation": "/kraḍ/",
+    "partOfSpeech": "numeral",
+    "semanticFields": [
+      "numbers"
+    ],
+    "definitions": [
+      {
+        "meaning": "three (3)",
+        "language": "en"
+      },
+      {
+        "meaning": "trois (3)",
+        "language": "fr"
+      },
+      {
+        "meaning": "ثلاثة",
+        "language": "ar"
+      },
+      {
+        "meaning": "tres",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-103",
+    "word": "kkuẓ",
+    "tifinagh": "ⴽⴽⵓⵥ",
+    "pronunciation": "/kkuẓ/",
+    "partOfSpeech": "numeral",
+    "semanticFields": [
+      "numbers"
+    ],
+    "definitions": [
+      {
+        "meaning": "four (4)",
+        "language": "en"
+      },
+      {
+        "meaning": "quatre (4)",
+        "language": "fr"
+      },
+      {
+        "meaning": "أربعة",
+        "language": "ar"
+      },
+      {
+        "meaning": "cuatro",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-104",
+    "word": "smmus",
+    "tifinagh": "ⵙⵎⵎⵓⵙ",
+    "pronunciation": "/smmus/",
+    "partOfSpeech": "numeral",
+    "semanticFields": [
+      "numbers"
+    ],
+    "definitions": [
+      {
+        "meaning": "five (5)",
+        "language": "en"
+      },
+      {
+        "meaning": "cinq (5)",
+        "language": "fr"
+      },
+      {
+        "meaning": "خمسة",
+        "language": "ar"
+      },
+      {
+        "meaning": "cinco",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-105",
+    "word": "sḍis",
+    "tifinagh": "ⵙⴹⵉⵙ",
+    "pronunciation": "/sḍis/",
+    "partOfSpeech": "numeral",
+    "semanticFields": [
+      "numbers"
+    ],
+    "definitions": [
+      {
+        "meaning": "six (6)",
+        "language": "en"
+      },
+      {
+        "meaning": "six (6)",
+        "language": "fr"
+      },
+      {
+        "meaning": "ستة",
+        "language": "ar"
+      },
+      {
+        "meaning": "seis",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-106",
+    "word": "sa",
+    "tifinagh": "ⵙⴰ",
+    "pronunciation": "/sa/",
+    "partOfSpeech": "numeral",
+    "semanticFields": [
+      "numbers"
+    ],
+    "definitions": [
+      {
+        "meaning": "seven (7)",
+        "language": "en"
+      },
+      {
+        "meaning": "sept (7)",
+        "language": "fr"
+      },
+      {
+        "meaning": "سبعة",
+        "language": "ar"
+      },
+      {
+        "meaning": "siete",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-107",
+    "word": "tam",
+    "tifinagh": "ⵜⴰⵎ",
+    "pronunciation": "/tam/",
+    "partOfSpeech": "numeral",
+    "semanticFields": [
+      "numbers"
+    ],
+    "definitions": [
+      {
+        "meaning": "eight (8)",
+        "language": "en"
+      },
+      {
+        "meaning": "huit (8)",
+        "language": "fr"
+      },
+      {
+        "meaning": "ثمانية",
+        "language": "ar"
+      },
+      {
+        "meaning": "ocho",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-108",
+    "word": "tẓa",
+    "tifinagh": "ⵜⵥⴰ",
+    "pronunciation": "/tẓa/",
+    "partOfSpeech": "numeral",
+    "semanticFields": [
+      "numbers"
+    ],
+    "definitions": [
+      {
+        "meaning": "nine (9)",
+        "language": "en"
+      },
+      {
+        "meaning": "neuf (9)",
+        "language": "fr"
+      },
+      {
+        "meaning": "تسعة",
+        "language": "ar"
+      },
+      {
+        "meaning": "nueve",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-109",
+    "word": "mraw",
+    "tifinagh": "ⵎⵔⴰⵡ",
+    "pronunciation": "/mraw/",
+    "partOfSpeech": "numeral",
+    "semanticFields": [
+      "numbers"
+    ],
+    "definitions": [
+      {
+        "meaning": "ten (10)",
+        "language": "en"
+      },
+      {
+        "meaning": "dix (10)",
+        "language": "fr"
+      },
+      {
+        "meaning": "عشرة",
+        "language": "ar"
+      },
+      {
+        "meaning": "diez",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-110",
+    "word": "ils",
+    "tifinagh": "ⵉⵍⵙ",
+    "pronunciation": "/ils/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "body"
+    ],
+    "definitions": [
+      {
+        "meaning": "tongue, language",
+        "language": "en"
+      },
+      {
+        "meaning": "langue",
+        "language": "fr"
+      },
+      {
+        "meaning": "لسان",
+        "language": "ar"
+      },
+      {
+        "meaning": "lengua",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-111",
+    "word": "tawada",
+    "tifinagh": "ⵜⴰⵡⴰⴷⴰ",
+    "pronunciation": "/tawada/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "travel"
+    ],
+    "definitions": [
+      {
+        "meaning": "journey, trip, walk",
+        "language": "en"
+      },
+      {
+        "meaning": "voyage, promenade",
+        "language": "fr"
+      },
+      {
+        "meaning": "رحلة",
+        "language": "ar"
+      },
+      {
+        "meaning": "viaje",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-112",
+    "word": "askkif",
+    "tifinagh": "ⴰⵙⴽⴽⵉⴼ",
+    "pronunciation": "/askkif/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "architecture"
+    ],
+    "definitions": [
+      {
+        "meaning": "entrance hall, vestibule",
+        "language": "en"
+      },
+      {
+        "meaning": "entrée, vestibule",
+        "language": "fr"
+      },
+      {
+        "meaning": "مدخل",
+        "language": "ar"
+      },
+      {
+        "meaning": "vestíbulo",
+        "language": "es"
+      }
+    ],
+    "frequency": "uncommon",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-113",
+    "word": "taskla",
+    "tifinagh": "ⵜⴰⵙⴽⵍⴰ",
+    "pronunciation": "/taskla/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "culture",
+      "knowledge"
+    ],
+    "definitions": [
+      {
+        "meaning": "literature, writing",
+        "language": "en"
+      },
+      {
+        "meaning": "littérature, écriture",
+        "language": "fr"
+      },
+      {
+        "meaning": "أدب",
+        "language": "ar"
+      },
+      {
+        "meaning": "literatura",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-114",
+    "word": "azar",
+    "tifinagh": "ⴰⵣⴰⵔ",
+    "pronunciation": "/azar/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "identity"
+    ],
+    "definitions": [
+      {
+        "meaning": "origin, root, ancestry",
+        "language": "en"
+      },
+      {
+        "meaning": "origine, racine, ascendance",
+        "language": "fr"
+      },
+      {
+        "meaning": "أصل",
+        "language": "ar"
+      },
+      {
+        "meaning": "origen",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-115",
+    "word": "tawalt",
+    "tifinagh": "ⵜⴰⵡⴰⵍⵜ",
+    "pronunciation": "/tawalt/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "communication"
+    ],
+    "definitions": [
+      {
+        "meaning": "word, speech, message",
+        "language": "en"
+      },
+      {
+        "meaning": "mot, parole, message",
+        "language": "fr"
+      },
+      {
+        "meaning": "كلمة، رسالة",
+        "language": "ar"
+      },
+      {
+        "meaning": "palabra, mensaje",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-116",
+    "word": "tala",
+    "tifinagh": "ⵜⴰⵍⴰ",
+    "pronunciation": "/tala/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "water",
+      "nature"
+    ],
+    "definitions": [
+      {
+        "meaning": "spring, fountain, water source",
+        "language": "en"
+      },
+      {
+        "meaning": "source, fontaine",
+        "language": "fr"
+      },
+      {
+        "meaning": "عين ماء، نبع",
+        "language": "ar"
+      },
+      {
+        "meaning": "fuente, manantial",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "plural": "taliwin",
+    "pluralTifinagh": "ⵜⴰⵍⵉⵡⵉⵏ"
+  },
+  {
+    "id": "word-117",
+    "word": "tasaft",
+    "tifinagh": "ⵜⴰⵙⴰⴼⵜ",
+    "pronunciation": "/tasaft/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "nature"
+    ],
+    "definitions": [
+      {
+        "meaning": "oak tree",
+        "language": "en"
+      },
+      {
+        "meaning": "chêne",
+        "language": "fr"
+      },
+      {
+        "meaning": "شجرة بلوط",
+        "language": "ar"
+      },
+      {
+        "meaning": "roble",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "plural": "tisafin",
+    "pluralTifinagh": "ⵜⵉⵙⴰⴼⵉⵏ"
+  },
+  {
+    "id": "word-118",
+    "word": "ifri",
+    "tifinagh": "ⵉⴼⵔⵉ",
+    "pronunciation": "/ifri/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "nature",
+      "geography"
+    ],
+    "definitions": [
+      {
+        "meaning": "cave, grotto",
+        "language": "en"
+      },
+      {
+        "meaning": "grotte, caverne",
+        "language": "fr"
+      },
+      {
+        "meaning": "كهف",
+        "language": "ar"
+      },
+      {
+        "meaning": "cueva",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "ifran",
+    "pluralTifinagh": "ⵉⴼⵔⴰⵏ",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "The city of Ifrane in the Middle Atlas takes its name from the plural 'ifran' (caves)."
+      }
+    ]
+  },
+  {
+    "id": "word-119",
+    "word": "agni",
+    "tifinagh": "ⴰⴳⵏⵉ",
+    "pronunciation": "/agni/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "nature"
+    ],
+    "definitions": [
+      {
+        "meaning": "sky, atmosphere",
+        "language": "en"
+      },
+      {
+        "meaning": "ciel, atmosphère",
+        "language": "fr"
+      },
+      {
+        "meaning": "سماء",
+        "language": "ar"
+      },
+      {
+        "meaning": "cielo",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-120",
+    "word": "timsi",
+    "tifinagh": "ⵜⵉⵎⵙⵉ",
+    "pronunciation": "/timsi/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "nature"
+    ],
+    "definitions": [
+      {
+        "meaning": "fire",
+        "language": "en"
+      },
+      {
+        "meaning": "feu",
+        "language": "fr"
+      },
+      {
+        "meaning": "نار",
+        "language": "ar"
+      },
+      {
+        "meaning": "fuego",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-121",
+    "word": "tanuṭfi",
+    "tifinagh": "ⵜⴰⵏⵓⵟⴼⵉ",
+    "pronunciation": "/tanuṭfi/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "household"
+    ],
+    "definitions": [
+      {
+        "meaning": "candle, lamp, light source",
+        "language": "en"
+      },
+      {
+        "meaning": "bougie, lampe",
+        "language": "fr"
+      },
+      {
+        "meaning": "شمعة",
+        "language": "ar"
+      },
+      {
+        "meaning": "vela, lámpara",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-122",
+    "word": "lkursi",
+    "tifinagh": "ⵍⴽⵓⵔⵙⵉ",
+    "pronunciation": "/lkursi/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "household"
+    ],
+    "definitions": [
+      {
+        "meaning": "chair, seat",
+        "language": "en"
+      },
+      {
+        "meaning": "chaise, siège",
+        "language": "fr"
+      },
+      {
+        "meaning": "كرسي",
+        "language": "ar"
+      },
+      {
+        "meaning": "silla",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-123",
+    "word": "tawwurt",
+    "tifinagh": "ⵜⴰⵡⵡⵓⵔⵜ",
+    "pronunciation": "/tawwurt/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "architecture"
+    ],
+    "definitions": [
+      {
+        "meaning": "door, gate",
+        "language": "en"
+      },
+      {
+        "meaning": "porte",
+        "language": "fr"
+      },
+      {
+        "meaning": "باب",
+        "language": "ar"
+      },
+      {
+        "meaning": "puerta",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "plural": "tiwwura",
+    "pluralTifinagh": "ⵜⵉⵡⵡⵓⵔⴰ"
+  },
+  {
+    "id": "word-124",
+    "word": "burz",
+    "tifinagh": "ⴱⵓⵔⵣ",
+    "pronunciation": "/burz/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "architecture"
+    ],
+    "definitions": [
+      {
+        "meaning": "tower, watchtower",
+        "language": "en"
+      },
+      {
+        "meaning": "tour, tour de guet",
+        "language": "fr"
+      },
+      {
+        "meaning": "برج",
+        "language": "ar"
+      },
+      {
+        "meaning": "torre",
+        "language": "es"
+      }
+    ],
+    "frequency": "uncommon",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-125",
+    "word": "asalu",
+    "tifinagh": "ⴰⵙⴰⵍⵓ",
+    "pronunciation": "/asalu/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "water"
+    ],
+    "definitions": [
+      {
+        "meaning": "river, stream",
+        "language": "en"
+      },
+      {
+        "meaning": "rivière, ruisseau",
+        "language": "fr"
+      },
+      {
+        "meaning": "نهر",
+        "language": "ar"
+      },
+      {
+        "meaning": "río",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-126",
+    "word": "aḥndir",
+    "tifinagh": "ⴰⵃⵏⴷⵉⵔ",
+    "pronunciation": "/aḥndir/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "clothing"
+    ],
+    "definitions": [
+      {
+        "meaning": "blanket cape, traditional cloak",
+        "language": "en"
+      },
+      {
+        "meaning": "cape, manteau traditionnel",
+        "language": "fr"
+      },
+      {
+        "meaning": "حنديرة",
+        "language": "ar"
+      },
+      {
+        "meaning": "capa, manto",
+        "language": "es"
+      }
+    ],
+    "frequency": "uncommon",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-127",
+    "word": "tashbniqt",
+    "tifinagh": "ⵜⴰⵙⵀⴱⵏⵉⵇⵜ",
+    "pronunciation": "/tašbniqt/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "clothing"
+    ],
+    "definitions": [
+      {
+        "meaning": "headscarf, head covering",
+        "language": "en"
+      },
+      {
+        "meaning": "foulard, couvre-chef",
+        "language": "fr"
+      },
+      {
+        "meaning": "منديل",
+        "language": "ar"
+      },
+      {
+        "meaning": "pañuelo",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-128",
+    "word": "lxatm",
+    "tifinagh": "ⵍⵅⴰⵜⵎ",
+    "pronunciation": "/lxatəm/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "adornment"
+    ],
+    "definitions": [
+      {
+        "meaning": "ring (jewelry)",
+        "language": "en"
+      },
+      {
+        "meaning": "bague, anneau",
+        "language": "fr"
+      },
+      {
+        "meaning": "خاتم",
+        "language": "ar"
+      },
+      {
+        "meaning": "anillo",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-129",
+    "word": "tudrt",
+    "tifinagh": "ⵜⵓⴷⵔⵜ",
+    "pronunciation": "/tudrt/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "abstract"
+    ],
+    "definitions": [
+      {
+        "meaning": "life, existence",
+        "language": "en"
+      },
+      {
+        "meaning": "vie, existence",
+        "language": "fr"
+      },
+      {
+        "meaning": "حياة",
+        "language": "ar"
+      },
+      {
+        "meaning": "vida",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-130",
+    "word": "tamttant",
+    "tifinagh": "ⵜⴰⵎⵜⵜⴰⵏⵜ",
+    "pronunciation": "/tamttant/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "abstract"
+    ],
+    "definitions": [
+      {
+        "meaning": "death",
+        "language": "en"
+      },
+      {
+        "meaning": "mort",
+        "language": "fr"
+      },
+      {
+        "meaning": "موت",
+        "language": "ar"
+      },
+      {
+        "meaning": "muerte",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-131",
+    "word": "irgazn",
+    "tifinagh": "ⵉⵔⴳⴰⵣⵏ",
+    "pronunciation": "/irgazən/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "people"
+    ],
+    "definitions": [
+      {
+        "meaning": "men, people",
+        "language": "en"
+      },
+      {
+        "meaning": "hommes, gens",
+        "language": "fr"
+      },
+      {
+        "meaning": "رجال",
+        "language": "ar"
+      },
+      {
+        "meaning": "hombres",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-132",
+    "word": "tislit",
+    "tifinagh": "ⵜⵉⵙⵍⵉⵜ",
+    "pronunciation": "/tislit/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "family",
+      "culture"
+    ],
+    "definitions": [
+      {
+        "meaning": "bride",
+        "language": "en"
+      },
+      {
+        "meaning": "mariée",
+        "language": "fr"
+      },
+      {
+        "meaning": "عروسة",
+        "language": "ar"
+      },
+      {
+        "meaning": "novia",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "plural": "tislitin",
+    "pluralTifinagh": "ⵜⵉⵙⵍⵉⵜⵉⵏ",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Tislit n Unẓar (Bride of the Rain) is a rain ceremony where a doll is paraded through the village with songs requesting rainfall."
+      }
+    ]
+  },
+  {
+    "id": "word-133",
+    "word": "isli",
+    "tifinagh": "ⵉⵙⵍⵉ",
+    "pronunciation": "/isli/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "family",
+      "culture"
+    ],
+    "definitions": [
+      {
+        "meaning": "groom, bridegroom",
+        "language": "en"
+      },
+      {
+        "meaning": "marié",
+        "language": "fr"
+      },
+      {
+        "meaning": "عريس",
+        "language": "ar"
+      },
+      {
+        "meaning": "novio",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-134",
+    "word": "ssuq",
+    "tifinagh": "ⵙⵙⵓⵇ",
+    "pronunciation": "/ssuq/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "commerce"
+    ],
+    "definitions": [
+      {
+        "meaning": "market, souk",
+        "language": "en"
+      },
+      {
+        "meaning": "marché, souk",
+        "language": "fr"
+      },
+      {
+        "meaning": "سوق",
+        "language": "ar"
+      },
+      {
+        "meaning": "mercado, zoco",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-135",
+    "word": "tamssuwqt",
+    "tifinagh": "ⵜⴰⵎⵙⵙⵓⵡⵇⵜ",
+    "pronunciation": "/tamssuwqt/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "commerce"
+    ],
+    "definitions": [
+      {
+        "meaning": "trade, commerce, buying and selling",
+        "language": "en"
+      },
+      {
+        "meaning": "commerce, négoce",
+        "language": "fr"
+      },
+      {
+        "meaning": "تجارة",
+        "language": "ar"
+      },
+      {
+        "meaning": "comercio",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-136",
+    "word": "amussu",
+    "tifinagh": "ⴰⵎⵓⵙⵙⵓ",
+    "pronunciation": "/amussu/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "social",
+      "politics"
+    ],
+    "definitions": [
+      {
+        "meaning": "movement, activism",
+        "language": "en"
+      },
+      {
+        "meaning": "mouvement, activisme",
+        "language": "fr"
+      },
+      {
+        "meaning": "حركة",
+        "language": "ar"
+      },
+      {
+        "meaning": "movimiento",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "The Amazigh cultural movement (amussu amazigh) has been instrumental in achieving recognition of Tamazight as an official language."
+      }
+    ]
+  },
+  {
+    "id": "word-137",
+    "word": "amazigh",
+    "tifinagh": "ⴰⵎⴰⵣⵉⴳⵀ",
+    "pronunciation": "/amaziɣ/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "identity"
+    ],
+    "definitions": [
+      {
+        "meaning": "free person, Amazigh, Berber",
+        "language": "en"
+      },
+      {
+        "meaning": "homme libre, Amazigh, Berbère",
+        "language": "fr"
+      },
+      {
+        "meaning": "أمازيغ",
+        "language": "ar"
+      },
+      {
+        "meaning": "persona libre, amazigh",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "imazighn",
+    "pluralTifinagh": "ⵉⵎⴰⵣⵉⴳⵀⵏ",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "The self-designation of the indigenous people of North Africa. Literally 'free person' — the very name encodes the value of freedom."
+      }
+    ]
+  },
+  {
+    "id": "word-138",
+    "word": "tamazight",
+    "tifinagh": "ⵜⴰⵎⴰⵣⵉⴳⵀⵜ",
+    "pronunciation": "/tamaziɣt/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "language",
+      "identity"
+    ],
+    "definitions": [
+      {
+        "meaning": "the Amazigh language, Tamazight",
+        "language": "en"
+      },
+      {
+        "meaning": "la langue amazighe, tamazight",
+        "language": "fr"
+      },
+      {
+        "meaning": "اللغة الأمازيغية",
+        "language": "ar"
+      },
+      {
+        "meaning": "la lengua amazigh",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Became an official language of Morocco in 2011 alongside Arabic. Written in Tifinagh, Latin, and Arabic scripts."
+      }
+    ]
+  },
+  {
+    "id": "word-139",
+    "word": "tifinagh",
+    "tifinagh": "ⵜⵉⴼⵉⵏⴰⴳⵀ",
+    "pronunciation": "/tifinaɣ/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "writing",
+      "identity"
+    ],
+    "definitions": [
+      {
+        "meaning": "Tifinagh (Amazigh alphabet)",
+        "language": "en"
+      },
+      {
+        "meaning": "tifinagh (alphabet amazigh)",
+        "language": "fr"
+      },
+      {
+        "meaning": "تيفيناغ",
+        "language": "ar"
+      },
+      {
+        "meaning": "tifinagh (alfabeto amazigh)",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "One of the oldest alphabets in the world, with inscriptions dating back over 2,500 years. Still used by Tuareg communities and now standard in Moroccan schools."
+      }
+    ]
+  },
+  {
+    "id": "word-141",
+    "word": "aghballu",
+    "tifinagh": "ⴰⴳⵀⴱⴰⵍⵍⵓ",
+    "pronunciation": "/aɣballu/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "water"
+    ],
+    "definitions": [
+      {
+        "meaning": "spring, water source, origin",
+        "language": "en"
+      },
+      {
+        "meaning": "source, point d'eau",
+        "language": "fr"
+      },
+      {
+        "meaning": "منبع",
+        "language": "ar"
+      },
+      {
+        "meaning": "manantial",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-142",
+    "word": "azru",
+    "tifinagh": "ⴰⵣⵔⵓ",
+    "pronunciation": "/azru/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "nature",
+      "geography"
+    ],
+    "definitions": [
+      {
+        "meaning": "rock, stone, cliff",
+        "language": "en"
+      },
+      {
+        "meaning": "rocher, pierre, falaise",
+        "language": "fr"
+      },
+      {
+        "meaning": "صخرة",
+        "language": "ar"
+      },
+      {
+        "meaning": "roca, piedra",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "plural": "izra",
+    "pluralTifinagh": "ⵉⵣⵔⴰ",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Azrou, a town in the Middle Atlas, takes its name from this word."
+      }
+    ]
+  },
+  {
+    "id": "word-143",
+    "word": "iggi",
+    "tifinagh": "ⵉⴳⴳⵉ",
+    "pronunciation": "/iggi/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "nature"
+    ],
+    "definitions": [
+      {
+        "meaning": "top, sky, upper part",
+        "language": "en"
+      },
+      {
+        "meaning": "haut, ciel, partie supérieure",
+        "language": "fr"
+      },
+      {
+        "meaning": "أعلى، سماء",
+        "language": "ar"
+      },
+      {
+        "meaning": "arriba, cielo",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-144",
+    "word": "tura",
+    "tifinagh": "ⵜⵓⵔⴰ",
+    "pronunciation": "/tura/",
+    "partOfSpeech": "adverb",
+    "semanticFields": [
+      "time"
+    ],
+    "definitions": [
+      {
+        "meaning": "now, at this moment",
+        "language": "en"
+      },
+      {
+        "meaning": "maintenant, en ce moment",
+        "language": "fr"
+      },
+      {
+        "meaning": "الآن",
+        "language": "ar"
+      },
+      {
+        "meaning": "ahora",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-145",
+    "word": "iḍgam",
+    "tifinagh": "ⵉⴹⴳⴰⵎ",
+    "pronunciation": "/iḍgam/",
+    "partOfSpeech": "adverb",
+    "semanticFields": [
+      "time"
+    ],
+    "definitions": [
+      {
+        "meaning": "yesterday",
+        "language": "en"
+      },
+      {
+        "meaning": "hier",
+        "language": "fr"
+      },
+      {
+        "meaning": "أمس",
+        "language": "ar"
+      },
+      {
+        "meaning": "ayer",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-146",
+    "word": "azka",
+    "tifinagh": "ⴰⵣⴽⴰ",
+    "pronunciation": "/azka/",
+    "partOfSpeech": "adverb",
+    "semanticFields": [
+      "time"
+    ],
+    "definitions": [
+      {
+        "meaning": "tomorrow",
+        "language": "en"
+      },
+      {
+        "meaning": "demain",
+        "language": "fr"
+      },
+      {
+        "meaning": "غداً",
+        "language": "ar"
+      },
+      {
+        "meaning": "mañana",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-147",
+    "word": "zik",
+    "tifinagh": "ⵣⵉⴽ",
+    "pronunciation": "/zik/",
+    "partOfSpeech": "adverb",
+    "semanticFields": [
+      "time"
+    ],
+    "definitions": [
+      {
+        "meaning": "early, long ago",
+        "language": "en"
+      },
+      {
+        "meaning": "tôt, autrefois",
+        "language": "fr"
+      },
+      {
+        "meaning": "مبكراً، قديماً",
+        "language": "ar"
+      },
+      {
+        "meaning": "temprano, antaño",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit"
+  },
+  {
+    "id": "word-148",
+    "word": "azrf",
+    "tifinagh": "ⴰⵣⵔⴼ",
+    "pronunciation": "/azrf/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "governance"
+    ],
+    "definitions": [
+      {
+        "meaning": "customary law, traditional code",
+        "language": "en"
+      },
+      {
+        "meaning": "droit coutumier, code traditionnel",
+        "language": "fr"
+      },
+      {
+        "meaning": "عرف، قانون عرفي",
+        "language": "ar"
+      },
+      {
+        "meaning": "derecho consuetudinario",
+        "language": "es"
+      }
+    ],
+    "frequency": "uncommon",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Izrfan (plural) are the oral legal codes governing Amazigh communities. They cover water rights, land use, conflict resolution, and collective responsibility."
+      }
+    ]
+  },
+  {
+    "id": "word-149",
+    "word": "lḥurma",
+    "tifinagh": "ⵍⵃⵓⵔⵎⴰ",
+    "pronunciation": "/lḥurma/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "social"
+    ],
+    "definitions": [
+      {
+        "meaning": "dignity, honor, respect, sanctity",
+        "language": "en"
+      },
+      {
+        "meaning": "dignité, honneur, respect",
+        "language": "fr"
+      },
+      {
+        "meaning": "حرمة",
+        "language": "ar"
+      },
+      {
+        "meaning": "dignidad, honor",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-150",
+    "word": "tagmat",
+    "tifinagh": "ⵜⴰⴳⵎⴰⵜ",
+    "pronunciation": "/tagmat/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "social"
+    ],
+    "definitions": [
+      {
+        "meaning": "brotherhood, solidarity",
+        "language": "en"
+      },
+      {
+        "meaning": "fraternité, solidarité",
+        "language": "fr"
+      },
+      {
+        "meaning": "أخوة، تضامن",
+        "language": "ar"
+      },
+      {
+        "meaning": "fraternidad, solidaridad",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-151",
+    "word": "afarnaw",
+    "tifinagh": "ⴰⴼⴰⵔⵏⴰⵡ",
+    "pronunciation": "/afarnaw/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "food",
+      "architecture"
+    ],
+    "definitions": [
+      {
+        "meaning": "traditional oven (clay)",
+        "language": "en"
+      },
+      {
+        "meaning": "four traditionnel (en terre)",
+        "language": "fr"
+      },
+      {
+        "meaning": "فرن تقليدي",
+        "language": "ar"
+      },
+      {
+        "meaning": "horno tradicional",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-152",
+    "word": "tasga",
+    "tifinagh": "ⵜⴰⵙⴳⴰ",
+    "pronunciation": "/tasga/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "architecture"
+    ],
+    "definitions": [
+      {
+        "meaning": "side, wall, direction",
+        "language": "en"
+      },
+      {
+        "meaning": "côté, mur, direction",
+        "language": "fr"
+      },
+      {
+        "meaning": "جانب",
+        "language": "ar"
+      },
+      {
+        "meaning": "lado, pared",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-153",
+    "word": "tifawt",
+    "tifinagh": "ⵜⵉⴼⴰⵡⵜ",
+    "pronunciation": "/tifawt/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "nature",
+      "abstract"
+    ],
+    "definitions": [
+      {
+        "meaning": "light, morning light, clarity",
+        "language": "en"
+      },
+      {
+        "meaning": "lumière, clarté",
+        "language": "fr"
+      },
+      {
+        "meaning": "ضوء، نور",
+        "language": "ar"
+      },
+      {
+        "meaning": "luz, claridad",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Often used metaphorically: 'tifawt n tamusni' — the light of knowledge."
+      }
+    ]
+  },
+  {
+    "id": "word-154",
+    "word": "tillas",
+    "tifinagh": "ⵜⵉⵍⵍⴰⵙ",
+    "pronunciation": "/tillas/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "nature",
+      "abstract"
+    ],
+    "definitions": [
+      {
+        "meaning": "darkness, shadow",
+        "language": "en"
+      },
+      {
+        "meaning": "obscurité, ombre",
+        "language": "fr"
+      },
+      {
+        "meaning": "ظلام",
+        "language": "ar"
+      },
+      {
+        "meaning": "oscuridad, sombra",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-155",
+    "word": "asirem",
+    "tifinagh": "ⴰⵙⵉⵔⴻⵎ",
+    "pronunciation": "/asirəm/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "abstract"
+    ],
+    "definitions": [
+      {
+        "meaning": "hope, wish",
+        "language": "en"
+      },
+      {
+        "meaning": "espoir, souhait",
+        "language": "fr"
+      },
+      {
+        "meaning": "أمل",
+        "language": "ar"
+      },
+      {
+        "meaning": "esperanza",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine"
+  },
+  {
+    "id": "word-156",
+    "word": "taghawsa",
+    "tifinagh": "ⵜⴰⴳⵀⴰⵡⵙⴰ",
+    "pronunciation": "/taɣawsa/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "abstract"
+    ],
+    "definitions": [
+      {
+        "meaning": "thing, matter, object",
+        "language": "en"
+      },
+      {
+        "meaning": "chose, affaire, objet",
+        "language": "fr"
+      },
+      {
+        "meaning": "شيء",
+        "language": "ar"
+      },
+      {
+        "meaning": "cosa, asunto",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "plural": "tighawsiwin",
+    "pluralTifinagh": "ⵜⵉⴳⵀⴰⵡⵙⵉⵡⵉⵏ"
+  },
+  {
+    "id": "word-157",
+    "word": "amarg",
+    "tifinagh": "ⴰⵎⴰⵔⴳ",
+    "pronunciation": "/amarg/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "music",
+      "emotion"
+    ],
+    "definitions": [
+      {
+        "meaning": "poetry, song, longing, nostalgia",
+        "language": "en"
+      },
+      {
+        "meaning": "poésie, chant, nostalgie",
+        "language": "fr"
+      },
+      {
+        "meaning": "شعر، حنين",
+        "language": "ar"
+      },
+      {
+        "meaning": "poesía, nostalgia",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "masculine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Amarg is both a poetic genre and an emotional state — a deep longing that fuels artistic expression. Central to Tachelhit musical tradition."
+      }
+    ]
+  },
+  {
+    "id": "word-158",
+    "word": "tabrat",
+    "tifinagh": "ⵜⴰⴱⵔⴰⵜ",
+    "pronunciation": "/tabrat/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "communication"
+    ],
+    "definitions": [
+      {
+        "meaning": "letter, message, written correspondence",
+        "language": "en"
+      },
+      {
+        "meaning": "lettre, message, correspondance",
+        "language": "fr"
+      },
+      {
+        "meaning": "رسالة",
+        "language": "ar"
+      },
+      {
+        "meaning": "carta, mensaje",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "plural": "tibratin",
+    "pluralTifinagh": "ⵜⵉⴱⵔⴰⵜⵉⵏ"
+  },
+  {
+    "id": "word-159",
+    "word": "tamsmunt",
+    "tifinagh": "ⵜⴰⵎⵙⵎⵓⵏⵜ",
+    "pronunciation": "/tamsmunt/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "social"
+    ],
+    "definitions": [
+      {
+        "meaning": "association, organization, group",
+        "language": "en"
+      },
+      {
+        "meaning": "association, organisation",
+        "language": "fr"
+      },
+      {
+        "meaning": "جمعية",
+        "language": "ar"
+      },
+      {
+        "meaning": "asociación",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine"
+  },
+  {
+    "id": "word-160",
+    "word": "tanmirt",
+    "tifinagh": "ⵜⴰⵏⵎⵉⵔⵜ",
+    "pronunciation": "/tanmirt/",
+    "partOfSpeech": "noun",
+    "semanticFields": [
+      "social"
+    ],
+    "definitions": [
+      {
+        "meaning": "thanks, gratitude",
+        "language": "en"
+      },
+      {
+        "meaning": "remerciement, gratitude",
+        "language": "fr"
+      },
+      {
+        "meaning": "شكر",
+        "language": "ar"
+      },
+      {
+        "meaning": "agradecimiento",
+        "language": "es"
+      }
+    ],
+    "frequency": "common",
+    "region": "tachelhit",
+    "gender": "feminine",
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Tanmirt is the standard expression of thanks across Tamazight varieties."
+      }
+    ]
+  }
+]

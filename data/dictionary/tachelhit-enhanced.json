@@ -1,0 +1,995 @@
+[
+  {
+    "id": "word-001-enhanced",
+    "word": "akal",
+    "tifinagh": "ⴰⴽⴰⵍ",
+    "pronunciation": "/akal/",
+
+    "audio": {
+      "primary": {
+        "id": "audio-akal-001",
+        "file": "/audio/tachelhit/akal-souss-male.mp3",
+        "format": "mp3",
+        "duration": 1.2,
+        "source": {
+          "type": "human",
+          "speaker": {
+            "id": "speaker-001",
+            "anonymous": false,
+            "name": "Mohamed A.",
+            "gender": "male",
+            "ageGroup": "adult",
+            "nativeRegion": "tachelhit",
+            "subRegion": "souss",
+            "birthplace": "Taroudant",
+            "speakerNotes": "Native Tachelhit speaker, also fluent in Darija and French"
+          },
+          "recordedAt": "2024-03-15",
+          "recordedIn": "Agadir, Morocco",
+          "quality": "studio"
+        },
+        "region": "tachelhit",
+        "subRegion": "souss",
+        "speed": "normal",
+        "style": "citation",
+        "verified": true,
+        "verifiedBy": "Dr. Fatima Boukhris",
+        "verifiedAt": "2024-04-01",
+        "license": "cc-by-sa",
+        "attribution": "Amawal Project"
+      },
+      "recordings": [
+        {
+          "id": "audio-akal-001",
+          "file": "/audio/tachelhit/akal-souss-male.mp3",
+          "format": "mp3",
+          "duration": 1.2,
+          "source": {
+            "type": "human",
+            "speaker": {
+              "id": "speaker-001",
+              "anonymous": false,
+              "name": "Mohamed A.",
+              "gender": "male",
+              "ageGroup": "adult",
+              "nativeRegion": "tachelhit",
+              "subRegion": "souss"
+            },
+            "recordedAt": "2024-03-15",
+            "recordedIn": "Agadir",
+            "quality": "studio"
+          },
+          "region": "tachelhit",
+          "subRegion": "souss",
+          "speed": "normal",
+          "style": "citation",
+          "verified": true,
+          "license": "cc-by-sa"
+        },
+        {
+          "id": "audio-akal-002",
+          "file": "/audio/tachelhit/akal-souss-female.mp3",
+          "format": "mp3",
+          "duration": 1.4,
+          "source": {
+            "type": "human",
+            "speaker": {
+              "id": "speaker-002",
+              "anonymous": true,
+              "gender": "female",
+              "ageGroup": "elder",
+              "nativeRegion": "tachelhit",
+              "subRegion": "souss",
+              "birthplace": "Tiznit"
+            },
+            "recordedAt": "2024-03-20",
+            "recordedIn": "Tiznit",
+            "quality": "field"
+          },
+          "region": "tachelhit",
+          "subRegion": "souss",
+          "speed": "slow",
+          "style": "natural",
+          "verified": true,
+          "license": "cc-by-nc"
+        },
+        {
+          "id": "audio-akal-003",
+          "file": "/audio/tachelhit/akal-anti-atlas.mp3",
+          "format": "mp3",
+          "duration": 1.3,
+          "source": {
+            "type": "field-recording",
+            "speaker": {
+              "id": "speaker-003",
+              "anonymous": true,
+              "gender": "male",
+              "ageGroup": "elder",
+              "nativeRegion": "tachelhit",
+              "subRegion": "anti-atlas"
+            },
+            "recordedAt": "2023-08-10",
+            "recordedIn": "Tafraoute",
+            "quality": "field"
+          },
+          "region": "tachelhit",
+          "subRegion": "anti-atlas",
+          "speed": "normal",
+          "style": "natural",
+          "verified": true,
+          "license": "cc-by-sa"
+        },
+        {
+          "id": "audio-akal-004",
+          "file": "/audio/tachelhit/akal-ai.mp3",
+          "format": "mp3",
+          "duration": 1.1,
+          "source": {
+            "type": "ai-generated",
+            "recordedAt": "2024-06-01",
+            "quality": "studio"
+          },
+          "region": "tachelhit",
+          "speed": "slow",
+          "style": "citation",
+          "verified": false,
+          "license": "cc-by"
+        }
+      ],
+      "hasRegionalVariants": true,
+      "hasAiGenerated": true,
+      "totalRecordings": 4
+    },
+
+    "partOfSpeech": "noun",
+    "gender": "masculine",
+    "semanticFields": ["nature", "agriculture"],
+    "plural": "ikalan",
+    "pluralTifinagh": "ⵉⴽⴰⵍⴰⵏ",
+
+    "morphology": {
+      "root": "k-l",
+      "rootTifinagh": "ⴽ-ⵍ",
+      "pattern": "aCaC",
+      "state": "free",
+      "derivedForms": [
+        {
+          "type": "place",
+          "word": "takallt",
+          "tifinagh": "ⵜⴰⴽⴰⵍⵍⵜ",
+          "meaning": "small plot of land"
+        }
+      ]
+    },
+
+    "definitions": [
+      {
+        "meaning": "earth, land, ground, soil, territory",
+        "language": "en",
+        "context": "general",
+        "register": "formal"
+      },
+      {
+        "meaning": "homeland, ancestral land",
+        "language": "en",
+        "context": "cultural",
+        "register": "literary"
+      },
+      {
+        "meaning": "terre, sol, terrain, pays",
+        "language": "fr"
+      },
+      {
+        "meaning": "أرض، تراب، بلد",
+        "language": "ar"
+      },
+      {
+        "meaning": "tierra, suelo, terreno",
+        "language": "es"
+      }
+    ],
+
+    "etymology": {
+      "root": "k-l",
+      "rootTifinagh": "ⴽ-ⵍ",
+      "origin": "berber-common",
+      "cognates": [
+        { "region": "kabyle", "word": "akal", "tifinagh": "ⴰⴽⴰⵍ" },
+        { "region": "tarifit", "word": "akal", "tifinagh": "ⴰⴽⴰⵍ" },
+        { "region": "tuareg", "word": "akal", "tifinagh": "ⴰⴽⴰⵍ" },
+        { "region": "central-atlas", "word": "akal", "tifinagh": "ⴰⴽⴰⵍ" },
+        { "region": "zenaga", "word": "äkäl", "tifinagh": "ⴰⴽⴰⵍ" }
+      ],
+      "notes": "Pan-Berber term found across all Amazigh varieties with remarkable stability. One of the oldest attested Berber words, found in ancient Libyan inscriptions. Related to the concept of territory and belonging central to Amazigh identity."
+    },
+
+    "usageNotes": [
+      {
+        "type": "semantic",
+        "text": "Can refer to physical soil, land ownership, or homeland/country depending on context."
+      },
+      {
+        "type": "cultural",
+        "text": "Akal holds deep cultural significance as connection to ancestral land is central to Amazigh identity. The phrase 'akal n imzwura' (land of ancestors) carries profound emotional weight."
+      },
+      {
+        "type": "pragmatic",
+        "text": "In political discourse, often used to assert indigenous land rights."
+      }
+    ],
+
+    "frequency": "common",
+    "register": "formal",
+    "era": "contemporary",
+    "attestedSince": "ancient",
+    "status": "active",
+
+    "examples": [
+      {
+        "id": "ex-akal-001",
+        "text": "akal-inu iga amqqran",
+        "tifinagh": "ⴰⴽⴰⵍ ⵉⵏⵓ ⵉⴳⴰ ⴰⵎⵇⵇⵔⴰⵏ",
+        "translations": [
+          { "language": "en", "text": "My land is vast" },
+          { "language": "fr", "text": "Ma terre est vaste" }
+        ],
+        "source": {
+          "type": "oral",
+          "attribution": "Common expression in Souss region"
+        },
+        "audio": {
+          "id": "audio-ex-akal-001",
+          "file": "/audio/examples/akal-inu-iga-amqqran.mp3",
+          "format": "mp3",
+          "duration": 2.1,
+          "source": {
+            "type": "human",
+            "quality": "studio"
+          },
+          "region": "tachelhit",
+          "subRegion": "souss",
+          "verified": true,
+          "license": "cc-by-sa"
+        },
+        "region": "tachelhit",
+        "subRegion": "souss",
+        "register": "informal",
+        "context": "expressing pride in heritage",
+        "verified": true,
+        "nativeSpeakerVerified": true
+      },
+      {
+        "id": "ex-akal-002",
+        "text": "ur illi akal bla aman",
+        "tifinagh": "ⵓⵔ ⵉⵍⵍⵉ ⴰⴽⴰⵍ ⴱⵍⴰ ⴰⵎⴰⵏ",
+        "translations": [
+          { "language": "en", "text": "There is no land without water" },
+          { "language": "fr", "text": "Il n'y a pas de terre sans eau" }
+        ],
+        "source": {
+          "type": "proverb",
+          "attribution": "Traditional Tachelhit proverb, widely known across the Souss-Massa region"
+        },
+        "region": "tachelhit",
+        "era": "classical",
+        "register": "literary",
+        "context": "wisdom about agriculture and life",
+        "pragmatics": "Often used to emphasize interdependence",
+        "verified": true,
+        "nativeSpeakerVerified": true,
+        "linguistVerified": true
+      },
+      {
+        "id": "ex-akal-003",
+        "text": "akal n imzwura-nngh",
+        "tifinagh": "ⴰⴽⴰⵍ ⵏ ⵉⵎⵣⵡⵓⵔⴰ ⵏⵏⵖ",
+        "translations": [
+          { "language": "en", "text": "The land of our ancestors" },
+          { "language": "fr", "text": "La terre de nos ancêtres" }
+        ],
+        "source": {
+          "type": "literature",
+          "attribution": "Common phrase in Amazigh poetry and song",
+          "work": "Traditional poetry"
+        },
+        "region": "tachelhit",
+        "register": "poetic",
+        "context": "cultural identity expression",
+        "pragmatics": "Emotionally charged, used in cultural and political contexts",
+        "verified": true
+      },
+      {
+        "id": "ex-akal-004",
+        "text": "nkka akal, nssn tawwuri",
+        "tifinagh": "ⵏⴽⴽⴰ ⴰⴽⴰⵍ, ⵏⵙⵙⵏ ⵜⴰⵡⵡⵓⵔⵉ",
+        "translations": [
+          { "language": "en", "text": "We worked the land, we know labor" },
+          { "language": "fr", "text": "Nous avons travaillé la terre, nous connaissons le labeur" }
+        ],
+        "source": {
+          "type": "corpus",
+          "corpusId": "ircam-tachelhit-oral-2020",
+          "attribution": "IRCAM Oral Corpus",
+          "speaker": "Anonymous elder, Taroudant",
+          "year": 2020
+        },
+        "region": "tachelhit",
+        "subRegion": "souss",
+        "collectedIn": "Taroudant",
+        "collectedAt": "2020-06-15",
+        "register": "colloquial",
+        "verified": true,
+        "linguistVerified": true
+      }
+    ],
+
+    "collocations": [
+      {
+        "words": ["akal", "nngh"],
+        "tifinagh": "ⴰⴽⴰⵍ ⵏⵏⵖ",
+        "frequency": "very-common",
+        "meaning": "our land",
+        "meaningFr": "notre terre",
+        "register": "formal"
+      },
+      {
+        "words": ["akal", "amazigh"],
+        "tifinagh": "ⴰⴽⴰⵍ ⴰⵎⴰⵣⵉⵖ",
+        "frequency": "common",
+        "meaning": "Amazigh land / Berber territory",
+        "meaningFr": "terre amazighe",
+        "register": "formal"
+      },
+      {
+        "words": ["akal", "n", "imzwura"],
+        "tifinagh": "ⴰⴽⴰⵍ ⵏ ⵉⵎⵣⵡⵓⵔⴰ",
+        "frequency": "common",
+        "meaning": "ancestral land",
+        "meaningFr": "terre ancestrale",
+        "register": "literary"
+      },
+      {
+        "words": ["swingm", "akal"],
+        "tifinagh": "ⵙⵡⵉⵏⴳⵎ ⴰⴽⴰⵍ",
+        "frequency": "common",
+        "meaning": "to till/work the land",
+        "meaningFr": "travailler la terre",
+        "example": "ar swingmn akal - they are tilling the land"
+      }
+    ],
+
+    "corpusReferences": [
+      {
+        "corpusName": "IRCAM Tachelhit Reference Corpus",
+        "corpusId": "ircam-tach-ref",
+        "entryId": "tach-akal-001",
+        "url": "https://tal.ircam.ma/corpus/tachelhit/akal",
+        "license": "cc-by-nc"
+      },
+      {
+        "corpusName": "Amazigh Oral Traditions Archive",
+        "corpusId": "aota",
+        "entryId": "aota-2019-akal",
+        "license": "cc-by-sa"
+      }
+    ],
+
+    "region": "tachelhit",
+    "subRegion": "souss",
+
+    "variants": [
+      {
+        "region": "kabyle",
+        "word": "akal",
+        "tifinagh": "ⴰⴽⴰⵍ",
+        "pronunciation": "/akal/",
+        "frequency": "common",
+        "status": "active",
+        "isPreferred": true
+      },
+      {
+        "region": "central-atlas",
+        "word": "akal",
+        "tifinagh": "ⴰⴽⴰⵍ",
+        "pronunciation": "/akal/",
+        "frequency": "common",
+        "status": "active"
+      },
+      {
+        "region": "tarifit",
+        "word": "akal",
+        "tifinagh": "ⴰⴽⴰⵍ",
+        "pronunciation": "/akal/",
+        "notes": "Sometimes pronounced with slight emphasis on first syllable",
+        "frequency": "common",
+        "status": "active"
+      },
+      {
+        "region": "tuareg",
+        "subRegion": "ahaggar",
+        "word": "akal",
+        "tifinagh": "ⴰⴽⴰⵍ",
+        "pronunciation": "/akal/",
+        "frequency": "common",
+        "status": "active",
+        "semanticDifference": "Also commonly means 'country' or 'region' in political sense"
+      }
+    ],
+
+    "regionalUsage": [
+      {
+        "region": "tachelhit",
+        "subRegion": "souss",
+        "frequency": "very-common",
+        "confidence": "high",
+        "status": "active",
+        "generationalUse": "all-ages",
+        "lastVerified": "2024-03-15",
+        "sources": ["IRCAM fieldwork 2024", "Amawal Project interviews"]
+      },
+      {
+        "region": "tachelhit",
+        "subRegion": "anti-atlas",
+        "frequency": "very-common",
+        "confidence": "high",
+        "status": "active",
+        "generationalUse": "all-ages"
+      },
+      {
+        "region": "kabyle",
+        "subRegion": "grande-kabylie",
+        "frequency": "very-common",
+        "confidence": "high",
+        "status": "active",
+        "generationalUse": "all-ages"
+      },
+      {
+        "region": "tarifit",
+        "frequency": "very-common",
+        "confidence": "high",
+        "status": "active",
+        "generationalUse": "all-ages"
+      },
+      {
+        "region": "central-atlas",
+        "frequency": "very-common",
+        "confidence": "high",
+        "status": "active"
+      },
+      {
+        "region": "tuareg",
+        "subRegion": "ahaggar",
+        "frequency": "very-common",
+        "confidence": "medium",
+        "status": "active",
+        "localMeanings": ["earth", "land", "country", "region"],
+        "semanticNotes": "Broader semantic range including political territory"
+      }
+    ],
+
+    "distribution": {
+      "wordId": "word-001-enhanced",
+      "word": "akal",
+      "regionalData": [],
+      "totalRegions": 7,
+      "primaryRegion": "tachelhit",
+      "isUniversal": true,
+      "isPanBerber": true,
+      "hasSemanticVariation": true,
+      "historicalNotes": "One of the most stable Berber roots, attested in ancient Libyan inscriptions",
+      "attestedSince": "ancient",
+      "etymology": "Proto-Berber *akal"
+    },
+
+    "semanticShifts": [
+      {
+        "id": "shift-akal-001",
+        "originalMeaning": "physical earth/soil",
+        "shiftedMeaning": "homeland, territory (political sense)",
+        "inRegion": "tuareg",
+        "fromEra": "classical",
+        "toEra": "modern",
+        "shiftType": "broadening",
+        "notes": "In Tuareg, akal increasingly used in political discourse to refer to Tuareg homeland",
+        "sources": ["Prasse 2003", "Heath 2005"]
+      }
+    ],
+
+    "crossReferences": [
+      {
+        "type": "synonym",
+        "wordId": "word-008",
+        "word": "tamurt",
+        "tifinagh": "ⵜⴰⵎⵓⵔⵜ",
+        "notes": "tamurt emphasizes homeland/country; akal emphasizes physical land"
+      },
+      {
+        "type": "see-also",
+        "wordId": "word-006",
+        "word": "adrar",
+        "tifinagh": "ⴰⴷⵔⴰⵔ",
+        "notes": "mountain - geographic feature"
+      },
+      {
+        "type": "derived",
+        "wordId": "word-050",
+        "word": "takallt",
+        "tifinagh": "ⵜⴰⴽⴰⵍⵍⵜ",
+        "notes": "diminutive - small plot of land"
+      }
+    ],
+    "relatedWords": ["tamurt", "adrar", "asif", "tawwurt"],
+
+    "isStandardForm": true,
+
+    "lastUpdated": "2024-06-15",
+    "sources": [
+      "IRCAM Dictionary (2022)",
+      "Destaing, E. (1920). Vocabulaire français-berbère",
+      "Bounfour & Boumalk (2001). Vocabulaire usuel du tachelhit",
+      "Amawal Project fieldwork (2024)"
+    ],
+    "contributors": ["Amawal Project", "IRCAM", "Dr. Fatima Boukhris"],
+
+    "verificationStatus": "expert-verified",
+    "verifiedBy": ["Dr. Fatima Boukhris", "IRCAM Lexicography Team"],
+    "verifiedAt": "2024-04-15",
+    "confidence": "high"
+  },
+
+  {
+    "id": "word-020-enhanced",
+    "word": "awal",
+    "tifinagh": "ⴰⵡⴰⵍ",
+    "pronunciation": "/awal/",
+
+    "audio": {
+      "primary": {
+        "id": "audio-awal-001",
+        "file": "/audio/tachelhit/awal-souss.mp3",
+        "format": "mp3",
+        "duration": 1.0,
+        "source": {
+          "type": "human",
+          "speaker": {
+            "anonymous": true,
+            "gender": "male",
+            "ageGroup": "adult",
+            "nativeRegion": "tachelhit",
+            "subRegion": "souss"
+          },
+          "quality": "studio"
+        },
+        "region": "tachelhit",
+        "verified": true,
+        "license": "cc-by-sa"
+      },
+      "recordings": [
+        {
+          "id": "audio-awal-001",
+          "file": "/audio/tachelhit/awal-souss.mp3",
+          "format": "mp3",
+          "source": { "type": "human", "quality": "studio" },
+          "region": "tachelhit",
+          "subRegion": "souss",
+          "verified": true,
+          "license": "cc-by-sa"
+        },
+        {
+          "id": "audio-awal-002",
+          "file": "/audio/kabyle/awal-kabylie.mp3",
+          "format": "mp3",
+          "source": { "type": "human", "quality": "professional" },
+          "region": "kabyle",
+          "subRegion": "grande-kabylie",
+          "verified": true,
+          "license": "cc-by-sa"
+        }
+      ],
+      "hasRegionalVariants": true,
+      "hasAiGenerated": false,
+      "totalRecordings": 2
+    },
+
+    "partOfSpeech": "noun",
+    "gender": "masculine",
+    "semanticFields": ["abstract", "society"],
+    "plural": "iwalen",
+    "pluralTifinagh": "ⵉⵡⴰⵍⵏ",
+
+    "morphology": {
+      "root": "w-l",
+      "rootTifinagh": "ⵡ-ⵍ",
+      "pattern": "aCaC",
+      "derivedForms": [
+        {
+          "type": "agent",
+          "word": "anawwal",
+          "tifinagh": "ⴰⵏⴰⵡⵡⴰⵍ",
+          "meaning": "speaker, orator"
+        },
+        {
+          "type": "abstract",
+          "word": "tawalt",
+          "tifinagh": "ⵜⴰⵡⴰⵍⵜ",
+          "meaning": "speech act, utterance"
+        }
+      ]
+    },
+
+    "definitions": [
+      {
+        "meaning": "word, speech, language",
+        "language": "en",
+        "register": "formal"
+      },
+      {
+        "meaning": "discourse, discussion, conversation",
+        "language": "en",
+        "context": "social interaction"
+      },
+      {
+        "meaning": "promise, commitment (when given)",
+        "language": "en",
+        "context": "social obligation",
+        "register": "formal"
+      },
+      {
+        "meaning": "mot, parole, langue, discours",
+        "language": "fr"
+      },
+      {
+        "meaning": "كلمة، كلام، لغة",
+        "language": "ar"
+      }
+    ],
+
+    "etymology": {
+      "root": "w-l",
+      "rootTifinagh": "ⵡ-ⵍ",
+      "origin": "berber-common",
+      "cognates": [
+        { "region": "kabyle", "word": "awal", "tifinagh": "ⴰⵡⴰⵍ" },
+        { "region": "tarifit", "word": "awal", "tifinagh": "ⴰⵡⴰⵍ" },
+        { "region": "tuareg", "word": "awal", "tifinagh": "ⴰⵡⴰⵍ" }
+      ],
+      "notes": "Related to the name 'Amawal' (dictionary). The root w-l is associated with speech and language across all Berber varieties. Possibly related to Proto-Afroasiatic roots for 'voice/speak'."
+    },
+
+    "usageNotes": [
+      {
+        "type": "semantic",
+        "text": "Can mean a single word, language as a system, or the act of speaking."
+      },
+      {
+        "type": "cultural",
+        "text": "'Fk-as awal' (give him your word) creates a binding social obligation in traditional society."
+      },
+      {
+        "type": "pragmatic",
+        "text": "In the phrase 'awal amazigh', it specifically means 'the Amazigh language' and carries cultural-political significance."
+      }
+    ],
+
+    "frequency": "common",
+    "register": "formal",
+    "era": "contemporary",
+    "attestedSince": "ancient",
+    "status": "active",
+
+    "examples": [
+      {
+        "id": "ex-awal-001",
+        "text": "awal amazigh",
+        "tifinagh": "ⴰⵡⴰⵍ ⴰⵎⴰⵣⵉⵖ",
+        "translations": [
+          { "language": "en", "text": "the Amazigh language" },
+          { "language": "fr", "text": "la langue amazighe" }
+        ],
+        "source": { "type": "written" },
+        "register": "formal",
+        "context": "language designation",
+        "verified": true
+      },
+      {
+        "id": "ex-awal-002",
+        "text": "fk-iyi awal-nnk",
+        "tifinagh": "ⴼⴽ ⵉⵢⵉ ⴰⵡⴰⵍ ⵏⵏⴽ",
+        "translations": [
+          { "language": "en", "text": "Give me your word (promise me)" },
+          { "language": "fr", "text": "Donne-moi ta parole (promets-moi)" }
+        ],
+        "source": { "type": "oral", "attribution": "Common expression" },
+        "register": "formal",
+        "context": "making promises, social obligations",
+        "pragmatics": "Creates binding social commitment",
+        "verified": true
+      },
+      {
+        "id": "ex-awal-003",
+        "text": "amawal n tmazight",
+        "tifinagh": "ⴰⵎⴰⵡⴰⵍ ⵏ ⵜⵎⴰⵣⵉⵖⵜ",
+        "translations": [
+          { "language": "en", "text": "Dictionary of Tamazight" },
+          { "language": "fr", "text": "Dictionnaire du tamazight" }
+        ],
+        "source": { "type": "written", "work": "Book title format" },
+        "register": "formal",
+        "verified": true
+      }
+    ],
+
+    "collocations": [
+      {
+        "words": ["awal", "amazigh"],
+        "tifinagh": "ⴰⵡⴰⵍ ⴰⵎⴰⵣⵉⵖ",
+        "frequency": "very-common",
+        "meaning": "Amazigh language",
+        "register": "formal"
+      },
+      {
+        "words": ["fk", "awal"],
+        "tifinagh": "ⴼⴽ ⴰⵡⴰⵍ",
+        "frequency": "common",
+        "meaning": "to give one's word, to promise",
+        "register": "formal"
+      },
+      {
+        "words": ["ini", "awal"],
+        "tifinagh": "ⵉⵏⵉ ⴰⵡⴰⵍ",
+        "frequency": "common",
+        "meaning": "to speak, to say something"
+      }
+    ],
+
+    "region": "tachelhit",
+
+    "regionalUsage": [
+      {
+        "region": "tachelhit",
+        "frequency": "very-common",
+        "confidence": "high",
+        "status": "active",
+        "generationalUse": "all-ages"
+      },
+      {
+        "region": "kabyle",
+        "frequency": "very-common",
+        "confidence": "high",
+        "status": "active",
+        "semanticNotes": "Same range of meanings"
+      },
+      {
+        "region": "tarifit",
+        "frequency": "very-common",
+        "confidence": "high",
+        "status": "active"
+      }
+    ],
+
+    "semanticShifts": [
+      {
+        "id": "shift-awal-001",
+        "originalMeaning": "single word/utterance",
+        "shiftedMeaning": "language (as system)",
+        "fromEra": "classical",
+        "toEra": "modern",
+        "shiftType": "broadening",
+        "notes": "In modern usage, 'awal amazigh' commonly refers to the language as a whole, not just speech"
+      }
+    ],
+
+    "crossReferences": [
+      {
+        "type": "derived",
+        "wordId": "word-amawal",
+        "word": "amawal",
+        "tifinagh": "ⴰⵎⴰⵡⴰⵍ",
+        "notes": "dictionary (lit. collection of words)"
+      },
+      {
+        "type": "see-also",
+        "wordId": "word-tutlayt",
+        "word": "tutlayt",
+        "tifinagh": "ⵜⵓⵜⵍⴰⵢⵜ",
+        "notes": "language (neologism)"
+      }
+    ],
+
+    "isStandardForm": true,
+    "verificationStatus": "expert-verified",
+    "confidence": "high"
+  },
+
+  {
+    "id": "word-azul-001",
+    "word": "azul",
+    "tifinagh": "ⴰⵣⵓⵍ",
+    "pronunciation": "/azul/",
+
+    "audio": {
+      "primary": {
+        "id": "audio-azul-001",
+        "file": "/audio/kabyle/azul.mp3",
+        "format": "mp3",
+        "duration": 0.8,
+        "source": {
+          "type": "human",
+          "speaker": {
+            "anonymous": true,
+            "gender": "female",
+            "ageGroup": "young-adult",
+            "nativeRegion": "kabyle"
+          },
+          "quality": "studio"
+        },
+        "region": "kabyle",
+        "verified": true,
+        "license": "cc-by-sa"
+      },
+      "recordings": [],
+      "hasRegionalVariants": false,
+      "hasAiGenerated": false,
+      "totalRecordings": 1
+    },
+
+    "partOfSpeech": "interjection",
+    "semanticFields": ["society"],
+
+    "definitions": [
+      {
+        "meaning": "hello, greetings (pan-Amazigh greeting)",
+        "language": "en"
+      },
+      {
+        "meaning": "bonjour, salut (salutation pan-amazighe)",
+        "language": "fr"
+      }
+    ],
+
+    "etymology": {
+      "origin": "berber-common",
+      "notes": "Revived and popularized as a pan-Amazigh greeting in the 20th century language revival movement. Originally meant 'health, well-being' in some varieties. Now universally recognized across Amazigh communities."
+    },
+
+    "usageNotes": [
+      {
+        "type": "cultural",
+        "text": "Azul has become the standard pan-Amazigh greeting, used as a cultural marker of Amazigh identity. It transcends dialectal boundaries."
+      },
+      {
+        "type": "pragmatic",
+        "text": "Can be used at any time of day. Often followed by 'manzakin?' (how are you?) or 'labas?' (all good?)."
+      },
+      {
+        "type": "semantic",
+        "text": "Response is typically 'azul' back, or 'labas, tanmirt' (fine, thank you)."
+      }
+    ],
+
+    "frequency": "common",
+    "register": "informal",
+    "era": "contemporary",
+    "attestedSince": "modern",
+    "status": "reviving",
+
+    "examples": [
+      {
+        "id": "ex-azul-001",
+        "text": "azul fellawen",
+        "tifinagh": "ⴰⵣⵓⵍ ⴼⵍⵍⴰⵡⵏ",
+        "translations": [
+          { "language": "en", "text": "Hello to you (plural/respectful)" },
+          { "language": "fr", "text": "Bonjour à vous" }
+        ],
+        "source": { "type": "oral" },
+        "register": "formal",
+        "verified": true
+      },
+      {
+        "id": "ex-azul-002",
+        "text": "azul, manzakin?",
+        "tifinagh": "ⴰⵣⵓⵍ, ⵎⴰⵏⵣⴰⴽⵉⵏ?",
+        "translations": [
+          { "language": "en", "text": "Hello, how are you?" },
+          { "language": "fr", "text": "Bonjour, comment vas-tu?" }
+        ],
+        "source": { "type": "oral" },
+        "register": "informal",
+        "context": "casual greeting",
+        "verified": true
+      }
+    ],
+
+    "collocations": [
+      {
+        "words": ["azul", "fellawen"],
+        "tifinagh": "ⴰⵣⵓⵍ ⴼⵍⵍⴰⵡⵏ",
+        "frequency": "very-common",
+        "meaning": "hello to you (plural/formal)"
+      },
+      {
+        "words": ["azul", "fellak"],
+        "tifinagh": "ⴰⵣⵓⵍ ⴼⵍⵍⴰⴽ",
+        "frequency": "common",
+        "meaning": "hello to you (singular masculine)"
+      },
+      {
+        "words": ["azul", "fellam"],
+        "tifinagh": "ⴰⵣⵓⵍ ⴼⵍⵍⴰⵎ",
+        "frequency": "common",
+        "meaning": "hello to you (singular feminine)"
+      }
+    ],
+
+    "region": "kabyle",
+
+    "variants": [
+      {
+        "region": "tachelhit",
+        "word": "azul",
+        "tifinagh": "ⴰⵣⵓⵍ",
+        "pronunciation": "/azul/",
+        "notes": "Adopted as pan-Amazigh greeting, alongside traditional 'mrhba'",
+        "frequency": "common",
+        "status": "reviving"
+      },
+      {
+        "region": "tarifit",
+        "word": "azul",
+        "tifinagh": "ⴰⵣⵓⵍ",
+        "pronunciation": "/azul/",
+        "frequency": "common",
+        "status": "active"
+      }
+    ],
+
+    "regionalUsage": [
+      {
+        "region": "kabyle",
+        "frequency": "very-common",
+        "confidence": "high",
+        "status": "active",
+        "generationalUse": "all-ages",
+        "semanticNotes": "Primary greeting, universal"
+      },
+      {
+        "region": "tachelhit",
+        "frequency": "common",
+        "confidence": "high",
+        "status": "reviving",
+        "generationalUse": "mainly-youth",
+        "semanticNotes": "Increasingly used alongside traditional greetings, especially among youth and in cultural contexts"
+      },
+      {
+        "region": "tarifit",
+        "frequency": "common",
+        "confidence": "medium",
+        "status": "active"
+      },
+      {
+        "region": "central-atlas",
+        "frequency": "uncommon",
+        "confidence": "medium",
+        "status": "reviving",
+        "generationalUse": "mainly-youth"
+      }
+    ],
+
+    "semanticShifts": [
+      {
+        "id": "shift-azul-001",
+        "originalMeaning": "health, well-being",
+        "shiftedMeaning": "greeting (hello)",
+        "fromEra": "classical",
+        "toEra": "contemporary",
+        "shiftType": "specialization",
+        "notes": "Became specialized as a greeting through the Amazigh cultural revival movement of the late 20th century"
+      }
+    ],
+
+    "isStandardForm": true,
+    "verificationStatus": "community-verified",
+    "confidence": "high"
+  }
+]

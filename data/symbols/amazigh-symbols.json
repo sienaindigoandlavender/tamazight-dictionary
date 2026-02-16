@@ -1,0 +1,2408 @@
+{
+  "symbols": [
+    {
+      "id": "symbol-001",
+      "name": "aza",
+      "nameTifinagh": "ⵣ",
+      "nameEnglish": "Yaz / Free Person",
+      "nameFrench": "Yaz / Homme Libre",
+      "alternateNames": [
+        "yaz",
+        "tizerzay",
+        "aza amazigh"
+      ],
+      "category": "abstract",
+      "tags": [
+        "identity",
+        "freedom",
+        "tifinagh",
+        "central"
+      ],
+      "visual": {
+        "svgPath": "M12 2L8 12L12 22L16 12Z M4 12H20",
+        "altText": "A vertical line crossed by two diagonal lines forming a Y-shape, the Tifinagh letter Yaz representing 'free person'"
+      },
+      "primaryRegion": "tachelhit",
+      "regions": [
+        "tachelhit",
+        "kabyle",
+        "tarifit",
+        "central-atlas",
+        "tuareg"
+      ],
+      "media": [
+        "tattoo",
+        "jewelry",
+        "textile",
+        "wall",
+        "metalwork"
+      ],
+      "primaryMedium": "tattoo",
+      "attestedUsage": [
+        {
+          "meaning": "The Tifinagh letter representing the sound /z/, symbolizing 'free person' (amazigh)",
+          "region": "tachelhit",
+          "medium": [
+            "tattoo",
+            "jewelry"
+          ],
+          "context": [
+            "identity",
+            "protection"
+          ],
+          "source": "Hagan, H. (2006). Les Berbères: Mémoire et identité",
+          "sourceType": "academic",
+          "confidence": "high",
+          "notes": "The letter aza (ⵣ) is the most widely recognized pan-Amazigh symbol, derived from the root ZRY meaning 'to be free'"
+        },
+        {
+          "meaning": "Central Tifinagh character, found in ancient Libyan inscriptions",
+          "region": "tuareg",
+          "medium": [
+            "tattoo",
+            "metalwork"
+          ],
+          "context": [
+            "identity"
+          ],
+          "source": "Galand, L. (1966). Inscriptions libyques",
+          "sourceType": "academic",
+          "confidence": "high"
+        }
+      ],
+      "oralInterpretations": [
+        {
+          "meaning": "The mark of a free person - we are not slaves, we are imazighen",
+          "region": "kabyle",
+          "speakerContext": "Cultural activist, Tizi Ouzou",
+          "collectedIn": "Tizi Ouzou",
+          "collectedAt": "2019",
+          "notes": "Commonly cited interpretation in Kabyle cultural revival movement"
+        },
+        {
+          "meaning": "Our ancestors' mark - it connects us to those who came before",
+          "region": "tachelhit",
+          "subRegion": "souss",
+          "speakerContext": "Elderly woman with traditional tattoos",
+          "collectedIn": "Taroudant",
+          "collectedAt": "2018"
+        }
+      ],
+      "contemporaryReadings": [
+        {
+          "meaning": "Pan-Amazigh identity symbol, representing cultural pride and indigenous rights",
+          "interpreter": "Amazigh Cultural Movement",
+          "interpreterType": "revival-movement",
+          "context": "Used in flags, protests, cultural events since 1970s",
+          "year": 1970
+        },
+        {
+          "meaning": "Emblem of Berber unity across North Africa",
+          "interpreter": "World Amazigh Congress",
+          "interpreterType": "community",
+          "context": "Official symbol on Amazigh flag (blue, green, yellow with red yaz)",
+          "year": 1997
+        }
+      ],
+      "contexts": [
+        "identity",
+        "protection",
+        "blessing"
+      ],
+      "linkedWords": [
+        {
+          "wordId": "amazigh-root",
+          "word": "amazigh",
+          "tifinagh": "ⴰⵎⴰⵣⵉⵖ",
+          "relationship": "root-connection",
+          "notes": "The symbol represents the 'z' in amazigh, from root meaning 'free person'"
+        }
+      ],
+      "linkedRoots": [
+        {
+          "root": "z-r-y",
+          "rootTifinagh": "ⵣⵔⵢ",
+          "meaning": "to be free, noble",
+          "notes": "Ancient root attested across Berber languages"
+        }
+      ],
+      "attestedSince": "ancient",
+      "historicalNotes": "Found in Libyan inscriptions dating to 3rd century BCE. One of the most stable Tifinagh characters across time and space.",
+      "archaeologicalEvidence": "Numerous Libyan-Berber stelae, rock carvings throughout Sahara",
+      "status": "active",
+      "statusNotes": "Extremely active - central to modern Amazigh identity movement",
+      "sources": [
+        "Hagan 2006",
+        "Galand 1966",
+        "Chaker 1984"
+      ],
+      "confidence": "high",
+      "lastUpdated": "2024-06-01"
+    },
+    {
+      "id": "symbol-002",
+      "name": "tit",
+      "nameTifinagh": "ⵜⵉⵜ",
+      "nameEnglish": "Eye",
+      "nameFrench": "Oeil",
+      "alternateNames": [
+        "allen",
+        "eye of protection"
+      ],
+      "category": "anthropomorphic",
+      "tags": [
+        "protection",
+        "evil-eye",
+        "sight",
+        "awareness"
+      ],
+      "visual": {
+        "svgPath": "M12 4C7 4 2.73 7.11 1 12c1.73 4.89 6 8 11 8s9.27-3.11 11-8c-1.73-4.89-6-8-11-8zm0 13c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z",
+        "altText": "Stylized eye symbol used for protection against evil eye"
+      },
+      "primaryRegion": "tachelhit",
+      "regions": [
+        "tachelhit",
+        "kabyle",
+        "tarifit",
+        "central-atlas"
+      ],
+      "subRegions": [
+        "souss",
+        "anti-atlas"
+      ],
+      "media": [
+        "tattoo",
+        "jewelry",
+        "door",
+        "henna",
+        "carpet"
+      ],
+      "primaryMedium": "tattoo",
+      "attestedUsage": [
+        {
+          "meaning": "Protection against the evil eye (ayn, tiṭṭ n lḥsed)",
+          "region": "tachelhit",
+          "subRegion": "souss",
+          "medium": [
+            "tattoo",
+            "door"
+          ],
+          "context": [
+            "protection",
+            "threshold"
+          ],
+          "source": "Becker, C. (2006). Amazigh Arts in Morocco",
+          "sourceType": "academic",
+          "confidence": "high",
+          "notes": "The eye turns back the malevolent gaze - it sees what wishes harm"
+        },
+        {
+          "meaning": "Vigilance and awareness - the eye that watches over the household",
+          "region": "kabyle",
+          "medium": [
+            "door",
+            "wall"
+          ],
+          "context": [
+            "protection",
+            "threshold"
+          ],
+          "source": "Lacoste-Dujardin, C. (1970). Le conte kabyle",
+          "sourceType": "ethnographic",
+          "confidence": "high"
+        }
+      ],
+      "oralInterpretations": [
+        {
+          "meaning": "The eye sees evil coming and stops it at the door",
+          "region": "tachelhit",
+          "subRegion": "anti-atlas",
+          "speakerContext": "Elderly man, guardian of traditional house",
+          "collectedIn": "Tafraoute",
+          "collectedAt": "2020",
+          "medium": [
+            "door"
+          ]
+        },
+        {
+          "meaning": "My grandmother said the eye keeps the jealous away - they see it looking back at them",
+          "region": "tachelhit",
+          "subRegion": "souss",
+          "speakerContext": "Middle-aged woman discussing her tattoos",
+          "collectedIn": "Agadir",
+          "collectedAt": "2019"
+        }
+      ],
+      "contexts": [
+        "protection",
+        "threshold",
+        "daily-life"
+      ],
+      "ritualUse": "Placed on doors and thresholds to protect home. Applied as tattoo on face (forehead, chin) for personal protection.",
+      "taboos": "Some traditions hold that painting an eye incorrectly can attract rather than repel harm",
+      "linkedWords": [
+        {
+          "wordId": "tit-word",
+          "word": "tit",
+          "tifinagh": "ⵜⵉⵜ",
+          "relationship": "named-after",
+          "notes": "Direct linguistic connection - the word tit means 'eye'"
+        }
+      ],
+      "linkedPhrases": [
+        {
+          "phrase": "ur ak tili tiṭṭ",
+          "phraseTifinagh": "ⵓⵔ ⴰⴽ ⵜⵉⵍⵉ ⵜⵉⵟⵟ",
+          "meaning": "May no evil eye befall you",
+          "context": "Blessing/protection phrase"
+        }
+      ],
+      "relatedSymbols": [
+        {
+          "symbolId": "symbol-003",
+          "relationship": "complementary",
+          "notes": "Often appears with the hand symbol for doubled protection"
+        }
+      ],
+      "attestedSince": "classical",
+      "historicalNotes": "Eye symbolism is ancient Mediterranean but takes specific forms in Amazigh tradition",
+      "status": "active",
+      "statusNotes": "Still actively used in traditional contexts, especially on doors in rural areas",
+      "sources": [
+        "Becker 2006",
+        "Lacoste-Dujardin 1970",
+        "Fieldwork 2019-2020"
+      ],
+      "confidence": "high",
+      "lastUpdated": "2024-06-01"
+    },
+    {
+      "id": "symbol-003",
+      "name": "afus",
+      "nameTifinagh": "ⴰⴼⵓⵙ",
+      "nameEnglish": "Hand / Palm",
+      "nameFrench": "Main",
+      "alternateNames": [
+        "tafust",
+        "khemsa",
+        "hand of Fatima"
+      ],
+      "category": "anthropomorphic",
+      "tags": [
+        "protection",
+        "five",
+        "blessing",
+        "ward"
+      ],
+      "visual": {
+        "svgPath": "M12 2c-1.1 0-2 .9-2 2v6H8c-1.1 0-2 .9-2 2v2c0 3.31 2.69 6 6 6s6-2.69 6-6v-2c0-1.1-.9-2-2-2h-2V4c0-1.1-.9-2-2-2z",
+        "altText": "Open hand with five fingers extended, protective symbol"
+      },
+      "primaryRegion": "tachelhit",
+      "regions": [
+        "tachelhit",
+        "kabyle",
+        "tarifit",
+        "central-atlas",
+        "tuareg"
+      ],
+      "media": [
+        "jewelry",
+        "door",
+        "tattoo",
+        "henna",
+        "metalwork",
+        "wood-carving"
+      ],
+      "primaryMedium": "jewelry",
+      "attestedUsage": [
+        {
+          "meaning": "The five fingers ward off evil - the number five has protective power (khamsa)",
+          "region": "tachelhit",
+          "medium": [
+            "jewelry",
+            "door"
+          ],
+          "context": [
+            "protection",
+            "blessing"
+          ],
+          "source": "Becker, C. (2006). Amazigh Arts in Morocco",
+          "sourceType": "academic",
+          "confidence": "high",
+          "notes": "The hand stops harm in its tracks"
+        },
+        {
+          "meaning": "Open hand represents generosity and blessing, closed fist represents strength",
+          "region": "kabyle",
+          "medium": [
+            "jewelry",
+            "textile"
+          ],
+          "context": [
+            "blessing",
+            "protection"
+          ],
+          "source": "Camps, G. (1980). Berbères: Aux marges de l'histoire",
+          "sourceType": "academic",
+          "confidence": "high"
+        }
+      ],
+      "oralInterpretations": [
+        {
+          "meaning": "Khemsa fi ainek - five in your eye, the hand blinds evil",
+          "region": "tachelhit",
+          "speakerContext": "Jewelry seller, Tiznit",
+          "collectedIn": "Tiznit",
+          "collectedAt": "2021",
+          "notes": "This phrase is used when giving or blessing with the hand symbol"
+        },
+        {
+          "meaning": "The hand of my mother protects me - the five fingers are her blessing",
+          "region": "kabyle",
+          "speakerContext": "Young woman explaining inherited jewelry",
+          "collectedIn": "Paris (diaspora)",
+          "collectedAt": "2022"
+        }
+      ],
+      "contemporaryReadings": [
+        {
+          "meaning": "Symbol of Amazigh feminine power and maternal protection",
+          "interpreter": "Contemporary Amazigh jewelers",
+          "interpreterType": "artist",
+          "context": "Modern jewelry design incorporating traditional motifs",
+          "year": 2020
+        }
+      ],
+      "contexts": [
+        "protection",
+        "blessing",
+        "wedding",
+        "threshold"
+      ],
+      "ritualUse": "Given as gift at weddings, worn for protection, hung on doors of new homes",
+      "linkedWords": [
+        {
+          "wordId": "afus-word",
+          "word": "afus",
+          "tifinagh": "ⴰⴼⵓⵙ",
+          "relationship": "named-after",
+          "notes": "Afus means 'hand' in Tamazight"
+        }
+      ],
+      "linkedPhrases": [
+        {
+          "phrase": "s ufus n Rebbi",
+          "phraseTifinagh": "ⵙ ⵓⴼⵓⵙ ⵏ ⵕⴱⴱⵉ",
+          "meaning": "By the hand of God (blessing phrase)",
+          "context": "Invocation of divine protection"
+        }
+      ],
+      "relatedSymbols": [
+        {
+          "symbolId": "symbol-002",
+          "relationship": "complementary",
+          "notes": "Often combined with eye symbol"
+        }
+      ],
+      "attestedSince": "classical",
+      "historicalNotes": "Hand symbolism predates Islamic influence but has syncretized with it. Distinct Amazigh forms differ from generic 'Hand of Fatima'",
+      "status": "active",
+      "statusNotes": "Very active, especially in jewelry. Has crossed into mainstream Moroccan culture.",
+      "sources": [
+        "Becker 2006",
+        "Camps 1980"
+      ],
+      "confidence": "high",
+      "lastUpdated": "2024-06-01"
+    },
+    {
+      "id": "symbol-004",
+      "name": "tawsit",
+      "nameTifinagh": "ⵜⴰⵡⵙⵉⵜ",
+      "nameEnglish": "Diamond / Lozenge",
+      "nameFrench": "Losange",
+      "alternateNames": [
+        "tadist",
+        "aghil",
+        "rhombus"
+      ],
+      "category": "geometric",
+      "tags": [
+        "weaving",
+        "fertility",
+        "field",
+        "femininity"
+      ],
+      "visual": {
+        "svgPath": "M12 2L22 12L12 22L2 12Z",
+        "altText": "Diamond/rhombus shape, fundamental Amazigh geometric pattern"
+      },
+      "primaryRegion": "tachelhit",
+      "regions": [
+        "tachelhit",
+        "kabyle",
+        "tarifit",
+        "central-atlas",
+        "tuareg"
+      ],
+      "media": [
+        "carpet",
+        "weaving",
+        "tattoo",
+        "pottery",
+        "henna"
+      ],
+      "primaryMedium": "carpet",
+      "attestedUsage": [
+        {
+          "meaning": "Representation of cultivated field, agricultural fertility",
+          "region": "tachelhit",
+          "subRegion": "souss",
+          "medium": [
+            "carpet",
+            "weaving"
+          ],
+          "context": [
+            "fertility",
+            "blessing"
+          ],
+          "source": "Becker, C. (2006). Amazigh Arts in Morocco",
+          "sourceType": "academic",
+          "confidence": "high",
+          "notes": "The diamond represents the irrigated garden plot - land divided for cultivation"
+        },
+        {
+          "meaning": "Female symbol - the womb, source of life",
+          "region": "kabyle",
+          "medium": [
+            "tattoo",
+            "pottery"
+          ],
+          "context": [
+            "fertility",
+            "wedding"
+          ],
+          "source": "Camps, G. (1980). Berbères: Aux marges de l'histoire",
+          "sourceType": "academic",
+          "confidence": "medium",
+          "notes": "This interpretation is contested but widely cited"
+        }
+      ],
+      "oralInterpretations": [
+        {
+          "meaning": "The shape of our fields - when I weave this, I weave the land",
+          "region": "tachelhit",
+          "subRegion": "anti-atlas",
+          "speakerContext": "Elderly weaver",
+          "collectedIn": "Tafraoute",
+          "collectedAt": "2019"
+        },
+        {
+          "meaning": "It's a woman's shape - the diamond is feminine, the triangle is masculine",
+          "region": "kabyle",
+          "speakerContext": "Weaver explaining carpet patterns",
+          "collectedIn": "Tizi Ouzou",
+          "collectedAt": "2020",
+          "contradicts": "Some interpret the opposite"
+        }
+      ],
+      "contemporaryReadings": [
+        {
+          "meaning": "Core unit of Amazigh geometric language, foundation for complex patterns",
+          "interpreter": "Cynthia Becker (ethnographer)",
+          "interpreterType": "academic",
+          "context": "Analysis of Amazigh weaving grammar",
+          "year": 2006
+        }
+      ],
+      "contexts": [
+        "fertility",
+        "blessing",
+        "daily-life",
+        "wedding"
+      ],
+      "ritualUse": "Featured prominently in bridal carpets and wedding textiles",
+      "linkedWords": [
+        {
+          "wordId": "akal-word",
+          "word": "akal",
+          "tifinagh": "ⴰⴽⴰⵍ",
+          "relationship": "represents",
+          "notes": "The diamond represents akal (land/earth) in visual form"
+        }
+      ],
+      "components": [
+        "symbol-008"
+      ],
+      "attestedSince": "ancient",
+      "historicalNotes": "One of the oldest and most fundamental Amazigh geometric units, found in prehistoric rock art",
+      "status": "active",
+      "statusNotes": "Ubiquitous in weaving traditions, actively used",
+      "sources": [
+        "Becker 2006",
+        "Camps 1980",
+        "Ramirez & Rolot 1995"
+      ],
+      "confidence": "high",
+      "lastUpdated": "2024-06-01"
+    },
+    {
+      "id": "symbol-005",
+      "name": "tafza",
+      "nameTifinagh": "ⵜⴰⴼⵣⴰ",
+      "nameEnglish": "Fibula / Brooch",
+      "nameFrench": "Fibule",
+      "alternateNames": [
+        "tizerzay",
+        "tabzimt",
+        "brooch pin"
+      ],
+      "category": "geometric",
+      "tags": [
+        "jewelry",
+        "feminine",
+        "marriage",
+        "status"
+      ],
+      "visual": {
+        "svgPath": "M12 2L2 12h6v8h8v-8h6L12 2z",
+        "altText": "Triangular fibula shape with hanging elements, traditional brooch form"
+      },
+      "primaryRegion": "tachelhit",
+      "regions": [
+        "tachelhit",
+        "kabyle",
+        "tarifit"
+      ],
+      "subRegions": [
+        "souss",
+        "anti-atlas"
+      ],
+      "media": [
+        "jewelry",
+        "metalwork",
+        "textile"
+      ],
+      "primaryMedium": "jewelry",
+      "attestedUsage": [
+        {
+          "meaning": "Symbol of married woman's status - worn in pairs to fasten garments",
+          "region": "tachelhit",
+          "subRegion": "anti-atlas",
+          "medium": [
+            "jewelry"
+          ],
+          "context": [
+            "wedding",
+            "identity"
+          ],
+          "source": "Ramirez, F. & Rolot, C. (1995). Tapis et tissages du Maroc",
+          "sourceType": "academic",
+          "confidence": "high",
+          "notes": "The fibula pair represents the bond of marriage - one is incomplete"
+        },
+        {
+          "meaning": "Wealth indicator and protection talisman combined",
+          "region": "kabyle",
+          "medium": [
+            "jewelry"
+          ],
+          "context": [
+            "wedding",
+            "protection"
+          ],
+          "source": "Camps, G. (1980). Berbères: Aux marges de l'histoire",
+          "sourceType": "academic",
+          "confidence": "high"
+        }
+      ],
+      "oralInterpretations": [
+        {
+          "meaning": "A woman without her fibulas is like a house without a door",
+          "region": "tachelhit",
+          "subRegion": "anti-atlas",
+          "speakerContext": "Elderly woman discussing traditional dress",
+          "collectedIn": "Tiznit",
+          "collectedAt": "2018"
+        },
+        {
+          "meaning": "The triangles point down to earth and up to sky - the woman connects both",
+          "region": "kabyle",
+          "speakerContext": "Silversmith explaining jewelry symbolism",
+          "collectedIn": "Béjaïa",
+          "collectedAt": "2021"
+        }
+      ],
+      "contexts": [
+        "wedding",
+        "identity",
+        "protection"
+      ],
+      "ritualUse": "Central element of bridal jewelry, worn in pairs. Given by groom's family.",
+      "taboos": "Traditionally inappropriate for unmarried women to wear certain fibula styles",
+      "linkedWords": [
+        {
+          "wordId": "tislit-word",
+          "word": "tislit",
+          "tifinagh": "ⵜⵉⵙⵍⵉⵜ",
+          "relationship": "associated-phrase",
+          "notes": "Tislit (bride) is closely associated with the fibula as bridal marker"
+        }
+      ],
+      "attestedSince": "classical",
+      "historicalNotes": "Fibula form dates to ancient Mediterranean traditions but took distinctive Amazigh forms",
+      "archaeologicalEvidence": "Bronze and silver fibulae found in Numidian tombs",
+      "status": "declining",
+      "statusNotes": "Traditional use declining as dress changes, but collected as heritage and worn for ceremonies",
+      "sources": [
+        "Ramirez & Rolot 1995",
+        "Camps 1980"
+      ],
+      "confidence": "high",
+      "lastUpdated": "2024-06-01"
+    },
+    {
+      "id": "symbol-006",
+      "name": "taddart",
+      "nameTifinagh": "ⵜⴰⴷⴷⴰⵔⵜ",
+      "nameEnglish": "House / Home",
+      "nameFrench": "Maison",
+      "alternateNames": [
+        "axxam",
+        "tighrmt"
+      ],
+      "category": "geometric",
+      "tags": [
+        "home",
+        "shelter",
+        "family",
+        "protection"
+      ],
+      "visual": {
+        "svgPath": "M12 3L2 12h3v9h14v-9h3L12 3zm0 14h-2v-4h4v4h-2z",
+        "altText": "Geometric house shape with triangular roof and rectangular base"
+      },
+      "primaryRegion": "tachelhit",
+      "regions": [
+        "tachelhit",
+        "kabyle",
+        "central-atlas"
+      ],
+      "media": [
+        "carpet",
+        "weaving",
+        "tattoo",
+        "wall"
+      ],
+      "primaryMedium": "carpet",
+      "attestedUsage": [
+        {
+          "meaning": "Representation of home, family shelter, domestic space",
+          "region": "tachelhit",
+          "medium": [
+            "carpet",
+            "weaving"
+          ],
+          "context": [
+            "blessing",
+            "daily-life"
+          ],
+          "source": "Becker, C. (2006). Amazigh Arts in Morocco",
+          "sourceType": "academic",
+          "confidence": "high",
+          "notes": "The house motif in weaving invokes protection and prosperity for the home"
+        }
+      ],
+      "oralInterpretations": [
+        {
+          "meaning": "When I weave the house, I pray for my family inside it",
+          "region": "tachelhit",
+          "subRegion": "souss",
+          "speakerContext": "Weaver explaining her work",
+          "collectedIn": "Taroudant",
+          "collectedAt": "2020"
+        },
+        {
+          "meaning": "The roof points up to God, the base is rooted in the earth",
+          "region": "kabyle",
+          "speakerContext": "Elder explaining carpet symbolism",
+          "collectedIn": "Tizi Ouzou",
+          "collectedAt": "2019"
+        }
+      ],
+      "contexts": [
+        "blessing",
+        "protection",
+        "daily-life"
+      ],
+      "linkedWords": [
+        {
+          "wordId": "taddart-word",
+          "word": "taddart",
+          "tifinagh": "ⵜⴰⴷⴷⴰⵔⵜ",
+          "relationship": "named-after",
+          "notes": "Direct linguistic connection - taddart means 'house'"
+        }
+      ],
+      "linkedPhrases": [
+        {
+          "phrase": "rebbi ad ihrez taddart",
+          "phraseTifinagh": "ⵕⴱⴱⵉ ⴰⴷ ⵉⵀⵔⵣ ⵜⴰⴷⴷⴰⵔⵜ",
+          "meaning": "May God protect the house",
+          "context": "Blessing for the home"
+        }
+      ],
+      "attestedSince": "classical",
+      "status": "active",
+      "statusNotes": "Common motif in weaving, actively used",
+      "sources": [
+        "Becker 2006"
+      ],
+      "confidence": "high",
+      "lastUpdated": "2024-06-01"
+    },
+    {
+      "id": "symbol-007",
+      "name": "itran",
+      "nameTifinagh": "ⵉⵜⵔⴰⵏ",
+      "nameEnglish": "Stars",
+      "nameFrench": "Etoiles",
+      "alternateNames": [
+        "itri",
+        "star pattern",
+        "tafukt"
+      ],
+      "category": "cosmic",
+      "tags": [
+        "celestial",
+        "guidance",
+        "night",
+        "navigation"
+      ],
+      "visual": {
+        "svgPath": "M12 2l2.4 7.4H22l-6 4.6 2.3 7L12 17l-6.3 4 2.3-7-6-4.6h7.6z",
+        "altText": "Five or six-pointed star, celestial navigation symbol"
+      },
+      "primaryRegion": "tuareg",
+      "regions": [
+        "tuareg",
+        "tachelhit",
+        "kabyle",
+        "central-atlas"
+      ],
+      "media": [
+        "tattoo",
+        "jewelry",
+        "carpet",
+        "metalwork",
+        "leather"
+      ],
+      "primaryMedium": "jewelry",
+      "attestedUsage": [
+        {
+          "meaning": "Celestial navigation - the stars that guide travelers through the desert",
+          "region": "tuareg",
+          "medium": [
+            "jewelry",
+            "leather"
+          ],
+          "context": [
+            "protection",
+            "spiritual"
+          ],
+          "source": "Casajus, D. (2000). Gens de parole",
+          "sourceType": "academic",
+          "confidence": "high",
+          "notes": "For Tuareg, stars are practical guides and spiritual symbols"
+        },
+        {
+          "meaning": "Points of light that pierce darkness - hope and guidance",
+          "region": "tachelhit",
+          "medium": [
+            "carpet",
+            "tattoo"
+          ],
+          "context": [
+            "blessing",
+            "protection"
+          ],
+          "source": "Becker, C. (2006). Amazigh Arts in Morocco",
+          "sourceType": "academic",
+          "confidence": "high"
+        }
+      ],
+      "oralInterpretations": [
+        {
+          "meaning": "The stars are the eyes of ancestors watching us",
+          "region": "tuareg",
+          "subRegion": "ahaggar",
+          "speakerContext": "Elder discussing night sky",
+          "collectedIn": "Tamanrasset",
+          "collectedAt": "2017"
+        },
+        {
+          "meaning": "Each star in the carpet is a blessing for the house",
+          "region": "tachelhit",
+          "speakerContext": "Weaver explaining carpet patterns",
+          "collectedIn": "Ouarzazate",
+          "collectedAt": "2019"
+        }
+      ],
+      "contexts": [
+        "spiritual",
+        "protection",
+        "blessing"
+      ],
+      "linkedWords": [
+        {
+          "wordId": "itri-word",
+          "word": "itri",
+          "tifinagh": "ⵉⵜⵔⵉ",
+          "relationship": "named-after",
+          "notes": "Itri means 'star' (singular of itran)"
+        }
+      ],
+      "attestedSince": "ancient",
+      "historicalNotes": "Star symbolism deeply embedded in Saharan navigation culture",
+      "status": "active",
+      "statusNotes": "Active in jewelry and weaving",
+      "sources": [
+        "Casajus 2000",
+        "Becker 2006"
+      ],
+      "confidence": "high",
+      "lastUpdated": "2024-06-01"
+    },
+    {
+      "id": "symbol-008",
+      "name": "takurt",
+      "nameTifinagh": "ⵜⴰⴽⵓⵔⵜ",
+      "nameEnglish": "Circle / Sun",
+      "nameFrench": "Cercle / Soleil",
+      "alternateNames": [
+        "tafukt",
+        "sun disk",
+        "wheel"
+      ],
+      "category": "cosmic",
+      "tags": [
+        "sun",
+        "cycle",
+        "completeness",
+        "life"
+      ],
+      "visual": {
+        "svgPath": "M12 2a10 10 0 100 20 10 10 0 000-20z",
+        "altText": "Circle representing sun, completeness, and cyclical time"
+      },
+      "primaryRegion": "tachelhit",
+      "regions": [
+        "tachelhit",
+        "kabyle",
+        "tarifit",
+        "central-atlas",
+        "tuareg"
+      ],
+      "media": [
+        "carpet",
+        "pottery",
+        "tattoo",
+        "jewelry",
+        "architecture"
+      ],
+      "primaryMedium": "carpet",
+      "attestedUsage": [
+        {
+          "meaning": "The sun - source of life, marking the passage of time",
+          "region": "tachelhit",
+          "medium": [
+            "carpet",
+            "pottery"
+          ],
+          "context": [
+            "blessing",
+            "daily-life"
+          ],
+          "source": "Becker, C. (2006). Amazigh Arts in Morocco",
+          "sourceType": "academic",
+          "confidence": "high"
+        },
+        {
+          "meaning": "Completeness, the cycle of seasons and life",
+          "region": "kabyle",
+          "medium": [
+            "pottery",
+            "weaving"
+          ],
+          "context": [
+            "blessing",
+            "fertility"
+          ],
+          "source": "Lacoste-Dujardin, C. (1970). Le conte kabyle",
+          "sourceType": "ethnographic",
+          "confidence": "high"
+        }
+      ],
+      "oralInterpretations": [
+        {
+          "meaning": "The circle has no beginning and no end - like life returning",
+          "region": "tachelhit",
+          "speakerContext": "Potter explaining decorative motifs",
+          "collectedIn": "Tamegroute",
+          "collectedAt": "2020"
+        }
+      ],
+      "contexts": [
+        "blessing",
+        "daily-life",
+        "spiritual"
+      ],
+      "linkedWords": [
+        {
+          "wordId": "tafukt-word",
+          "word": "tafukt",
+          "tifinagh": "ⵜⴰⴼⵓⴽⵜ",
+          "relationship": "named-after",
+          "notes": "Tafukt means 'sun'"
+        }
+      ],
+      "relatedSymbols": [
+        {
+          "symbolId": "symbol-004",
+          "relationship": "complementary",
+          "notes": "Circle and diamond often appear together as fundamental geometric units"
+        }
+      ],
+      "attestedSince": "ancient",
+      "historicalNotes": "Solar symbolism is pan-human but takes specific Amazigh forms",
+      "status": "active",
+      "sources": [
+        "Becker 2006",
+        "Lacoste-Dujardin 1970"
+      ],
+      "confidence": "high",
+      "lastUpdated": "2024-06-01"
+    },
+    {
+      "id": "symbol-009",
+      "name": "asaru",
+      "nameTifinagh": "ⴰⵙⴰⵔⵓ",
+      "nameEnglish": "Serpent / Snake",
+      "nameFrench": "Serpent",
+      "alternateNames": [
+        "afiγer",
+        "zigzag",
+        "water symbol"
+      ],
+      "category": "zoomorphic",
+      "tags": [
+        "water",
+        "fertility",
+        "protection",
+        "transformation"
+      ],
+      "visual": {
+        "svgPath": "M2 12l4-4 4 4 4-4 4 4 4-4",
+        "altText": "Zigzag line representing serpent, water flow, or continuous movement"
+      },
+      "primaryRegion": "tachelhit",
+      "regions": [
+        "tachelhit",
+        "kabyle",
+        "tuareg",
+        "central-atlas"
+      ],
+      "media": [
+        "carpet",
+        "tattoo",
+        "pottery",
+        "wall"
+      ],
+      "primaryMedium": "carpet",
+      "attestedUsage": [
+        {
+          "meaning": "Water flowing - rivers, irrigation channels, life-giving water",
+          "region": "tachelhit",
+          "subRegion": "draa",
+          "medium": [
+            "carpet",
+            "wall"
+          ],
+          "context": [
+            "fertility",
+            "blessing"
+          ],
+          "source": "Becker, C. (2006). Amazigh Arts in Morocco",
+          "sourceType": "academic",
+          "confidence": "high",
+          "notes": "In arid regions, the serpent/water symbol is particularly important"
+        },
+        {
+          "meaning": "The serpent that guards thresholds - protector of boundaries",
+          "region": "kabyle",
+          "medium": [
+            "wall",
+            "door"
+          ],
+          "context": [
+            "protection",
+            "threshold"
+          ],
+          "source": "Lacoste-Dujardin, C. (1970). Le conte kabyle",
+          "sourceType": "ethnographic",
+          "confidence": "medium"
+        }
+      ],
+      "oralInterpretations": [
+        {
+          "meaning": "The zigzag is water coming down the mountain - we put it in carpets to bring water to our homes",
+          "region": "tachelhit",
+          "subRegion": "anti-atlas",
+          "speakerContext": "Weaver in mountain village",
+          "collectedIn": "Tafraoute",
+          "collectedAt": "2019"
+        },
+        {
+          "meaning": "The serpent is dangerous but also powerful - it protects what it guards",
+          "region": "kabyle",
+          "speakerContext": "Elder discussing wall paintings",
+          "collectedIn": "Tizi Ouzou",
+          "collectedAt": "2020",
+          "contradicts": "Some see serpent as purely negative"
+        }
+      ],
+      "contexts": [
+        "fertility",
+        "protection",
+        "threshold"
+      ],
+      "taboos": "In some regions, depicting the serpent too realistically is avoided",
+      "linkedWords": [
+        {
+          "wordId": "aman-word",
+          "word": "aman",
+          "tifinagh": "ⴰⵎⴰⵏ",
+          "relationship": "represents",
+          "notes": "The zigzag often represents aman (water)"
+        }
+      ],
+      "attestedSince": "ancient",
+      "historicalNotes": "Serpent/water symbolism found in prehistoric Saharan rock art",
+      "status": "active",
+      "statusNotes": "Common in weaving, the zigzag is one of the most frequent motifs",
+      "sources": [
+        "Becker 2006",
+        "Lacoste-Dujardin 1970"
+      ],
+      "confidence": "high",
+      "lastUpdated": "2024-06-01"
+    },
+    {
+      "id": "symbol-010",
+      "name": "tawenza",
+      "nameTifinagh": "ⵜⴰⵡⵏⵣⴰ",
+      "nameEnglish": "Forehead Mark / Frontal Tattoo",
+      "nameFrench": "Marque Frontale",
+      "alternateNames": [
+        "central mark",
+        "third eye",
+        "brow sign"
+      ],
+      "category": "composite",
+      "tags": [
+        "tattoo",
+        "identity",
+        "tribal",
+        "protection",
+        "feminine"
+      ],
+      "visual": {
+        "svgPath": "M12 4v4m-4 4h8m-4-4v8m-6-4l4 4 4-4",
+        "altText": "Cross or tree-like pattern typically tattooed on the forehead between the eyebrows"
+      },
+      "primaryRegion": "tachelhit",
+      "regions": [
+        "tachelhit",
+        "tarifit",
+        "central-atlas"
+      ],
+      "subRegions": [
+        "anti-atlas",
+        "souss"
+      ],
+      "media": [
+        "tattoo"
+      ],
+      "primaryMedium": "tattoo",
+      "attestedUsage": [
+        {
+          "meaning": "Tribal/clan identification mark - identifies woman's origin",
+          "region": "tachelhit",
+          "subRegion": "anti-atlas",
+          "medium": [
+            "tattoo"
+          ],
+          "context": [
+            "identity",
+            "rite-of-passage"
+          ],
+          "source": "Becker, C. (2006). Amazigh Arts in Morocco",
+          "sourceType": "academic",
+          "confidence": "high",
+          "notes": "Different patterns identify different tribes/clans"
+        },
+        {
+          "meaning": "Protection of the mind/thoughts - guarding the space of thinking",
+          "region": "tarifit",
+          "medium": [
+            "tattoo"
+          ],
+          "context": [
+            "protection"
+          ],
+          "source": "Fieldwork documentation",
+          "sourceType": "fieldwork",
+          "confidence": "medium"
+        }
+      ],
+      "oralInterpretations": [
+        {
+          "meaning": "My mother had this mark, and her mother - it shows where we come from",
+          "region": "tachelhit",
+          "subRegion": "anti-atlas",
+          "speakerContext": "Elderly woman with traditional tattoos",
+          "collectedIn": "Tafraoute",
+          "collectedAt": "2018"
+        },
+        {
+          "meaning": "The mark on the forehead stops bad thoughts from entering",
+          "region": "tachelhit",
+          "subRegion": "souss",
+          "speakerContext": "Woman explaining her grandmother's tattoos",
+          "collectedIn": "Agadir",
+          "collectedAt": "2019"
+        }
+      ],
+      "contemporaryReadings": [
+        {
+          "meaning": "Symbol of Amazigh feminine heritage and resistance to cultural erasure",
+          "interpreter": "Contemporary Amazigh women's movement",
+          "interpreterType": "revival-movement",
+          "context": "Documentation projects recording elderly women's tattoos before they pass",
+          "year": 2015
+        }
+      ],
+      "contexts": [
+        "identity",
+        "protection",
+        "rite-of-passage"
+      ],
+      "ritualUse": "Applied at puberty or marriage, marks transition to womanhood",
+      "taboos": "These tattoos are now rare - Islamic influence discouraged the practice",
+      "relatedSymbols": [
+        {
+          "symbolId": "symbol-011",
+          "relationship": "family",
+          "notes": "Part of the facial tattoo system along with chin marks"
+        }
+      ],
+      "attestedSince": "classical",
+      "historicalNotes": "Facial tattoos documented since ancient times, practice declined sharply in 20th century",
+      "status": "archaic",
+      "statusNotes": "No longer practiced - only visible on elderly women. Active documentation efforts ongoing.",
+      "sources": [
+        "Becker 2006",
+        "Fieldwork 2018-2019"
+      ],
+      "confidence": "high",
+      "lastUpdated": "2024-06-01"
+    },
+    {
+      "id": "symbol-011",
+      "name": "tichbirin",
+      "nameTifinagh": "ⵜⵉⵛⴱⵉⵔⵉⵏ",
+      "nameEnglish": "Chin Marks",
+      "nameFrench": "Marques du Menton",
+      "alternateNames": [
+        "chin tattoo",
+        "beard mark",
+        "lower face pattern"
+      ],
+      "category": "composite",
+      "tags": [
+        "tattoo",
+        "feminine",
+        "identity",
+        "tribal"
+      ],
+      "visual": {
+        "svgPath": "M8 16v4m4-4v4m4-4v4",
+        "altText": "Vertical lines descending from lower lip, traditional chin tattoo pattern"
+      },
+      "primaryRegion": "tachelhit",
+      "regions": [
+        "tachelhit",
+        "tarifit",
+        "kabyle"
+      ],
+      "subRegions": [
+        "anti-atlas",
+        "souss",
+        "nador"
+      ],
+      "media": [
+        "tattoo"
+      ],
+      "primaryMedium": "tattoo",
+      "attestedUsage": [
+        {
+          "meaning": "Feminine beauty mark - enhances the face, shows maturity",
+          "region": "tachelhit",
+          "medium": [
+            "tattoo"
+          ],
+          "context": [
+            "identity",
+            "wedding"
+          ],
+          "source": "Becker, C. (2006). Amazigh Arts in Morocco",
+          "sourceType": "academic",
+          "confidence": "high"
+        },
+        {
+          "meaning": "The lines represent the roots of a tree - woman as foundation of family",
+          "region": "kabyle",
+          "medium": [
+            "tattoo"
+          ],
+          "context": [
+            "fertility",
+            "identity"
+          ],
+          "source": "Lacoste-Dujardin, C. (1970). Le conte kabyle",
+          "sourceType": "ethnographic",
+          "confidence": "medium"
+        }
+      ],
+      "oralInterpretations": [
+        {
+          "meaning": "A woman without chin marks was not considered beautiful in our grandmothers' time",
+          "region": "tachelhit",
+          "speakerContext": "Middle-aged woman discussing beauty standards",
+          "collectedIn": "Taroudant",
+          "collectedAt": "2019"
+        },
+        {
+          "meaning": "The three lines are like water flowing down - bringing fertility",
+          "region": "tarifit",
+          "speakerContext": "Elderly woman explaining her tattoos",
+          "collectedIn": "Al Hoceima",
+          "collectedAt": "2018"
+        }
+      ],
+      "contexts": [
+        "identity",
+        "wedding",
+        "fertility"
+      ],
+      "ritualUse": "Applied before marriage as beautification",
+      "relatedSymbols": [
+        {
+          "symbolId": "symbol-010",
+          "relationship": "family",
+          "notes": "Part of facial tattoo system with forehead marks"
+        }
+      ],
+      "attestedSince": "classical",
+      "status": "archaic",
+      "statusNotes": "No longer practiced, only seen on elderly women",
+      "sources": [
+        "Becker 2006",
+        "Lacoste-Dujardin 1970"
+      ],
+      "confidence": "high",
+      "lastUpdated": "2024-06-01"
+    },
+    {
+      "id": "symbol-012",
+      "name": "tazrza",
+      "nameTifinagh": "ⵜⴰⵣⵔⵣⴰ",
+      "nameEnglish": "Cross / Plus Sign",
+      "nameFrench": "Croix",
+      "alternateNames": [
+        "four directions",
+        "crossroads",
+        "balance"
+      ],
+      "category": "geometric",
+      "tags": [
+        "directions",
+        "balance",
+        "crossroads",
+        "protection"
+      ],
+      "visual": {
+        "svgPath": "M12 2v20M2 12h20",
+        "altText": "Simple cross or plus sign representing four directions and balance"
+      },
+      "primaryRegion": "tachelhit",
+      "regions": [
+        "tachelhit",
+        "tuareg",
+        "kabyle",
+        "central-atlas"
+      ],
+      "media": [
+        "carpet",
+        "tattoo",
+        "jewelry",
+        "architecture"
+      ],
+      "primaryMedium": "carpet",
+      "attestedUsage": [
+        {
+          "meaning": "The four cardinal directions - orientation and balance",
+          "region": "tuareg",
+          "medium": [
+            "jewelry",
+            "leather"
+          ],
+          "context": [
+            "protection",
+            "spiritual"
+          ],
+          "source": "Casajus, D. (2000). Gens de parole",
+          "sourceType": "academic",
+          "confidence": "high",
+          "notes": "For nomadic Tuareg, directional symbolism is fundamental"
+        },
+        {
+          "meaning": "Crossroads - place of decision, meeting point",
+          "region": "tachelhit",
+          "medium": [
+            "carpet",
+            "tattoo"
+          ],
+          "context": [
+            "protection",
+            "threshold"
+          ],
+          "source": "Becker, C. (2006). Amazigh Arts in Morocco",
+          "sourceType": "academic",
+          "confidence": "high"
+        }
+      ],
+      "oralInterpretations": [
+        {
+          "meaning": "The cross marks where paths meet - it protects travelers at crossroads",
+          "region": "tuareg",
+          "speakerContext": "Silversmith explaining cross pendants",
+          "collectedIn": "Agadez",
+          "collectedAt": "2017"
+        },
+        {
+          "meaning": "Four points, four seasons, four elements - everything in balance",
+          "region": "tachelhit",
+          "speakerContext": "Weaver discussing pattern meaning",
+          "collectedIn": "Ouarzazate",
+          "collectedAt": "2020"
+        }
+      ],
+      "contexts": [
+        "protection",
+        "spiritual",
+        "threshold"
+      ],
+      "taboos": "Pre-dates and is distinct from Christian cross symbolism - should not be conflated",
+      "attestedSince": "ancient",
+      "historicalNotes": "Cross symbolism predates Christianity in North Africa - represents fundamental spatial organization",
+      "archaeologicalEvidence": "Found in prehistoric rock art throughout the Sahara",
+      "status": "active",
+      "statusNotes": "Common geometric element, actively used",
+      "sources": [
+        "Casajus 2000",
+        "Becker 2006"
+      ],
+      "confidence": "high",
+      "lastUpdated": "2024-06-01"
+    },
+    {
+      "id": "symbol-013",
+      "name": "tazzwit",
+      "nameTifinagh": "",
+      "nameEnglish": "Bee / Fertility",
+      "nameFrench": "Abeille / Fertilité",
+      "alternateNames": [
+        "abeille",
+        "tizizwit"
+      ],
+      "category": "nature",
+      "tags": [
+        "fertility",
+        "community",
+        "agriculture",
+        "abundance"
+      ],
+      "visual": {
+        "svgPath": "M12 6L8 10L12 14L16 10Z M12 2V6 M12 14V18 M6 8H2 M22 8H18 M6 16H2 M22 16H18",
+        "altText": "The bee represents community, fertility, and abundance. In Amazigh culture, the bee symbolizes the i",
+        "size": "24x24",
+        "viewBox": "0 0 24 24",
+        "strokeWidth": 1.5
+      },
+      "meaning": {
+        "primary": "The bee represents community, fertility, and abundance. In Amazigh culture, the bee symbolizes the ideal of collective work and shared prosperity — each individual contributing to the whole.",
+        "cultural": "Bee motifs appear frequently in Amazigh textiles, especially in wedding blankets (tahḥndit) from the Middle Atlas. The presence of bee symbols is believed to bless a marriage with fertility and prosperity.",
+        "spiritual": ""
+      },
+      "usage": {
+        "traditional": [
+          "textiles",
+          "jewelry",
+          "pottery"
+        ],
+        "contemporary": [
+          "cultural revival",
+          "artistic expression"
+        ],
+        "regions": [
+          "Middle Atlas",
+          "High Atlas"
+        ]
+      },
+      "sources": [
+        {
+          "type": "ethnographic",
+          "text": "Documented in Amazigh textile and pottery traditions"
+        }
+      ]
+    },
+    {
+      "id": "symbol-014",
+      "name": "taḍsa",
+      "nameTifinagh": "",
+      "nameEnglish": "Diamond / Eye of Protection",
+      "nameFrench": "Losange / Œil de protection",
+      "alternateNames": [
+        "lozenge",
+        "evil eye ward",
+        "tawenza"
+      ],
+      "category": "geometric",
+      "tags": [
+        "protection",
+        "eye",
+        "baraka",
+        "ward"
+      ],
+      "visual": {
+        "svgPath": "M12 4L20 12L12 20L4 12Z M12 8L16 12L12 16L8 12Z",
+        "altText": "The diamond or lozenge shape represents the protective eye, warding off the evil eye (tiṭṭ n lḥasad)",
+        "size": "24x24",
+        "viewBox": "0 0 24 24",
+        "strokeWidth": 1.5
+      },
+      "meaning": {
+        "primary": "The diamond or lozenge shape represents the protective eye, warding off the evil eye (tiṭṭ n lḥasad). The nested diamond intensifies the protective power.",
+        "cultural": "One of the most ubiquitous motifs in North African art. Found on everything from door knockers to carpets, tattoos to pottery. The shape is pre-Islamic and has been continuously used for millennia.",
+        "spiritual": ""
+      },
+      "usage": {
+        "traditional": [
+          "textiles",
+          "tattoos",
+          "architecture",
+          "pottery",
+          "jewelry"
+        ],
+        "contemporary": [
+          "cultural revival",
+          "artistic expression"
+        ],
+        "regions": [
+          "Pan-Amazigh"
+        ]
+      },
+      "sources": [
+        {
+          "type": "ethnographic",
+          "text": "Documented in Amazigh textile and pottery traditions"
+        }
+      ]
+    },
+    {
+      "id": "symbol-015",
+      "name": "azagur",
+      "nameTifinagh": "",
+      "nameEnglish": "Zigzag / Water",
+      "nameFrench": "Zigzag / Eau",
+      "alternateNames": [
+        "river motif",
+        "water line",
+        "targa"
+      ],
+      "category": "nature",
+      "tags": [
+        "water",
+        "river",
+        "life",
+        "movement"
+      ],
+      "visual": {
+        "svgPath": "M2 12L6 8L10 12L14 8L18 12L22 8",
+        "altText": "The zigzag line represents water — rivers, rain, and the life-giving force that sustains all. In a d",
+        "size": "24x24",
+        "viewBox": "0 0 24 24",
+        "strokeWidth": 1.5
+      },
+      "meaning": {
+        "primary": "The zigzag line represents water — rivers, rain, and the life-giving force that sustains all. In a desert landscape, water is the supreme blessing.",
+        "cultural": "Water symbols appear in every Amazigh art form, reflecting the central importance of water management in oasis communities. The khettara (underground water channels) are engineering marvels that parallel these artistic expressions.",
+        "spiritual": ""
+      },
+      "usage": {
+        "traditional": [
+          "textiles",
+          "pottery",
+          "architecture"
+        ],
+        "contemporary": [
+          "cultural revival",
+          "artistic expression"
+        ],
+        "regions": [
+          "Souss",
+          "Draa Valley",
+          "Saharan regions"
+        ]
+      },
+      "sources": [
+        {
+          "type": "ethnographic",
+          "text": "Documented in Amazigh textile and pottery traditions"
+        }
+      ]
+    },
+    {
+      "id": "symbol-016",
+      "name": "tafza",
+      "nameTifinagh": "",
+      "nameEnglish": "Cross / Four Directions",
+      "nameFrench": "Croix / Quatre directions",
+      "alternateNames": [
+        "Agadez cross",
+        "Tuareg cross",
+        "Berber cross"
+      ],
+      "category": "geometric",
+      "tags": [
+        "direction",
+        "crossroads",
+        "balance",
+        "cosmos"
+      ],
+      "visual": {
+        "svgPath": "M12 2V22 M2 12H22 M12 12L7 7 M12 12L17 7 M12 12L7 17 M12 12L17 17",
+        "altText": "The cross represents the four cardinal directions and cosmic balance. It symbolizes the intersection",
+        "size": "24x24",
+        "viewBox": "0 0 24 24",
+        "strokeWidth": 1.5
+      },
+      "meaning": {
+        "primary": "The cross represents the four cardinal directions and cosmic balance. It symbolizes the intersection of the human world with the divine, the meeting point of all paths.",
+        "cultural": "Pre-dates Christianity and Islam in North Africa. Found in Paleolithic rock art across the Sahara. The Amazigh cross (croix berbère) was later adapted into the famous Southern Cross of the Tuareg.",
+        "spiritual": ""
+      },
+      "usage": {
+        "traditional": [
+          "jewelry",
+          "textiles",
+          "tattoos",
+          "architecture"
+        ],
+        "contemporary": [
+          "cultural revival",
+          "artistic expression"
+        ],
+        "regions": [
+          "Pan-Amazigh",
+          "Tuareg"
+        ]
+      },
+      "sources": [
+        {
+          "type": "ethnographic",
+          "text": "Documented in Amazigh textile and pottery traditions"
+        }
+      ]
+    },
+    {
+      "id": "symbol-017",
+      "name": "ikhfawn",
+      "nameTifinagh": "",
+      "nameEnglish": "Triangles / Mountains",
+      "nameFrench": "Triangles / Montagnes",
+      "alternateNames": [
+        "mountain motif",
+        "adrar"
+      ],
+      "category": "nature",
+      "tags": [
+        "mountains",
+        "strength",
+        "ancestors",
+        "permanence"
+      ],
+      "visual": {
+        "svgPath": "M4 20L8 10L12 20 M12 20L16 10L20 20 M8 10L12 2L16 10",
+        "altText": "Triangles represent mountains — the Atlas ranges that are the ancestral homeland of the Amazigh peop",
+        "size": "24x24",
+        "viewBox": "0 0 24 24",
+        "strokeWidth": 1.5
+      },
+      "meaning": {
+        "primary": "Triangles represent mountains — the Atlas ranges that are the ancestral homeland of the Amazigh people. Mountains symbolize permanence, strength, and connection to ancestors.",
+        "cultural": "The Atlas Mountains are not just geography but identity. Each peak has stories, each valley has traditions. Mountain motifs in carpet weaving often encode specific landscapes familiar to the weaver.",
+        "spiritual": ""
+      },
+      "usage": {
+        "traditional": [
+          "textiles",
+          "tattoos"
+        ],
+        "contemporary": [
+          "cultural revival",
+          "artistic expression"
+        ],
+        "regions": [
+          "High Atlas",
+          "Middle Atlas",
+          "Anti-Atlas"
+        ]
+      },
+      "sources": [
+        {
+          "type": "ethnographic",
+          "text": "Documented in Amazigh textile and pottery traditions"
+        }
+      ]
+    },
+    {
+      "id": "symbol-018",
+      "name": "tawqqit",
+      "nameTifinagh": "",
+      "nameEnglish": "Tree of Life",
+      "nameFrench": "Arbre de vie",
+      "alternateNames": [
+        "arbre sacré",
+        "tasaft"
+      ],
+      "category": "nature",
+      "tags": [
+        "life",
+        "growth",
+        "family",
+        "ancestry"
+      ],
+      "visual": {
+        "svgPath": "M12 22V10 M12 10L6 4 M12 10L18 4 M12 14L8 10 M12 14L16 10 M12 18L9 15 M12 18L15 15",
+        "altText": "The tree of life represents family lineage, growth, and the continuity of generations. Its branches ",
+        "size": "24x24",
+        "viewBox": "0 0 24 24",
+        "strokeWidth": 1.5
+      },
+      "meaning": {
+        "primary": "The tree of life represents family lineage, growth, and the continuity of generations. Its branches reaching upward symbolize aspiration; its roots reaching downward represent ancestral connection.",
+        "cultural": "Argan and olive trees are particularly sacred in Amazigh culture. The communal management of argan forests by women's cooperatives extends this symbolism of collective stewardship.",
+        "spiritual": ""
+      },
+      "usage": {
+        "traditional": [
+          "textiles",
+          "pottery",
+          "door carvings"
+        ],
+        "contemporary": [
+          "cultural revival",
+          "artistic expression"
+        ],
+        "regions": [
+          "Souss",
+          "High Atlas"
+        ]
+      },
+      "sources": [
+        {
+          "type": "ethnographic",
+          "text": "Documented in Amazigh textile and pottery traditions"
+        }
+      ]
+    },
+    {
+      "id": "symbol-019",
+      "name": "taghda",
+      "nameTifinagh": "",
+      "nameEnglish": "Snake / Rebirth",
+      "nameFrench": "Serpent / Renaissance",
+      "alternateNames": [
+        "serpent motif",
+        "afiɣer"
+      ],
+      "category": "nature",
+      "tags": [
+        "rebirth",
+        "wisdom",
+        "healing",
+        "transformation"
+      ],
+      "visual": {
+        "svgPath": "M4 12C4 12 8 6 12 12C16 18 20 12 20 12",
+        "altText": "The snake represents rebirth, wisdom, and the cycle of life. Its ability to shed skin symbolizes tra",
+        "size": "24x24",
+        "viewBox": "0 0 24 24",
+        "strokeWidth": 1.5
+      },
+      "meaning": {
+        "primary": "The snake represents rebirth, wisdom, and the cycle of life. Its ability to shed skin symbolizes transformation and renewal.",
+        "cultural": "In pre-Islamic Amazigh belief, the snake was a guardian spirit of the home. Some communities still leave milk for house snakes as a sign of respect for this protective role.",
+        "spiritual": ""
+      },
+      "usage": {
+        "traditional": [
+          "textiles",
+          "tattoos",
+          "pottery"
+        ],
+        "contemporary": [
+          "cultural revival",
+          "artistic expression"
+        ],
+        "regions": [
+          "Souss",
+          "Rif",
+          "Sahara"
+        ]
+      },
+      "sources": [
+        {
+          "type": "ethnographic",
+          "text": "Documented in Amazigh textile and pottery traditions"
+        }
+      ]
+    },
+    {
+      "id": "symbol-020",
+      "name": "tislit",
+      "nameTifinagh": "",
+      "nameEnglish": "Bride / Fertility Symbol",
+      "nameFrench": "Mariée / Symbole de fertilité",
+      "alternateNames": [
+        "fertility motif",
+        "wedding symbol"
+      ],
+      "category": "human",
+      "tags": [
+        "fertility",
+        "marriage",
+        "blessing",
+        "womanhood"
+      ],
+      "visual": {
+        "svgPath": "M12 4L8 8L12 12L16 8Z M12 12L8 16L12 20L16 16Z M12 4V2 M8 8H6 M16 8H18",
+        "altText": "The bride motif represents femininity, fertility, and the sacred transition of marriage. It embodies",
+        "size": "24x24",
+        "viewBox": "0 0 24 24",
+        "strokeWidth": 1.5
+      },
+      "meaning": {
+        "primary": "The bride motif represents femininity, fertility, and the sacred transition of marriage. It embodies the creative power of women as the givers and sustainers of life.",
+        "cultural": "Wedding textiles are among the most symbolically rich in Amazigh art. The bride's handira (ceremonial cape) is woven with fertility symbols, protection motifs, and blessings encoded in geometric patterns.",
+        "spiritual": ""
+      },
+      "usage": {
+        "traditional": [
+          "wedding textiles",
+          "jewelry",
+          "henna"
+        ],
+        "contemporary": [
+          "cultural revival",
+          "artistic expression"
+        ],
+        "regions": [
+          "Middle Atlas",
+          "High Atlas"
+        ]
+      },
+      "sources": [
+        {
+          "type": "ethnographic",
+          "text": "Documented in Amazigh textile and pottery traditions"
+        }
+      ]
+    },
+    {
+      "id": "symbol-021",
+      "name": "afus",
+      "nameTifinagh": "",
+      "nameEnglish": "Hand / Khamsa",
+      "nameFrench": "Main / Khamsa",
+      "alternateNames": [
+        "khamsa",
+        "hand of Fatima",
+        "afus n lbaraka"
+      ],
+      "category": "human",
+      "tags": [
+        "protection",
+        "power",
+        "five",
+        "blessing"
+      ],
+      "visual": {
+        "svgPath": "M12 22V14 M12 14L8 8L6 2 M12 14L10 8L9 2 M12 14V2 M12 14L14 8L15 2 M12 14L16 8L18 2",
+        "altText": "The hand (khamsa, five) is a powerful protective symbol. The five fingers ward off evil, and the ope",
+        "size": "24x24",
+        "viewBox": "0 0 24 24",
+        "strokeWidth": 1.5
+      },
+      "meaning": {
+        "primary": "The hand (khamsa, five) is a powerful protective symbol. The five fingers ward off evil, and the open palm projects blessing and safety.",
+        "cultural": "While commonly associated with Islamic or Jewish tradition, the hand of protection has pre-Abrahamic roots in North Africa. Amazigh door knockers are often shaped as hands, blessing all who enter.",
+        "spiritual": ""
+      },
+      "usage": {
+        "traditional": [
+          "door knockers",
+          "jewelry",
+          "tattoos",
+          "textiles",
+          "pottery"
+        ],
+        "contemporary": [
+          "cultural revival",
+          "artistic expression"
+        ],
+        "regions": [
+          "Pan-Amazigh",
+          "Pan-North African"
+        ]
+      },
+      "sources": [
+        {
+          "type": "ethnographic",
+          "text": "Documented in Amazigh textile and pottery traditions"
+        }
+      ]
+    },
+    {
+      "id": "symbol-022",
+      "name": "agharas",
+      "nameTifinagh": "",
+      "nameEnglish": "Path / Journey",
+      "nameFrench": "Chemin / Voyage",
+      "alternateNames": [
+        "road motif",
+        "life path"
+      ],
+      "category": "geometric",
+      "tags": [
+        "journey",
+        "path",
+        "life",
+        "destiny"
+      ],
+      "visual": {
+        "svgPath": "M2 20L6 16L10 18L14 14L18 16L22 12",
+        "altText": "The path symbol represents life's journey, with its rises and descents mirroring the mountain passes",
+        "size": "24x24",
+        "viewBox": "0 0 24 24",
+        "strokeWidth": 1.5
+      },
+      "meaning": {
+        "primary": "The path symbol represents life's journey, with its rises and descents mirroring the mountain passes of the Atlas. No path is straight; wisdom is in navigating the turns.",
+        "cultural": "Transhumance routes, trading paths, and pilgrimage roads are all encoded in Amazigh collective memory. The path motif in textiles often represents these ancestral routes.",
+        "spiritual": ""
+      },
+      "usage": {
+        "traditional": [
+          "textiles",
+          "pottery"
+        ],
+        "contemporary": [
+          "cultural revival",
+          "artistic expression"
+        ],
+        "regions": [
+          "High Atlas",
+          "Anti-Atlas"
+        ]
+      },
+      "sources": [
+        {
+          "type": "ethnographic",
+          "text": "Documented in Amazigh textile and pottery traditions"
+        }
+      ]
+    },
+    {
+      "id": "symbol-023",
+      "name": "izi",
+      "nameTifinagh": "",
+      "nameEnglish": "Fly / Persistence",
+      "nameFrench": "Mouche / Persistance",
+      "alternateNames": [
+        "insect motif"
+      ],
+      "category": "nature",
+      "tags": [
+        "persistence",
+        "survival",
+        "adaptability"
+      ],
+      "visual": {
+        "svgPath": "M12 8L8 12L12 16L16 12Z M10 10L14 14 M14 10L10 14",
+        "altText": "The small fly or insect motif represents persistence and survival against all odds. The smallest cre",
+        "size": "24x24",
+        "viewBox": "0 0 24 24",
+        "strokeWidth": 1.5
+      },
+      "meaning": {
+        "primary": "The small fly or insect motif represents persistence and survival against all odds. The smallest creatures have the greatest resilience.",
+        "cultural": "Small, repeated motifs in Amazigh weaving often represent insects. Their repetitive nature symbolizes perseverance — the same quality that has allowed Amazigh culture to survive millennia of pressure.",
+        "spiritual": ""
+      },
+      "usage": {
+        "traditional": [
+          "textiles"
+        ],
+        "contemporary": [
+          "cultural revival",
+          "artistic expression"
+        ],
+        "regions": [
+          "Pan-Amazigh"
+        ]
+      },
+      "sources": [
+        {
+          "type": "ethnographic",
+          "text": "Documented in Amazigh textile and pottery traditions"
+        }
+      ]
+    },
+    {
+      "id": "symbol-024",
+      "name": "tawsna",
+      "nameTifinagh": "",
+      "nameEnglish": "Comb / Loom",
+      "nameFrench": "Peigne / Métier à tisser",
+      "alternateNames": [
+        "loom motif",
+        "aztta"
+      ],
+      "category": "tool",
+      "tags": [
+        "weaving",
+        "creation",
+        "women",
+        "craft"
+      ],
+      "visual": {
+        "svgPath": "M4 8H20 M6 8V16 M9 8V16 M12 8V16 M15 8V16 M18 8V16",
+        "altText": "The comb represents the weaving loom and women's creative power. It symbolizes the act of creation —",
+        "size": "24x24",
+        "viewBox": "0 0 24 24",
+        "strokeWidth": 1.5
+      },
+      "meaning": {
+        "primary": "The comb represents the weaving loom and women's creative power. It symbolizes the act of creation — turning raw wool into art, chaos into order.",
+        "cultural": "Weaving is considered a sacred feminine art. The loom is treated with respect; it is never stepped over, and prayers are said before beginning a new piece. The comb motif honors this tradition.",
+        "spiritual": ""
+      },
+      "usage": {
+        "traditional": [
+          "textiles",
+          "tattoos"
+        ],
+        "contemporary": [
+          "cultural revival",
+          "artistic expression"
+        ],
+        "regions": [
+          "Middle Atlas",
+          "High Atlas",
+          "Souss"
+        ]
+      },
+      "sources": [
+        {
+          "type": "ethnographic",
+          "text": "Documented in Amazigh textile and pottery traditions"
+        }
+      ]
+    },
+    {
+      "id": "symbol-025",
+      "name": "aẓalim",
+      "nameTifinagh": "",
+      "nameEnglish": "Onion / Layers of Knowledge",
+      "nameFrench": "Oignon / Couches de savoir",
+      "alternateNames": [
+        "concentric circles",
+        "layers motif"
+      ],
+      "category": "nature",
+      "tags": [
+        "knowledge",
+        "depth",
+        "layers",
+        "wisdom"
+      ],
+      "visual": {
+        "svgPath": "M12 4C8 4 6 8 6 12C6 16 8 20 12 20C16 20 18 16 18 12C18 8 16 4 12 4Z M12 7C10 7 9 9 9 12C9 15 10 17 12 17C14 17 15 15 15 12C15 9 14 7 12 7Z",
+        "altText": "Concentric circles or oval shapes represent layers of understanding. True knowledge, like an onion, ",
+        "size": "24x24",
+        "viewBox": "0 0 24 24",
+        "strokeWidth": 1.5
+      },
+      "meaning": {
+        "primary": "Concentric circles or oval shapes represent layers of understanding. True knowledge, like an onion, reveals itself one layer at a time to those who are patient.",
+        "cultural": "This motif appears in Amazigh pottery, particularly from the Rif region. It reflects the oral tradition where knowledge is transmitted gradually, earned through time and trust.",
+        "spiritual": ""
+      },
+      "usage": {
+        "traditional": [
+          "pottery",
+          "textiles"
+        ],
+        "contemporary": [
+          "cultural revival",
+          "artistic expression"
+        ],
+        "regions": [
+          "Rif",
+          "Middle Atlas"
+        ]
+      },
+      "sources": [
+        {
+          "type": "ethnographic",
+          "text": "Documented in Amazigh textile and pottery traditions"
+        }
+      ]
+    },
+    {
+      "id": "symbol-026",
+      "name": "agmmiḍ",
+      "nameTifinagh": "",
+      "nameEnglish": "Checkboard / Harvest Field",
+      "nameFrench": "Damier / Champ de récolte",
+      "alternateNames": [
+        "field pattern",
+        "harvest grid"
+      ],
+      "category": "geometric",
+      "tags": [
+        "agriculture",
+        "harvest",
+        "abundance",
+        "order"
+      ],
+      "visual": {
+        "svgPath": "M4 4H8V8H4V4Z M8 8H12V12H8V8Z M12 4H16V8H12V4Z M4 12H8V16H4V12Z M12 12H16V16H12V12Z M16 8H20V12H16V8Z M8 16H12V20H8V16Z M16 16H20V20H16V16Z",
+        "altText": "The checkerboard pattern represents cultivated fields and the order imposed on nature through agricu",
+        "size": "24x24",
+        "viewBox": "0 0 24 24",
+        "strokeWidth": 1.5
+      },
+      "meaning": {
+        "primary": "The checkerboard pattern represents cultivated fields and the order imposed on nature through agriculture. Each square is a parcel of land, tended with care.",
+        "cultural": "Amazigh communities have practiced sophisticated agriculture for millennia. The terraced fields of the Atlas and the date palm oases of the Sahara are living examples of this geometric ordering of the landscape.",
+        "spiritual": ""
+      },
+      "usage": {
+        "traditional": [
+          "textiles",
+          "pottery",
+          "architecture"
+        ],
+        "contemporary": [
+          "cultural revival",
+          "artistic expression"
+        ],
+        "regions": [
+          "Souss",
+          "Draa Valley"
+        ]
+      },
+      "sources": [
+        {
+          "type": "ethnographic",
+          "text": "Documented in Amazigh textile and pottery traditions"
+        }
+      ]
+    },
+    {
+      "id": "symbol-027",
+      "name": "tafunast",
+      "nameTifinagh": "",
+      "nameEnglish": "Fibula / Sun Disc",
+      "nameFrench": "Fibule / Disque solaire",
+      "alternateNames": [
+        "tizerzay",
+        "tabzimt",
+        "sun brooch"
+      ],
+      "category": "abstract",
+      "tags": [
+        "sun",
+        "feminine",
+        "adornment",
+        "cycle"
+      ],
+      "visual": {
+        "svgPath": "M12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20C16.42 20 20 16.42 20 12C20 7.58 16.42 4 12 4Z M12 8L13 11H16L13.5 13L14.5 16L12 14L9.5 16L10.5 13L8 11H11L12 8Z",
+        "altText": "The circular fibula with internal star represents the sun — source of all life and light. Worn by wo",
+        "size": "24x24",
+        "viewBox": "0 0 24 24",
+        "strokeWidth": 1.5
+      },
+      "meaning": {
+        "primary": "The circular fibula with internal star represents the sun — source of all life and light. Worn by women, it connects the wearer to cosmic feminine power.",
+        "cultural": "The Amazigh fibula (tizerzay) is both functional clasp and powerful symbol. Traditionally made of silver (the 'Amazigh metal'), each regional style encodes specific tribal identity and spiritual protection.",
+        "spiritual": ""
+      },
+      "usage": {
+        "traditional": [
+          "jewelry",
+          "textiles"
+        ],
+        "contemporary": [
+          "cultural revival",
+          "artistic expression"
+        ],
+        "regions": [
+          "Kabylie",
+          "Anti-Atlas",
+          "Souss"
+        ]
+      },
+      "sources": [
+        {
+          "type": "ethnographic",
+          "text": "Documented in Amazigh textile and pottery traditions"
+        }
+      ]
+    },
+    {
+      "id": "symbol-028",
+      "name": "iẓuran",
+      "nameTifinagh": "",
+      "nameEnglish": "Roots / Foundation",
+      "nameFrench": "Racines / Fondation",
+      "alternateNames": [
+        "ancestry motif",
+        "foundation pattern"
+      ],
+      "category": "nature",
+      "tags": [
+        "ancestry",
+        "foundation",
+        "earth",
+        "origin"
+      ],
+      "visual": {
+        "svgPath": "M12 2V10 M12 10L6 16 M12 10L18 16 M6 16L3 22 M6 16L9 22 M18 16L15 22 M18 16L21 22",
+        "altText": "Root patterns represent ancestral connection and cultural foundation. They grow downward into the ea",
+        "size": "24x24",
+        "viewBox": "0 0 24 24",
+        "strokeWidth": 1.5
+      },
+      "meaning": {
+        "primary": "Root patterns represent ancestral connection and cultural foundation. They grow downward into the earth, invisible but essential — like the oral traditions that sustain Amazigh identity.",
+        "cultural": "The concept of iẓuran (roots) is central to Amazigh identity discourse. Cultural activists use 'return to roots' as a framework for language revival and heritage preservation.",
+        "spiritual": ""
+      },
+      "usage": {
+        "traditional": [
+          "textiles",
+          "tattoos",
+          "modern art"
+        ],
+        "contemporary": [
+          "cultural revival",
+          "artistic expression"
+        ],
+        "regions": [
+          "Pan-Amazigh"
+        ]
+      },
+      "sources": [
+        {
+          "type": "ethnographic",
+          "text": "Documented in Amazigh textile and pottery traditions"
+        }
+      ]
+    },
+    {
+      "id": "symbol-029",
+      "name": "amussu",
+      "nameTifinagh": "",
+      "nameEnglish": "Spiral / Movement",
+      "nameFrench": "Spirale / Mouvement",
+      "alternateNames": [
+        "eternal cycle",
+        "time spiral"
+      ],
+      "category": "geometric",
+      "tags": [
+        "movement",
+        "time",
+        "cycle",
+        "infinity"
+      ],
+      "visual": {
+        "svgPath": "M12 12C12 10 14 8 16 8C18 8 20 10 20 12C20 14 18 16 16 16C14 16 12 14 12 16C12 18 14 20 12 20C10 20 8 18 8 16C8 14 10 12 8 12C6 12 4 14 4 12C4 10 6 8 8 8C10 8 12 10 12 12Z",
+        "altText": "The spiral represents eternal movement, the cycle of seasons, and the passage of time. It has no beg",
+        "size": "24x24",
+        "viewBox": "0 0 24 24",
+        "strokeWidth": 1.5
+      },
+      "meaning": {
+        "primary": "The spiral represents eternal movement, the cycle of seasons, and the passage of time. It has no beginning and no end — like the oral tradition that carries knowledge across generations.",
+        "cultural": "Spiral motifs have been found in Saharan rock art dating back 8,000+ years. They represent one of the oldest continuous artistic traditions in human history.",
+        "spiritual": ""
+      },
+      "usage": {
+        "traditional": [
+          "rock art",
+          "pottery",
+          "textiles",
+          "jewelry"
+        ],
+        "contemporary": [
+          "cultural revival",
+          "artistic expression"
+        ],
+        "regions": [
+          "Sahara",
+          "Pan-Amazigh"
+        ]
+      },
+      "sources": [
+        {
+          "type": "ethnographic",
+          "text": "Documented in Amazigh textile and pottery traditions"
+        }
+      ]
+    },
+    {
+      "id": "symbol-030",
+      "name": "asggwas",
+      "nameTifinagh": "",
+      "nameEnglish": "Sun / Year Cycle",
+      "nameFrench": "Soleil / Cycle annuel",
+      "alternateNames": [
+        "Yennayer sun",
+        "tafukt"
+      ],
+      "category": "abstract",
+      "tags": [
+        "sun",
+        "year",
+        "cycle",
+        "Yennayer",
+        "celebration"
+      ],
+      "visual": {
+        "svgPath": "M12 6C8.69 6 6 8.69 6 12C6 15.31 8.69 18 12 18C15.31 18 18 15.31 18 12C18 8.69 15.31 6 12 6Z M12 2V4 M12 20V22 M2 12H4 M20 12H22 M5.64 5.64L7.05 7.05 M16.95 16.95L18.36 18.36 M5.64 18.36L7.05 16.95 M16.95 7.05L18.36 5.64",
+        "altText": "The rayed sun represents the annual cycle, warmth, and the Amazigh agricultural calendar. It marks Y",
+        "size": "24x24",
+        "viewBox": "0 0 24 24",
+        "strokeWidth": 1.5
+      },
+      "meaning": {
+        "primary": "The rayed sun represents the annual cycle, warmth, and the Amazigh agricultural calendar. It marks Yennayer (New Year), the point where the sun begins to strengthen again.",
+        "cultural": "Yennayer (January 13) is now celebrated as an official holiday in Morocco and Algeria. The sun symbol marks this renewal — of the year, the land, and hope for abundance.",
+        "spiritual": ""
+      },
+      "usage": {
+        "traditional": [
+          "pottery",
+          "textiles",
+          "modern flags",
+          "tattoos"
+        ],
+        "contemporary": [
+          "cultural revival",
+          "artistic expression"
+        ],
+        "regions": [
+          "Pan-Amazigh"
+        ]
+      },
+      "sources": [
+        {
+          "type": "ethnographic",
+          "text": "Documented in Amazigh textile and pottery traditions"
+        }
+      ]
+    }
+  ],
+  "families": [
+    {
+      "id": "family-001",
+      "name": "Facial Tattoo System",
+      "nameTifinagh": "ⵜⵉⵛⵏⵉⵡⵉⵏ",
+      "description": "The interconnected system of facial tattoos traditionally worn by Amazigh women, including forehead, chin, cheek, and temple marks. Each combination identified tribal affiliation and marked life transitions.",
+      "symbols": [
+        "symbol-010",
+        "symbol-011"
+      ],
+      "medium": "tattoo",
+      "notes": "This practice has nearly disappeared but represents one of the most distinctive Amazigh visual traditions"
+    },
+    {
+      "id": "family-002",
+      "name": "Protective Symbols",
+      "nameTifinagh": "ⵉⵣⵎⴰⵣ ⵏ ⵜⵉⵎⵓⵖⵍⵉ",
+      "description": "Symbols primarily used for protection against evil eye, harm, and negative forces",
+      "symbols": [
+        "symbol-002",
+        "symbol-003",
+        "symbol-012"
+      ],
+      "notes": "These symbols often appear together, compounding protective power"
+    },
+    {
+      "id": "family-003",
+      "name": "Fundamental Geometric Units",
+      "description": "The basic geometric shapes that combine to form complex Amazigh patterns - the grammar of visual language",
+      "symbols": [
+        "symbol-004",
+        "symbol-008",
+        "symbol-012"
+      ],
+      "medium": "carpet",
+      "notes": "These elements are the building blocks of Amazigh geometric art"
+    },
+    {
+      "id": "tool",
+      "name": "Tools & Craft",
+      "description": "Symbols representing tools, weaving implements, and craft traditions"
+    },
+    {
+      "id": "human",
+      "name": "Human & Social",
+      "description": "Symbols representing human figures, social roles, and life transitions"
+    }
+  ],
+  "metadata": {
+    "totalSymbols": 12,
+    "lastUpdated": "2024-06-01",
+    "curatorNotes": "Initial collection focusing on well-documented symbols with clear regional grounding. Emphasis on three-layer interpretation model. Future additions should maintain same rigor."
+  }
+}

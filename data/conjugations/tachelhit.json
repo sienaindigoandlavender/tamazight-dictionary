@@ -1,0 +1,345 @@
+[
+  {
+    "id": "verb-001",
+    "infinitive": "ddu",
+    "tifinagh": "ⴷⴷⵓ",
+    "meaning": "to go",
+    "meaningFr": "aller",
+    "conjugations": {
+      "imperative": {
+        "singular": "ddu",
+        "plural": "ddut"
+      },
+      "aorist": {
+        "1s": "ddiɣ",
+        "2s": "tddut",
+        "3sm": "idda",
+        "3sf": "tdda",
+        "1p": "ndda",
+        "2pm": "tddaum",
+        "2pf": "tddaumt",
+        "3pm": "ddan",
+        "3pf": "ddant"
+      },
+      "preterite": {
+        "1s": "ddiɣ",
+        "2s": "tddit",
+        "3sm": "idda",
+        "3sf": "tdda",
+        "1p": "ndda",
+        "2pm": "tddaum",
+        "2pf": "tddaumt",
+        "3pm": "ddan",
+        "3pf": "ddant"
+      },
+      "intensive": {
+        "1s": "ttdduɣ",
+        "2s": "ttddut",
+        "3sm": "ittddu",
+        "3sf": "ttddu",
+        "1p": "nttddu",
+        "2pm": "tttddum",
+        "2pf": "tttddumt",
+        "3pm": "ttddun",
+        "3pf": "ttddunt"
+      }
+    },
+    "region": "tachelhit"
+  },
+  {
+    "id": "verb-002",
+    "infinitive": "ls",
+    "tifinagh": "ⵍⵙ",
+    "meaning": "to wear, to put on",
+    "meaningFr": "porter, mettre (vêtement)",
+    "conjugations": {
+      "imperative": {
+        "singular": "ls",
+        "plural": "lsat"
+      },
+      "aorist": {
+        "1s": "lsiɣ",
+        "2s": "tlsit",
+        "3sm": "ilsa",
+        "3sf": "tlsa",
+        "1p": "nlsa",
+        "2pm": "tlsaum",
+        "2pf": "tlsaumt",
+        "3pm": "lsan",
+        "3pf": "lsant"
+      },
+      "preterite": {
+        "1s": "lsiɣ",
+        "2s": "tlsit",
+        "3sm": "ilsa",
+        "3sf": "tlsa",
+        "1p": "nlsa",
+        "2pm": "tlsaum",
+        "2pf": "tlsaumt",
+        "3pm": "lsan",
+        "3pf": "lsant"
+      }
+    },
+    "region": "tachelhit"
+  },
+  {
+    "id": "verb-003",
+    "infinitive": "ẓr",
+    "tifinagh": "ⵥⵔ",
+    "meaning": "to see",
+    "meaningFr": "voir",
+    "conjugations": {
+      "imperative": {
+        "singular": "ẓr",
+        "plural": "ẓrat"
+      },
+      "aorist": {
+        "1s": "ẓriɣ",
+        "2s": "tẓrit",
+        "3sm": "iẓra",
+        "3sf": "tẓra",
+        "1p": "nẓra",
+        "2pm": "tẓraum",
+        "2pf": "tẓraumt",
+        "3pm": "ẓran",
+        "3pf": "ẓrant"
+      },
+      "preterite": {
+        "1s": "ẓriɣ",
+        "2s": "tẓrit",
+        "3sm": "iẓra",
+        "3sf": "tẓra",
+        "1p": "nẓra",
+        "2pm": "tẓraum",
+        "2pf": "tẓraumt",
+        "3pm": "ẓran",
+        "3pf": "ẓrant"
+      },
+      "intensive": {
+        "1s": "ttẓraɣ",
+        "2s": "ttẓrat",
+        "3sm": "ittẓra",
+        "3sf": "ttẓra",
+        "1p": "nttẓra",
+        "2pm": "ttẓram",
+        "2pf": "ttẓramt",
+        "3pm": "ttẓran",
+        "3pf": "ttẓrant"
+      }
+    },
+    "region": "tachelhit"
+  },
+  {
+    "id": "verb-004",
+    "infinitive": "sker",
+    "tifinagh": "ⵙⴽⵔ",
+    "meaning": "to do, to make",
+    "meaningFr": "faire",
+    "conjugations": {
+      "imperative": {
+        "singular": "sker",
+        "plural": "skrat"
+      },
+      "aorist": {
+        "1s": "skrɣ",
+        "2s": "tskrt",
+        "3sm": "iskr",
+        "3sf": "tskr",
+        "1p": "nskr",
+        "2pm": "tskrm",
+        "2pf": "tskrmt",
+        "3pm": "skrn",
+        "3pf": "skrnt"
+      },
+      "preterite": {
+        "1s": "skrɣ",
+        "2s": "tskrt",
+        "3sm": "iskr",
+        "3sf": "tskr",
+        "1p": "nskr",
+        "2pm": "tskrm",
+        "2pf": "tskrmt",
+        "3pm": "skrn",
+        "3pf": "skrnt"
+      },
+      "intensive": {
+        "1s": "skarɣ",
+        "2s": "tskart",
+        "3sm": "iskar",
+        "3sf": "tskar",
+        "1p": "nskar",
+        "2pm": "tskarm",
+        "2pf": "tskarmt",
+        "3pm": "skarn",
+        "3pf": "skarnt"
+      }
+    },
+    "region": "tachelhit"
+  },
+  {
+    "id": "verb-005",
+    "infinitive": "ini",
+    "tifinagh": "ⵉⵏⵉ",
+    "meaning": "to say, to tell",
+    "meaningFr": "dire",
+    "conjugations": {
+      "imperative": {
+        "singular": "ini",
+        "plural": "iniyt"
+      },
+      "aorist": {
+        "1s": "nniɣ",
+        "2s": "tnnit",
+        "3sm": "inna",
+        "3sf": "tnna",
+        "1p": "nna",
+        "2pm": "tnnaum",
+        "2pf": "tnnaumt",
+        "3pm": "nnan",
+        "3pf": "nnant"
+      },
+      "preterite": {
+        "1s": "nniɣ",
+        "2s": "tnnit",
+        "3sm": "inna",
+        "3sf": "tnna",
+        "1p": "nna",
+        "2pm": "tnnaum",
+        "2pf": "tnnaumt",
+        "3pm": "nnan",
+        "3pf": "nnant"
+      },
+      "intensive": {
+        "1s": "ttiniɣ",
+        "2s": "ttinit",
+        "3sm": "ittini",
+        "3sf": "ttini",
+        "1p": "nttini",
+        "2pm": "ttinim",
+        "2pf": "ttinimt",
+        "3pm": "ttinin",
+        "3pf": "ttinint"
+      }
+    },
+    "region": "tachelhit"
+  },
+  {
+    "id": "verb-006",
+    "infinitive": "awi",
+    "tifinagh": "ⴰⵡⵉ",
+    "meaning": "to take, to bring",
+    "meaningFr": "prendre, apporter",
+    "conjugations": {
+      "imperative": {
+        "singular": "awi",
+        "plural": "awiyt"
+      },
+      "aorist": {
+        "1s": "ufiɣ",
+        "2s": "tufit",
+        "3sm": "yufa",
+        "3sf": "tufa",
+        "1p": "nufa",
+        "2pm": "tufaum",
+        "2pf": "tufaumt",
+        "3pm": "ufan",
+        "3pf": "ufant"
+      },
+      "preterite": {
+        "1s": "uwiɣ",
+        "2s": "tuwit",
+        "3sm": "iwa",
+        "3sf": "tuwa",
+        "1p": "nuwa",
+        "2pm": "tuwaum",
+        "2pf": "tuwaumt",
+        "3pm": "uwin",
+        "3pf": "uwint"
+      }
+    },
+    "region": "tachelhit"
+  },
+  {
+    "id": "verb-007",
+    "infinitive": "fk",
+    "tifinagh": "ⴼⴽ",
+    "meaning": "to give",
+    "meaningFr": "donner",
+    "conjugations": {
+      "imperative": {
+        "singular": "fk",
+        "plural": "fkat"
+      },
+      "aorist": {
+        "1s": "fkiɣ",
+        "2s": "tfkit",
+        "3sm": "ifka",
+        "3sf": "tfka",
+        "1p": "nfka",
+        "2pm": "tfkaum",
+        "2pf": "tfkaumt",
+        "3pm": "fkan",
+        "3pf": "fkant"
+      },
+      "preterite": {
+        "1s": "fkiɣ",
+        "2s": "tfkit",
+        "3sm": "ifka",
+        "3sf": "tfka",
+        "1p": "nfka",
+        "2pm": "tfkaum",
+        "2pf": "tfkaumt",
+        "3pm": "fkan",
+        "3pf": "fkant"
+      },
+      "intensive": {
+        "1s": "ttakkaɣ",
+        "2s": "ttakkat",
+        "3sm": "ittakka",
+        "3sf": "ttakka",
+        "1p": "nttakka",
+        "2pm": "ttakkam",
+        "2pf": "ttakkamt",
+        "3pm": "ttakkan",
+        "3pf": "ttakkant"
+      }
+    },
+    "region": "tachelhit"
+  },
+  {
+    "id": "verb-008",
+    "infinitive": "ɣr",
+    "tifinagh": "ⵖⵔ",
+    "meaning": "to read, to call",
+    "meaningFr": "lire, appeler",
+    "conjugations": {
+      "imperative": {
+        "singular": "ɣr",
+        "plural": "ɣrat"
+      },
+      "aorist": {
+        "1s": "ɣriɣ",
+        "2s": "tɣrit",
+        "3sm": "iɣra",
+        "3sf": "tɣra",
+        "1p": "nɣra",
+        "2pm": "tɣraum",
+        "2pf": "tɣraumt",
+        "3pm": "ɣran",
+        "3pf": "ɣrant"
+      },
+      "preterite": {
+        "1s": "ɣriɣ",
+        "2s": "tɣrit",
+        "3sm": "iɣra",
+        "3sf": "tɣra",
+        "1p": "nɣra",
+        "2pm": "tɣraum",
+        "2pf": "tɣraumt",
+        "3pm": "ɣran",
+        "3pf": "ɣrant"
+      }
+    },
+    "region": "tachelhit"
+  }
+]

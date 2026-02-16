@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Noto+Sans+Tifinagh&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #faf9f7;
+  --foreground: #1a1a1a;
+  --muted: #737373;
+}
+
+/* Class-based dark mode */
+:root.dark {
+  --background: #0f0f0f;
+  --foreground: #f5f5f5;
+  --muted: #a3a3a3;
+}
+
+/* System preference dark mode (fallback when no class is set) */
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    --background: #0f0f0f;
+    --foreground: #f5f5f5;
+    --muted: #a3a3a3;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.tifinagh {
+  font-family: 'Noto Sans Tifinagh', sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-foreground text-background px-8 py-3 uppercase tracking-widest text-sm font-normal transition-opacity;
+  }
+
+  .btn-primary:hover {
+    opacity: 0.9;
+  }
+
+  .btn-secondary {
+    @apply border border-foreground px-8 py-3 uppercase tracking-widest text-sm font-normal transition-colors;
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--foreground);
+    color: var(--background);
+  }
+
+  .card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+
+  :root.dark .card,
+  @media (prefers-color-scheme: dark) {
+    .card {
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  .input-search {
+    @apply w-full px-6 py-4 bg-transparent outline-none transition-all text-lg;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .input-search:focus {
+    border-color: var(--foreground);
+  }
+
+  .nav-link {
+    @apply uppercase tracking-widest text-xs transition-opacity;
+  }
+
+  .nav-link:hover {
+    opacity: 0.6;
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    @apply text-4xl md:text-5xl lg:text-6xl font-normal tracking-wide;
+  }
+
+  .section-subtitle {
+    @apply uppercase tracking-widest text-xs;
+    color: var(--muted);
+  }
+}

@@ -1,0 +1,1724 @@
+{
+  "phrases": [
+    {
+      "id": "phrase-001",
+      "phrase": "azul",
+      "tifinagh": "ⴰⵣⵓⵍ",
+      "pronunciation": "/azul/",
+      "translations": {
+        "en": "Hello",
+        "fr": "Bonjour"
+      },
+      "category": "greeting",
+      "formality": "neutral",
+      "context": "Universal greeting, used at any time of day",
+      "response": "phrase-001",
+      "region": "tachelhit",
+      "culturalNote": "A pan-Amazigh greeting that has become widespread through cultural revival movements"
+    },
+    {
+      "id": "phrase-002",
+      "phrase": "azul fellawen",
+      "tifinagh": "ⴰⵣⵓⵍ ⴼⵍⵍⴰⵡⵏ",
+      "pronunciation": "/azul fəllaːwən/",
+      "translations": {
+        "en": "Hello to you (plural/respectful)",
+        "fr": "Bonjour à vous"
+      },
+      "literalTranslation": "Peace upon you",
+      "category": "greeting",
+      "formality": "formal",
+      "context": "More formal greeting, showing respect",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-003",
+      "phrase": "la bas?",
+      "tifinagh": "ⵍⴰ ⴱⴰⵙ?",
+      "pronunciation": "/la baːs/",
+      "translations": {
+        "en": "How are you? / Is everything okay?",
+        "fr": "Ça va? / Tout va bien?"
+      },
+      "category": "greeting",
+      "formality": "informal",
+      "context": "Common casual greeting, borrowed from Arabic",
+      "response": "phrase-004",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-004",
+      "phrase": "la bas, lhamdullah",
+      "tifinagh": "ⵍⴰ ⴱⴰⵙ, ⵍⵃⵎⴷⵓⵍⵍⴰⵀ",
+      "pronunciation": "/la baːs, lħamdullaːh/",
+      "translations": {
+        "en": "I'm fine, thank God",
+        "fr": "Ça va, Dieu merci"
+      },
+      "category": "greeting",
+      "formality": "informal",
+      "context": "Standard response to 'la bas?'",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-005",
+      "phrase": "manzakin?",
+      "tifinagh": "ⵎⴰⵏⵣⴰⴽⵉⵏ?",
+      "pronunciation": "/manzakin/",
+      "translations": {
+        "en": "How are you? (masculine)",
+        "fr": "Comment vas-tu? (masculin)"
+      },
+      "category": "greeting",
+      "formality": "informal",
+      "context": "Addressing a male",
+      "region": "tachelhit",
+      "variants": [
+        {
+          "region": "tachelhit",
+          "phrase": "manzakm?",
+          "tifinagh": "ⵎⴰⵏⵣⴰⴽⵎ?",
+          "notes": "Addressing a female"
+        }
+      ]
+    },
+    {
+      "id": "phrase-006",
+      "phrase": "bikhir, tanmirt",
+      "tifinagh": "ⴱⵉⵅⵉⵔ, ⵜⴰⵏⵎⵉⵔⵜ",
+      "pronunciation": "/biχiːr, tanmirt/",
+      "translations": {
+        "en": "I'm well, thank you",
+        "fr": "Je vais bien, merci"
+      },
+      "category": "greeting",
+      "formality": "neutral",
+      "context": "Response to how are you",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-007",
+      "phrase": "tanmirt",
+      "tifinagh": "ⵜⴰⵏⵎⵉⵔⵜ",
+      "pronunciation": "/tanmirt/",
+      "translations": {
+        "en": "Thank you",
+        "fr": "Merci"
+      },
+      "category": "courtesy",
+      "formality": "neutral",
+      "context": "Universal expression of gratitude",
+      "region": "tachelhit",
+      "culturalNote": "Pure Tamazight word for thanks, preferred in formal/cultural contexts"
+    },
+    {
+      "id": "phrase-008",
+      "phrase": "tanmirt igan",
+      "tifinagh": "ⵜⴰⵏⵎⵉⵔⵜ ⵉⴳⴰⵏ",
+      "pronunciation": "/tanmirt iɡan/",
+      "translations": {
+        "en": "Thank you very much",
+        "fr": "Merci beaucoup"
+      },
+      "literalTranslation": "Big thanks",
+      "category": "courtesy",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-009",
+      "phrase": "uhu",
+      "tifinagh": "ⵓⵀⵓ",
+      "pronunciation": "/uhu/",
+      "translations": {
+        "en": "No",
+        "fr": "Non"
+      },
+      "category": "expression",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-010",
+      "phrase": "yyih / waxxa",
+      "tifinagh": "ⵢⵢⵉⵀ / ⵡⴰⵅⵅⴰ",
+      "pronunciation": "/jjiːh/ or /waχχa/",
+      "translations": {
+        "en": "Yes",
+        "fr": "Oui"
+      },
+      "category": "expression",
+      "formality": "neutral",
+      "context": "yyih is pure Tamazight, waxxa is borrowed from Arabic",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-011",
+      "phrase": "samhiyi",
+      "tifinagh": "ⵙⴰⵎⵃⵉⵢⵉ",
+      "pronunciation": "/samħiji/",
+      "translations": {
+        "en": "Excuse me / I'm sorry",
+        "fr": "Excusez-moi / Pardon"
+      },
+      "category": "courtesy",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-012",
+      "phrase": "ar timlilit",
+      "tifinagh": "ⴰⵔ ⵜⵉⵎⵍⵉⵍⵉⵜ",
+      "pronunciation": "/ar timliliːt/",
+      "translations": {
+        "en": "Goodbye / See you later",
+        "fr": "Au revoir / À bientôt"
+      },
+      "literalTranslation": "Until meeting",
+      "category": "farewell",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-013",
+      "phrase": "akiyi trit?",
+      "tifinagh": "ⴰⴽⵉⵢⵉ ⵜⵔⵉⵜ?",
+      "pronunciation": "/akiji triːt/",
+      "translations": {
+        "en": "What would you like?",
+        "fr": "Que voulez-vous?"
+      },
+      "category": "shopping",
+      "formality": "neutral",
+      "context": "Used by shopkeepers",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-014",
+      "phrase": "mshta aya?",
+      "tifinagh": "ⵎⵛⵜⴰ ⴰⵢⴰ?",
+      "pronunciation": "/mʃta aja/",
+      "translations": {
+        "en": "How much is this?",
+        "fr": "Combien coûte ceci?"
+      },
+      "category": "shopping",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-015",
+      "phrase": "ghla bzaf",
+      "tifinagh": "ⵖⵍⴰ ⴱⵣⴰⴼ",
+      "pronunciation": "/ɣla bzaːf/",
+      "translations": {
+        "en": "It's too expensive",
+        "fr": "C'est trop cher"
+      },
+      "category": "shopping",
+      "formality": "informal",
+      "context": "Bargaining",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-016",
+      "phrase": "rikh ad sghgh",
+      "tifinagh": "ⵔⵉⵅ ⴰⴷ ⵙⵖⵖ",
+      "pronunciation": "/riːχ ad sɣɣ/",
+      "translations": {
+        "en": "I want to buy",
+        "fr": "Je veux acheter"
+      },
+      "category": "shopping",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-017",
+      "phrase": "mani tlla...?",
+      "tifinagh": "ⵎⴰⵏⵉ ⵜⵍⵍⴰ...?",
+      "pronunciation": "/mani tlla/",
+      "translations": {
+        "en": "Where is...?",
+        "fr": "Où est...?"
+      },
+      "category": "direction",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-018",
+      "phrase": "mani ghlla lmasjid?",
+      "tifinagh": "ⵎⴰⵏⵉ ⵖⵍⵍⴰ ⵍⵎⴰⵙⵊⵉⴷ?",
+      "pronunciation": "/mani ɣlla lmasʒid/",
+      "translations": {
+        "en": "Where is the mosque?",
+        "fr": "Où est la mosquée?"
+      },
+      "category": "direction",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-019",
+      "phrase": "ddu s ufasi",
+      "tifinagh": "ⴷⴷⵓ ⵙ ⵓⴼⴰⵙⵉ",
+      "pronunciation": "/ddu s ufasi/",
+      "translations": {
+        "en": "Go right",
+        "fr": "Allez à droite"
+      },
+      "category": "direction",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-020",
+      "phrase": "ddu s uẓlmaḍ",
+      "tifinagh": "ⴷⴷⵓ ⵙ ⵓⵥⵍⵎⴰⴹ",
+      "pronunciation": "/ddu s uzˤlmadˤ/",
+      "translations": {
+        "en": "Go left",
+        "fr": "Allez à gauche"
+      },
+      "category": "direction",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-021",
+      "phrase": "is illa kra...?",
+      "tifinagh": "ⵉⵙ ⵉⵍⵍⴰ ⴽⵔⴰ...?",
+      "pronunciation": "/is illa kra/",
+      "translations": {
+        "en": "Is there any...?",
+        "fr": "Y a-t-il...?"
+      },
+      "category": "question",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-022",
+      "phrase": "rikh aman",
+      "tifinagh": "ⵔⵉⵅ ⴰⵎⴰⵏ",
+      "pronunciation": "/riːχ aman/",
+      "translations": {
+        "en": "I want water",
+        "fr": "Je veux de l'eau"
+      },
+      "category": "food",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-023",
+      "phrase": "fad iyi",
+      "tifinagh": "ⴼⴰⴷ ⵉⵢⵉ",
+      "pronunciation": "/fad iji/",
+      "translations": {
+        "en": "I'm thirsty",
+        "fr": "J'ai soif"
+      },
+      "literalTranslation": "Thirst is in me",
+      "category": "food",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-024",
+      "phrase": "laẓ iyi",
+      "tifinagh": "ⵍⴰⵥ ⵉⵢⵉ",
+      "pronunciation": "/lazˤ iji/",
+      "translations": {
+        "en": "I'm hungry",
+        "fr": "J'ai faim"
+      },
+      "literalTranslation": "Hunger is in me",
+      "category": "food",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-025",
+      "phrase": "is yshwa?",
+      "tifinagh": "ⵉⵙ ⵢⵛⵡⴰ?",
+      "pronunciation": "/is jʃwa/",
+      "translations": {
+        "en": "Is it delicious?",
+        "fr": "C'est bon?"
+      },
+      "category": "food",
+      "formality": "informal",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-026",
+      "phrase": "yshwa bzaf",
+      "tifinagh": "ⵢⵛⵡⴰ ⴱⵣⴰⴼ",
+      "pronunciation": "/jʃwa bzaːf/",
+      "translations": {
+        "en": "It's very delicious",
+        "fr": "C'est très bon"
+      },
+      "category": "food",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-027",
+      "phrase": "matta ismnk?",
+      "tifinagh": "ⵎⴰⵜⵜⴰ ⵉⵙⵎⵏⴽ?",
+      "pronunciation": "/matta ismnk/",
+      "translations": {
+        "en": "What is your name? (masculine)",
+        "fr": "Comment t'appelles-tu? (masculin)"
+      },
+      "category": "introduction",
+      "formality": "neutral",
+      "region": "tachelhit",
+      "variants": [
+        {
+          "region": "tachelhit",
+          "phrase": "matta ismnm?",
+          "tifinagh": "ⵎⴰⵜⵜⴰ ⵉⵙⵎⵏⵎ?",
+          "notes": "Addressing a female"
+        }
+      ]
+    },
+    {
+      "id": "phrase-028",
+      "phrase": "isminu...",
+      "tifinagh": "ⵉⵙⵎⵉⵏⵓ...",
+      "pronunciation": "/isminu/",
+      "translations": {
+        "en": "My name is...",
+        "fr": "Je m'appelle..."
+      },
+      "category": "introduction",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-029",
+      "phrase": "manza tslit?",
+      "tifinagh": "ⵎⴰⵏⵣⴰ ⵜⵙⵍⵉⵜ?",
+      "pronunciation": "/manza tslit/",
+      "translations": {
+        "en": "Where are you from? (masculine)",
+        "fr": "D'où viens-tu? (masculin)"
+      },
+      "category": "introduction",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-030",
+      "phrase": "galgh zg...",
+      "tifinagh": "ⴳⴰⵍⵖ ⵣⴳ...",
+      "pronunciation": "/ɡalɣ zɡ/",
+      "translations": {
+        "en": "I am from...",
+        "fr": "Je viens de..."
+      },
+      "category": "introduction",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-031",
+      "phrase": "mshta n wussan?",
+      "tifinagh": "ⵎⵛⵜⴰ ⵏ ⵡⵓⵙⵙⴰⵏ?",
+      "pronunciation": "/mʃta n wussan/",
+      "translations": {
+        "en": "How many days?",
+        "fr": "Combien de jours?"
+      },
+      "category": "time",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-032",
+      "phrase": "matta tasragt?",
+      "tifinagh": "ⵎⴰⵜⵜⴰ ⵜⴰⵙⵔⴰⴳⵜ?",
+      "pronunciation": "/matta tasraɡt/",
+      "translations": {
+        "en": "What time is it?",
+        "fr": "Quelle heure est-il?"
+      },
+      "category": "time",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-033",
+      "phrase": "ass-a",
+      "tifinagh": "ⴰⵙⵙ-ⴰ",
+      "pronunciation": "/ass-a/",
+      "translations": {
+        "en": "Today",
+        "fr": "Aujourd'hui"
+      },
+      "category": "time",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-034",
+      "phrase": "iḍlli",
+      "tifinagh": "ⵉⴹⵍⵍⵉ",
+      "pronunciation": "/idˤlli/",
+      "translations": {
+        "en": "Yesterday",
+        "fr": "Hier"
+      },
+      "category": "time",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-035",
+      "phrase": "azekka",
+      "tifinagh": "ⴰⵣⴻⴽⴽⴰ",
+      "pronunciation": "/azəkka/",
+      "translations": {
+        "en": "Tomorrow",
+        "fr": "Demain"
+      },
+      "category": "time",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-036",
+      "phrase": "tlla tfukt",
+      "tifinagh": "ⵜⵍⵍⴰ ⵜⴼⵓⴽⵜ",
+      "pronunciation": "/tlla tfukt/",
+      "translations": {
+        "en": "It's sunny",
+        "fr": "Il fait soleil"
+      },
+      "literalTranslation": "The sun is there",
+      "category": "weather",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-037",
+      "phrase": "illa unẓar",
+      "tifinagh": "ⵉⵍⵍⴰ ⵓⵏⵥⴰⵔ",
+      "pronunciation": "/illa unzˤar/",
+      "translations": {
+        "en": "It's raining",
+        "fr": "Il pleut"
+      },
+      "literalTranslation": "Rain is there",
+      "category": "weather",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-038",
+      "phrase": "lla tfuyt ihardan",
+      "tifinagh": "ⵍⵍⴰ ⵜⴼⵓⵢⵜ ⵉⵀⴰⵔⴷⴰⵏ",
+      "pronunciation": "/lla tfujt ihardan/",
+      "translations": {
+        "en": "It's hot",
+        "fr": "Il fait chaud"
+      },
+      "category": "weather",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-039",
+      "phrase": "ismmid",
+      "tifinagh": "ⵉⵙⵎⵎⵉⴷ",
+      "pronunciation": "/ismmid/",
+      "translations": {
+        "en": "It's cold",
+        "fr": "Il fait froid"
+      },
+      "category": "weather",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-040",
+      "phrase": "awit-iyi s...",
+      "tifinagh": "ⴰⵡⵉⵜ-ⵉⵢⵉ ⵙ...",
+      "pronunciation": "/awit-iji s/",
+      "translations": {
+        "en": "Take me to...",
+        "fr": "Emmenez-moi à..."
+      },
+      "category": "travel",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-041",
+      "phrase": "is yggug?",
+      "tifinagh": "ⵉⵙ ⵢⴳⴳⵓⴳ?",
+      "pronunciation": "/is jɡɡuɡ/",
+      "translations": {
+        "en": "Is it far?",
+        "fr": "C'est loin?"
+      },
+      "category": "travel",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-042",
+      "phrase": "yus-d",
+      "tifinagh": "ⵢⵓⵙ-ⴷ",
+      "pronunciation": "/jus-d/",
+      "translations": {
+        "en": "It's close / It has arrived",
+        "fr": "C'est proche / C'est arrivé"
+      },
+      "category": "travel",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-043",
+      "phrase": "awnit-iyi",
+      "tifinagh": "ⴰⵡⵏⵉⵜ-ⵉⵢⵉ",
+      "pronunciation": "/awnit-iji/",
+      "translations": {
+        "en": "Help me",
+        "fr": "Aidez-moi"
+      },
+      "category": "emergency",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-044",
+      "phrase": "righ aḍbib",
+      "tifinagh": "ⵔⵉⵖ ⴰⴹⴱⵉⴱ",
+      "pronunciation": "/riɣ adˤbib/",
+      "translations": {
+        "en": "I need a doctor",
+        "fr": "J'ai besoin d'un médecin"
+      },
+      "category": "emergency",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-045",
+      "phrase": "yan, sin, kraḍ, kkuẓ, smmus",
+      "tifinagh": "ⵢⴰⵏ, ⵙⵉⵏ, ⴽⵔⴰⴹ, ⴽⴽⵓⵥ, ⵙⵎⵎⵓⵙ",
+      "pronunciation": "/jan, sin, kradˤ, kkuzˤ, smmus/",
+      "translations": {
+        "en": "One, two, three, four, five",
+        "fr": "Un, deux, trois, quatre, cinq"
+      },
+      "category": "numbers",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-046",
+      "phrase": "sḍis, sa, ttam, tẓa, mraw",
+      "tifinagh": "ⵙⴹⵉⵙ, ⵙⴰ, ⵜⵜⴰⵎ, ⵜⵥⴰ, ⵎⵔⴰⵡ",
+      "pronunciation": "/sdˤis, sa, ttam, tzˤa, mraw/",
+      "translations": {
+        "en": "Six, seven, eight, nine, ten",
+        "fr": "Six, sept, huit, neuf, dix"
+      },
+      "category": "numbers",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-047",
+      "phrase": "win iran ad issen, ad issuter",
+      "tifinagh": "ⵡⵉⵏ ⵉⵔⴰⵏ ⴰⴷ ⵉⵙⵙⵏ, ⴰⴷ ⵉⵙⵙⵓⵜⵔ",
+      "pronunciation": "/win iran ad issn, ad issutər/",
+      "translations": {
+        "en": "He who wants to know must ask",
+        "fr": "Celui qui veut savoir doit demander"
+      },
+      "category": "proverb",
+      "formality": "neutral",
+      "context": "Traditional proverb about the value of asking questions",
+      "region": "tachelhit",
+      "culturalNote": "Used to encourage curiosity and learning"
+    },
+    {
+      "id": "phrase-048",
+      "phrase": "agdud ur iẓri akal-ns ur issin mani ra iḍu",
+      "tifinagh": "ⴰⴳⴷⵓⴷ ⵓⵔ ⵉⵥⵔⵉ ⴰⴽⴰⵍ-ⵏⵙ ⵓⵔ ⵉⵙⵙⵉⵏ ⵎⴰⵏⵉ ⵔⴰ ⵉⴹⵓ",
+      "pronunciation": "/aɡdud ur izˤri akal-ns ur issin mani ra idˤu/",
+      "translations": {
+        "en": "A people who doesn't know its land doesn't know where it's going",
+        "fr": "Un peuple qui ne connaît pas sa terre ne sait pas où il va"
+      },
+      "category": "proverb",
+      "formality": "neutral",
+      "context": "About the importance of knowing one's heritage",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-049",
+      "phrase": "rebbi ak iɛawn",
+      "tifinagh": "ⵔⴻⴱⴱⵉ ⴰⴽ ⵉⵄⴰⵡⵏ",
+      "pronunciation": "/rəbbi ak iʕawn/",
+      "translations": {
+        "en": "May God help you",
+        "fr": "Que Dieu t'aide"
+      },
+      "category": "blessing",
+      "formality": "neutral",
+      "context": "Common blessing, often said when someone embarks on work or journey",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-050",
+      "phrase": "mabrouk",
+      "tifinagh": "ⵎⴰⴱⵔⵓⴽ",
+      "pronunciation": "/mabruk/",
+      "translations": {
+        "en": "Congratulations / Blessings",
+        "fr": "Félicitations"
+      },
+      "category": "blessing",
+      "formality": "neutral",
+      "context": "Used for celebrations, weddings, births, achievements",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-051",
+      "phrase": "sawlgh s tmazight",
+      "tifinagh": "ⵙⴰⵡⵍⵖ ⵙ ⵜⵎⴰⵣⵉⵖⵜ",
+      "pronunciation": "/sawlɣ s tmaziɣt/",
+      "translations": {
+        "en": "I speak Tamazight",
+        "fr": "Je parle le tamazight"
+      },
+      "category": "introduction",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-052",
+      "phrase": "ur fhmgh",
+      "tifinagh": "ⵓⵔ ⴼⵀⵎⵖ",
+      "pronunciation": "/ur fhəmɣ/",
+      "translations": {
+        "en": "I don't understand",
+        "fr": "Je ne comprends pas"
+      },
+      "category": "expression",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-053",
+      "phrase": "als-as afella",
+      "tifinagh": "ⴰⵍⵙ-ⴰⵙ ⴰⴼⵍⵍⴰ",
+      "pronunciation": "/als-as afəlla/",
+      "translations": {
+        "en": "Please repeat",
+        "fr": "Répétez s'il vous plaît"
+      },
+      "category": "expression",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-054",
+      "phrase": "matta iga waya s tmazight?",
+      "tifinagh": "ⵎⴰⵜⵜⴰ ⵉⴳⴰ ⵡⴰⵢⴰ ⵙ ⵜⵎⴰⵣⵉⵖⵜ?",
+      "pronunciation": "/matta iɡa waja s tmaziɣt/",
+      "translations": {
+        "en": "What is this in Tamazight?",
+        "fr": "Qu'est-ce que c'est en tamazight?"
+      },
+      "category": "question",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-055",
+      "phrase": "mamnk as ttinin... s tmazight?",
+      "tifinagh": "ⵎⴰⵎⵏⴽ ⴰⵙ ⵜⵜⵉⵏⵉⵏ... ⵙ ⵜⵎⴰⵣⵉⵖⵜ?",
+      "pronunciation": "/mamnk as ttinin... s tmaziɣt/",
+      "translations": {
+        "en": "How do you say... in Tamazight?",
+        "fr": "Comment dit-on... en tamazight?"
+      },
+      "category": "question",
+      "formality": "neutral",
+      "context": "Useful template phrase for learning new vocabulary",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-056",
+      "phrase": "azul fellawen",
+      "tifinagh": "ⴰⵣⵓⵍ ⴼⴻⵍⵍⴰⵡⴻⵏ",
+      "pronunciation": "/azul fellawen/",
+      "translations": {
+        "en": "Hello to you all (m)",
+        "fr": "Bonjour à vous tous"
+      },
+      "category": "greeting",
+      "formality": "neutral",
+      "region": "tachelhit",
+      "literalTranslation": "Peace upon you all"
+    },
+    {
+      "id": "phrase-057",
+      "phrase": "azul fellawnt",
+      "tifinagh": "ⴰⵣⵓⵍ ⴼⴻⵍⵍⴰⵡⵏⵜ",
+      "pronunciation": "/azul fellawnt/",
+      "translations": {
+        "en": "Hello to you all (f)",
+        "fr": "Bonjour à vous toutes"
+      },
+      "category": "greeting",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-058",
+      "phrase": "manzakin",
+      "tifinagh": "ⵎⴰⵏⵣⴰⴽⵉⵏ",
+      "pronunciation": "/manzakin/",
+      "translations": {
+        "en": "How are you? (m)",
+        "fr": "Comment vas-tu ?"
+      },
+      "category": "greeting",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-059",
+      "phrase": "manzaknt",
+      "tifinagh": "ⵎⴰⵏⵣⴰⴽⵏⵜ",
+      "pronunciation": "/manzaknt/",
+      "translations": {
+        "en": "How are you? (f)",
+        "fr": "Comment vas-tu ?"
+      },
+      "category": "greeting",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-060",
+      "phrase": "labas darik",
+      "tifinagh": "ⵍⴰⴱⴰⵙ ⴷⴰⵔⵉⴽ",
+      "pronunciation": "/labas darik/",
+      "translations": {
+        "en": "Are you well?",
+        "fr": "Tu vas bien ?"
+      },
+      "category": "greeting",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-061",
+      "phrase": "labas lhamdullah",
+      "tifinagh": "ⵍⴰⴱⴰⵙ ⵍⵀⴰⵎⴷⵓⵍⵍⴰⵀ",
+      "pronunciation": "/labas lhamdullah/",
+      "translations": {
+        "en": "Fine, thanks be to God",
+        "fr": "Bien, grâce à Dieu"
+      },
+      "category": "greeting",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-062",
+      "phrase": "azul a gma",
+      "tifinagh": "ⴰⵣⵓⵍ ⴰ ⴳⵎⴰ",
+      "pronunciation": "/azul a gma/",
+      "translations": {
+        "en": "Hello, brother",
+        "fr": "Bonjour, frère"
+      },
+      "category": "greeting",
+      "formality": "informal",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-063",
+      "phrase": "azul a ultma",
+      "tifinagh": "ⴰⵣⵓⵍ ⴰ ⵓⵍⵜⵎⴰ",
+      "pronunciation": "/azul a ultma/",
+      "translations": {
+        "en": "Hello, sister",
+        "fr": "Bonjour, sœur"
+      },
+      "category": "greeting",
+      "formality": "informal",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-064",
+      "phrase": "ar tufat",
+      "tifinagh": "ⴰⵔ ⵜⵓⴼⴰⵜ",
+      "pronunciation": "/ar tufat/",
+      "translations": {
+        "en": "See you tomorrow",
+        "fr": "À demain"
+      },
+      "category": "farewell",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-065",
+      "phrase": "ar timlilit",
+      "tifinagh": "ⴰⵔ ⵜⵉⵎⵍⵉⵍⵉⵜ",
+      "pronunciation": "/ar timlilit/",
+      "translations": {
+        "en": "Until we meet again",
+        "fr": "Jusqu'à ce qu'on se revoie"
+      },
+      "category": "farewell",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-066",
+      "phrase": "akka ad as tgid",
+      "tifinagh": "ⴰⴽⴽⴰ ⴰⴷ ⴰⵙ ⵜⴳⵉⴷ",
+      "pronunciation": "/akka ad as tgid/",
+      "translations": {
+        "en": "Take care",
+        "fr": "Prends soin de toi"
+      },
+      "category": "farewell",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-067",
+      "phrase": "tanmirt",
+      "tifinagh": "ⵜⴰⵏⵎⵉⵔⵜ",
+      "pronunciation": "/tanmirt/",
+      "translations": {
+        "en": "Thank you",
+        "fr": "Merci"
+      },
+      "category": "courtesy",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-068",
+      "phrase": "tanmirt yatuyn",
+      "tifinagh": "ⵜⴰⵏⵎⵉⵔⵜ ⵢⴰⵜⵓⵢⵏ",
+      "pronunciation": "/tanmirt yatuyn/",
+      "translations": {
+        "en": "Thank you very much",
+        "fr": "Merci beaucoup"
+      },
+      "category": "courtesy",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-069",
+      "phrase": "ur illi walu",
+      "tifinagh": "ⵓⵔ ⵉⵍⵍⵉ ⵡⴰⵍⵓ",
+      "pronunciation": "/ur illi walu/",
+      "translations": {
+        "en": "You're welcome / It's nothing",
+        "fr": "De rien"
+      },
+      "category": "courtesy",
+      "formality": "neutral",
+      "region": "tachelhit",
+      "literalTranslation": "There is nothing"
+    },
+    {
+      "id": "phrase-070",
+      "phrase": "samḥ iyi",
+      "tifinagh": "ⵙⴰⵎⵃ ⵉⵢⵉ",
+      "pronunciation": "/samḥ iyi/",
+      "translations": {
+        "en": "Excuse me / Forgive me",
+        "fr": "Excuse-moi / Pardonne-moi"
+      },
+      "category": "courtesy",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-071",
+      "phrase": "barakallahu fik",
+      "tifinagh": "ⴱⴰⵔⴰⴽⴰⵍⵍⴰⵀⵓ ⴼⵉⴽ",
+      "pronunciation": "/barakallahu fik/",
+      "translations": {
+        "en": "God bless you",
+        "fr": "Que Dieu te bénisse"
+      },
+      "category": "blessing",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-072",
+      "phrase": "ḥnna igan lḥal",
+      "tifinagh": "ⵃⵏⵏⴰ ⵉⴳⴰⵏ ⵍⵃⴰⵍ",
+      "pronunciation": "/ḥnna igan lḥal/",
+      "translations": {
+        "en": "Please (literally: have pity on the situation)",
+        "fr": "S'il te plaît"
+      },
+      "category": "courtesy",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-073",
+      "phrase": "matta iga wass",
+      "tifinagh": "ⵎⴰⵜⵜⴰ ⵉⴳⴰ ⵡⴰⵙⵙ",
+      "pronunciation": "/matta iga wass/",
+      "translations": {
+        "en": "What day is it?",
+        "fr": "Quel jour sommes-nous ?"
+      },
+      "category": "question",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-074",
+      "phrase": "mayd trit",
+      "tifinagh": "ⵎⴰⵢⴷ ⵜⵔⵉⵜ",
+      "pronunciation": "/mayd trit/",
+      "translations": {
+        "en": "What do you want?",
+        "fr": "Que veux-tu ?"
+      },
+      "category": "question",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-075",
+      "phrase": "manighak",
+      "tifinagh": "ⵎⴰⵏⵉⴳⵀⴰⴽ",
+      "pronunciation": "/manighak/",
+      "translations": {
+        "en": "Where are you from?",
+        "fr": "D'où es-tu ?"
+      },
+      "category": "question",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-076",
+      "phrase": "mshhal",
+      "tifinagh": "ⵎⵙⵀⵀⴰⵍ",
+      "pronunciation": "/mshhal/",
+      "translations": {
+        "en": "How much?",
+        "fr": "Combien ?"
+      },
+      "category": "shopping",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-077",
+      "phrase": "is tssnt tamazight",
+      "tifinagh": "ⵉⵙ ⵜⵙⵙⵏⵜ ⵜⴰⵎⴰⵣⵉⴳⵀⵜ",
+      "pronunciation": "/is tssnt tamazight/",
+      "translations": {
+        "en": "Do you speak Tamazight?",
+        "fr": "Parles-tu tamazight ?"
+      },
+      "category": "question",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-078",
+      "phrase": "mayd ism nnk",
+      "tifinagh": "ⵎⴰⵢⴷ ⵉⵙⵎ ⵏⵏⴽ",
+      "pronunciation": "/mayd ism nnk/",
+      "translations": {
+        "en": "What is your name? (m)",
+        "fr": "Quel est ton nom ?"
+      },
+      "category": "introduction",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-079",
+      "phrase": "mayd ism nnm",
+      "tifinagh": "ⵎⴰⵢⴷ ⵉⵙⵎ ⵏⵏⵎ",
+      "pronunciation": "/mayd ism nnm/",
+      "translations": {
+        "en": "What is your name? (f)",
+        "fr": "Quel est ton nom ?"
+      },
+      "category": "introduction",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-080",
+      "phrase": "ism inu ga",
+      "tifinagh": "ⵉⵙⵎ ⵉⵏⵓ ⴳⴰ",
+      "pronunciation": "/ism inu ga/",
+      "translations": {
+        "en": "My name is...",
+        "fr": "Mon nom est..."
+      },
+      "category": "introduction",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-081",
+      "phrase": "afasi",
+      "tifinagh": "ⴰⴼⴰⵙⵉ",
+      "pronunciation": "/afasi/",
+      "translations": {
+        "en": "Right",
+        "fr": "Droite"
+      },
+      "category": "direction",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-082",
+      "phrase": "aẓlmaḍ",
+      "tifinagh": "ⴰⵥⵍⵎⴰⴹ",
+      "pronunciation": "/aẓlmaḍ/",
+      "translations": {
+        "en": "Left",
+        "fr": "Gauche"
+      },
+      "category": "direction",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-083",
+      "phrase": "nigh sdat",
+      "tifinagh": "ⵏⵉⴳⵀ ⵙⴷⴰⵜ",
+      "pronunciation": "/nigh sdat/",
+      "translations": {
+        "en": "Straight ahead",
+        "fr": "Tout droit"
+      },
+      "category": "direction",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-084",
+      "phrase": "mani gh illa ssuq",
+      "tifinagh": "ⵎⴰⵏⵉ ⴳⵀ ⵉⵍⵍⴰ ⵙⵙⵓⵇ",
+      "pronunciation": "/mani gh illa ssuq/",
+      "translations": {
+        "en": "Where is the market?",
+        "fr": "Où est le marché ?"
+      },
+      "category": "direction",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-085",
+      "phrase": "is iqrb",
+      "tifinagh": "ⵉⵙ ⵉⵇⵔⴱ",
+      "pronunciation": "/is iqrb/",
+      "translations": {
+        "en": "Is it near?",
+        "fr": "C'est proche ?"
+      },
+      "category": "direction",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-086",
+      "phrase": "iggut",
+      "tifinagh": "ⵉⴳⴳⵓⵜ",
+      "pronunciation": "/iggut/",
+      "translations": {
+        "en": "It's far",
+        "fr": "C'est loin"
+      },
+      "category": "direction",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-087",
+      "phrase": "ghiyi atay",
+      "tifinagh": "ⴳⵀⵉⵢⵉ ⴰⵜⴰⵢ",
+      "pronunciation": "/ghiyi atay/",
+      "translations": {
+        "en": "I want tea",
+        "fr": "Je veux du thé"
+      },
+      "category": "food",
+      "formality": "informal",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-088",
+      "phrase": "ghiyi aman",
+      "tifinagh": "ⴳⵀⵉⵢⵉ ⴰⵎⴰⵏ",
+      "pronunciation": "/ghiyi aman/",
+      "translations": {
+        "en": "I want water",
+        "fr": "Je veux de l'eau"
+      },
+      "category": "food",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-089",
+      "phrase": "luzagh",
+      "tifinagh": "ⵍⵓⵣⴰⴳⵀ",
+      "pronunciation": "/luzagh/",
+      "translations": {
+        "en": "I'm hungry",
+        "fr": "J'ai faim"
+      },
+      "category": "food",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-090",
+      "phrase": "fad iyi",
+      "tifinagh": "ⴼⴰⴷ ⵉⵢⵉ",
+      "pronunciation": "/fad iyi/",
+      "translations": {
+        "en": "I'm thirsty",
+        "fr": "J'ai soif"
+      },
+      "category": "food",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-091",
+      "phrase": "itẓhha",
+      "tifinagh": "ⵉⵜⵥⵀⵀⴰ",
+      "pronunciation": "/itẓhha/",
+      "translations": {
+        "en": "It's delicious",
+        "fr": "C'est délicieux"
+      },
+      "category": "food",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-092",
+      "phrase": "ssargh",
+      "tifinagh": "ⵙⵙⴰⵔⴳⵀ",
+      "pronunciation": "/ssargh/",
+      "translations": {
+        "en": "I'm full / I've had enough",
+        "fr": "Je suis rassasié"
+      },
+      "category": "food",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-093",
+      "phrase": "bism illah",
+      "tifinagh": "ⴱⵉⵙⵎ ⵉⵍⵍⴰⵀ",
+      "pronunciation": "/bism illah/",
+      "translations": {
+        "en": "In the name of God (said before eating)",
+        "fr": "Au nom de Dieu (dit avant le repas)"
+      },
+      "category": "food",
+      "formality": "neutral",
+      "region": "tachelhit",
+      "culturalNote": "Always said before a meal. It is considered impolite not to."
+    },
+    {
+      "id": "phrase-094",
+      "phrase": "ri ad dduγ s Marrakuc",
+      "tifinagh": "ⵔⵉ ⴰⴷ ⴷⴷⵓⵖ ⵙ Mⴰⵔⵔⴰⴽⵓⵛ",
+      "pronunciation": "/ri ad dduγ s Marrakuc/",
+      "translations": {
+        "en": "I want to go to Marrakech",
+        "fr": "Je veux aller à Marrakech"
+      },
+      "category": "travel",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-095",
+      "phrase": "mshhal i tbilit",
+      "tifinagh": "ⵎⵙⵀⵀⴰⵍ ⵉ ⵜⴱⵉⵍⵉⵜ",
+      "pronunciation": "/mshhal i tbilit/",
+      "translations": {
+        "en": "How much for the ticket?",
+        "fr": "Combien pour le billet ?"
+      },
+      "category": "travel",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-096",
+      "phrase": "mani gh lla lukanda",
+      "tifinagh": "ⵎⴰⵏⵉ ⴳⵀ ⵍⵍⴰ ⵍⵓⴽⴰⵏⴷⴰ",
+      "pronunciation": "/mani gh lla lukanda/",
+      "translations": {
+        "en": "Where is the hotel?",
+        "fr": "Où est l'hôtel ?"
+      },
+      "category": "travel",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-097",
+      "phrase": "lḥal ihma",
+      "tifinagh": "ⵍⵃⴰⵍ ⵉⵀⵎⴰ",
+      "pronunciation": "/lḥal ihma/",
+      "translations": {
+        "en": "It's hot",
+        "fr": "Il fait chaud"
+      },
+      "category": "weather",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-098",
+      "phrase": "lḥal ismmḍ",
+      "tifinagh": "ⵍⵃⴰⵍ ⵉⵙⵎⵎⴹ",
+      "pronunciation": "/lḥal ismmḍ/",
+      "translations": {
+        "en": "It's cold",
+        "fr": "Il fait froid"
+      },
+      "category": "weather",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-099",
+      "phrase": "ra ad ignw unẓar",
+      "tifinagh": "ⵔⴰ ⴰⴷ ⵉⴳⵏⵡ ⵓⵏⵥⴰⵔ",
+      "pronunciation": "/ra ad ignw unẓar/",
+      "translations": {
+        "en": "It's going to rain",
+        "fr": "Il va pleuvoir"
+      },
+      "category": "weather",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-100",
+      "phrase": "ur illi akal bla aman",
+      "tifinagh": "ⵓⵔ ⵉⵍⵍⵉ ⴰⴽⴰⵍ ⴱⵍⴰ ⴰⵎⴰⵏ",
+      "pronunciation": "/ur illi akal bla aman/",
+      "translations": {
+        "en": "There is no land without water",
+        "fr": "Il n'y a pas de terre sans eau"
+      },
+      "category": "proverb",
+      "formality": "neutral",
+      "region": "tachelhit",
+      "culturalNote": "A proverb emphasizing the sacred relationship between earth and water in Amazigh philosophy."
+    },
+    {
+      "id": "phrase-101",
+      "phrase": "yan ifassn ur isfrγ",
+      "tifinagh": "ⵢⴰⵏ ⵉⴼⴰⵙⵙⵏ ⵓⵔ ⵉⵙⴼⵔⵖ",
+      "pronunciation": "/yan ifassn ur isfrγ/",
+      "translations": {
+        "en": "One hand alone cannot clap",
+        "fr": "Une seule main ne peut applaudir"
+      },
+      "category": "proverb",
+      "formality": "neutral",
+      "region": "tachelhit",
+      "culturalNote": "Amazigh equivalent of 'it takes two to tango' — emphasizing community and cooperation."
+    },
+    {
+      "id": "phrase-102",
+      "phrase": "wi iran ad yissin ad issqsa",
+      "tifinagh": "ⵡⵉ ⵉⵔⴰⵏ ⴰⴷ ⵢⵉⵙⵙⵉⵏ ⴰⴷ ⵉⵙⵙⵇⵙⴰ",
+      "pronunciation": "/wi iran ad yissin ad issqsa/",
+      "translations": {
+        "en": "He who wants to know must ask",
+        "fr": "Qui veut savoir doit demander"
+      },
+      "category": "proverb",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-103",
+      "phrase": "amẓẓyan iga uqmmum amqqran igat ul",
+      "tifinagh": "ⴰⵎⵥⵥⵢⴰⵏ ⵉⴳⴰ ⵓⵇⵎⵎⵓⵎ ⴰⵎⵇⵇⵔⴰⵏ ⵉⴳⴰⵜ ⵓⵍ",
+      "pronunciation": "/amẓẓyan iga uqmmum amqqran igat ul/",
+      "translations": {
+        "en": "Small is the mouth, great is the heart",
+        "fr": "Petite est la bouche, grand est le cœur"
+      },
+      "category": "proverb",
+      "formality": "neutral",
+      "region": "tachelhit",
+      "culturalNote": "Speaks to the Amazigh value of generosity over boasting."
+    },
+    {
+      "id": "phrase-104",
+      "phrase": "afus iqqn afus a isird",
+      "tifinagh": "ⴰⴼⵓⵙ ⵉⵇⵇⵏ ⴰⴼⵓⵙ ⴰ ⵉⵙⵉⵔⴷ",
+      "pronunciation": "/afus iqqn afus a isird/",
+      "translations": {
+        "en": "One hand washes the other",
+        "fr": "Une main lave l'autre"
+      },
+      "category": "proverb",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-105",
+      "phrase": "wi ur nssin mani dd ikka ur issin mani dd ittddu",
+      "tifinagh": "ⵡⵉ ⵓⵔ ⵏⵙⵙⵉⵏ ⵎⴰⵏⵉ ⴷⴷ ⵉⴽⴽⴰ ⵓⵔ ⵉⵙⵙⵉⵏ ⵎⴰⵏⵉ ⴷⴷ ⵉⵜⵜⴷⴷⵓ",
+      "pronunciation": "/wi ur nssin mani dd ikka ur issin mani dd ittddu/",
+      "translations": {
+        "en": "He who doesn't know where he came from doesn't know where he's going",
+        "fr": "Qui ne sait pas d'où il vient ne sait pas où il va"
+      },
+      "category": "proverb",
+      "formality": "neutral",
+      "region": "tachelhit",
+      "culturalNote": "A profound statement on the importance of ancestral knowledge and cultural identity."
+    },
+    {
+      "id": "phrase-106",
+      "phrase": "tamurt n baba-s tufa ghas izra",
+      "tifinagh": "ⵜⴰⵎⵓⵔⵜ ⵏ ⴱⴰⴱⴰ-ⵙ ⵜⵓⴼⴰ ⴳⵀⴰⵙ ⵉⵣⵔⴰ",
+      "pronunciation": "/tamurt n baba-s tufa ghas izra/",
+      "translations": {
+        "en": "His father's land left him only stones",
+        "fr": "La terre de son père ne lui a laissé que des pierres"
+      },
+      "category": "proverb",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-107",
+      "phrase": "rbbi ad ak ihfdh",
+      "tifinagh": "ⵔⴱⴱⵉ ⴰⴷ ⴰⴽ ⵉⵀⴼⴷⵀ",
+      "pronunciation": "/rbbi ad ak ihfdh/",
+      "translations": {
+        "en": "May God protect you",
+        "fr": "Que Dieu te protège"
+      },
+      "category": "blessing",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-108",
+      "phrase": "rbbi ad ak issaḥl",
+      "tifinagh": "ⵔⴱⴱⵉ ⴰⴷ ⴰⴽ ⵉⵙⵙⴰⵃⵍ",
+      "pronunciation": "/rbbi ad ak issaḥl/",
+      "translations": {
+        "en": "May God make it easy for you",
+        "fr": "Que Dieu te facilite les choses"
+      },
+      "category": "blessing",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-109",
+      "phrase": "asggwas amggaz",
+      "tifinagh": "ⴰⵙⴳⴳⵡⴰⵙ ⴰⵎⴳⴳⴰⵣ",
+      "pronunciation": "/asggwas amggaz/",
+      "translations": {
+        "en": "Happy New Year (Amazigh New Year)",
+        "fr": "Bonne année (Nouvel An amazigh)"
+      },
+      "category": "blessing",
+      "formality": "neutral",
+      "region": "tachelhit",
+      "culturalNote": "Said during Yennayer celebrations (January 13). Asggwas amggaz literally means 'a beneficial year.'"
+    },
+    {
+      "id": "phrase-110",
+      "phrase": "tifawt i tmurt",
+      "tifinagh": "ⵜⵉⴼⴰⵡⵜ ⵉ ⵜⵎⵓⵔⵜ",
+      "pronunciation": "/tifawt i tmurt/",
+      "translations": {
+        "en": "Light upon the land",
+        "fr": "Lumière sur la terre"
+      },
+      "category": "blessing",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-111",
+      "phrase": "walu",
+      "tifinagh": "ⵡⴰⵍⵓ",
+      "pronunciation": "/walu/",
+      "translations": {
+        "en": "Nothing / It's nothing",
+        "fr": "Rien"
+      },
+      "category": "expression",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-112",
+      "phrase": "iyih",
+      "tifinagh": "ⵉⵢⵉⵀ",
+      "pronunciation": "/iyih/",
+      "translations": {
+        "en": "Yes",
+        "fr": "Oui"
+      },
+      "category": "expression",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-113",
+      "phrase": "uhu",
+      "tifinagh": "ⵓⵀⵓ",
+      "pronunciation": "/uhu/",
+      "translations": {
+        "en": "No",
+        "fr": "Non"
+      },
+      "category": "expression",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-114",
+      "phrase": "waxxa",
+      "tifinagh": "ⵡⴰⵅⵅⴰ",
+      "pronunciation": "/waxxa/",
+      "translations": {
+        "en": "OK / Alright / Agreed",
+        "fr": "D'accord / OK"
+      },
+      "category": "expression",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-115",
+      "phrase": "imil",
+      "tifinagh": "ⵉⵎⵉⵍ",
+      "pronunciation": "/imil/",
+      "translations": {
+        "en": "Maybe / Perhaps",
+        "fr": "Peut-être"
+      },
+      "category": "expression",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-116",
+      "phrase": "bzzaf",
+      "tifinagh": "ⴱⵣⵣⴰⴼ",
+      "pronunciation": "/bzzaf/",
+      "translations": {
+        "en": "A lot / Very much",
+        "fr": "Beaucoup"
+      },
+      "category": "expression",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-117",
+      "phrase": "qama qama",
+      "tifinagh": "ⵇⴰⵎⴰ ⵇⴰⵎⴰ",
+      "pronunciation": "/qama qama/",
+      "translations": {
+        "en": "Slowly, slowly / Easy does it",
+        "fr": "Doucement, doucement"
+      },
+      "category": "expression",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-118",
+      "phrase": "εawn iyi",
+      "tifinagh": "ⵄⴰⵡⵏ ⵉⵢⵉ",
+      "pronunciation": "/εawn iyi/",
+      "translations": {
+        "en": "Help me!",
+        "fr": "Aidez-moi !"
+      },
+      "category": "emergency",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-119",
+      "phrase": "ri ḍbib",
+      "tifinagh": "ⵔⵉ ⴹⴱⵉⴱ",
+      "pronunciation": "/ri ḍbib/",
+      "translations": {
+        "en": "I need a doctor",
+        "fr": "J'ai besoin d'un médecin"
+      },
+      "category": "emergency",
+      "formality": "neutral",
+      "region": "tachelhit"
+    },
+    {
+      "id": "phrase-120",
+      "phrase": "ẓriγ yan lmusiba",
+      "tifinagh": "ⵥⵔⵉⵖ ⵢⴰⵏ ⵍⵎⵓⵙⵉⴱⴰ",
+      "pronunciation": "/ẓriγ yan lmusiba/",
+      "translations": {
+        "en": "I saw an accident",
+        "fr": "J'ai vu un accident"
+      },
+      "category": "emergency",
+      "formality": "neutral",
+      "region": "tachelhit"
+    }
+  ],
+  "categories": [
+    {
+      "id": "greeting",
+      "name": "Greetings",
+      "nameTifinagh": "ⴰⵣⵓⵍⵏ",
+      "description": "Hello, goodbye, and how are you",
+      "icon": "wave"
+    },
+    {
+      "id": "farewell",
+      "name": "Farewells",
+      "description": "Ways to say goodbye",
+      "icon": "door"
+    },
+    {
+      "id": "introduction",
+      "name": "Introductions",
+      "nameTifinagh": "ⵜⵓⵙⵙⵏⴰ",
+      "description": "Names, origins, and meeting people",
+      "icon": "user"
+    },
+    {
+      "id": "question",
+      "name": "Questions",
+      "description": "Common questions and inquiries",
+      "icon": "help"
+    },
+    {
+      "id": "direction",
+      "name": "Directions",
+      "description": "Navigation and locations",
+      "icon": "compass"
+    },
+    {
+      "id": "shopping",
+      "name": "Shopping",
+      "description": "Buying, bargaining, and markets",
+      "icon": "cart"
+    },
+    {
+      "id": "food",
+      "name": "Food & Drink",
+      "nameTifinagh": "ⵜⵉⵔⵎⵜ",
+      "description": "Eating, drinking, and restaurants",
+      "icon": "utensils"
+    },
+    {
+      "id": "time",
+      "name": "Time",
+      "nameTifinagh": "ⴰⴽⵓⴷ",
+      "description": "Days, hours, and temporal expressions",
+      "icon": "clock"
+    },
+    {
+      "id": "weather",
+      "name": "Weather",
+      "description": "Weather and climate expressions",
+      "icon": "cloud"
+    },
+    {
+      "id": "travel",
+      "name": "Travel",
+      "description": "Transportation and getting around",
+      "icon": "plane"
+    },
+    {
+      "id": "courtesy",
+      "name": "Courtesy",
+      "description": "Please, thank you, and polite expressions",
+      "icon": "heart"
+    },
+    {
+      "id": "emergency",
+      "name": "Emergency",
+      "description": "Help, medical, and urgent situations",
+      "icon": "alert"
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "nameTifinagh": "ⵉⵎⴹⴰⵏ",
+      "description": "Counting and numerical expressions",
+      "icon": "hash"
+    },
+    {
+      "id": "proverb",
+      "name": "Proverbs",
+      "nameTifinagh": "ⵉⵏⵣⴰⵏ",
+      "description": "Traditional wisdom and sayings",
+      "icon": "book"
+    },
+    {
+      "id": "blessing",
+      "name": "Blessings",
+      "description": "Well-wishes and congratulations",
+      "icon": "star"
+    },
+    {
+      "id": "expression",
+      "name": "Expressions",
+      "description": "Common phrases and expressions",
+      "icon": "message"
+    }
+  ],
+  "metadata": {
+    "totalPhrases": 55,
+    "lastUpdated": "2025-01-10",
+    "region": "tachelhit"
+  }
+}

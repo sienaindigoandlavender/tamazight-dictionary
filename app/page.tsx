@@ -25,6 +25,9 @@ const directionLabels: Record<TranslationDirection, { from: string; to: string; 
   'tmz-fr': { from: 'Tamazight', to: 'French', placeholder: 'Aru awal s Tmazight...' },
 };
 
+// Floating Tifinagh letters for background decoration
+const floatingLetters = ['ⴰ', 'ⵎ', 'ⵣ', 'ⵔ', 'ⵏ', 'ⵜ', 'ⵍ', 'ⴼ', 'ⴷ', 'ⵙ', 'ⵡ', 'ⵢ'];
+
 export default function Home() {
   const [direction, setDirection] = useState<TranslationDirection>('en-tmz');
   const [query, setQuery] = useState('');
@@ -40,38 +43,21 @@ export default function Home() {
   const allEntries = useMemo(() => getAllEntries('tachelhit'), []);
   const phrasesMetadata = useMemo(() => getPhrasesMetadata(), []);
 
-  // Search when query or direction changes
   useEffect(() => {
-    if (!query.trim()) {
-      setWordResults([]);
-      setPhraseResults([]);
-      return;
-    }
-
-    // Search words
+    if (!query.trim()) { setWordResults([]); setPhraseResults([]); return; }
     let words: DictionaryEntry[] = [];
-    if (direction === 'en-tmz') {
-      words = searchByLanguage(query, 'en');
-    } else if (direction === 'fr-tmz') {
-      words = searchByLanguage(query, 'fr');
-    } else {
-      words = searchEntries(query);
-    }
+    if (direction === 'en-tmz') words = searchByLanguage(query, 'en');
+    else if (direction === 'fr-tmz') words = searchByLanguage(query, 'fr');
+    else words = searchEntries(query);
     setWordResults(words.slice(0, 12));
 
-    // Search phrases
     let phrases: PhraseEntry[] = [];
-    if (direction === 'en-tmz') {
-      phrases = searchEnglishToTamazight(query);
-    } else if (direction === 'fr-tmz') {
-      phrases = searchFrenchToTamazight(query);
-    } else {
-      phrases = searchTamazightToOther(query);
-    }
+    if (direction === 'en-tmz') phrases = searchEnglishToTamazight(query);
+    else if (direction === 'fr-tmz') phrases = searchFrenchToTamazight(query);
+    else phrases = searchTamazightToOther(query);
     setPhraseResults(phrases.slice(0, 8));
   }, [query, direction]);
 
-  // Get phrases by category
   const categoryPhrases = useMemo(() => {
     if (!selectedCategory) return [];
     return getPhrasesByCategory(selectedCategory);
@@ -79,10 +65,7 @@ export default function Home() {
 
   const handleSwapDirection = () => {
     const swaps: Record<TranslationDirection, TranslationDirection> = {
-      'en-tmz': 'tmz-en',
-      'tmz-en': 'en-tmz',
-      'fr-tmz': 'tmz-fr',
-      'tmz-fr': 'fr-tmz',
+      'en-tmz': 'tmz-en', 'tmz-en': 'en-tmz', 'fr-tmz': 'tmz-fr', 'tmz-fr': 'fr-tmz',
     };
     setDirection(swaps[direction]);
     setQuery('');
@@ -93,12 +76,10 @@ export default function Home() {
     inputRef.current?.focus();
   };
 
-  // Check if a word exists in the dictionary for cross-linking
   const getLinkedWord = (word: string): DictionaryEntry | undefined => {
     return getEntryByWord(word.toLowerCase());
   };
 
-  // Split phrase into linkable words
   const renderLinkedPhrase = (phrase: string) => {
     const words = phrase.split(/(\s+)/);
     return words.map((word, idx) => {
@@ -106,11 +87,8 @@ export default function Home() {
       const entry = getLinkedWord(word.replace(/[.,!?;:]/g, ''));
       if (entry) {
         return (
-          <Link
-            key={idx}
-            href={`/dictionary/${entry.word}`}
-            className="underline decoration-dotted underline-offset-2 hover:decoration-solid hover:text-foreground transition-colors"
-          >
+          <Link key={idx} href={`/dictionary/${entry.word}`}
+            className="underline decoration-dotted underline-offset-2 hover:decoration-solid hover:text-foreground transition-colors">
             {word}
           </Link>
         );
@@ -121,23 +99,20 @@ export default function Home() {
 
   const renderWordResult = (entry: DictionaryEntry) => {
     const targetLang = direction === 'tmz-fr' ? 'fr' : 'en';
-    const meaning = entry.definitions.find(d => d.language === targetLang)?.meaning
-      || entry.definitions[0]?.meaning;
-
+    const meaning = entry.definitions.find(d => d.language === targetLang)?.meaning || entry.definitions[0]?.meaning;
     return (
-      <Link
-        key={entry.id}
-        href={`/dictionary/${entry.word}`}
-        className="block p-4 border border-foreground/10 hover:border-foreground/30 transition-colors bg-background"
-      >
-        <div className="flex items-center gap-3 mb-2">
-          <span className="tifinagh text-xl">{entry.tifinagh}</span>
-          <span className="font-serif text-lg">{entry.word}</span>
-          <span className="text-xs px-2 py-0.5 bg-foreground/5 text-muted-foreground">
+      <Link key={entry.id} href={`/dictionary/${entry.word}`}
+        className="group block p-5 border border-foreground/8 hover:border-foreground/25 transition-all bg-background hover-lift">
+        <div className="flex items-baseline gap-3 mb-2">
+          <span className="tifinagh text-2xl text-accent">{entry.tifinagh}</span>
+          <span className="font-serif text-xl">{entry.word}</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="text-[10px] px-2 py-0.5 border border-foreground/10 text-muted-foreground uppercase tracking-wider">
             {entry.partOfSpeech}
           </span>
+          <span className="text-muted-foreground text-sm">{meaning}</span>
         </div>
-        <p className="text-muted-foreground text-sm">{meaning}</p>
       </Link>
     );
   };
@@ -145,45 +120,23 @@ export default function Home() {
   const renderPhraseResult = (phrase: PhraseEntry, showCategory = true) => {
     const targetLang = direction === 'tmz-fr' || direction === 'fr-tmz' ? 'fr' : 'en';
     const translation = phrase.translations[targetLang] || phrase.translations.en;
-
     return (
-      <div
-        key={phrase.id}
-        className="p-4 border border-foreground/10 hover:border-foreground/30 transition-colors bg-background"
-      >
+      <div key={phrase.id} className="group p-5 border border-foreground/8 hover:border-foreground/25 transition-all bg-background hover-lift">
         <div className="flex items-start justify-between gap-3">
           <div className="flex-1">
-            <div className="flex items-center gap-3 mb-2 flex-wrap">
-              <span className="tifinagh text-lg">{phrase.tifinagh}</span>
+            <div className="mb-2">
+              <span className="tifinagh text-lg text-accent mr-3">{phrase.tifinagh}</span>
               <span className="font-medium">{renderLinkedPhrase(phrase.phrase)}</span>
-              {showCategory && (
-                <span className="text-xs px-2 py-0.5 bg-foreground/5 text-muted-foreground capitalize">
-                  {phrase.category}
-                </span>
-              )}
             </div>
             <p className="text-muted-foreground text-sm">{translation}</p>
             {phrase.literalTranslation && (
-              <p className="text-xs text-muted-foreground/60 mt-1 italic">
-                Lit: {phrase.literalTranslation}
-              </p>
-            )}
-            {phrase.pronunciation && (
-              <p className="text-xs text-muted-foreground/50 mt-1">
-                /{phrase.pronunciation}/
-              </p>
+              <p className="text-xs text-muted-foreground/50 mt-2 italic">Lit: {phrase.literalTranslation}</p>
             )}
           </div>
-          {/* Audio button placeholder - will be enabled when audio files are added */}
-          {phrase.audioFile && (
-            <button
-              className="w-8 h-8 flex-shrink-0 border border-foreground/20 flex items-center justify-center hover:border-foreground hover:bg-foreground hover:text-background transition-all"
-              title={`Play pronunciation`}
-            >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
-              </svg>
-            </button>
+          {showCategory && (
+            <span className="text-[10px] px-2 py-0.5 border border-foreground/10 text-muted-foreground uppercase tracking-wider flex-shrink-0">
+              {phrase.category}
+            </span>
           )}
         </div>
       </div>
@@ -194,84 +147,90 @@ export default function Home() {
   const noResults = query && wordResults.length === 0 && phraseResults.length === 0;
 
   return (
-    <div>
-      {/* Hero + Translator */}
-      <section className="min-h-[60vh] flex flex-col items-center justify-center px-6 py-16">
-        {/* Minimal branding */}
-        <div className="text-center mb-10">
-          <h1 className="tifinagh text-5xl md:text-6xl mb-3">ⴰⵎⴰⵡⴰⵍ</h1>
-          <p className="font-serif text-xl text-muted-foreground">Tamazight Dictionary</p>
+    <div className="overflow-hidden">
+
+      {/* ============ HERO ============ */}
+      <section className="relative min-h-[85vh] flex items-center justify-center px-6 py-20">
+
+        {/* Background Tifinagh scatter */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none select-none" aria-hidden="true">
+          {floatingLetters.map((letter, i) => (
+            <span key={i} className="tifinagh-deco absolute"
+              style={{
+                fontSize: `${80 + Math.random() * 200}px`,
+                top: `${5 + (i * 8) % 90}%`,
+                left: `${3 + (i * 13) % 94}%`,
+                transform: `rotate(${-15 + Math.random() * 30}deg)`,
+                opacity: 0.03 + Math.random() * 0.02,
+              }}>
+              {letter}
+            </span>
+          ))}
         </div>
 
-        {/* Translation Interface */}
-        <div className="w-full max-w-2xl">
-          {/* Direction Selector */}
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <select
-              value={direction}
-              onChange={(e) => {
-                setDirection(e.target.value as TranslationDirection);
-                setQuery('');
-              }}
-              className="px-4 py-2 border border-foreground/10 bg-background text-foreground text-sm"
-            >
-              <option value="en-tmz">English → Tamazight</option>
-              <option value="fr-tmz">French → Tamazight</option>
-              <option value="tmz-en">Tamazight → English</option>
-              <option value="tmz-fr">Tamazight → French</option>
-            </select>
-
-            <button
-              onClick={handleSwapDirection}
-              className="p-2 border border-foreground/10 hover:border-foreground/30 transition-colors"
-              aria-label="Swap languages"
-            >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
-              </svg>
-            </button>
+        <div className="relative z-10 w-full max-w-3xl mx-auto">
+          {/* Oversized Tifinagh title */}
+          <div className="text-center mb-6 animate-fade-up">
+            <h1 className="tifinagh text-[5rem] md:text-[7rem] lg:text-[9rem] leading-[0.85] tracking-tight">
+              ⴰⵎⴰⵡⴰⵍ
+            </h1>
           </div>
 
-          {/* Dialect Indicator */}
-          <div className="flex items-center justify-center gap-2 mb-6">
-            <div
-              className="w-2 h-2 rounded-full"
-              style={{ backgroundColor: '#E07A5F' }}
-            />
-            <span className="text-xs text-muted-foreground">
-              Tachelhit (Souss, Morocco)
-            </span>
-            <Link
-              href="/map"
-              className="text-xs text-muted-foreground hover:text-foreground transition-colors underline underline-offset-2"
-            >
-              Explore {regions.length} dialects
-            </Link>
+          {/* Subtitle with asymmetric layout */}
+          <div className="flex items-baseline justify-center gap-4 mb-2 animate-fade-up stagger-1">
+            <span className="font-serif text-3xl md:text-4xl italic font-light">Tamazight</span>
+            <span className="w-12 h-px bg-foreground/30 hidden md:block" />
+            <span className="font-serif text-3xl md:text-4xl font-light">Dictionary</span>
           </div>
 
-          {/* Search Input */}
-          <div className="relative">
-            <div className="flex">
-              <input
-                ref={inputRef}
-                type="text"
-                value={query}
+          <p className="text-center text-muted-foreground text-sm tracking-wider uppercase mb-12 animate-fade-up stagger-2">
+            {allEntries.length} words · {phrasesMetadata.totalPhrases} phrases · {regions.length} dialects
+          </p>
+
+          {/* ---- Translator ---- */}
+          <div className="animate-fade-up stagger-3">
+            {/* Direction + Dialect row */}
+            <div className="flex items-center justify-between mb-3">
+              <div className="flex items-center gap-2">
+                <select value={direction}
+                  onChange={(e) => { setDirection(e.target.value as TranslationDirection); setQuery(''); }}
+                  className="px-3 py-1.5 border border-foreground/10 bg-background text-foreground text-xs uppercase tracking-wider appearance-none cursor-pointer pr-6"
+                  style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E\")", backgroundRepeat: 'no-repeat', backgroundPosition: 'right 8px center' }}>
+                  <option value="en-tmz">English → Tamazight</option>
+                  <option value="fr-tmz">French → Tamazight</option>
+                  <option value="tmz-en">Tamazight → English</option>
+                  <option value="tmz-fr">Tamazight → French</option>
+                </select>
+                <button onClick={handleSwapDirection}
+                  className="p-1.5 border border-foreground/10 hover:border-foreground/30 hover:bg-foreground/5 transition-all"
+                  aria-label="Swap languages">
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
+                  </svg>
+                </button>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-accent" />
+                <span className="text-[10px] text-muted-foreground uppercase tracking-wider">Tachelhit</span>
+              </div>
+            </div>
+
+            {/* Search Input - oversized */}
+            <div className="relative mb-4">
+              <input ref={inputRef} type="text" value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder={directionLabels[direction].placeholder}
                 autoFocus
-                className="w-full px-6 py-5 text-xl border border-foreground/20 focus:border-foreground/40 focus:outline-none transition-colors bg-background text-center"
-              />
-              {/* Tifinagh keyboard toggle - show for Tamazight input directions */}
+                className="w-full px-6 py-6 text-xl md:text-2xl border-2 border-foreground/10 focus:border-foreground/40 focus:outline-none transition-all bg-background font-serif placeholder:font-sans placeholder:text-base placeholder:font-light" />
               {(direction === 'tmz-en' || direction === 'tmz-fr') && (
                 <div className="absolute right-14 top-1/2 -translate-y-1/2">
                   <TifinaghToggle isActive={showKeyboard} onClick={() => setShowKeyboard(!showKeyboard)} />
                 </div>
               )}
               {query && (
-                <button
-                  onClick={() => setQuery('')}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground p-2"
-                >
+                <button onClick={() => setQuery('')}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground p-2">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
                   </svg>
@@ -279,79 +238,57 @@ export default function Home() {
               )}
             </div>
 
-            {/* Tifinagh Keyboard */}
             {showKeyboard && (direction === 'tmz-en' || direction === 'tmz-fr') && (
-              <div className="mt-4">
-                <TifinaghKeyboard
-                  onInsert={handleKeyboardInsert}
-                  onClose={() => setShowKeyboard(false)}
-                />
+              <div className="mb-4">
+                <TifinaghKeyboard onInsert={handleKeyboardInsert} onClose={() => setShowKeyboard(false)} />
+              </div>
+            )}
+
+            {/* Quick examples */}
+            {!query && !showKeyboard && (
+              <div className="flex flex-wrap justify-center gap-4 text-sm">
+                <span className="text-muted-foreground/50">Try:</span>
+                {(direction === 'tmz-en' || direction === 'tmz-fr')
+                  ? ['aman', 'tafukt', 'akal', 'azul'].map((word, i) => (
+                      <button key={word} onClick={() => setQuery(word)}
+                        className={`text-foreground/60 hover:text-accent transition-colors font-serif text-base italic animate-fade-up stagger-${i + 4}`}>
+                        {word}
+                      </button>
+                    ))
+                  : ['water', 'sun', 'freedom', 'love'].map((word, i) => (
+                      <button key={word} onClick={() => setQuery(word)}
+                        className={`text-foreground/60 hover:text-accent transition-colors font-serif text-base italic animate-fade-up stagger-${i + 4}`}>
+                        {word}
+                      </button>
+                    ))
+                }
               </div>
             )}
           </div>
-
-          {/* Quick examples */}
-          {!query && !showKeyboard && (
-            <div className="flex flex-wrap justify-center gap-3 mt-6 text-sm">
-              <span className="text-muted-foreground">Try:</span>
-              {(direction === 'tmz-en' || direction === 'tmz-fr')
-                ? ['aman', 'tafukt', 'akal', 'azul'].map(word => (
-                    <button
-                      key={word}
-                      onClick={() => setQuery(word)}
-                      className="text-foreground/70 hover:text-foreground transition-colors underline underline-offset-2"
-                    >
-                      {word}
-                    </button>
-                  ))
-                : ['hello', 'water', 'sun', 'earth'].map(word => (
-                    <button
-                      key={word}
-                      onClick={() => setQuery(word)}
-                      className="text-foreground/70 hover:text-foreground transition-colors underline underline-offset-2"
-                    >
-                      {word}
-                    </button>
-                  ))
-              }
-            </div>
-          )}
-
-          {/* Methodology link */}
-          {!query && (
-            <div className="text-center mt-8">
-              <Link
-                href="/methodology"
-                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
-                How we build this dictionary
-              </Link>
-            </div>
-          )}
         </div>
       </section>
 
-      {/* Results Section */}
+      {/* ============ RESULTS ============ */}
       {hasResults && (
-        <section className="border-t border-foreground/10 bg-foreground/[0.02] py-12">
-          <div className="max-w-5xl mx-auto px-6">
-            {/* Words */}
+        <section className="py-16 px-6">
+          <div className="max-w-5xl mx-auto">
             {wordResults.length > 0 && (
-              <div className="mb-10">
-                <h2 className="section-subtitle mb-4">Words ({wordResults.length})</h2>
+              <div className="mb-12">
+                <div className="flex items-baseline gap-3 mb-6">
+                  <span className="font-serif text-3xl">{wordResults.length}</span>
+                  <span className="text-xs uppercase tracking-widest text-muted-foreground">words found</span>
+                </div>
                 <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
                   {wordResults.map(renderWordResult)}
                 </div>
               </div>
             )}
-
-            {/* Phrases */}
             {phraseResults.length > 0 && (
               <div>
-                <h2 className="section-subtitle mb-4">Phrases ({phraseResults.length})</h2>
+                <div className="flex items-baseline gap-3 mb-6">
+                  <span className="font-serif text-3xl">{phraseResults.length}</span>
+                  <span className="text-xs uppercase tracking-widest text-muted-foreground">phrases found</span>
+                </div>
                 <div className="grid gap-3 md:grid-cols-2">
                   {phraseResults.map(p => renderPhraseResult(p))}
                 </div>
@@ -363,61 +300,56 @@ export default function Home() {
 
       {/* No Results */}
       {noResults && (
-        <section className="border-t border-foreground/10 py-16">
-          <div className="max-w-2xl mx-auto px-6 text-center">
-            <p className="text-muted-foreground mb-4">
-              No matches found for &ldquo;{query}&rdquo;
-            </p>
-            <p className="text-sm text-muted-foreground/70">
-              Try a different word, or browse common phrases below.
-            </p>
+        <section className="py-20 px-6">
+          <div className="max-w-2xl mx-auto text-center">
+            <span className="tifinagh text-6xl text-foreground/10 block mb-6">ⵅ</span>
+            <p className="font-serif text-2xl mb-2">No matches for &ldquo;{query}&rdquo;</p>
+            <p className="text-sm text-muted-foreground">Try a different word, or browse common phrases below.</p>
           </div>
         </section>
       )}
 
-      {/* Phrases Discovery (when not searching) */}
+      {/* ============ PHRASES DISCOVERY ============ */}
       {!query && (
-        <section className="border-t border-foreground/10 py-16">
-          <div className="max-w-5xl mx-auto px-6">
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
-              <div>
-                <p className="section-subtitle mb-2">Common Phrases</p>
-                <h2 className="font-serif text-2xl">Essential Tachelhit</h2>
+        <section className="py-20 md:py-28 px-6">
+          <div className="max-w-6xl mx-auto">
+            {/* Section header - asymmetric */}
+            <div className="grid md:grid-cols-12 gap-6 mb-12">
+              <div className="md:col-span-7">
+                <span className="text-xs uppercase tracking-[0.2em] text-accent mb-3 block">Essential Tachelhit</span>
+                <h2 className="font-serif text-4xl md:text-5xl leading-tight">Common<br/>Phrases</h2>
               </div>
-              <p className="text-sm text-muted-foreground">
-                {phrasesMetadata.totalPhrases} phrases across {phrasesMetadata.categoryCount} categories
-              </p>
+              <div className="md:col-span-5 flex items-end">
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {phrasesMetadata.totalPhrases} phrases across {phrasesMetadata.categoryCount} categories — greetings, farewells, courtesy, directions, and everyday conversation.
+                </p>
+              </div>
             </div>
 
-            {/* Category Filter */}
-            <div className="flex flex-wrap gap-2 mb-8">
-              <button
-                onClick={() => setSelectedCategory(null)}
-                className={`text-sm px-3 py-1.5 border transition-colors ${
+            {/* Category pills */}
+            <div className="flex flex-wrap gap-2 mb-10">
+              <button onClick={() => setSelectedCategory(null)}
+                className={`text-xs px-4 py-2 transition-all ${
                   selectedCategory === null
-                    ? 'border-foreground bg-foreground text-background'
-                    : 'border-foreground/10 hover:border-foreground/30'
-                }`}
-              >
+                    ? 'bg-foreground text-background'
+                    : 'border border-foreground/10 hover:border-foreground/30'
+                }`}>
                 Featured
               </button>
-              {categories.slice(0, 8).map(cat => (
-                <button
-                  key={cat.id}
-                  onClick={() => setSelectedCategory(cat.id as PhraseCategory)}
-                  className={`text-sm px-3 py-1.5 border transition-colors ${
+              {categories.slice(0, 10).map(cat => (
+                <button key={cat.id} onClick={() => setSelectedCategory(cat.id as PhraseCategory)}
+                  className={`text-xs px-4 py-2 transition-all ${
                     selectedCategory === cat.id
-                      ? 'border-foreground bg-foreground text-background'
-                      : 'border-foreground/10 hover:border-foreground/30'
-                  }`}
-                >
+                      ? 'bg-foreground text-background'
+                      : 'border border-foreground/10 hover:border-foreground/30'
+                  }`}>
                   {cat.name}
                 </button>
               ))}
             </div>
 
             {/* Phrases Grid */}
-            <div className="grid gap-4 md:grid-cols-2">
+            <div className="grid gap-3 md:grid-cols-2">
               {(selectedCategory ? categoryPhrases : randomPhrases).map(phrase =>
                 renderPhraseResult(phrase, !selectedCategory)
               )}
@@ -426,72 +358,97 @@ export default function Home() {
         </section>
       )}
 
-      {/* Explore More (when not searching) */}
+      {/* ============ EXPLORE MORE ============ */}
       {!query && (
-        <section className="border-t border-foreground/10 py-16 bg-foreground/[0.02]">
-          <div className="max-w-5xl mx-auto px-6">
-            <div className="text-center mb-12">
-              <p className="section-subtitle mb-2">Explore</p>
-              <h2 className="font-serif text-2xl">Go Deeper</h2>
+        <section className="py-20 md:py-28 px-6 relative">
+          {/* Large background letter */}
+          <div className="absolute right-0 top-0 tifinagh-deco text-[28rem] leading-none -translate-y-20 translate-x-20" aria-hidden="true">
+            ⵣ
+          </div>
+
+          <div className="max-w-6xl mx-auto relative z-10">
+            {/* Stats — oversized numbers */}
+            <div className="grid grid-cols-3 gap-4 md:gap-8 mb-20 md:mb-28">
+              <div className="text-center md:text-left">
+                <div className="font-serif text-6xl md:text-8xl leading-none mb-2">{allEntries.length}</div>
+                <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Words</div>
+              </div>
+              <div className="text-center">
+                <div className="font-serif text-6xl md:text-8xl leading-none mb-2">{phrasesMetadata.totalPhrases}</div>
+                <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Phrases</div>
+              </div>
+              <div className="text-center md:text-right">
+                <div className="font-serif text-6xl md:text-8xl leading-none mb-2">{regions.length}</div>
+                <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Dialects</div>
+              </div>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-3">
-              {/* Map */}
-              <Link href="/map" className="group">
-                <div className="card hover:border-foreground/30 transition-colors h-full">
-                  <div className="flex -space-x-1 mb-4">
-                    {regions.slice(0, 5).map((region, i) => (
-                      <div
-                        key={region.id}
-                        className="w-4 h-4 rounded-full border-2 border-background"
-                        style={{ backgroundColor: region.color, zIndex: 5 - i }}
-                      />
+            {/* Explore cards — varied sizes */}
+            <div className="grid md:grid-cols-12 gap-4">
+              {/* Map — large */}
+              <Link href="/map" className="md:col-span-7 group">
+                <div className="border border-foreground/8 p-8 md:p-10 hover:border-foreground/25 transition-all hover-lift h-full relative overflow-hidden">
+                  <div className="absolute -right-6 -bottom-6 opacity-[0.04]">
+                    <svg viewBox="0 0 200 200" className="w-40 h-40"><circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" strokeWidth="2"/>
+                      <circle cx="100" cy="60" r="4" fill="currentColor"/><circle cx="80" cy="120" r="4" fill="currentColor"/>
+                      <circle cx="130" cy="100" r="4" fill="currentColor"/><circle cx="60" cy="80" r="4" fill="currentColor"/>
+                    </svg>
+                  </div>
+                  <div className="flex -space-x-1.5 mb-6">
+                    {regions.slice(0, 7).map((region, i) => (
+                      <div key={region.id} className="w-5 h-5 rounded-full border-2 border-background"
+                        style={{ backgroundColor: region.color, zIndex: 7 - i }} />
                     ))}
                   </div>
-                  <h3 className="font-serif text-xl mb-2 group-hover:underline">Linguistic Atlas</h3>
-                  <p className="text-sm text-muted-foreground">
-                    {regions.length} dialect regions across North Africa
-                  </p>
+                  <h3 className="font-serif text-3xl md:text-4xl mb-3 group-hover:text-accent transition-colors">Linguistic Atlas</h3>
+                  <p className="text-sm text-muted-foreground max-w-sm">{regions.length} dialect regions mapped across North Africa — from the Rif to the Sahara.</p>
                 </div>
               </Link>
 
-              {/* Symbols */}
-              <Link href="/symbols" className="group">
-                <div className="card hover:border-foreground/30 transition-colors h-full">
-                  <div className="tifinagh text-3xl mb-4">ⵣ</div>
-                  <h3 className="font-serif text-xl mb-2 group-hover:underline">Symbol Dictionary</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Amazigh visual language and meanings
-                  </p>
+              {/* Symbols — medium */}
+              <Link href="/symbols" className="md:col-span-5 group">
+                <div className="border border-foreground/8 p-8 md:p-10 hover:border-foreground/25 transition-all hover-lift h-full">
+                  <div className="tifinagh text-5xl mb-6 text-accent/70 group-hover:text-accent transition-colors">ⴰ ⵣ ⵯ</div>
+                  <h3 className="font-serif text-3xl md:text-4xl mb-3 group-hover:text-accent transition-colors">Symbol Dictionary</h3>
+                  <p className="text-sm text-muted-foreground">30 Amazigh symbols — geometry, nature, and the visual language of a civilization.</p>
                 </div>
               </Link>
 
-              {/* Conjugation */}
-              <Link href="/conjugation" className="group">
-                <div className="card hover:border-foreground/30 transition-colors h-full">
-                  <div className="tifinagh text-3xl mb-4">ⴷⴷⵓ</div>
-                  <h3 className="font-serif text-xl mb-2 group-hover:underline">Verb Conjugation</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Aorist, preterite, and imperative forms
-                  </p>
+              {/* Alphabet — medium */}
+              <Link href="/alphabet" className="md:col-span-5 group">
+                <div className="border border-foreground/8 p-8 md:p-10 hover:border-foreground/25 transition-all hover-lift h-full">
+                  <div className="flex gap-3 mb-6">
+                    {['ⵢ','ⴰ','ⵣ','ⵎ','ⵏ'].map((ch, i) => (
+                      <span key={i} className="tifinagh text-2xl text-foreground/20">{ch}</span>
+                    ))}
+                  </div>
+                  <h3 className="font-serif text-3xl md:text-4xl mb-3 group-hover:text-accent transition-colors">Tifinagh Alphabet</h3>
+                  <p className="text-sm text-muted-foreground">33 letters. One of the oldest writing systems still in use — over 2,500 years of marks on stone and skin.</p>
                 </div>
               </Link>
-            </div>
 
-            {/* Stats Row */}
-            <div className="grid grid-cols-3 gap-8 mt-12 pt-12 border-t border-foreground/10 text-center">
-              <div>
-                <div className="font-serif text-3xl mb-1">{allEntries.length}+</div>
-                <div className="text-xs uppercase tracking-widest text-muted-foreground">Words</div>
-              </div>
-              <div>
-                <div className="font-serif text-3xl mb-1">{phrasesMetadata.totalPhrases}</div>
-                <div className="text-xs uppercase tracking-widest text-muted-foreground">Phrases</div>
-              </div>
-              <div>
-                <div className="font-serif text-3xl mb-1">{regions.length}</div>
-                <div className="text-xs uppercase tracking-widest text-muted-foreground">Dialects</div>
-              </div>
+              {/* Conjugation — narrow */}
+              <Link href="/conjugation" className="md:col-span-4 group">
+                <div className="border border-foreground/8 p-8 md:p-10 hover:border-foreground/25 transition-all hover-lift h-full">
+                  <div className="font-serif text-lg text-muted-foreground mb-6 space-y-1">
+                    <div>ddu → <span className="text-foreground">iddú</span></div>
+                    <div>awi → <span className="text-foreground">iwí</span></div>
+                  </div>
+                  <h3 className="font-serif text-2xl mb-2 group-hover:text-accent transition-colors">Verb Conjugation</h3>
+                  <p className="text-sm text-muted-foreground">Aorist, preterite, imperative.</p>
+                </div>
+              </Link>
+
+              {/* About — full width accent strip */}
+              <Link href="/about" className="md:col-span-3 group">
+                <div className="bg-foreground text-background p-8 md:p-10 hover:opacity-90 transition-all h-full flex flex-col justify-between">
+                  <div>
+                    <h3 className="font-serif text-2xl mb-3">About</h3>
+                    <p className="text-sm text-background/60">The story behind Amawal and the Tamazight language.</p>
+                  </div>
+                  <span className="text-xs uppercase tracking-widest text-background/40 mt-6">Learn more →</span>
+                </div>
+              </Link>
             </div>
           </div>
         </section>

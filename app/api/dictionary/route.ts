@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAllEntries, getEntryByWord, searchEntries } from '@/lib/dictionary';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amawal.app';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amazigh.online';
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
@@ -96,7 +96,7 @@ export async function GET(request: NextRequest) {
     publisher: {
       '@type': 'Organization',
       name: 'Dancing with Lions',
-      url: 'https://dancingwithlions.com',
+      url: 'https://dancingwiththelions.com',
     },
     inLanguage: ['tzm', 'en', 'fr', 'ar', 'es'],
     numberOfTerms: entries.length,

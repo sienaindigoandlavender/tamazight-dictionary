@@ -4,6 +4,7 @@ import alphabetData from '@/data/alphabet.json';
 import { AlphabetLetter } from '@/types';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://amazigh.online/alphabet' },
   title: 'Tifinagh Alphabet - Amawal Tamazight Dictionary',
   description: 'Learn the Tifinagh alphabet, the traditional script of the Amazigh (Berber) people. Complete chart with Latin equivalents and pronunciation guides.',
 };

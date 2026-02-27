@@ -1,11 +1,12 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { SuggestCorrectionFloating } from "@/components/SuggestCorrection";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amawal.vercel.app';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amazigh.online';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -31,9 +32,14 @@ export const metadata: Metadata = {
     "Berber language", "Amazigh dictionary", "learn Tamazight", "Tifinagh alphabet",
     "verb conjugation", "etymology", "pronunciation"
   ],
-  authors: [{ name: "Amawal Project" }],
-  creator: "Amawal Project",
-  publisher: "Amawal Project",
+  authors: [{ name: "Dancing with Lions" }],
+  creator: "Dancing with Lions",
+  publisher: "Dancing with Lions",
+
+  // Canonical
+  alternates: {
+    canonical: siteUrl,
+  },
 
   // OpenGraph
   openGraph: {
@@ -120,8 +126,13 @@ const jsonLd = {
   },
   publisher: {
     "@type": "Organization",
-    name: "Amawal Project",
+    name: "Amawal",
     url: siteUrl,
+    parentOrganization: {
+      "@type": "Organization",
+      name: "Dancing with Lions",
+      url: "https://dancingwiththelions.com",
+    },
   },
 };
 
@@ -137,6 +148,9 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {/* Google Analytics */}
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-JZZL8XR39X" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-JZZL8XR39X');` }} />
       </head>
       <body className="font-sans antialiased min-h-screen flex flex-col">
         <ThemeProvider>

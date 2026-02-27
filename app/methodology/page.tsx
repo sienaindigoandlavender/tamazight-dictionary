@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://amazigh.online/methodology' },
   title: 'Methodology - Amawal',
   description: 'Research methodology, sources, and ethical framework for the Amawal Tamazight Dictionary and Cultural Archive.',
 };
@@ -144,7 +145,7 @@ export default function MethodologyPage() {
             If referencing this archive in academic or professional contexts:
           </p>
           <p className="text-sm font-mono bg-foreground/5 p-3 text-foreground/70">
-            Amawal: Tamazight Dictionary and Cultural Archive. https://amawal.org. Accessed [date].
+            Amawal: Tamazight Dictionary and Cultural Archive. https://amazigh.online. Accessed [date].
           </p>
         </section>
 

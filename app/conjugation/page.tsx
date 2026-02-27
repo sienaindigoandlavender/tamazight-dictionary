@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { getAllVerbs } from '@/lib/conjugation';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://amazigh.online/conjugation' },
   title: 'Verb Conjugation - Amawal Tamazight Dictionary',
   description: 'Learn Tachelhit verb conjugations including aorist, preterite, imperative, and intensive forms.',
 };

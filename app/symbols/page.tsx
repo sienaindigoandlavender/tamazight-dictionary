@@ -4,6 +4,7 @@ import { getAllSymbols, getAvailableCategories, getAvailableMedia, formatCategor
 import SymbolCard from '@/components/SymbolCard';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://amazigh.online/symbols' },
   title: 'Symbol Dictionary - Amawal',
   description: 'Explore Amazigh visual symbols - geometric patterns, tattoos, weaving motifs, and their meanings across Berber cultures.',
 };

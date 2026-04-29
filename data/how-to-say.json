@@ -1,0 +1,76 @@
+{
+  "groups": [
+    {
+      "label": "Greetings & courtesy",
+      "terms": [
+        { "slug": "hello", "label": "hello", "word": "azul" },
+        { "slug": "thank-you", "label": "thank you", "word": "tanmirt" },
+        { "slug": "friend", "label": "friend", "word": "amddakl" },
+        { "slug": "peace", "label": "peace", "word": "laεfu" }
+      ]
+    },
+    {
+      "label": "Family & people",
+      "terms": [
+        { "slug": "mother", "label": "mother", "word": "yemma" },
+        { "slug": "father", "label": "father", "word": "baba" },
+        { "slug": "man", "label": "man", "word": "argaz" },
+        { "slug": "woman", "label": "woman", "word": "tamghart" },
+        { "slug": "girl", "label": "girl", "word": "tafrukht" }
+      ]
+    },
+    {
+      "label": "Food & drink",
+      "terms": [
+        { "slug": "water", "label": "water", "word": "aman" },
+        { "slug": "bread", "label": "bread", "word": "aghrum" },
+        { "slug": "honey", "label": "honey", "word": "tament" },
+        { "slug": "couscous", "label": "couscous", "word": "seksu" }
+      ]
+    },
+    {
+      "label": "Numbers",
+      "terms": [
+        { "slug": "one", "label": "one", "word": "yan" },
+        { "slug": "two", "label": "two", "word": "sin" },
+        { "slug": "three", "label": "three", "word": "kraḍ" },
+        { "slug": "five", "label": "five", "word": "smmus" },
+        { "slug": "ten", "label": "ten", "word": "mraw" }
+      ]
+    },
+    {
+      "label": "Nature",
+      "terms": [
+        { "slug": "sun", "label": "sun", "word": "tafukt" },
+        { "slug": "moon", "label": "moon", "word": "ayyur" },
+        { "slug": "star", "label": "star", "word": "itri" },
+        { "slug": "mountain", "label": "mountain", "word": "adrar" },
+        { "slug": "earth", "label": "earth", "word": "akal" }
+      ]
+    },
+    {
+      "label": "Time",
+      "terms": [
+        { "slug": "day", "label": "day", "word": "ass" },
+        { "slug": "now", "label": "now", "word": "tura" },
+        { "slug": "tomorrow", "label": "tomorrow", "word": "azka" }
+      ]
+    },
+    {
+      "label": "Places",
+      "terms": [
+        { "slug": "house", "label": "house", "word": "tigmmi" },
+        { "slug": "door", "label": "door", "word": "tawwurt" },
+        { "slug": "road", "label": "road", "word": "agharas" }
+      ]
+    },
+    {
+      "label": "Words to live by",
+      "terms": [
+        { "slug": "love", "label": "love", "word": "tayri" },
+        { "slug": "freedom", "label": "freedom", "word": "tilelli" },
+        { "slug": "knowledge", "label": "knowledge", "word": "tamusni" }
+      ]
+    }
+  ]
+}

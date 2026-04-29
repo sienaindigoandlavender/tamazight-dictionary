@@ -18,6 +18,7 @@ import TifinaghKeyboard, { TifinaghToggle } from '@/components/TifinaghKeyboard'
 import { AMAWAL_LOCALE_KEY, AMAWAL_LOCALE_EVENT, type AmawalLocale } from '@/components/LocaleSwitcher';
 import WordOfTheDay from './_home/WordOfTheDay';
 import FirstDaySection from './_home/FirstDaySection';
+import WisdomSection from './_home/WisdomSection';
 import RecentlyViewed from '@/components/RecentlyViewed';
 
 type TranslationDirection = 'en-tmz' | 'fr-tmz' | 'tmz-en' | 'tmz-fr';
@@ -321,6 +322,9 @@ export default function Home() {
 
       {/* ============ FIRST DAY ESSENTIALS ============ */}
       {!query && <FirstDaySection />}
+
+      {/* ============ FROM THE TRADITION ============ */}
+      {!query && <WisdomSection />}
 
       {/* ============ PHRASES DISCOVERY ============ */}
       {!query && (

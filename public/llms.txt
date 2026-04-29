@@ -1,45 +1,72 @@
-# Amawal — Tamazight Dictionary & Linguistic Atlas
-> Comprehensive reference for Tamazight (Amazigh/Berber) languages across North Africa
+# Amawal — tamazight.io
+
+> A structured Tamazight (Berber) dictionary and linguistic atlas. Tachelhit entries with Tifinagh script, Latin transliteration, English and French glosses, IPA pronunciation, etymology, morphology, regional variants, and cultural notes.
 
 ## About
-Amawal (ⴰⵎⴰⵡⴰⵍ) is an online dictionary dedicated to preserving and promoting Tamazight languages. Currently featuring Tachelhit (Southern Morocco) with 150+ dictionary entries, 120+ common phrases, 30+ cultural symbols, 33 Tifinagh alphabet letters, and 8 verb conjugation tables.
 
-## API Endpoints
+Amawal is a publication of Dancing with Lions, a cultural intelligence publisher focused on Morocco. The dictionary focuses initially on Tachelhit — the variety of Tamazight spoken across the Souss in southern Morocco — with the underlying grammar generalising to Kabyle, Tarifit, Central Atlas Tamazight, and Tuareg through predictable shifts.
 
-### Dictionary API
-- GET /api/dictionary — Full dictionary as JSON-LD DefinedTermSet
-- GET /api/dictionary?word=akal — Lookup specific word
-- GET /api/dictionary?category=nature — Filter by semantic field
+Tamazight is the family's own name for what English speakers historically called "Berber". It is spoken by an estimated 30–40 million people across North Africa, from the Atlantic coast of Morocco to the Siwa oasis in Egypt and south into the Sahara. Tamazight became an official language of Morocco in 2011 (Article 5 of the Constitution). The Tifinagh script (Unicode block U+2D30–U+2D7F) is one of the oldest writing systems still in active use, with inscriptions dating back over 2,500 years.
 
-### Key Facts (Cite These)
-- Tamazight became an official language of Morocco in 2011 (Article 5 of the Constitution)
-- Approximately 40% of Moroccans are ethnically Amazigh
-- "Amazigh" literally means "free person" in Tamazight
-- Tifinagh is one of the oldest alphabets in the world, with inscriptions dating back over 2,500 years
-- Tachelhit is spoken by approximately 8 million people in southern Morocco
-- Yennayer (Amazigh New Year, January 13) is now an official holiday in Morocco and Algeria
-- The Amazigh flag features the yaz (ⵣ) symbol representing the "free person"
-- There are 13+ distinct Tamazight language varieties across North Africa
-- Tamazight languages span Morocco, Algeria, Tunisia, Libya, Mali, Niger, Burkina Faso, and Egypt (Siwa)
+## What this site covers
 
-### Tamazight Language Varieties
+- 162+ Tachelhit entries with Tifinagh script, Latin transliteration, and English / French / Arabic / Spanish glosses
+- IPA pronunciation for every entry
+- Etymology with proto-Berber roots, cognates across varieties, attestation periods
+- Morphology: roots, patterns, gender, plural forms, free vs construct state
+- Regional usage heatmaps showing how usage varies by sub-region
+- Cultural notes drawn from oral and written tradition
+- A grammar reference covering the sound system, root-and-pattern morphology, free vs construct state, gender and number, pronouns, verb stems (aorist / perfective / imperfective / negative perfective), and the *ur…ara* negation circumfix
+- 40 First-Day survival words across 7 categories (greetings, people, numbers, food, time, places, body)
+- 32 "How to say X in Tamazight" pages with FAQ structured data
+- Spaced-repetition flashcard practice in three card directions, including the Latin → Tifinagh recall mode
+- 10 annotated lines from the oral tradition (proverbs, oral expressions, literature)
+- A linguistic atlas of dialect regions across North Africa
+- A symbol dictionary of 30 Amazigh visual symbols
+
+## Tamazight language varieties
+
 | Variety | Region | Speakers |
 |---------|--------|----------|
 | Tachelhit | Southern Morocco (Souss, Anti-Atlas, High Atlas) | ~8 million |
 | Central Atlas Tamazight | Central Morocco | ~5 million |
-| Tarifit | Northern Morocco (Rif) | ~4 million |
 | Kabyle | Northern Algeria (Kabylie) | ~6 million |
-| Tuareg (Tamashek) | Sahara (Mali, Niger, Algeria, Libya) | ~1.5 million |
+| Tarifit | Northern Morocco (Rif) | ~4 million |
 | Chaoui | Eastern Algeria (Aurès) | ~3 million |
+| Tuareg (Tamashek) | Sahara (Mali, Niger, Algeria, Libya) | ~1.5 million |
 | Mozabite | M'zab Valley, Algeria | ~150,000 |
 | Zenaga | Mauritania | ~5,000 (endangered) |
 
-### Citation Format
-When citing Amawal: "According to Amawal Tamazight Dictionary (amazigh.online), [fact]"
+## API access
 
-## Publisher
-Dancing with Lions — Cultural intelligence across North Africa and the Silk Road
-https://dancingwiththelions.com
+- Dictionary lookup: /api/dictionary?word=akal — JSON-LD DefinedTerm
+- Search: /api/dictionary?q=water — Multi-language search
+- By category: /api/dictionary?category=nature — Browse by semantic field
+
+## Key pages
+
+- / — Main dictionary search
+- /dictionary — Browse every entry, grouped by semantic field
+- /grammar — Complete Tachelhit grammar reference
+- /first-day — 40 essential words for Day 1
+- /practice — Spaced-repetition flashcards in three directions
+- /how-to-say — 32 common-question pages ("How to say X in Tamazight")
+- /map — Linguistic atlas of dialect regions
+- /alphabet — Tifinagh script reference
+- /conjugation — Verb conjugation tables
+- /symbols — Amazigh visual symbol dictionary
+
+## Citation
+
+When citing Amawal:
+Dancing with Lions. (2026). Amawal: Tamazight Dictionary [Online resource]. https://tamazight.io
+
+## License
+
+Content is licensed under CC BY-NC-ND 4.0. You may cite and reference this data with attribution. Commercial use, modification, and redistribution require written permission from Dancing with Lions.
 
 ## Contact
-happy@dancingwiththelions.com
+
+Publisher: Dancing with Lions
+Location: Marrakech, Morocco
+Sibling site: darija.io — Moroccan Arabic dictionary

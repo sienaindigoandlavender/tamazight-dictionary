@@ -27,10 +27,25 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: 'Word Not Found - Amawal' };
   }
 
+  const meaning = entry.definitions.find(d => d.language === 'en')?.meaning ?? entry.definitions[0]?.meaning ?? '';
+  const title = `${entry.word} (${entry.tifinagh}) — Tamazight Dictionary`;
+  const description = `${entry.word} means "${meaning}" in Tachelhit. Tifinagh: ${entry.tifinagh}. Pronunciation, etymology, regional variants.`;
+
   return {
-    title: `${entry.word} (${entry.tifinagh}) - Amawal Tamazight Dictionary`,
-    description: `${entry.word} means "${entry.definitions[0]?.meaning}" in Tachelhit. Tifinagh: ${entry.tifinagh}. Learn pronunciation, etymology, and examples.`,
+    title,
+    description,
     alternates: { canonical: `https://tamazight.io/dictionary/${encodeURIComponent(entry.word)}` },
+    openGraph: {
+      title,
+      description,
+      type: 'article',
+      url: `https://tamazight.io/dictionary/${encodeURIComponent(entry.word)}`,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+    },
   };
 }
 

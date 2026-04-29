@@ -117,6 +117,17 @@ export default function FirstDayClient({ sections, total }: Props) {
           </ul>
         </section>
       ))}
+
+      <section className="px-6 md:px-[8%] lg:px-[12%] py-16 md:py-20 border-t border-neutral-100 dark:border-white/10 text-center">
+        <p className="font-display text-3xl md:text-4xl mb-3 tracking-tight">Ready to memorise them?</p>
+        <p className="text-neutral-500 dark:text-neutral-400 mb-8">Flashcards with spaced repetition. Words you miss come back.</p>
+        <Link
+          href="/practice"
+          className="inline-block px-8 py-4 bg-foreground text-background text-sm uppercase tracking-wider hover:opacity-90 transition-opacity"
+        >
+          Practice first-day words
+        </Link>
+      </section>
     </div>
   );
 }

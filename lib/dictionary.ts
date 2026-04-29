@@ -185,6 +185,46 @@ export function getFirstDayEntries(region: Region = 'tachelhit'): DictionaryEntr
   return getFirstDaySections(region).flatMap(s => s.entries);
 }
 
+// Annotated lines from the oral and written tradition — proverbs,
+// oral expressions, song, poetry, literature. Returned with their host
+// entry so the home Wisdom section can link back into the dictionary.
+export interface TraditionLine {
+  entryWord: string;
+  entryTifinagh: string;
+  type: 'proverb' | 'oral' | 'song' | 'poetry' | 'literature';
+  text: string;
+  tifinagh: string;
+  en?: string;
+  fr?: string;
+  attribution?: string;
+}
+
+export function getTraditionLines(region: Region = 'tachelhit'): TraditionLine[] {
+  const allowed = new Set(['proverb', 'oral', 'song', 'poetry', 'literature']);
+  const seen = new Set<string>();
+  const out: TraditionLine[] = [];
+  for (const e of getAllEntries(region)) {
+    for (const ex of e.examples ?? []) {
+      const t = ex.source?.type;
+      if (!t || !allowed.has(t)) continue;
+      const key = `${e.word}|${ex.text}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      out.push({
+        entryWord: e.word,
+        entryTifinagh: e.tifinagh,
+        type: t as TraditionLine['type'],
+        text: ex.text,
+        tifinagh: ex.tifinagh,
+        en: ex.translations?.find(tr => tr.language === 'en')?.text,
+        fr: ex.translations?.find(tr => tr.language === 'fr')?.text,
+        attribution: ex.source?.attribution,
+      });
+    }
+  }
+  return out;
+}
+
 // Entries rich enough to be a "word of the day" — at minimum a cultural
 // note, otherwise a usage note, etymology note, or example.
 export function getRichEntries(region: Region = 'tachelhit'): DictionaryEntry[] {

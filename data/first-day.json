@@ -1,0 +1,39 @@
+{
+  "sections": [
+    {
+      "id": "greetings",
+      "label": "Greetings & courtesy",
+      "words": ["azul", "tanmirt", "amddakl", "tagmat", "lḥurma", "laεfu"]
+    },
+    {
+      "id": "people",
+      "label": "People",
+      "words": ["argaz", "tamghart", "afrux", "tafrukht", "baba", "yemma"]
+    },
+    {
+      "id": "numbers",
+      "label": "Numbers (1–10)",
+      "words": ["yan", "sin", "kraḍ", "kkuẓ", "smmus", "sḍis", "sa", "tam", "tẓa", "mraw"]
+    },
+    {
+      "id": "food",
+      "label": "Food & water",
+      "words": ["aman", "aghrum", "seksu", "tament", "tifiyi", "tiskrt"]
+    },
+    {
+      "id": "time",
+      "label": "Time",
+      "words": ["ass", "iḍ", "tura", "azka"]
+    },
+    {
+      "id": "place",
+      "label": "Places & travel",
+      "words": ["agharas", "tawada", "tawwurt", "afella"]
+    },
+    {
+      "id": "body",
+      "label": "Body",
+      "words": ["ixf", "ul", "afus", "idammn"]
+    }
+  ]
+}

@@ -18,6 +18,7 @@ export default function Header() {
 
         <nav className="hidden md:flex items-center gap-7 text-xs uppercase tracking-widest">
           <Link href="/" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">Dictionary</Link>
+          <Link href="/first-day" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">First Day</Link>
           <Link href="/symbols" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">Symbols</Link>
           <Link href="/map" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">Atlas</Link>
           <Link href="/alphabet" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">Tifinagh</Link>
@@ -52,6 +53,7 @@ export default function Header() {
         <div className="md:hidden border-t border-neutral-100 dark:border-white/10 bg-white dark:bg-[#0a0a0a]">
           <div className="px-6 py-6 flex flex-col gap-5">
             <Link href="/" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Dictionary</Link>
+            <Link href="/first-day" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>First Day</Link>
             <Link href="/symbols" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Symbols</Link>
             <Link href="/map" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Linguistic Atlas</Link>
             <Link href="/alphabet" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Tifinagh</Link>

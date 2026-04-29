@@ -47,7 +47,10 @@
     "contact": "Contact",
     "privacy": "Privacy",
     "terms": "Terms of Use",
-    "accessibility": "Accessibility"
+    "accessibility": "Accessibility",
+    "dialectsHeading": "Dialects",
+    "dialectsMorocco": "Morocco",
+    "dialectsBeyond": "Beyond Morocco"
   },
   "language": {
     "switch": "Switch language",

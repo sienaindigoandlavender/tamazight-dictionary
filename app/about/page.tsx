@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  alternates: { canonical: 'https://amazigh.online/about' },
+  alternates: { canonical: 'https://tamazight.io/about' },
   title: 'About - Amawal Tamazight Dictionary',
   description: 'Learn about the Tamazight language, Amazigh culture, and the mission behind the Amawal dictionary project.',
 };

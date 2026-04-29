@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${entry.word} (${entry.tifinagh}) - Amawal Tamazight Dictionary`,
     description: `${entry.word} means "${entry.definitions[0]?.meaning}" in Tachelhit. Tifinagh: ${entry.tifinagh}. Learn pronunciation, etymology, and examples.`,
-    alternates: { canonical: `https://amazigh.online/dictionary/${encodeURIComponent(entry.word)}` },
+    alternates: { canonical: `https://tamazight.io/dictionary/${encodeURIComponent(entry.word)}` },
   };
 }
 
@@ -473,7 +473,7 @@ function RelatedByRootSection({ entry }: { entry: DictionaryEntry }) {
 
 // Generate JSON-LD structured data for dictionary entry
 function generateJsonLd(entry: DictionaryEntry) {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amazigh.online';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://tamazight.io';
 
   return {
     "@context": "https://schema.org",

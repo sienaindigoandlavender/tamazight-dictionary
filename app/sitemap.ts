@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { getAllEntries } from '@/lib/dictionary';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amazigh.online';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://tamazight.io';
   const now = new Date().toISOString();
 
   // Static pages

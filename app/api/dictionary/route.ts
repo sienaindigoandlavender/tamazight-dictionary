@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAllEntries, getEntryByWord, searchEntries } from '@/lib/dictionary';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amazigh.online';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://tamazight.io';
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);

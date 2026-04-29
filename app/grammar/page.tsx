@@ -376,7 +376,7 @@ export default function GrammarPage() {
             Negation is a <strong>circumfix</strong>: <em>ur</em> in front of the verb, <em>ara</em> after it. The verb between them takes the negative perfective stem.
           </p>
           <p className="text-foreground text-lg max-w-3xl leading-relaxed mb-12">
-            This pattern — a particle on each side of the verb — is shared with French (<em>ne… pas</em>) and Maghrebi Arabic (<em>ma… ši</em>). It&rsquo;s a regional feature that crosses language families across North Africa.
+            This pattern — a particle on each side of the verb — is shared with French (<em>ne… pas</em>) and <a href="https://darija.io/grammar" className="underline decoration-dotted underline-offset-4 hover:text-[#c53a1a]">Maghrebi Arabic</a> (<em>ma… ši</em>). It&rsquo;s a regional feature that crosses language families across North Africa.
           </p>
 
           <div className="max-w-3xl space-y-6">

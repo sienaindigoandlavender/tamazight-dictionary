@@ -1,4 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="96" fill="#1a1a1a"/>
-  <text x="256" y="380" text-anchor="middle" font-family="Noto Sans Tifinagh, sans-serif" font-size="360" fill="#ffffff">ⴰ</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <g stroke="#c53a1a" stroke-width="14" stroke-linecap="round" fill="none">
+    <line x1="20" y1="15" x2="20" y2="85"/>
+    <line x1="50" y1="15" x2="50" y2="85"/>
+    <line x1="80" y1="15" x2="80" y2="85"/>
+    <line x1="20" y1="50" x2="80" y2="50"/>
+  </g>
 </svg>

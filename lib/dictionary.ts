@@ -2,6 +2,7 @@ import { DictionaryEntry, Region, Language, SemanticField } from '@/types';
 import tachelhitData from '@/data/dictionary/tachelhit.json';
 import tachelhitEnhancedData from '@/data/dictionary/tachelhit-enhanced.json';
 import firstDayData from '@/data/first-day.json';
+import howToSayData from '@/data/how-to-say.json';
 
 // Merge entries: enhanced entries override basic ones by ID
 function mergeEntries(basic: DictionaryEntry[], enhanced: DictionaryEntry[]): DictionaryEntry[] {
@@ -183,6 +184,31 @@ export function getFirstDaySections(region: Region = 'tachelhit'): FirstDaySecti
 
 export function getFirstDayEntries(region: Region = 'tachelhit'): DictionaryEntry[] {
   return getFirstDaySections(region).flatMap(s => s.entries);
+}
+
+// "How to say X in Tamazight" — curated mapping of slug → dictionary
+// entry. Used by the /how-to-say SEO surface.
+export interface HowToSayTerm {
+  slug: string;
+  label: string;
+  group: string;
+  entry: DictionaryEntry;
+}
+
+export function getHowToSayTerms(region: Region = 'tachelhit'): HowToSayTerm[] {
+  const byWord = new Map(getAllEntries(region).map(e => [e.word, e]));
+  const out: HowToSayTerm[] = [];
+  for (const g of (howToSayData.groups as { label: string; terms: { slug: string; label: string; word: string }[] }[])) {
+    for (const t of g.terms) {
+      const entry = byWord.get(t.word);
+      if (entry) out.push({ slug: t.slug, label: t.label, group: g.label, entry });
+    }
+  }
+  return out;
+}
+
+export function getHowToSayTerm(slug: string, region: Region = 'tachelhit'): HowToSayTerm | undefined {
+  return getHowToSayTerms(region).find(t => t.slug === slug);
 }
 
 // Annotated lines from the oral and written tradition — proverbs,

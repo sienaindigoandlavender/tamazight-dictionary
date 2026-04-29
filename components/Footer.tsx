@@ -18,6 +18,16 @@ export default function Footer() {
               <p className="text-xs text-white/70 leading-relaxed max-w-xs">
                 A living dictionary and linguistic atlas preserving Tamazight languages across North Africa.
               </p>
+              <p className="text-[10px] uppercase tracking-[0.2em] text-white/50 mt-5">
+                Sibling site
+              </p>
+              <a
+                href="https://darija.io"
+                rel="noopener"
+                className="text-xs text-white/85 hover:text-white transition-colors mt-1 inline-block"
+              >
+                darija.io <span className="text-white/40">— Moroccan Arabic dictionary</span>
+              </a>
             </div>
 
             {/* Learn */}
@@ -60,9 +70,9 @@ export default function Footer() {
       <div style={{ backgroundColor: '#161616' }}>
         <div className="max-w-7xl mx-auto px-6 py-3">
           <div className="flex flex-wrap items-center gap-6 text-xs">
-            <Link href="/privacy" className="text-white/85 hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="text-white/85 hover:text-white transition-colors">Terms of Use</Link>
-            <Link href="/accessibility" className="text-white/85 hover:text-white transition-colors">Accessibility</Link>
+            <Link href="/legal/privacy" className="text-white/85 hover:text-white transition-colors">Privacy</Link>
+            <Link href="/legal/terms" className="text-white/85 hover:text-white transition-colors">Terms of Use</Link>
+            <Link href="/legal/accessibility" className="text-white/85 hover:text-white transition-colors">Accessibility</Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { DictionaryEntry, Region, Language, SemanticField } from '@/types';
 import tachelhitData from '@/data/dictionary/tachelhit.json';
 import tachelhitEnhancedData from '@/data/dictionary/tachelhit-enhanced.json';
+import firstDayData from '@/data/first-day.json';
 
 // Merge entries: enhanced entries override basic ones by ID
 function mergeEntries(basic: DictionaryEntry[], enhanced: DictionaryEntry[]): DictionaryEntry[] {
@@ -157,6 +158,31 @@ export function getRandomEntries(count: number = 5, region: Region = 'tachelhit'
   const entries = getAllEntries(region);
   const shuffled = [...entries].sort(() => Math.random() - 0.5);
   return shuffled.slice(0, count);
+}
+
+// Curated "first day" essentials — grouped sections, looked up against
+// the live dictionary so a slug typo is dropped silently rather than
+// shipping a broken row.
+export interface FirstDaySection {
+  id: string;
+  label: string;
+  entries: DictionaryEntry[];
+}
+
+export function getFirstDaySections(region: Region = 'tachelhit'): FirstDaySection[] {
+  const entries = getAllEntries(region);
+  const byWord = new Map(entries.map(e => [e.word, e]));
+  return (firstDayData.sections as { id: string; label: string; words: string[] }[])
+    .map(s => ({
+      id: s.id,
+      label: s.label,
+      entries: s.words.map(w => byWord.get(w)).filter((e): e is DictionaryEntry => Boolean(e)),
+    }))
+    .filter(s => s.entries.length > 0);
+}
+
+export function getFirstDayEntries(region: Region = 'tachelhit'): DictionaryEntry[] {
+  return getFirstDaySections(region).flatMap(s => s.entries);
 }
 
 // Entries rich enough to be a "word of the day" — at minimum a cultural

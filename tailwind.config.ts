@@ -11,11 +11,16 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        muted: { DEFAULT: "var(--muted)", foreground: "var(--muted)" },
         "muted-foreground": "var(--muted)",
+        accent: { DEFAULT: "var(--accent)", warm: "var(--accent-warm)" },
+        surface: "var(--surface)",
       },
       fontFamily: {
-        serif: ['Cormorant Garamond', 'serif'],
-        sans: ['Inter', 'sans-serif'],
+        display: ['Playfair Display', 'serif'],
+        serif: ['Playfair Display', 'serif'],
+        sans: ['DM Sans', 'sans-serif'],
+        mono: ['IBM Plex Mono', 'monospace'],
         tifinagh: ['Noto Sans Tifinagh', 'sans-serif'],
       },
     },

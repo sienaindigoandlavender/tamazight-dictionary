@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import { getEntryByWord, getAllEntries, getEntriesByRoot } from '@/lib/dictionary';
 import AudioPlayer from '@/components/AudioPlayer';
 import WordHeatMap from '@/components/WordHeatMap';
+import RecentTracker from '@/components/RecentTracker';
 import { DictionaryEntry, Example, CrossReference, UsageNote, Variant, RegionalUsage, SemanticShift } from '@/types';
 
 interface PageProps {
@@ -508,6 +509,10 @@ export default async function WordPage({ params }: PageProps) {
   }
 
   const jsonLd = generateJsonLd(entry);
+  const trackerSub =
+    entry.definitions.find(d => d.language === 'en')?.meaning ??
+    entry.definitions[0]?.meaning ??
+    '';
 
   return (
     <>
@@ -515,6 +520,7 @@ export default async function WordPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <RecentTracker word={entry.word} tifinagh={entry.tifinagh} sub={trackerSub} />
     <div className="max-w-4xl mx-auto px-6 py-16">
       {/* Breadcrumb */}
       <nav className="mb-12 text-xs uppercase tracking-widest text-muted-foreground">

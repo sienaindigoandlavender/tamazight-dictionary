@@ -1,10 +1,11 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Metadata } from 'next';
-import { getEntryByWord, getAllEntries, getEntriesByRoot } from '@/lib/dictionary';
+import { getEntryByWord, getAllEntries, getEntriesByRoot, getFirstDayEntries } from '@/lib/dictionary';
 import AudioPlayer from '@/components/AudioPlayer';
 import WordHeatMap from '@/components/WordHeatMap';
 import RecentTracker from '@/components/RecentTracker';
+import EntryContextStrip from '@/components/EntryContextStrip';
 import { DictionaryEntry, Example, CrossReference, UsageNote, Variant, RegionalUsage, SemanticShift } from '@/types';
 
 interface PageProps {
@@ -528,6 +529,7 @@ export default async function WordPage({ params }: PageProps) {
     entry.definitions.find(d => d.language === 'en')?.meaning ??
     entry.definitions[0]?.meaning ??
     '';
+  const isFirstDay = getFirstDayEntries('tachelhit').some(e => e.id === entry.id);
 
   return (
     <>
@@ -558,6 +560,7 @@ export default async function WordPage({ params }: PageProps) {
                 )}
               </p>
             )}
+            <EntryContextStrip entryId={entry.id} word={entry.word} isFirstDay={isFirstDay} />
           </div>
           {entry.audio ? (
             <AudioPlayer audio={entry.audio} word={entry.word} />

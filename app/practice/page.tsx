@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import {
   getFirstDayEntries,
   getEntriesBySemanticField,
+  getEntryByWord,
 } from '@/lib/dictionary';
 import type { DictionaryEntry, SemanticField } from '@/types';
 import PracticeClient, { type DeckSpec, type PracticeEntry } from './PracticeClient';
@@ -42,13 +43,25 @@ function slim(e: DictionaryEntry): PracticeEntry {
   };
 }
 
-export default function PracticePage() {
+interface PracticePageProps {
+  searchParams: Promise<{ word?: string }>;
+}
+
+export default async function PracticePage({ searchParams }: PracticePageProps) {
+  const { word } = await searchParams;
+
   const decks: DeckSpec[] = DECK_FIELDS.map(d => {
     const entries = d.firstDay
       ? getFirstDayEntries('tachelhit')
       : getEntriesBySemanticField(d.field as SemanticField, 'tachelhit');
     return { id: d.id, label: d.label, entries: entries.map(slim) };
   }).filter(d => d.entries.length >= 4);
+
+  let featured: PracticeEntry | undefined;
+  if (word) {
+    const entry = getEntryByWord(decodeURIComponent(word), 'tachelhit');
+    if (entry) featured = slim(entry);
+  }
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -65,7 +78,7 @@ export default function PracticePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <PracticeClient decks={decks} />
+      <PracticeClient decks={decks} featured={featured} />
     </>
   );
 }

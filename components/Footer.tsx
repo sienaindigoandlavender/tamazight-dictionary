@@ -20,36 +20,36 @@ export default function Footer() {
               </p>
             </div>
 
+            {/* Learn */}
+            <div>
+              <h3 className="uppercase tracking-widest text-[10px] text-white/80 mb-3">Learn</h3>
+              <ul className="space-y-2">
+                <li><Link href="/" className="text-xs text-white/90 hover:text-white transition-colors">Dictionary</Link></li>
+                <li><Link href="/first-day" className="text-xs text-white/90 hover:text-white transition-colors">First Day</Link></li>
+                <li><Link href="/practice" className="text-xs text-white/90 hover:text-white transition-colors">Practice</Link></li>
+                <li><Link href="/grammar" className="text-xs text-white/90 hover:text-white transition-colors">Grammar</Link></li>
+                <li><Link href="/how-to-say" className="text-xs text-white/90 hover:text-white transition-colors">Phrases</Link></li>
+              </ul>
+            </div>
+
             {/* Explore */}
             <div>
               <h3 className="uppercase tracking-widest text-[10px] text-white/80 mb-3">Explore</h3>
               <ul className="space-y-2">
-                <li><Link href="/" className="text-xs text-white/90 hover:text-white transition-colors">Translate</Link></li>
-                <li><Link href="/symbols" className="text-xs text-white/90 hover:text-white transition-colors">Symbol Dictionary</Link></li>
                 <li><Link href="/map" className="text-xs text-white/90 hover:text-white transition-colors">Linguistic Atlas</Link></li>
+                <li><Link href="/symbols" className="text-xs text-white/90 hover:text-white transition-colors">Symbol Dictionary</Link></li>
                 <li><Link href="/alphabet" className="text-xs text-white/90 hover:text-white transition-colors">Tifinagh Alphabet</Link></li>
                 <li><Link href="/conjugation" className="text-xs text-white/90 hover:text-white transition-colors">Verb Conjugation</Link></li>
               </ul>
             </div>
 
-            {/* Learn */}
+            {/* Project */}
             <div>
-              <h3 className="uppercase tracking-widest text-[10px] text-white/80 mb-3">Learn</h3>
+              <h3 className="uppercase tracking-widest text-[10px] text-white/80 mb-3">Project</h3>
               <ul className="space-y-2">
-                <li><Link href="/about" className="text-xs text-white/90 hover:text-white transition-colors">About Tamazight</Link></li>
+                <li><Link href="/about" className="text-xs text-white/90 hover:text-white transition-colors">About</Link></li>
                 <li><Link href="/methodology" className="text-xs text-white/90 hover:text-white transition-colors">Methodology</Link></li>
                 <li><Link href="/contact" className="text-xs text-white/90 hover:text-white transition-colors">Contact</Link></li>
-              </ul>
-            </div>
-
-            {/* Dialects */}
-            <div>
-              <h3 className="uppercase tracking-widest text-[10px] text-white/80 mb-3">Dialects</h3>
-              <ul className="space-y-2">
-                <li><Link href="/map/tachelhit" className="text-xs text-white/90 hover:text-white transition-colors">Tachelhit</Link></li>
-                <li><span className="text-xs text-white/40">Kabyle</span></li>
-                <li><span className="text-xs text-white/40">Tarifit</span></li>
-                <li><span className="text-xs text-white/40">Central Atlas</span></li>
               </ul>
             </div>
           </div>

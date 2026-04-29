@@ -22,11 +22,6 @@ export default function Header() {
           <Link href="/practice" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">Practice</Link>
           <Link href="/grammar" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">Grammar</Link>
           <Link href="/how-to-say" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">Phrases</Link>
-          <Link href="/symbols" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">Symbols</Link>
-          <Link href="/map" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">Atlas</Link>
-          <Link href="/alphabet" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">Tifinagh</Link>
-          <Link href="/conjugation" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">Conjugation</Link>
-          <Link href="/about" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">About</Link>
         </nav>
 
         <div className="flex items-center gap-3 md:gap-4">
@@ -60,11 +55,13 @@ export default function Header() {
             <Link href="/practice" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Practice</Link>
             <Link href="/grammar" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Grammar</Link>
             <Link href="/how-to-say" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Phrases</Link>
-            <Link href="/symbols" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Symbols</Link>
-            <Link href="/map" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Linguistic Atlas</Link>
-            <Link href="/alphabet" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Tifinagh</Link>
-            <Link href="/conjugation" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Conjugation</Link>
-            <Link href="/about" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>About</Link>
+            <div className="pt-2 border-t border-neutral-100 dark:border-white/10 mt-2 flex flex-col gap-5">
+              <Link href="/map" className="text-xs uppercase tracking-widest text-neutral-500 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Atlas</Link>
+              <Link href="/symbols" className="text-xs uppercase tracking-widest text-neutral-500 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Symbols</Link>
+              <Link href="/alphabet" className="text-xs uppercase tracking-widest text-neutral-500 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Tifinagh</Link>
+              <Link href="/conjugation" className="text-xs uppercase tracking-widest text-neutral-500 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Conjugation</Link>
+              <Link href="/about" className="text-xs uppercase tracking-widest text-neutral-500 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>About</Link>
+            </div>
             <div className="pt-4 border-t border-neutral-100 dark:border-white/10 flex items-center justify-between gap-4">
               <LocaleSwitcher />
               <ThemeToggleCompact />

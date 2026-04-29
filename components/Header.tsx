@@ -2,11 +2,13 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import ThemeToggle, { ThemeToggleCompact } from './ThemeToggle';
 import LocaleSwitcher from './LocaleSwitcher';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const t = useTranslations('nav');
 
   return (
     <header className="fixed top-0 inset-x-0 z-40 bg-white/90 dark:bg-[#0a0a0a]/90 backdrop-blur border-b border-neutral-100 dark:border-white/10">
@@ -17,11 +19,11 @@ export default function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-7 text-xs uppercase tracking-widest">
-          <Link href="/" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">Dictionary</Link>
-          <Link href="/first-day" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">First Day</Link>
-          <Link href="/practice" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">Practice</Link>
-          <Link href="/grammar" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">Grammar</Link>
-          <Link href="/how-to-say" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">Phrases</Link>
+          <Link href="/" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">{t('dictionary')}</Link>
+          <Link href="/first-day" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">{t('firstDay')}</Link>
+          <Link href="/practice" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">{t('practice')}</Link>
+          <Link href="/grammar" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">{t('grammar')}</Link>
+          <Link href="/how-to-say" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">{t('phrases')}</Link>
         </nav>
 
         <div className="flex items-center gap-3 md:gap-4">
@@ -50,17 +52,17 @@ export default function Header() {
       {isMenuOpen && (
         <div className="md:hidden border-t border-neutral-100 dark:border-white/10 bg-white dark:bg-[#0a0a0a]">
           <div className="px-6 py-6 flex flex-col gap-5">
-            <Link href="/" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Dictionary</Link>
-            <Link href="/first-day" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>First Day</Link>
-            <Link href="/practice" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Practice</Link>
-            <Link href="/grammar" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Grammar</Link>
-            <Link href="/how-to-say" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Phrases</Link>
+            <Link href="/" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>{t('dictionary')}</Link>
+            <Link href="/first-day" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>{t('firstDay')}</Link>
+            <Link href="/practice" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>{t('practice')}</Link>
+            <Link href="/grammar" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>{t('grammar')}</Link>
+            <Link href="/how-to-say" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>{t('phrases')}</Link>
             <div className="pt-2 border-t border-neutral-100 dark:border-white/10 mt-2 flex flex-col gap-5">
-              <Link href="/map" className="text-xs uppercase tracking-widest text-neutral-500 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Atlas</Link>
-              <Link href="/symbols" className="text-xs uppercase tracking-widest text-neutral-500 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Symbols</Link>
-              <Link href="/alphabet" className="text-xs uppercase tracking-widest text-neutral-500 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Tifinagh</Link>
-              <Link href="/conjugation" className="text-xs uppercase tracking-widest text-neutral-500 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Conjugation</Link>
-              <Link href="/about" className="text-xs uppercase tracking-widest text-neutral-500 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>About</Link>
+              <Link href="/map" className="text-xs uppercase tracking-widest text-neutral-500 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>{t('atlas')}</Link>
+              <Link href="/symbols" className="text-xs uppercase tracking-widest text-neutral-500 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>{t('symbols')}</Link>
+              <Link href="/alphabet" className="text-xs uppercase tracking-widest text-neutral-500 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>{t('tifinagh')}</Link>
+              <Link href="/conjugation" className="text-xs uppercase tracking-widest text-neutral-500 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>{t('conjugation')}</Link>
+              <Link href="/about" className="text-xs uppercase tracking-widest text-neutral-500 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>{t('about')}</Link>
             </div>
             <div className="pt-4 border-t border-neutral-100 dark:border-white/10 flex items-center justify-between gap-4">
               <LocaleSwitcher />

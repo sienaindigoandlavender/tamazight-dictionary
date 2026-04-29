@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
+import { useTranslations } from 'next-intl';
 import type { DictionaryEntry } from '@/types';
 import { getFirstDayEntries } from '@/lib/dictionary';
 import { AMAWAL_LOCALE_KEY, AMAWAL_LOCALE_EVENT, type AmawalLocale } from '@/components/LocaleSwitcher';
@@ -13,6 +14,7 @@ import { pickByDay } from './util';
  * No accordions, no expand toggles — clarity first.
  */
 export default function FirstDaySection() {
+  const t = useTranslations('home');
   const [locale, setLocale] = useState<AmawalLocale>('en');
 
   useEffect(() => {
@@ -40,18 +42,17 @@ export default function FirstDaySection() {
       <div className="grid md:grid-cols-12 gap-10 mb-12 md:mb-16">
         <div className="md:col-span-7">
           <p className="text-[#c53a1a] text-[11px] font-medium uppercase tracking-[0.3em] mb-4">
-            Essentials
+            {t('essentials')}
           </p>
           <h2
             id="first-day-heading"
             className="font-display text-4xl md:text-5xl lg:text-6xl leading-[0.95] tracking-tight"
-          >
-            Your first<br /><em>day</em> words
-          </h2>
+            dangerouslySetInnerHTML={{ __html: t.raw('essentialsTitle') }}
+          />
         </div>
         <div className="md:col-span-4 md:col-start-9 flex items-end">
           <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed">
-            A handful of the 40 words that get you through Day 1 in Tamazight country. Say them badly — people will love you for trying.
+            {t('essentialsDesc')}
           </p>
         </div>
       </div>
@@ -96,7 +97,7 @@ export default function FirstDaySection() {
           href="/first-day"
           className="text-sm uppercase tracking-[0.2em] text-[#c53a1a] hover:underline underline-offset-4"
         >
-          All first-day words →
+          {t('essentialsCta')}
         </Link>
       </div>
     </section>

@@ -1,0 +1,57 @@
+{
+  "site": {
+    "name": "Tamazight Dictionary",
+    "tagline": "Berber language, finally clear.",
+    "description": "Free Tamazight dictionary. {words} words, {phrases} phrases — with Tifinagh script, pronunciation, and {regions} dialect regions."
+  },
+  "nav": {
+    "dictionary": "Dictionary",
+    "firstDay": "First Day",
+    "practice": "Practice",
+    "grammar": "Grammar",
+    "phrases": "Phrases",
+    "atlas": "Atlas",
+    "symbols": "Symbols",
+    "tifinagh": "Tifinagh",
+    "conjugation": "Conjugation",
+    "about": "About"
+  },
+  "search": {
+    "try": "Try",
+    "back": "← Back to dictionary",
+    "backToSearch": "← Back to search"
+  },
+  "home": {
+    "wordOfTheDay": "Word of the day",
+    "recentlyViewed": "Recently viewed",
+    "essentials": "Essentials",
+    "essentialsTitle": "Your first <em>day</em> words",
+    "essentialsDesc": "A handful of the 40 words that get you through Day 1 in Tamazight country. Say them badly — people will love you for trying.",
+    "essentialsCta": "All first-day words →",
+    "tradition": "From the tradition",
+    "traditionTitle": "Voices that<br />carry the language",
+    "traditionDesc": "Proverbs, songs, and lines of poetry that show how Tachelhit lives in everyday speech. Each one links back to the word it builds around."
+  },
+  "footer": {
+    "tagline": "A living dictionary and linguistic atlas preserving Tamazight languages across North Africa.",
+    "siblingSite": "Sibling site",
+    "learn": "Learn",
+    "explore": "Explore",
+    "project": "Project",
+    "browseAll": "Browse all words",
+    "linguisticAtlas": "Linguistic Atlas",
+    "symbolDictionary": "Symbol Dictionary",
+    "tifinaghAlphabet": "Tifinagh Alphabet",
+    "verbConjugation": "Verb Conjugation",
+    "methodology": "Methodology",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "terms": "Terms of Use",
+    "accessibility": "Accessibility"
+  },
+  "language": {
+    "switch": "Switch language",
+    "english": "English",
+    "french": "French"
+  }
+}

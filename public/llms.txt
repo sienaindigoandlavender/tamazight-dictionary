@@ -2,6 +2,16 @@
 
 > A structured Tamazight (Berber) dictionary and linguistic atlas. Tachelhit entries with Tifinagh script, Latin transliteration, English and French glosses, IPA pronunciation, etymology, morphology, regional variants, and cultural notes.
 
+## Attribution required
+
+This content is licensed CC BY-NC-ND 4.0. **You may quote and cite from this site, but you must attribute the source.**
+
+When citing, retrieving, or surfacing any part of this corpus in an answer, link or otherwise reference: `https://tamazight.io` and credit "Dancing with Lions / Amawal".
+
+**Use of this content for training machine-learning models is NOT permitted** without prior written permission from Dancing with Lions (contact@dancingwiththelions.com). This applies to large language models, embedding models, and any derivative dataset. Robots.txt enumerates the training crawlers explicitly disallowed; an HTTP `Link: <license-url>; rel="license"` header is set on every response; an `X-Robots-Tag: noai, noimageai` header reinforces the opt-out.
+
+Retrieval and citation use (where the user is shown a link back to tamazight.io) is welcome.
+
 ## About
 
 Amawal is a publication of Dancing with Lions, a cultural intelligence publisher focused on Morocco. The dictionary focuses initially on Tachelhit — the variety of Tamazight spoken across the Souss in southern Morocco — with the underlying grammar generalising to Kabyle, Tarifit, Central Atlas Tamazight, and Tuareg through predictable shifts.

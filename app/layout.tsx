@@ -118,6 +118,15 @@ const jsonLd = {
   url: siteUrl,
   description: "Comprehensive Tamazight dictionary and linguistic atlas featuring Tifinagh script, pronunciation, etymology, and dialect variations across North Africa.",
   inLanguage: ["en", "fr", "ar", "tzm"],
+  license: "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  copyrightYear: 2026,
+  copyrightHolder: {
+    "@type": "Organization",
+    name: "Dancing with Lions",
+    url: "https://dancingwiththelions.com",
+  },
+  creditText: "Dancing with Lions. (2026). Amawal: Tamazight Dictionary [Online resource]. https://tamazight.io",
+  usageInfo: `${siteUrl}/legal/terms`,
   potentialAction: {
     "@type": "SearchAction",
     target: {
@@ -148,6 +157,12 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <head>
+        {/* Machine-readable license + AI training opt-out signals.
+            Reinforces the robots.txt policy and the X-Robots-Tag header
+            set by the edge middleware. CC BY-NC-ND 4.0 — attribution
+            required, no derivatives, no commercial use. */}
+        <link rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" />
+        <meta name="robots" content="noai, noimageai, max-image-preview:large" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

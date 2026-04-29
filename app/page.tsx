@@ -25,9 +25,6 @@ const directionLabels: Record<TranslationDirection, { from: string; to: string; 
   'tmz-fr': { from: 'Tamazight', to: 'French', placeholder: 'Aru awal s Tmazight...' },
 };
 
-// Floating Tifinagh letters for background decoration
-const floatingLetters = ['ⴰ', 'ⵎ', 'ⵣ', 'ⵔ', 'ⵏ', 'ⵜ', 'ⵍ', 'ⴼ', 'ⴷ', 'ⵙ', 'ⵡ', 'ⵢ'];
-
 export default function Home() {
   const [direction, setDirection] = useState<TranslationDirection>('en-tmz');
   const [query, setQuery] = useState('');
@@ -150,45 +147,37 @@ export default function Home() {
     <div className="overflow-hidden">
 
       {/* ============ HERO ============ */}
-      <section className="relative min-h-[85vh] flex items-center justify-center px-6 py-20">
-
-        {/* Background Tifinagh scatter */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none select-none" aria-hidden="true">
-          {floatingLetters.map((letter, i) => (
-            <span key={i} className="tifinagh-deco absolute"
-              style={{
-                fontSize: `${80 + Math.random() * 200}px`,
-                top: `${5 + (i * 8) % 90}%`,
-                left: `${3 + (i * 13) % 94}%`,
-                transform: `rotate(${-15 + Math.random() * 30}deg)`,
-                opacity: 0.03 + Math.random() * 0.02,
-              }}>
-              {letter}
-            </span>
-          ))}
+      <section
+        className="relative px-6 md:px-[8%] lg:px-[12%] pt-24 md:pt-40 pb-12 md:pb-28 overflow-hidden"
+        aria-labelledby="home-h1"
+      >
+        {/* One subtle Tifinagh ornament — bottom-right */}
+        <div
+          aria-hidden="true"
+          className="absolute -bottom-32 -right-16 md:-right-32 pointer-events-none select-none"
+        >
+          <span className="tifinagh text-[28vw] md:text-[20vw] leading-none text-[#c53a1a]/[0.04]">
+            ⴰⵎⴰⵡⴰⵍ
+          </span>
         </div>
 
-        <div className="relative z-10 w-full max-w-3xl mx-auto">
-          {/* Oversized Tifinagh title */}
-          <div className="text-center mb-6 animate-fade-up">
-            <h1 className="tifinagh text-[5rem] md:text-[7rem] lg:text-[9rem] leading-[0.85] tracking-tight">
-              ⴰⵎⴰⵡⴰⵍ
-            </h1>
-          </div>
-
-          {/* Subtitle with asymmetric layout */}
-          <div className="flex items-baseline justify-center gap-4 mb-2 animate-fade-up stagger-1">
-            <span className="font-serif text-3xl md:text-4xl italic font-light">Tamazight</span>
-            <span className="w-12 h-px bg-foreground/30 hidden md:block" />
-            <span className="font-serif text-3xl md:text-4xl font-light">Dictionary</span>
-          </div>
-
-          <p className="text-center text-muted-foreground text-sm tracking-wider uppercase mb-12 animate-fade-up stagger-2">
-            {allEntries.length} words · {phrasesMetadata.totalPhrases} phrases · {regions.length} dialects
+        <div className="relative z-10 max-w-5xl">
+          <p className="text-[#c53a1a] text-[11px] md:text-xs font-medium uppercase tracking-[0.3em] mb-4 md:mb-6">
+            Tamazight Dictionary
           </p>
 
-          {/* ---- Translator ---- */}
-          <div className="animate-fade-up stagger-3">
+          <h1
+            id="home-h1"
+            className="font-display text-[clamp(2.5rem,8vw,7rem)] leading-[0.95] md:leading-[0.9] tracking-tight mb-4 md:mb-6"
+          >
+            Berber language, finally clear.
+          </h1>
+
+          <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-xl max-w-2xl mb-8 md:mb-16 leading-relaxed">
+            Free Tamazight dictionary. {allEntries.length.toLocaleString()} words, {phrasesMetadata.totalPhrases.toLocaleString()} phrases — with Tifinagh script, pronunciation, and {regions.length} dialect regions.
+          </p>
+
+          <div className="max-w-3xl">
             {/* Direction + Dialect row */}
             <div className="flex items-center justify-between mb-3">
               <div className="flex items-center gap-2">
@@ -216,52 +205,48 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Search Input - oversized */}
-            <div className="relative mb-4">
+            {/* Search Input — underline style, matches darija.io */}
+            <div className="relative">
               <input ref={inputRef} type="text" value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder={directionLabels[direction].placeholder}
                 autoFocus
-                className="w-full px-6 py-6 text-xl md:text-2xl border-2 border-foreground/10 focus:border-foreground/40 focus:outline-none transition-all bg-background font-serif placeholder:font-sans placeholder:text-base placeholder:font-light" />
+                className="w-full bg-transparent outline-none transition-colors py-3 md:pt-0 md:pb-4 text-xl md:text-2xl border-b-2 border-neutral-200 dark:border-neutral-800 focus:border-[#c53a1a] font-display placeholder:font-display placeholder:text-neutral-400" />
               {(direction === 'tmz-en' || direction === 'tmz-fr') && (
-                <div className="absolute right-14 top-1/2 -translate-y-1/2">
+                <div className="absolute right-12 top-1/2 -translate-y-1/2">
                   <TifinaghToggle isActive={showKeyboard} onClick={() => setShowKeyboard(!showKeyboard)} />
                 </div>
               )}
               {query && (
                 <button onClick={() => setQuery('')}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground p-2">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
+                  aria-label="Clear"
+                  className="absolute right-0 inset-y-0 my-auto h-11 w-11 inline-flex items-center justify-center text-neutral-400 hover:text-black dark:hover:text-white">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </button>
               )}
             </div>
 
             {showKeyboard && (direction === 'tmz-en' || direction === 'tmz-fr') && (
-              <div className="mb-4">
+              <div className="mt-4">
                 <TifinaghKeyboard onInsert={handleKeyboardInsert} onClose={() => setShowKeyboard(false)} />
               </div>
             )}
 
-            {/* Quick examples */}
+            {/* Try chips */}
             {!query && !showKeyboard && (
-              <div className="flex flex-wrap justify-center gap-4 text-sm">
-                <span className="text-muted-foreground/50">Try:</span>
-                {(direction === 'tmz-en' || direction === 'tmz-fr')
-                  ? ['aman', 'tafukt', 'akal', 'azul'].map((word, i) => (
-                      <button key={word} onClick={() => setQuery(word)}
-                        className={`text-foreground/60 hover:text-accent transition-colors font-serif text-base italic animate-fade-up stagger-${i + 4}`}>
-                        {word}
-                      </button>
-                    ))
-                  : ['water', 'sun', 'freedom', 'love'].map((word, i) => (
-                      <button key={word} onClick={() => setQuery(word)}
-                        className={`text-foreground/60 hover:text-accent transition-colors font-serif text-base italic animate-fade-up stagger-${i + 4}`}>
-                        {word}
-                      </button>
-                    ))
-                }
+              <div className="flex flex-wrap items-baseline gap-x-5 gap-y-2 mt-4">
+                <span className="text-xs uppercase tracking-[0.2em] text-neutral-400">Try</span>
+                {((direction === 'tmz-en' || direction === 'tmz-fr')
+                  ? ['aman', 'tafukt', 'akal', 'azul']
+                  : ['water', 'sun', 'freedom', 'love']
+                ).map(word => (
+                  <button key={word} onClick={() => setQuery(word)}
+                    className="text-sm text-neutral-500 hover:text-[#c53a1a] transition-colors font-display italic">
+                    {word}
+                  </button>
+                ))}
               </div>
             )}
           </div>

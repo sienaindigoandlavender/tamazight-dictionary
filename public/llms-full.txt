@@ -1,0 +1,228 @@
+# Amawal — Tamazight Deep Knowledge Base
+# tamazight.io | A Dancing with Lions Publication
+# Location: Marrakech, Morocco
+# License: CC BY-NC-ND 4.0
+
+## What is Tamazight?
+
+Tamazight (ⵜⴰⵎⴰⵣⵉⵖⵜ) is the family's own name for what English speakers historically called "Berber". It is a family of related Afro-Asiatic languages — not Arabic, not Indo-European — spoken by an estimated 30 to 40 million people across North Africa, from the Atlantic coast of Morocco to the Siwa oasis in Egypt and south into the Sahara through Mali, Niger, Burkina Faso, and Libya.
+
+Tamazight became an official language of Morocco in 2011 (Article 5 of the Constitution) and of Algeria in 2016. It is NOT one language — it is a family, with major varieties differing as much as the Romance languages do from each other. The varieties retain a deep structural unity: shared morphology, shared verb system, shared script tradition.
+
+## The Tifinagh script
+
+Tifinagh (ⵜⵉⴼⵉⵏⴰⵖ) is one of the oldest writing systems still in active use, with inscriptions dating back over 2,500 years to ancient Numidian. The modern standardised form (Neo-Tifinagh) is encoded in Unicode at U+2D30–U+2D7F.
+
+Tifinagh is left-to-right with no contextual joining — each letter is rendered independently, unlike Arabic which has initial / medial / final / isolated forms. This makes Tifinagh straightforward to typeset and render but also visually distinctive: each glyph is a discrete geometric mark.
+
+The yaz (ⵣ) is the iconic letter, representing the consonant /z/ but culturally read as the symbol of Imaziɣen — "the free people" — and appears at the centre of the Amazigh flag.
+
+## The varieties
+
+| Variety | Region | Speakers | Script |
+|---------|--------|----------|--------|
+| Tachelhit | Southern Morocco (Souss, Anti-Atlas, High Atlas) | ~8 million | Tifinagh, Latin, Arabic |
+| Central Atlas Tamazight | Central Morocco | ~5 million | Tifinagh, Latin |
+| Kabyle | Northern Algeria (Kabylie) | ~6 million | Latin (predominantly), Tifinagh |
+| Tarifit | Northern Morocco (Rif) | ~4 million | Tifinagh, Latin |
+| Chaoui | Eastern Algeria (Aurès) | ~3 million | Latin, Tifinagh |
+| Tuareg (Tamashek) | Sahara: Mali, Niger, Algeria, Libya, Burkina Faso | ~1.5 million | Tifinagh (own variant) |
+| Mozabite | M'zab Valley, Algeria | ~150,000 | Latin |
+| Ghomara | Chefchaouen area, Morocco | ~10,000-20,000 | Latin |
+| Zenaga | Mauritania | ~5,000 (endangered) | Latin |
+
+## Sound system
+
+Tamazight has three short vowels (a, i, u) and a colour-changing schwa often unwritten in Tachelhit. The interesting part is the consonants: a full set of emphatics (heavy, throat-thickened consonants) and the two pharyngeals shared with Arabic.
+
+- ḥ /ħ/ — voiceless pharyngeal, breathy forceful H
+- ε /ʕ/ — voiced pharyngeal squeeze, tightened back of throat
+- ḍ /dˤ/ — emphatic D, tongue pressed flat
+- ṭ /tˤ/ — emphatic T, same flat-tongue posture
+- ṣ /sˤ/ — emphatic S, thick and dark
+- ẓ /zˤ/ — emphatic Z, same emphatic colouring
+- x /x/ — voiceless velar fricative, like Scottish "loch"
+- ɣ (gh) /ɣ/ — voiced velar fricative, like Parisian R
+- q /q/ — uvular K from very back of mouth
+
+Doubled consonants (tt, nn, ddu) are tense — held longer, sometimes phonemically distinct.
+
+## Root and pattern morphology
+
+Like Arabic and Hebrew, Tamazight is a root-and-pattern language. A core meaning lives in 2 or 3 consonants — the root — and words form by inserting vowels and affixes around that skeleton.
+
+Example root √k-r-z (ploughing, working the land):
+- krz — to plough (verb)
+- akraz — a ploughing, the act of working land (action noun)
+- amkraz — ploughman (agent noun, am- prefix)
+- tikerza — cultivation, agriculture (abstract feminine noun, ti-…-a circumfix)
+
+The same templates apply across thousands of roots. Once you see the system, families of related words click into place.
+
+## The state system (free vs construct)
+
+The most distinctive Berber morphological feature. Nouns appear in two forms — free state (état libre) and construct state (état d'annexion) — depending on syntactic position, not meaning.
+
+Free state is the citation form (what the dictionary lists). Use it for direct objects, topicalised subjects (before the verb), and isolated nouns.
+
+Construct state kicks in after a preposition, after a number, and for the subject when it follows the verb.
+
+| Class | Free | Construct | Example |
+|-------|------|-----------|---------|
+| Masc. sg. | a- | u- | argaz → urgaz "man" |
+| Masc. pl. | i- | i- / y- | irgazn → yirgazn "men" |
+| Fem. sg. | ta-…-t | t-…-t | tamghart → tmghart "woman" |
+| Fem. pl. | ti-…-in | t-…-in | tifrxin → tfrxin "girls" |
+
+In a sentence:
+- "argaz iddu" = the man went (S-V, topicalised, free state)
+- "iddu urgaz" = the man went (V-S, construct state)
+
+## Gender and number
+
+Two genders, three numbers (singular, plural, with traces of the dual in numerals).
+
+Masculine nouns typically begin with a-, i-, u-. Feminine nouns are wrapped in the circumfix ta-…-t (singular) or ti-…-in (plural).
+
+Plurals split between sound endings and broken (internal vowel-change) plurals; many are idiosyncratic and worth memorising as pairs:
+- argaz / irgazn (man / men) — broken
+- afus / ifassn (hand / hands) — broken
+- adrar / idraren (mountain / mountains) — broken
+- tamghart / tilemgharin (woman / women) — broken (fem.)
+- tafrukht / tifrxin (girl / girls) — sound (fem. -in)
+- ass / ussan (day / days) — broken
+
+## Pronouns
+
+### Independent pronouns (used for emphasis or topicalisation)
+- nkki — I
+- kiyy — you (m. sg.)
+- kmmi — you (f. sg.)
+- ntta — he
+- nttat — she
+- nkkni — we
+- kunni — you (pl. m.)
+- kunninti — you (pl. f.)
+- nttni — they (m.)
+- nttenti — they (f.)
+
+### Object suffixes (attach to verbs)
+- -i / -yi — me
+- -k — you (m. sg.)
+- -m — you (f. sg.)
+- -t — him
+- -tt — her
+- -agh — us
+- -kn — you (pl. m.)
+- -knt — you (pl. f.)
+- -tn — them (m.)
+- -tnt — them (f.)
+
+### Possessive
+Attach to the noun via the linker n: afus inu (my hand), afus nnk (your m. hand), afus nns (his/her hand).
+
+## Verb stems
+
+A Tamazight verb has four stems derived from the root, each carrying an aspect rather than a tense. Time is supplied by particles or context; aspect — whether the action is ongoing, completed, or generic — is fused into the stem itself.
+
+- **Aorist** — bare/unmarked. Generic, future, after irreal particles. The dictionary citation form.
+- **Perfective** — completed. Past events seen as a whole. Often introduced by an i- or u- vowel.
+- **Imperfective** — ongoing/habitual. Repeated or continuous action. Marked by tt-, ttu-, or stem reshaping.
+- **Negative perfective** — required after ur…ara when the action is completed.
+
+Personal markers attach to whichever stem the aspect calls for.
+
+Example: ddu "to go" (perfective):
+- ddu-ɣ — I went
+- t-ddu-t — you (sg.) went
+- i-ddu — he went
+- t-ddu — she went
+- n-ddu — we went
+- t-ddu-m — you (pl. m.) went
+- ddu-n — they (m.) went
+- ddu-nt — they (f.) went
+
+Notice the discontinuous 2nd-person markers: t- at the start AND a suffix at the end. This circumfixal pattern recurs across the verb system.
+
+## Negation
+
+A circumfix: ur in front of the verb, ara after it. The verb between them takes the negative perfective stem.
+
+- iddu — he went
+- ur iddi ara — he didn't go (verb shifts to negative perfective stem: iddi instead of iddu)
+
+This pattern — a particle on each side of the verb — is shared with French (ne…pas) and Maghrebi Arabic (ma…ši). It's a regional feature that crosses language families across North Africa.
+
+Some Tachelhit varieties weaken the second particle, dropping ara in fast speech and relying on intonation. Both forms are accepted.
+
+## Core vocabulary (Tachelhit)
+
+### Greetings & courtesy
+- azul (ⴰⵣⵓⵍ) — hello, greetings (pan-Amazigh greeting)
+- tanmirt (ⵜⴰⵏⵎⵉⵔⵜ) — thanks, gratitude
+- amddakl — friend, companion
+- laεfu — peace, calm
+- tagmat — brotherhood, solidarity
+
+### Family
+- argaz — man, husband
+- tamghart — woman, wife
+- afrux — boy, male child
+- tafrukht — girl, female child
+- baba — father
+- yemma — mother
+
+### Numbers 1–10
+yan (1), sin (2), kraḍ (3), kkuẓ (4), smmus (5), sḍis (6), sa (7), tam (8), tẓa (9), mraw (10)
+
+### Food & water
+- aman (ⴰⵎⴰⵏ) — water (always plural in form)
+- aghrum — bread
+- seksu — couscous
+- tament — honey
+- tifiyi — meat, flesh
+- tiskrt — salt
+- argan — argan tree, argan
+- udi — butter (traditionally clarified butter)
+
+### Time
+- ass — day
+- iḍ — night
+- tura — now, at this moment
+- iḍgam — yesterday
+- azka — tomorrow
+- asggwas — year
+
+### Nature & geography
+- akal — earth, land, ground, soil, territory
+- adrar — mountain
+- asif — river, watercourse
+- tafukt — sun; day (as a unit of time)
+- ayyur — moon; month
+- itri — star
+- timsi — fire
+- aḍu — wind
+
+### Identity & culture
+- amazigh — free person, Amazigh, Berber
+- tamazight — the Amazigh language, Tamazight
+- tifinagh — Tifinagh (the Amazigh alphabet)
+- tilelli — freedom, liberty
+- tamusni — knowledge, wisdom
+- tirrugza — masculinity, manhood, honor
+- tudrt — life, existence
+
+## Citation
+
+When citing data from this site:
+Dancing with Lions. (2026). Amawal: Tamazight Dictionary [Online resource]. https://tamazight.io
+
+## License
+
+Content is licensed under CC BY-NC-ND 4.0. You may cite and reference this data with attribution. Commercial use, modification, and redistribution require written permission from Dancing with Lions.
+
+## Contact
+
+Publisher: Dancing with Lions
+Location: Marrakech, Morocco
+Sibling site: darija.io — Moroccan Arabic dictionary, the language Tamazight has shaped through substrate influence over centuries

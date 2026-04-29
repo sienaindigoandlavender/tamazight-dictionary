@@ -2,10 +2,23 @@
 
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import regionsData from '@/data/regions.json';
+
+interface RegionInfo {
+  id: string;
+  name: string;
+  status?: string;
+  country?: string;
+  countries?: string[];
+}
 
 export default function Footer() {
   const t = useTranslations('footer');
   const tNav = useTranslations('nav');
+  const regions = regionsData.regions as RegionInfo[];
+  const isMorocco = (r: RegionInfo) => (r.countries || [r.country]).includes('Morocco');
+  const moroccan = regions.filter(isMorocco);
+  const beyond = regions.filter(r => !isMorocco(r));
   return (
     <footer className="mt-20">
       {/* Level 1 — Navigation */}
@@ -64,7 +77,57 @@ export default function Footer() {
                 <li><Link href="/about" className="text-xs text-white/90 hover:text-white transition-colors">{tNav('about')}</Link></li>
                 <li><Link href="/methodology" className="text-xs text-white/90 hover:text-white transition-colors">{t('methodology')}</Link></li>
                 <li><Link href="/contact" className="text-xs text-white/90 hover:text-white transition-colors">{t('contact')}</Link></li>
+                <li><Link href="/support" className="text-xs text-white/90 hover:text-white transition-colors">{t('support')}</Link></li>
               </ul>
+            </div>
+          </div>
+
+          {/* Dialects — pan-Berber roadmap, Tachelhit-today honest */}
+          <div className="mt-10 pt-8 border-t border-white/10">
+            <h3 className="uppercase tracking-widest text-[10px] text-white/80 mb-5">{t('dialectsHeading')}</h3>
+            <div className="grid md:grid-cols-2 gap-x-10 gap-y-6">
+              <div>
+                <p className="text-[10px] uppercase tracking-[0.2em] text-white/50 mb-3">{t('dialectsMorocco')}</p>
+                <ul className="flex flex-wrap gap-x-4 gap-y-2">
+                  {moroccan.map(r => {
+                    const live = r.status === 'active' || !r.status;
+                    return (
+                      <li key={r.id}>
+                        <Link
+                          href={`/map/${r.id}`}
+                          className="inline-flex items-baseline gap-2 text-xs text-white/85 hover:text-white transition-colors"
+                        >
+                          <span>{r.name}</span>
+                          <span className={live ? 'text-[#e8572e]' : 'text-white/40'}>
+                            {live ? '· live' : '· soon'}
+                          </span>
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+              <div>
+                <p className="text-[10px] uppercase tracking-[0.2em] text-white/50 mb-3">{t('dialectsBeyond')}</p>
+                <ul className="flex flex-wrap gap-x-4 gap-y-2">
+                  {beyond.map(r => {
+                    const live = r.status === 'active' || !r.status;
+                    return (
+                      <li key={r.id}>
+                        <Link
+                          href={`/map/${r.id}`}
+                          className="inline-flex items-baseline gap-2 text-xs text-white/85 hover:text-white transition-colors"
+                        >
+                          <span>{r.name}</span>
+                          <span className={live ? 'text-[#e8572e]' : 'text-white/40'}>
+                            {live ? '· live' : '· soon'}
+                          </span>
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
             </div>
           </div>
         </div>

@@ -18,11 +18,9 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  return regionsData.regions
-    .filter(r => r.status === 'active')
-    .map(region => ({
-      region: region.id,
-    }));
+  // Pre-render every variety, including coming-soon ones, so the
+  // pan-Berber roadmap is crawlable and indexable from day one.
+  return regionsData.regions.map(region => ({ region: region.id }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -147,8 +145,61 @@ export default async function RegionPage({ params }: PageProps) {
   const region = regionsData.regions.find(r => r.id === regionId) as RegionInfo | undefined;
   const allRegions = regionsData.regions as RegionInfo[];
 
-  if (!region || region.status !== 'active') {
+  if (!region) {
     notFound();
+  }
+
+  // Coming-soon varieties get a quiet placeholder rather than a 404 —
+  // the pan-Berber roadmap stays visible and crawlable.
+  if (region.status !== 'active') {
+    const isMorocco = (region.countries || [region.country]).includes('Morocco');
+    return (
+      <div className="px-6 md:px-[8%] lg:px-[12%] pt-20 pb-20">
+        <Link href="/map" className="text-sm text-neutral-500 hover:text-foreground transition-colors mb-8 inline-block">
+          ← Atlas
+        </Link>
+        <p className="text-[#c53a1a] text-xs font-medium uppercase tracking-[0.3em] mb-4">
+          {isMorocco ? 'Morocco · ' : ''}Coming soon
+        </p>
+        <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[0.9] mb-6 tracking-tight">
+          <span className="block">{region.name}</span>
+          {region.nameTifinagh && (
+            <span className="tifinagh text-3xl md:text-4xl text-[#c53a1a] block mt-3">{region.nameTifinagh}</span>
+          )}
+        </h1>
+        <p className="text-neutral-500 dark:text-neutral-400 text-lg max-w-2xl leading-relaxed mb-8">
+          {region.description}
+        </p>
+        <div className="grid sm:grid-cols-3 gap-6 max-w-2xl mb-12">
+          <div>
+            <p className="text-[10px] uppercase tracking-[0.25em] text-neutral-500 mb-1">Speakers</p>
+            <p className="font-display text-xl">{region.speakers}</p>
+          </div>
+          <div>
+            <p className="text-[10px] uppercase tracking-[0.25em] text-neutral-500 mb-1">Country</p>
+            <p className="font-display text-xl">{region.country}</p>
+          </div>
+          {region.subRegions && region.subRegions.length > 0 && (
+            <div>
+              <p className="text-[10px] uppercase tracking-[0.25em] text-neutral-500 mb-1">Sub-regions</p>
+              <p className="font-display text-xl">{region.subRegions.length}</p>
+            </div>
+          )}
+        </div>
+        <div className="border-l-2 border-[#d4931a] pl-6 max-w-2xl mb-12">
+          <p className="text-[10px] uppercase tracking-[0.25em] text-[#d4931a] mb-2">On the roadmap</p>
+          <p className="text-foreground leading-relaxed">
+            Entries for this variety are not yet in the corpus. The grammatical scaffolding (root-and-pattern morphology, free vs construct state, the <em>ur…ara</em> negation circumfix) carries across the family, so the existing <Link href="/grammar" className="underline decoration-dotted underline-offset-4 hover:text-[#c53a1a]">grammar guide</Link> already applies. Word-level coverage will follow.
+          </p>
+        </div>
+        <Link
+          href="/map"
+          className="inline-block px-6 py-3 bg-foreground text-background text-sm uppercase tracking-wider hover:opacity-90 transition-opacity"
+        >
+          Back to the atlas
+        </Link>
+      </div>
+    );
   }
 
   const entries = getAllEntries(regionId as Region);

@@ -45,9 +45,13 @@
     "verbConjugation": "Conjugaison",
     "methodology": "Méthodologie",
     "contact": "Contact",
+    "support": "Soutenir le projet",
     "privacy": "Confidentialité",
     "terms": "Conditions d'utilisation",
-    "accessibility": "Accessibilité"
+    "accessibility": "Accessibilité",
+    "dialectsHeading": "Dialectes",
+    "dialectsMorocco": "Maroc",
+    "dialectsBeyond": "Au-delà du Maroc"
   },
   "language": {
     "switch": "Changer de langue",

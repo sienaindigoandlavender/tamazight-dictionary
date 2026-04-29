@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { getAllEntries, getHowToSayTerms } from '@/lib/dictionary';
+import regionsData from '@/data/regions.json';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://tamazight.io';
@@ -20,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/about`, changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${siteUrl}/methodology`, changeFrequency: 'monthly' as const, priority: 0.5 },
     { url: `${siteUrl}/contact`, changeFrequency: 'yearly' as const, priority: 0.4 },
+    { url: `${siteUrl}/support`, changeFrequency: 'monthly' as const, priority: 0.6 },
   ];
 
   // Dictionary word pages
@@ -39,8 +41,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  // Regional dialect pages — every variety, including coming-soon
+  // (so search engines see the pan-Berber roadmap from day one).
+  const regionPages = regionsData.regions.map(r => ({
+    url: `${siteUrl}/map/${r.id}`,
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
+    priority: r.status === 'active' ? 0.85 : 0.6,
+  }));
+
   return [
     ...staticPages.map(p => ({ ...p, lastModified: now })),
+    ...regionPages,
     ...howToSayPages,
     ...wordPages,
   ];

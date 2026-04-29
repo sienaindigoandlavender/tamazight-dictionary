@@ -9,18 +9,56 @@ interface RegionInfo {
   status?: string;
   color: string;
   country?: string;
+  countries?: string[];
   description?: string;
 }
 
 /**
- * Map preview just above the footer. A calm static preview — list of
- * dialect regions with coloured markers, plus a CTA into the full
- * interactive atlas at /map. Keeps the home page light (no Mapbox bundle
- * loaded here) and gives the marquee feature constant visibility.
+ * Map preview just above the footer. Lists all 7 Berber varieties, grouped
+ * Morocco-first then beyond, with status badges. Pan-Berber roadmap visible,
+ * Tachelhit-today honest. Static (no Mapbox bundle on home).
  */
 export default function MapPreview() {
   const regions = regionsData.regions as RegionInfo[];
-  const active = regions.filter(r => r.status === 'active' || !r.status);
+  const isMorocco = (r: RegionInfo) => (r.countries || [r.country]).includes('Morocco');
+  const moroccan = regions.filter(isMorocco);
+  const beyond = regions.filter(r => !isMorocco(r));
+
+  const renderRow = (r: RegionInfo) => {
+    const isLive = r.status === 'active' || !r.status;
+    return (
+      <li key={r.id}>
+        <Link
+          href={`/map/${r.id}`}
+          className="group flex items-baseline gap-4 py-3 border-b border-neutral-100 dark:border-white/10 hover:border-foreground transition-colors"
+        >
+          <span
+            aria-hidden="true"
+            className="w-3 h-3 rounded-full shrink-0 mt-1.5"
+            style={{ backgroundColor: r.color }}
+          />
+          <div className="flex-1 min-w-0">
+            <div className="flex items-baseline gap-3 flex-wrap">
+              <span className="font-display text-lg md:text-xl group-hover:text-[#c53a1a] transition-colors">
+                {r.name}
+              </span>
+              {r.nameTifinagh && (
+                <span className="tifinagh text-base text-[#c53a1a]">{r.nameTifinagh}</span>
+              )}
+              {!isLive && (
+                <span className="text-[10px] uppercase tracking-[0.2em] text-neutral-400 border border-neutral-200 dark:border-white/15 px-1.5 py-0.5">
+                  Soon
+                </span>
+              )}
+            </div>
+          </div>
+          <span className="text-xs text-neutral-500 shrink-0 text-right">
+            {r.speakers}
+          </span>
+        </Link>
+      </li>
+    );
+  };
 
   return (
     <section
@@ -39,7 +77,7 @@ export default function MapPreview() {
             Where it&rsquo;s<br />spoken
           </h2>
           <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed mb-8 max-w-md">
-            Tamazight isn&rsquo;t one language — it&rsquo;s a family. {regions.length} varieties stretch from the Atlantic coast to the Siwa oasis, each with its own corpus, script tradition, and rhythms. The interactive atlas shows you which words live where.
+            Tamazight isn&rsquo;t one language — it&rsquo;s a family. {regions.length} varieties stretch from the Atlantic coast to the Siwa oasis, each with its own rhythm and script tradition. We start with Tachelhit and grow outward.
           </p>
           <Link
             href="/map"
@@ -49,38 +87,19 @@ export default function MapPreview() {
           </Link>
         </div>
 
-        <div className="md:col-span-7 md:col-start-7">
-          <ul role="list" className="space-y-3">
-            {active.map(region => (
-              <li key={region.id}>
-                <Link
-                  href={`/map/${region.id}`}
-                  className="group flex items-baseline gap-4 py-3 border-b border-neutral-100 dark:border-white/10 hover:border-foreground transition-colors"
-                >
-                  <span
-                    aria-hidden="true"
-                    className="w-3 h-3 rounded-full shrink-0 mt-1.5"
-                    style={{ backgroundColor: region.color }}
-                  />
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-baseline gap-3 flex-wrap">
-                      <span className="font-display text-lg md:text-xl group-hover:text-[#c53a1a] transition-colors">
-                        {region.name}
-                      </span>
-                      {region.nameTifinagh && (
-                        <span className="tifinagh text-base text-[#c53a1a]">
-                          {region.nameTifinagh}
-                        </span>
-                      )}
-                    </div>
-                  </div>
-                  <span className="text-xs text-neutral-500 shrink-0 text-right">
-                    {region.speakers}
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <div className="md:col-span-7 md:col-start-7 space-y-8">
+          {moroccan.length > 0 && (
+            <div>
+              <p className="text-[10px] uppercase tracking-[0.25em] text-neutral-500 mb-3">Morocco</p>
+              <ul role="list">{moroccan.map(renderRow)}</ul>
+            </div>
+          )}
+          {beyond.length > 0 && (
+            <div>
+              <p className="text-[10px] uppercase tracking-[0.25em] text-neutral-500 mb-3">Beyond Morocco</p>
+              <ul role="list">{beyond.map(renderRow)}</ul>
+            </div>
+          )}
         </div>
       </div>
     </section>

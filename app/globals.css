@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&family=Noto+Sans+Tifinagh&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=Noto+Sans+Tifinagh&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,48 +6,43 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #1a1a1a;
-  --muted: #737373;
-  --accent: #c44d2b;
+  --foreground: #000000;
+  --muted: #555555;
+  --accent: #c53a1a;
+  --accent-warm: #d4931a;
+  --surface: #f5f3f0;
 }
 
 :root.dark {
   --background: #0a0a0a;
-  --foreground: #f5f5f5;
-  --muted: #a3a3a3;
-  --accent: #e07a5f;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not(.light) {
-    --background: #0a0a0a;
-    --foreground: #f5f5f5;
-    --muted: #a3a3a3;
-    --accent: #e07a5f;
-  }
+  --foreground: #f0f0f0;
+  --muted: #aaaaaa;
+  --accent: #e8572e;
+  --accent-warm: #f0b840;
+  --surface: #141414;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
 }
 
-.font-serif {
-  font-family: 'Cormorant Garamond', serif;
-}
+.font-display { font-family: 'Playfair Display', serif; }
+.font-serif { font-family: 'Playfair Display', serif; }
+.font-mono { font-family: 'IBM Plex Mono', monospace; }
 
 .tifinagh {
   font-family: 'Noto Sans Tifinagh', sans-serif;
 }
 
-/* Oversized decorative Tifinagh */
 .tifinagh-deco {
   font-family: 'Noto Sans Tifinagh', sans-serif;
   color: var(--foreground);
@@ -57,46 +52,45 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0.8;
 }
 
-/* Accent color */
 .text-accent { color: var(--accent); }
 .bg-accent { background-color: var(--accent); }
 .border-accent { border-color: var(--accent); }
+.text-accent-warm { color: var(--accent-warm); }
+.bg-accent-warm { background-color: var(--accent-warm); }
+.bg-surface { background-color: var(--surface); }
 
-/* Staggered entrance animations */
-@keyframes fadeSlideUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+@keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideInLeft { from { opacity: 0; transform: translateX(-30px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes slideInRight { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes bounceIn { 0% { opacity: 0; transform: scale(0.8); } 60% { transform: scale(1.05); } 100% { opacity: 1; transform: scale(1); } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
 
-@keyframes fadeSlideIn {
-  from { opacity: 0; transform: translateX(-16px); }
-  to { opacity: 1; transform: translateX(0); }
-}
+.anim-fade-up { animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
+.anim-fade-in { animation: fadeIn 0.5s ease forwards; opacity: 0; }
+.anim-slide-left { animation: slideInLeft 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
+.anim-slide-right { animation: slideInRight 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
+.anim-bounce { animation: bounceIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
 
-@keyframes scaleIn {
-  from { opacity: 0; transform: scale(0.92); }
-  to { opacity: 1; transform: scale(1); }
-}
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
+.delay-6 { animation-delay: 0.6s; }
+.delay-7 { animation-delay: 0.7s; }
+.delay-8 { animation-delay: 0.8s; }
+.delay-9 { animation-delay: 0.9s; }
+.delay-10 { animation-delay: 1.0s; }
 
-@keyframes letterFloat {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-}
+/* Legacy Tamazight animation aliases — keep existing pages working */
+@keyframes fadeSlideUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeSlideIn { from { opacity: 0; transform: translateX(-16px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes scaleIn { from { opacity: 0; transform: scale(0.92); } to { opacity: 1; transform: scale(1); } }
 
-.animate-fade-up {
-  animation: fadeSlideUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  opacity: 0;
-}
-
-.animate-fade-in {
-  animation: fadeSlideIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  opacity: 0;
-}
-
-.animate-scale-in {
-  animation: scaleIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  opacity: 0;
-}
+.animate-fade-up { animation: fadeSlideUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
+.animate-fade-in { animation: fadeSlideIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
+.animate-scale-in { animation: scaleIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
 
 .stagger-1 { animation-delay: 0.1s; }
 .stagger-2 { animation-delay: 0.2s; }
@@ -107,14 +101,18 @@ h1, h2, h3, h4, h5, h6 {
 .stagger-7 { animation-delay: 0.7s; }
 .stagger-8 { animation-delay: 0.8s; }
 
-/* Hover lift */
 .hover-lift {
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s;
 }
 .hover-lift:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
 }
+
+.hover-scale {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-scale:hover { transform: scale(1.03); }
 
 @layer utilities {
   .text-balance { text-wrap: balance; }
@@ -129,19 +127,14 @@ h1, h2, h3, h4, h5, h6 {
   .btn-secondary {
     @apply border border-foreground px-8 py-3 uppercase tracking-widest text-sm font-normal transition-colors;
   }
-  .btn-secondary:hover {
-    background-color: var(--foreground);
-    color: var(--background);
-  }
+  .btn-secondary:hover { background-color: var(--foreground); color: var(--background); }
 
   .card {
     border: 1px solid rgba(0, 0, 0, 0.08);
     padding: 2rem;
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   }
-  .card:hover {
-    border-color: rgba(0, 0, 0, 0.2);
-  }
+  .card:hover { border-color: rgba(0, 0, 0, 0.2); }
   :root.dark .card { border-color: rgba(255, 255, 255, 0.1); }
   :root.dark .card:hover { border-color: rgba(255, 255, 255, 0.2); }
 
@@ -157,8 +150,8 @@ h1, h2, h3, h4, h5, h6 {
   .nav-link:hover { opacity: 0.6; }
 
   .section-title {
-    font-family: 'Cormorant Garamond', serif;
-    @apply text-4xl md:text-5xl lg:text-6xl font-normal tracking-wide;
+    font-family: 'Playfair Display', serif;
+    @apply text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight;
   }
 
   .section-subtitle {

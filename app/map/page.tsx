@@ -19,7 +19,7 @@ const LanguageMap = dynamic(() => import('@/components/LanguageMap'), {
 });
 
 export const metadata: Metadata = {
-  alternates: { canonical: 'https://amazigh.online/map' },
+  alternates: { canonical: 'https://tamazight.io/map' },
   title: 'Linguistic Atlas - Amawal Tamazight Dictionary',
   description: 'Explore the geographic distribution of Tamazight languages across North Africa. Interactive map showing Tachelhit, Kabyle, Tarifit, Central Atlas, Tuareg, and more.',
 };

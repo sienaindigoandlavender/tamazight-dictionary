@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { SuggestCorrectionFloating } from "@/components/SuggestCorrection";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amazigh.online';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://tamazight.io';
 
 export const viewport: Viewport = {
   width: 'device-width',

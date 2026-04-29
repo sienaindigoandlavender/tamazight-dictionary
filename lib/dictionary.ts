@@ -159,6 +159,20 @@ export function getRandomEntries(count: number = 5, region: Region = 'tachelhit'
   return shuffled.slice(0, count);
 }
 
+// Entries rich enough to be a "word of the day" — at minimum a cultural
+// note, otherwise a usage note, etymology note, or example.
+export function getRichEntries(region: Region = 'tachelhit'): DictionaryEntry[] {
+  const entries = getAllEntries(region);
+  const cultural = entries.filter(e =>
+    e.usageNotes?.some(u => u.type === 'cultural')
+  );
+  if (cultural.length > 0) return cultural;
+  const withNotes = entries.filter(e =>
+    e.usageNotes?.length || e.etymology?.notes || e.examples?.length
+  );
+  return withNotes.length > 0 ? withNotes : entries;
+}
+
 // Get all unique semantic fields in the dictionary
 export function getAvailableSemanticFields(region: Region = 'tachelhit'): SemanticField[] {
   const entries = getAllEntries(region);

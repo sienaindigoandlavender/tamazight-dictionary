@@ -10,12 +10,12 @@ export default function Header() {
   return (
     <header className="fixed top-0 inset-x-0 z-40 bg-white/90 dark:bg-[#0a0a0a]/90 backdrop-blur border-b border-neutral-100 dark:border-white/10">
       <div className="px-6 md:px-[8%] lg:px-[12%] h-14 flex items-center justify-between gap-4 md:gap-6">
-        <Link href="/" className="flex items-baseline gap-2 group" aria-label="Amawal home">
+        <Link href="/" className="flex items-baseline gap-2 group" aria-label="Tamazight home">
           <span className="tifinagh text-xl text-[#c53a1a] leading-none group-hover:opacity-80 transition-opacity">ⴰⵎⴰⵡⴰⵍ</span>
-          <span className="font-display text-base tracking-tight">amawal</span>
+          <span className="font-display text-base tracking-tight">tamazight</span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-7 text-sm">
+        <nav className="hidden md:flex items-center gap-7 text-xs uppercase tracking-widest">
           <Link href="/" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">Dictionary</Link>
           <Link href="/symbols" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">Symbols</Link>
           <Link href="/map" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">Atlas</Link>

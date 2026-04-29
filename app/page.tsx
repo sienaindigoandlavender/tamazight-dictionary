@@ -19,7 +19,9 @@ import { AMAWAL_LOCALE_KEY, AMAWAL_LOCALE_EVENT, type AmawalLocale } from '@/com
 import WordOfTheDay from './_home/WordOfTheDay';
 import FirstDaySection from './_home/FirstDaySection';
 import WisdomSection from './_home/WisdomSection';
+import MapPreview from './_home/MapPreview';
 import RecentlyViewed from '@/components/RecentlyViewed';
+import NewsletterSignup from '@/components/NewsletterSignup';
 
 type TranslationDirection = 'en-tmz' | 'fr-tmz' | 'tmz-en' | 'tmz-fr';
 
@@ -194,7 +196,10 @@ export default function Home() {
           </h1>
 
           <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-xl max-w-2xl mb-8 md:mb-16 leading-relaxed">
-            Free Tamazight dictionary. {allEntries.length.toLocaleString()} words, {phrasesMetadata.totalPhrases.toLocaleString()} phrases — with Tifinagh script, pronunciation, and {regions.length} dialect regions.
+            Free Tamazight dictionary. {allEntries.length.toLocaleString()} words, {phrasesMetadata.totalPhrases.toLocaleString()} phrases — with Tifinagh script, pronunciation, and{' '}
+            <Link href="/map" className="underline decoration-dotted underline-offset-4 hover:text-[#c53a1a]">
+              {regions.length} dialect regions
+            </Link>.
           </p>
 
           <div className="max-w-3xl">
@@ -470,6 +475,12 @@ export default function Home() {
           </div>
         </section>
       )}
+
+      {/* ============ NEWSLETTER ============ */}
+      {!query && <NewsletterSignup />}
+
+      {/* ============ MAP PREVIEW (above footer) ============ */}
+      {!query && <MapPreview />}
     </div>
   );
 }

@@ -53,6 +53,19 @@ export default function AboutPage() {
             families. Today, Tamazight holds official language status in both Morocco (since 2011) and Algeria (since 2016).
           </p>
         </div>
+
+        <div className="mt-10 border-l-2 border-[#d4931a] pl-6 max-w-2xl">
+          <p className="text-[10px] uppercase tracking-[0.3em] text-[#d4931a] mb-2">Where it&rsquo;s spoken</p>
+          <p className="text-foreground leading-relaxed mb-4">
+            From the Atlantic coast of Morocco to the Siwa oasis in Egypt, with major populations in Algeria, Mali, Niger, and Libya. Each region has its own variety with predictable shifts.
+          </p>
+          <Link
+            href="/map"
+            className="text-sm uppercase tracking-[0.2em] text-[#c53a1a] hover:underline underline-offset-4"
+          >
+            Explore the linguistic atlas →
+          </Link>
+        </div>
       </section>
 
       {/* Regional Varieties */}

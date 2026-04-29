@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import ThemeToggle, { ThemeToggleCompact } from './ThemeToggle';
+import LocaleSwitcher from './LocaleSwitcher';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +25,10 @@ export default function Header() {
           <Link href="/about" className="text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">About</Link>
         </nav>
 
-        <div className="flex items-center gap-2 md:gap-4">
+        <div className="flex items-center gap-3 md:gap-4">
+          <div className="hidden md:block">
+            <LocaleSwitcher />
+          </div>
           <div className="hidden md:block">
             <ThemeToggle />
           </div>
@@ -53,7 +57,8 @@ export default function Header() {
             <Link href="/alphabet" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Tifinagh</Link>
             <Link href="/conjugation" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>Conjugation</Link>
             <Link href="/about" className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>About</Link>
-            <div className="pt-4 border-t border-neutral-100 dark:border-white/10">
+            <div className="pt-4 border-t border-neutral-100 dark:border-white/10 flex items-center justify-between gap-4">
+              <LocaleSwitcher />
               <ThemeToggleCompact />
             </div>
           </div>

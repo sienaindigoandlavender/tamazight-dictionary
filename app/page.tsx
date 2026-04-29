@@ -15,6 +15,7 @@ import {
 import { DictionaryEntry, PhraseEntry, PhraseCategory } from '@/types';
 import regionsData from '@/data/regions.json';
 import TifinaghKeyboard, { TifinaghToggle } from '@/components/TifinaghKeyboard';
+import { AMAWAL_LOCALE_KEY, AMAWAL_LOCALE_EVENT, type AmawalLocale } from '@/components/LocaleSwitcher';
 
 type TranslationDirection = 'en-tmz' | 'fr-tmz' | 'tmz-en' | 'tmz-fr';
 
@@ -39,6 +40,21 @@ export default function Home() {
   const regions = regionsData.regions;
   const allEntries = useMemo(() => getAllEntries('tachelhit'), []);
   const phrasesMetadata = useMemo(() => getPhrasesMetadata(), []);
+
+  // Sync translator direction with the global EN | FR locale switcher
+  useEffect(() => {
+    const apply = (loc: AmawalLocale) => {
+      setDirection(d => {
+        if (loc === 'fr') return d === 'en-tmz' ? 'fr-tmz' : d === 'tmz-en' ? 'tmz-fr' : d;
+        return d === 'fr-tmz' ? 'en-tmz' : d === 'tmz-fr' ? 'tmz-en' : d;
+      });
+    };
+    const saved = localStorage.getItem(AMAWAL_LOCALE_KEY);
+    if (saved === 'fr' || saved === 'en') apply(saved);
+    const onChange = (e: Event) => apply((e as CustomEvent<AmawalLocale>).detail);
+    window.addEventListener(AMAWAL_LOCALE_EVENT, onChange);
+    return () => window.removeEventListener(AMAWAL_LOCALE_EVENT, onChange);
+  }, []);
 
   useEffect(() => {
     if (!query.trim()) { setWordResults([]); setPhraseResults([]); return; }

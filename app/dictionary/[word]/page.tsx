@@ -541,7 +541,9 @@ export default async function WordPage({ params }: PageProps) {
     <div className="max-w-4xl mx-auto px-6 py-16">
       {/* Breadcrumb */}
       <nav className="mb-12 text-xs uppercase tracking-widest text-muted-foreground">
-        <Link href="/" className="hover:text-foreground transition-colors">Dictionary</Link>
+        <Link href="/" className="hover:text-foreground transition-colors">Search</Link>
+        <span className="mx-3">/</span>
+        <Link href="/dictionary" className="hover:text-foreground transition-colors">Dictionary</Link>
         <span className="mx-3">/</span>
         <span className="text-foreground">{entry.word}</span>
       </nav>

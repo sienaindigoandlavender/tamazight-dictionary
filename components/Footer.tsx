@@ -35,6 +35,7 @@ export default function Footer() {
               <h3 className="uppercase tracking-widest text-[10px] text-white/80 mb-3">Learn</h3>
               <ul className="space-y-2">
                 <li><Link href="/" className="text-xs text-white/90 hover:text-white transition-colors">Dictionary</Link></li>
+                <li><Link href="/dictionary" className="text-xs text-white/90 hover:text-white transition-colors">Browse all words</Link></li>
                 <li><Link href="/first-day" className="text-xs text-white/90 hover:text-white transition-colors">First Day</Link></li>
                 <li><Link href="/practice" className="text-xs text-white/90 hover:text-white transition-colors">Practice</Link></li>
                 <li><Link href="/grammar" className="text-xs text-white/90 hover:text-white transition-colors">Grammar</Link></li>

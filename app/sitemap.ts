@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/about`, changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${siteUrl}/methodology`, changeFrequency: 'monthly' as const, priority: 0.5 },
     { url: `${siteUrl}/contact`, changeFrequency: 'yearly' as const, priority: 0.4 },
+    { url: `${siteUrl}/support`, changeFrequency: 'monthly' as const, priority: 0.6 },
   ];
 
   // Dictionary word pages

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 /**
  * Recently viewed — calm daily-use surface.
@@ -50,6 +51,7 @@ export function pushRecent(item: Omit<RecentItem, 'ts'>) {
 }
 
 export default function RecentlyViewed() {
+  const t = useTranslations('home');
   const [items, setItems] = useState<RecentItem[] | null>(null);
 
   useEffect(() => {
@@ -68,7 +70,7 @@ export default function RecentlyViewed() {
         id="recent-heading"
         className="text-[#c53a1a] text-[11px] font-medium uppercase tracking-[0.3em] mb-6"
       >
-        Recently viewed
+        {t('recentlyViewed')}
       </p>
 
       <div className="flex flex-wrap gap-x-6 gap-y-3">

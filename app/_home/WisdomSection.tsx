@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
+import { useTranslations } from 'next-intl';
 import { getTraditionLines } from '@/lib/dictionary';
 import { AMAWAL_LOCALE_KEY, AMAWAL_LOCALE_EVENT, type AmawalLocale } from '@/components/LocaleSwitcher';
 import { pickByDay } from './util';
@@ -20,6 +21,7 @@ const TYPE_LABEL: Record<string, string> = {
  * inside the dictionary entries, deterministically rotated per day.
  */
 export default function WisdomSection() {
+  const t = useTranslations('home');
   const [locale, setLocale] = useState<AmawalLocale>('en');
 
   useEffect(() => {
@@ -42,18 +44,17 @@ export default function WisdomSection() {
       <div className="grid md:grid-cols-12 gap-10 mb-12 md:mb-16">
         <div className="md:col-span-7">
           <p className="text-[#d4931a] text-[11px] font-medium uppercase tracking-[0.3em] mb-4">
-            From the tradition
+            {t('tradition')}
           </p>
           <h2
             id="wisdom-heading"
             className="font-display text-4xl md:text-5xl lg:text-6xl leading-[0.95] tracking-tight"
-          >
-            Voices that<br />carry the language
-          </h2>
+            dangerouslySetInnerHTML={{ __html: t.raw('traditionTitle') }}
+          />
         </div>
         <div className="md:col-span-4 md:col-start-9 flex items-end">
           <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed">
-            Proverbs, songs, and lines of poetry that show how Tachelhit lives in everyday speech. Each one links back to the word it builds around.
+            {t('traditionDesc')}
           </p>
         </div>
       </div>

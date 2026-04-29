@@ -64,7 +64,7 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-export default function PracticeClient({ decks }: { decks: DeckSpec[] }) {
+export default function PracticeClient({ decks, featured }: { decks: DeckSpec[]; featured?: PracticeEntry }) {
   const [phase, setPhase] = useState<'select' | 'practice' | 'done'>('select');
   const [mode, setMode] = useState<Mode>('tifinagh-to-meaning');
   const [deckId, setDeckId] = useState<string | null>(null);
@@ -83,6 +83,17 @@ export default function PracticeClient({ decks }: { decks: DeckSpec[] }) {
     window.addEventListener(AMAWAL_LOCALE_EVENT, onLocale);
     return () => window.removeEventListener(AMAWAL_LOCALE_EVENT, onLocale);
   }, []);
+
+  // Single-word deep link from /dictionary/[word] → /practice?word=…
+  useEffect(() => {
+    if (!featured) return;
+    setDeckId('single');
+    setQueue([featured]);
+    setIdx(0);
+    setFlipped(false);
+    setStats({ correct: 0, incorrect: 0, total: 0 });
+    setPhase('practice');
+  }, [featured]);
 
   const startDeck = useCallback((deck: DeckSpec) => {
     const now = Date.now() / 1000;

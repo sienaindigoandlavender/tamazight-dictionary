@@ -1,0 +1,57 @@
+{
+  "site": {
+    "name": "Dictionnaire Tamazight",
+    "tagline": "La langue berbère, enfin claire.",
+    "description": "Dictionnaire tamazight gratuit. {words} mots, {phrases} expressions — avec l'écriture tifinagh, la prononciation et {regions} régions dialectales."
+  },
+  "nav": {
+    "dictionary": "Dictionnaire",
+    "firstDay": "Premier jour",
+    "practice": "Pratique",
+    "grammar": "Grammaire",
+    "phrases": "Expressions",
+    "atlas": "Atlas",
+    "symbols": "Symboles",
+    "tifinagh": "Tifinagh",
+    "conjugation": "Conjugaison",
+    "about": "À propos"
+  },
+  "search": {
+    "try": "Essayez",
+    "back": "← Retour au dictionnaire",
+    "backToSearch": "← Retour à la recherche"
+  },
+  "home": {
+    "wordOfTheDay": "Mot du jour",
+    "recentlyViewed": "Vus récemment",
+    "essentials": "Essentiels",
+    "essentialsTitle": "Vos mots du <em>premier</em> jour",
+    "essentialsDesc": "Une poignée des 40 mots qui suffisent pour passer la première journée en pays amazigh. Prononcez-les mal — on vous aimera d'avoir essayé.",
+    "essentialsCta": "Tous les mots du premier jour →",
+    "tradition": "De la tradition",
+    "traditionTitle": "Des voix qui<br />portent la langue",
+    "traditionDesc": "Proverbes, chansons et vers de poésie qui montrent comment le tachelhit vit dans la parole quotidienne. Chaque ligne renvoie au mot qu'elle construit."
+  },
+  "footer": {
+    "tagline": "Un dictionnaire vivant et un atlas linguistique préservant les langues tamazight à travers l'Afrique du Nord.",
+    "siblingSite": "Site frère",
+    "learn": "Apprendre",
+    "explore": "Explorer",
+    "project": "Projet",
+    "browseAll": "Parcourir tous les mots",
+    "linguisticAtlas": "Atlas linguistique",
+    "symbolDictionary": "Dictionnaire des symboles",
+    "tifinaghAlphabet": "Alphabet tifinagh",
+    "verbConjugation": "Conjugaison",
+    "methodology": "Méthodologie",
+    "contact": "Contact",
+    "privacy": "Confidentialité",
+    "terms": "Conditions d'utilisation",
+    "accessibility": "Accessibilité"
+  },
+  "language": {
+    "switch": "Changer de langue",
+    "english": "Anglais",
+    "french": "Français"
+  }
+}

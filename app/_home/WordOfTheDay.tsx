@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
+import { useTranslations } from 'next-intl';
 import type { DictionaryEntry } from '@/types';
 import { getRichEntries } from '@/lib/dictionary';
 import { AMAWAL_LOCALE_KEY, AMAWAL_LOCALE_EVENT, type AmawalLocale } from '@/components/LocaleSwitcher';
@@ -13,6 +14,7 @@ import { dayIndex } from './util';
  * Fresh every day, deterministic per day (SSR-safe).
  */
 export default function WordOfTheDay() {
+  const t = useTranslations('home');
   const [locale, setLocale] = useState<AmawalLocale>('en');
 
   useEffect(() => {
@@ -54,7 +56,7 @@ export default function WordOfTheDay() {
             id="wotd-heading"
             className="text-[#d4931a] text-[11px] font-medium uppercase tracking-[0.3em] mb-6"
           >
-            Word of the day
+            {t('wordOfTheDay')}
           </p>
 
           <Link href={`/dictionary/${entry.word}`} className="group inline-block">

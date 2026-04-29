@@ -1,10 +1,11 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Metadata } from 'next';
-import { getEntryByWord, getAllEntries, getEntriesByRoot } from '@/lib/dictionary';
+import { getEntryByWord, getAllEntries, getEntriesByRoot, getFirstDayEntries } from '@/lib/dictionary';
 import AudioPlayer from '@/components/AudioPlayer';
 import WordHeatMap from '@/components/WordHeatMap';
 import RecentTracker from '@/components/RecentTracker';
+import EntryContextStrip from '@/components/EntryContextStrip';
 import { DictionaryEntry, Example, CrossReference, UsageNote, Variant, RegionalUsage, SemanticShift } from '@/types';
 
 interface PageProps {
@@ -528,6 +529,7 @@ export default async function WordPage({ params }: PageProps) {
     entry.definitions.find(d => d.language === 'en')?.meaning ??
     entry.definitions[0]?.meaning ??
     '';
+  const isFirstDay = getFirstDayEntries('tachelhit').some(e => e.id === entry.id);
 
   return (
     <>
@@ -539,7 +541,9 @@ export default async function WordPage({ params }: PageProps) {
     <div className="max-w-4xl mx-auto px-6 py-16">
       {/* Breadcrumb */}
       <nav className="mb-12 text-xs uppercase tracking-widest text-muted-foreground">
-        <Link href="/" className="hover:text-foreground transition-colors">Dictionary</Link>
+        <Link href="/" className="hover:text-foreground transition-colors">Search</Link>
+        <span className="mx-3">/</span>
+        <Link href="/dictionary" className="hover:text-foreground transition-colors">Dictionary</Link>
         <span className="mx-3">/</span>
         <span className="text-foreground">{entry.word}</span>
       </nav>
@@ -558,6 +562,7 @@ export default async function WordPage({ params }: PageProps) {
                 )}
               </p>
             )}
+            <EntryContextStrip entryId={entry.id} word={entry.word} isFirstDay={isFirstDay} />
           </div>
           {entry.audio ? (
             <AudioPlayer audio={entry.audio} word={entry.word} />

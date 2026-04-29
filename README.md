@@ -1,114 +1,205 @@
-# Amawal - Tamazight Dictionary
+# Amawal — Tamazight Dictionary
 
 <div align="center">
   <h2>ⴰⵎⴰⵡⴰⵍ</h2>
-  <p>An online dictionary for the Tamazight language featuring Tifinagh script</p>
+  <p><em>A living dictionary and linguistic atlas of the Tamazight (Berber) language family</em></p>
+  <p><a href="https://tamazight.io">tamazight.io</a></p>
 </div>
 
-## About
+A Dancing with Lions publication. Sister site: [darija.io](https://darija.io).
 
-**Amawal** (ⴰⵎⴰⵡⴰⵍ - "dictionary" in Tamazight) is an online dictionary dedicated to preserving and promoting the Tamazight language. Currently featuring **Tachelhit** (Southern Morocco), with plans to expand to other regional varieties.
+---
 
-Part of the **Amazigh Series**.
+## What this is
 
-## Features
+**Amawal** (ⴰⵎⴰⵡⴰⵍ — "dictionary" in Tamazight) is a structured reference for the Tamazight (Berber) language family. The launch corpus is **Tachelhit** — the variety spoken across the Souss in southern Morocco — with the underlying grammar generalising to **Kabyle** (Algeria), **Tarifit** (Northern Morocco), **Central Atlas Tamazight**, and **Tuareg** through predictable shifts. Pan-Berber by design, Tachelhit by volume today.
 
-- **Dictionary Search** - Look up words in Tachelhit with instant search
-- **Tifinagh Display** - All entries shown in traditional Tifinagh script
-- **Bilingual Definitions** - English and French translations
-- **Verb Conjugation** - Complete conjugation tables (aorist, preterite, imperative, intensive)
-- **Tifinagh Alphabet** - Full alphabet reference with pronunciation guides
-- **Audio Pronunciation** - Audio playback support (audio files to be added)
+Built on the calm-OS principles: clarity over cleverness, no streaks, no dopamine UI, no accounts, no ads. Useful and quietly addictive in the spirit of Sunsama.
 
-## Tech Stack
+## Status
+
+Currently on the development branch `claude/align-dictionary-chrome-hEykQ`. Deploy when the `tamazight.io` domain resolves.
+
+| Variety | Status | Speakers |
+|---------|--------|----------|
+| Tachelhit | Live | ~8 million |
+| Central Atlas | Coming | ~5 million |
+| Tarifit | Coming | ~4 million |
+| Ghomara | Coming | ~10–20k |
+| Kabyle | Coming | ~6 million |
+| Tuareg | Coming | ~1.5 million |
+| Zenaga | Coming | ~5k (endangered) |
+
+## Surfaces
+
+### Reference
+
+| Route | Purpose |
+|-------|---------|
+| `/` | Search-first home with daily rituals (recently viewed, word of the day, first-day, tradition, phrases discovery, explore) |
+| `/dictionary` | Browse every entry, grouped by semantic field |
+| `/dictionary/[word]` | Per-entry page with etymology, morphology, regional variants, examples, cross-references, OG share card, "Practice this word" button |
+| `/grammar` | Sound system, root-and-pattern morphology, free vs construct state, gender, pronouns, verb stems, negation |
+| `/map` | Interactive linguistic atlas (Mapbox, with static fallback) |
+| `/map/[region]` | Per-region detail; coming-soon varieties render placeholder pages, not 404s |
+| `/alphabet` | Tifinagh script reference |
+| `/conjugation`, `/conjugation/[verb]` | Verb tables |
+| `/symbols`, `/symbols/[id]` | Amazigh visual symbol dictionary |
+
+### Learning loops
+
+| Route | What it does |
+|-------|---|
+| `/first-day` | 40 curated essentials across 7 themes (greetings, people, numbers, food, time, places, body), 8 rotated daily on home |
+| `/practice` | Spaced-repetition flashcards with three card directions: Tifinagh→meaning, meaning→Latin, **Latin→Tifinagh** (the killer mode darija can't have). Progress in `localStorage`, no accounts. Deep-link via `?word=...` for one-card sessions. |
+| `/how-to-say` | Curated SEO surface — 32 common questions ("How to say water in Tamazight"), each with FAQ JSON-LD |
+
+### Project
+
+| Route | What it does |
+|-------|---|
+| `/about` | Project mission, language background, regional varieties, atlas callout |
+| `/methodology` | How entries are sourced and verified |
+| `/contact` | Contact form |
+| `/support` | Patron-model donation tiers (env-driven; not active until `NEXT_PUBLIC_SUPPORT_URL` is set) |
+| `/legal/[slug]` | `privacy`, `terms`, `accessibility` |
+
+## Tech
 
 - **Framework**: Next.js 14 (App Router)
-- **Styling**: Tailwind CSS
 - **Language**: TypeScript
-- **Data**: JSON files
+- **Styling**: Tailwind CSS, custom CSS for animations + focus-visible + reduced-motion
+- **i18n**: next-intl (`en`, `fr`); cookie-driven, falls back to `Accept-Language`
+- **Map**: Mapbox GL with static-fallback when WebGL unavailable
+- **OG cards**: Next.js `ImageResponse` with bundled Noto Sans Tifinagh
+- **Data**: bundled JSON in `/data` (no DB)
 - **Deployment**: Vercel
 
-## Getting Started
-
-```bash
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-
-# Build for production
-npm run build
-```
-
-Open [http://localhost:3000](http://localhost:3000) to view the dictionary.
-
-## Project Structure
+## Project structure
 
 ```
 tamazight-dictionary/
-├── app/                    # Next.js app router pages
-├── components/             # React components
-├── data/                   # Dictionary and conjugation data (JSON)
-├── lib/                    # Utility functions
-├── types/                  # TypeScript interfaces
-└── public/                 # Static assets (audio, fonts)
+├── app/
+│   ├── _home/              # Home-page sections (server + client)
+│   ├── _og-fonts/           # Bundled font for OG ImageResponse
+│   ├── api/                 # Dictionary, contact, subscribe, footer
+│   ├── dictionary/          # Index + [word] detail + opengraph-image
+│   ├── first-day/           # /first-day surface
+│   ├── grammar/             # Long-form grammar reference
+│   ├── how-to-say/          # SEO surface index + [term] detail
+│   ├── legal/[slug]/        # Privacy, terms, accessibility
+│   ├── map/, /map/[region]/ # Interactive atlas + per-region pages
+│   ├── practice/            # Flashcard practice surface
+│   ├── support/             # Patron tiers
+│   ├── layout.tsx           # NextIntl provider, ThemeProvider, JSON-LD
+│   ├── robots.ts            # AI-policy-aware robots
+│   └── sitemap.ts
+├── components/              # Header, Footer, LocaleSwitcher, AudioPlayer,
+│                            # WordHeatMap, LanguageMap, NewsletterSignup,
+│                            # RecentTracker, RecentlyViewed, EntryContextStrip
+├── data/
+│   ├── dictionary/          # tachelhit.json + tachelhit-enhanced.json
+│   ├── phrases/, conjugations/, symbols/
+│   ├── regions.json         # All 7 Berber varieties with sub-regions
+│   ├── alphabet.json
+│   ├── first-day.json       # Curated 40-word list
+│   └── how-to-say.json      # Curated 32-term SEO list
+├── i18n/request.ts          # Locale detection
+├── messages/                # en.json, fr.json
+├── lib/                     # dictionary, phrases, conjugation, nexus, transliteration
+├── public/
+│   ├── icon.svg             # Yaz (ⵣ) glyph in brand red
+│   ├── llms.txt             # AI-GEO manifest
+│   ├── llms-full.txt        # Deep AI knowledge file
+│   └── apple-touch-icon.svg
+├── types/                   # TypeScript interfaces
+├── middleware.ts            # License Link header + X-Robots-Tag noai
+└── next.config.mjs          # Wrapped with createNextIntlPlugin
 ```
 
-## Adding Words
+## Getting started
 
-Dictionary entries are stored in `data/dictionary/tachelhit.json`. Each entry follows this structure:
+```bash
+npm install
+npm run dev          # http://localhost:3000
+npm run build        # production build
+```
 
-```json
+### Environment variables
+
+| Variable | Purpose | Required |
+|---|---|---|
+| `NEXT_PUBLIC_SITE_URL` | Canonical origin (default `https://tamazight.io`) | No |
+| `NEXT_PUBLIC_MAPBOX_TOKEN` | Mapbox token for the atlas | No (static fallback works without it) |
+| `NEXT_PUBLIC_SUPPORT_URL` | Stripe payment link for `/support` tiers | No (greys-out without it) |
+
+## Data model
+
+A dictionary entry (full schema in `types/index.ts`):
+
+```ts
 {
-  "id": "word-001",
-  "word": "akal",
-  "tifinagh": "ⴰⴽⴰⵍ",
-  "pronunciation": "/akal/",
-  "partOfSpeech": "noun",
-  "gender": "masculine",
-  "definitions": [
-    { "meaning": "earth, land", "language": "en" },
-    { "meaning": "terre, sol", "language": "fr" }
+  id: 'word-001',
+  word: 'akal',
+  tifinagh: 'ⴰⴽⴰⵍ',
+  pronunciation: 'akal',
+  partOfSpeech: 'noun',
+  gender: 'masculine',
+  definitions: [
+    { language: 'en', meaning: 'earth, land, ground, soil, territory' },
+    { language: 'fr', meaning: 'terre, sol, territoire' },
   ],
-  "region": "tachelhit"
+  semanticFields: ['nature', 'agriculture'],
+  etymology: { root: 'k-l', origin: 'proto-Berber', cognates: [...] },
+  morphology: { state: 'free', plural: 'ikallen' },
+  examples: [{ text: '...', tifinagh: '...', source: { type: 'proverb' } }],
+  usageNotes: [{ type: 'cultural', text: '...' }],
+  variants: [{ region: 'high-atlas', form: '...', notes: '...' }],
+  region: 'tachelhit',
 }
 ```
 
-## Regional Varieties
+Curated sidecars (decoupled from per-entry data):
+- `data/first-day.json` — slug → entry word, 40 entries in 7 themed groups
+- `data/how-to-say.json` — slug → entry word, 32 SEO terms in 8 groups
 
-- **Tachelhit** (Active) - Southern Morocco
-- **Kabyle** (Coming Soon) - Algeria
-- **Tarifit** (Coming Soon) - Northern Morocco
-- **Central Atlas** (Coming Soon) - Central Morocco
+## AI policy & licensing
 
-## Deployment
+Content licensed **[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)**. The codebase itself is MIT.
 
-Deploy to Vercel:
+The site distinguishes two classes of AI crawler:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/tamazight-dictionary)
+- **Allowed** (visit on demand, return citation URL): Googlebot, Bingbot, ChatGPT-User, OAI-SearchBot, Claude-User, PerplexityBot, Perplexity-User, Applebot.
+- **Disallowed** (silent ingestion into model weights): GPTBot, Google-Extended, ClaudeBot, anthropic-ai, Claude-Web, CCBot, Bytespider, Meta-ExternalAgent, FacebookBot, Diffbot, Amazonbot, Applebot-Extended, cohere-ai, AI2Bot, and others. See [`app/robots.ts`](app/robots.ts) for the full list.
 
-Or manually:
+Three machine-readable signals enforce the policy on every response:
+1. `robots.ts` — explicit per-user-agent allow/disallow
+2. Edge middleware — `Link: <license>; rel="license"` and `X-Robots-Tag: noai, noimageai`
+3. JSON-LD WebSite schema — `license`, `copyrightHolder`, `creditText`, `usageInfo`
 
-1. Push to GitHub
-2. Connect repository to Vercel
-3. Deploy
+Training use of the corpus requires written permission from Dancing with Lions (`contact@dancingwiththelions.com`).
+
+## Citation
+
+```
+Dancing with Lions. (2026). Amawal: Tamazight Dictionary [Online resource].
+https://tamazight.io
+```
 
 ## Contributing
 
-Contributions are welcome, especially:
-- Additional Tachelhit vocabulary
-- Pronunciation audio recordings
-- Other Tamazight regional data
-- Bug fixes and improvements
+Issues and PRs are welcome. The most valuable contributions are:
+- New verified Tachelhit entries (with sources)
+- Population of the `etymology.root` field across the existing corpus
+- Native-speaker review of cultural notes
+- French translation of long-form pages (currently English-only beyond chrome strings)
+- Coverage for Central Atlas, Tarifit, Ghomara, Kabyle, Tuareg
 
-## License
-
-MIT
+Use the `/contact` form on the site or open an issue here.
 
 ---
 
 <div align="center">
   <p>ⵜⴰⵎⴰⵣⵉⵖⵜ</p>
-  <p><em>Preserving the Amazigh language for future generations</em></p>
+  <p><em>A Dancing with Lions publication · Marrakech, Morocco</em></p>
 </div>

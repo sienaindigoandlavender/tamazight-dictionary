@@ -148,7 +148,7 @@ export default function Footer() {
       <div style={{ backgroundColor: '#0e0e0e' }}>
         <div className="max-w-7xl mx-auto px-6 py-3">
           <p className="text-[9px] tracking-[0.15em] uppercase text-white/70 text-center">
-            A <a href="https://www.slowmorocco.com" target="_blank" rel="noopener noreferrer" className="text-white/90 hover:text-white transition-colors">Slow Morocco</a> project / Powered by <a href="https://www.dancingwiththelions.com" target="_blank" rel="noopener noreferrer" className="text-white/90 hover:text-white transition-colors">Dancing with Lions</a>
+            A <a href="https://www.slowmorocco.com" target="_blank" rel="noopener noreferrer" className="text-white/90 hover:text-white transition-colors">Slow Morocco</a> project / Powered by <a href="https://dancewithlions.com" target="_blank" rel="noopener noreferrer" className="text-white/90 hover:text-white transition-colors">Dancing with Lions</a>
           </p>
         </div>
       </div>

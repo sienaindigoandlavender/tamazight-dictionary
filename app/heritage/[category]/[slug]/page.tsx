@@ -2,7 +2,7 @@ import React from 'react';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ChevronLeft } from 'lucide-react';
-import { getSpecimenBySlug } from '@/lib/archive';
+import { getSpecimenBySlug, getAllSpecimens } from '@/lib/archive';
 
 interface SpecimenPageProps {
   params: {
@@ -11,10 +11,18 @@ interface SpecimenPageProps {
   };
 }
 
+// Generates the static compilation paths for Next.js during optimization
+export async function generateStaticParams() {
+  const specimens = getAllSpecimens();
+  return specimens.map((specimen) => ({
+    category: specimen.category,
+    slug: specimen.slug,
+  }));
+}
+
 export default function SpecimenRecordPage({ params }: SpecimenPageProps) {
   const { category, slug } = params;
   
-  // Look up the matching markdown record via our utility parsing engine
   const specimen = getSpecimenBySlug(category, slug);
 
   if (!specimen) {
@@ -23,7 +31,6 @@ export default function SpecimenRecordPage({ params }: SpecimenPageProps) {
 
   return (
     <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-12 bg-[#F9F9F7] min-h-screen text-[#1C1C1A]">
-      {/* Breadcrumb Navigation */}
       <div className="mb-12">
         <Link 
           href="/heritage" 
@@ -33,10 +40,7 @@ export default function SpecimenRecordPage({ params }: SpecimenPageProps) {
         </Link>
       </div>
 
-      {/* Main Structural Layout Split */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
-        
-        {/* LEFT COLUMN: Narrative & Prose Descriptions (7 Columns) */}
         <div className="lg:col-span-7 flex flex-col space-y-8">
           <div>
             <span className="text-xs font-mono text-[#767670] uppercase tracking-widest">{specimen.classification}</span>
@@ -46,14 +50,12 @@ export default function SpecimenRecordPage({ params }: SpecimenPageProps) {
             <p className="text-xl font-sans text-[#767670] tracking-wide">{specimen.tifinagh}</p>
           </div>
 
-          {/* Master Visual Specimen Container */}
           <div className="aspect-[4/5] w-full bg-[#F1F1EE] border border-[#E4E4E0] flex items-center justify-center grayscale">
             <span className="text-xs font-mono text-[#767670] uppercase tracking-widest">
               Visual Document {specimen.catalogId}
             </span>
           </div>
 
-          {/* Core Descriptive Text Block */}
           <article className="prose prose-neutral font-sans text-base leading-relaxed text-[#1C1C1A] space-y-6 max-w-none
             prose-headings:font-serif prose-headings:font-normal prose-headings:mt-8 prose-headings:mb-4
             prose-h3:text-xl prose-h3:border-b prose-h3:border-[#E4E4E0] prose-h3:pb-2">
@@ -66,7 +68,6 @@ export default function SpecimenRecordPage({ params }: SpecimenPageProps) {
           </article>
         </div>
 
-        {/* RIGHT COLUMN: The Metadata Ledger Card (5 Columns) */}
         <div className="lg:col-span-5">
           <div className="sticky top-8 border border-[#E4E4E0] bg-[#F1F1EE] p-6 sm:p-8 rounded-sm font-mono text-xs space-y-6">
             <div className="border-b border-[#E4E4E0] pb-4">
@@ -79,22 +80,18 @@ export default function SpecimenRecordPage({ params }: SpecimenPageProps) {
                 <span className="text-[#767670] uppercase tracking-wider block">Classification</span>
                 <span className="text-[#1C1C1A] mt-0.5 block font-sans text-sm">{specimen.classification}</span>
               </div>
-
               <div>
                 <span className="text-[#767670] uppercase tracking-wider block">Material Composition</span>
                 <span className="text-[#1C1C1A] mt-0.5 block font-sans text-sm">{specimen.medium}</span>
               </div>
-
               <div>
                 <span className="text-[#767670] uppercase tracking-wider block">Macro Region</span>
                 <span className="text-[#1C1C1A] mt-0.5 block font-sans text-sm">{specimen.region}</span>
               </div>
-
               <div>
                 <span className="text-[#767670] uppercase tracking-wider block">Tribal Provenance / Point of Origin</span>
                 <span className="text-[#1C1C1A] mt-0.5 block font-sans text-sm">{specimen.provenance}</span>
               </div>
-
               <div>
                 <span className="text-[#767670] uppercase tracking-wider block">Estimated Production Era</span>
                 <span className="text-[#1C1C1A] mt-0.5 block font-sans text-sm">{specimen.era}</span>
@@ -106,7 +103,6 @@ export default function SpecimenRecordPage({ params }: SpecimenPageProps) {
             </div>
           </div>
         </div>
-
       </div>
     </main>
   );

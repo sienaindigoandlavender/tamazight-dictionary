@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
-import Map, { NavigationControl } from 'react-map-gl';
+import Map, { NavigationControl } from 'react-map-gl/mapbox';
 import { searchEntries, searchByLanguage, getAllEntries, getEntryByWord } from '@/lib/dictionary';
 import {
   searchEnglishToTamazight,

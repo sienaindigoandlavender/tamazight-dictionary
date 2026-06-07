@@ -22,12 +22,13 @@ import WisdomSection from './_home/WisdomSection';
 import MapPreview from './_home/MapPreview';
 import RecentlyViewed from '@/components/RecentlyViewed';
 import NewsletterSignup from '@/components/NewsletterSignup';
+import { LayoutGrid, BookOpen, Compass, Bookmark } from 'lucide-react';
 
 type TranslationDirection = 'en-tmz' | 'fr-tmz' | 'tmz-en' | 'tmz-fr';
 
 const directionLabels: Record<TranslationDirection, { from: string; to: string; placeholder: string }> = {
-  'en-tmz': { from: 'English', to: 'Tamazight', placeholder: 'Type English word or phrase...' },
-  'fr-tmz': { from: 'French', to: 'Tamazight', placeholder: 'Tapez un mot en français...' },
+  'en-tmz': { from: 'English', to: 'Tamazight', placeholder: 'Search lexical dictionary entries...' },
+  'fr-tmz': { from: 'French', to: 'Tamazight', placeholder: 'Rechercher dans le dictionnaire...' },
   'tmz-en': { from: 'Tamazight', to: 'English', placeholder: 'Aru awal s Tmazight...' },
   'tmz-fr': { from: 'Tamazight', to: 'French', placeholder: 'Aru awal s Tmazight...' },
 };
@@ -47,7 +48,6 @@ export default function Home() {
   const allEntries = useMemo(() => getAllEntries('tachelhit'), []);
   const phrasesMetadata = useMemo(() => getPhrasesMetadata(), []);
 
-  // Sync translator direction with the global EN | FR locale switcher
   useEffect(() => {
     const apply = (loc: AmawalLocale) => {
       setDirection(d => {
@@ -166,87 +166,82 @@ export default function Home() {
   const noResults = query && wordResults.length === 0 && phraseResults.length === 0;
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden bg-[#F9F9F7]">
 
-      {/* ============ HERO ============ */}
-      <section
-        className="relative px-6 md:px-[8%] lg:px-[12%] pt-24 md:pt-40 pb-12 md:pb-28 overflow-hidden"
-        aria-labelledby="home-h1"
-      >
-        {/* One subtle Tifinagh ornament — bottom-right */}
-        <div
-          aria-hidden="true"
-          className="absolute -bottom-32 -right-16 md:-right-32 pointer-events-none select-none"
-        >
-          <span className="tifinagh text-[28vw] md:text-[20vw] leading-none text-[#c53a1a]/[0.04]">
+      {/* ============ CORE REPOSITORY HERO ============ */}
+      <section className="relative px-6 md:px-[8%] lg:px-[12%] pt-24 md:pt-36 pb-12 md:pb-20 overflow-hidden border-b border-[#E4E4E0] bg-[#F1F1EE]">
+        <div aria-hidden="true" className="absolute -bottom-32 -right-16 md:-right-32 pointer-events-none select-none">
+          <span className="tifinagh text-[28vw] md:text-[20vw] leading-none text-[#1C1C1A]/[0.02]">
             ⴰⵎⴰⵡⴰⵍ
           </span>
         </div>
 
         <div className="relative z-10 max-w-5xl">
-          <p className="text-[#c53a1a] text-[11px] md:text-xs font-medium uppercase tracking-[0.3em] mb-4 md:mb-6">
-            Tamazight Dictionary
-          </p>
+          <span className="text-xs font-mono uppercase tracking-[0.25em] text-[#767670] block mb-4">
+            Tamazgha Research Database
+          </span>
 
-          <h1
-            id="home-h1"
-            className="font-display text-[clamp(2.5rem,8vw,7rem)] leading-[0.95] md:leading-[0.9] tracking-tight mb-4 md:mb-6"
-          >
-            Berber language, finally clear.
+          <h1 className="font-serif text-[clamp(2.5rem,7vw,5.5rem)] leading-[1.0] text-[#1C1C1A] tracking-tight mb-6">
+            The Intangible & Material Heritage Vault.
           </h1>
 
-          <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-xl max-w-2xl mb-8 md:mb-16 leading-relaxed">
-            Free Tamazight dictionary. {allEntries.length.toLocaleString()} words, {phrasesMetadata.totalPhrases.toLocaleString()} phrases — with Tifinagh script, pronunciation, and{' '}
-            <Link href="/map" className="underline decoration-dotted underline-offset-4 hover:text-[#c53a1a]">
-              {regions.length} dialect regions
-            </Link>.
+          <p className="text-[#767670] text-base md:text-lg max-w-2xl mb-12 leading-relaxed font-sans">
+            A collaborative architecture consolidating the physical artifacts, linguistic morphology, and spatial configurations of the Amazigh civilization segments.
           </p>
 
-          <div className="max-w-3xl">
-            {/* Direction + Dialect row */}
-            <div className="flex items-center justify-between mb-3">
+          {/* MASTER SUB-CONTENT SEARCH COMPONENT (Lexicon Lookup Engine) */}
+          <div className="max-w-3xl bg-[#F9F9F7] border border-[#E4E4E0] p-4 sm:p-6 rounded shadow-sm">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
               <div className="flex items-center gap-2">
-                <select value={direction}
+                <select 
+                  value={direction}
                   onChange={(e) => { setDirection(e.target.value as TranslationDirection); setQuery(''); }}
-                  className="px-3 py-1.5 border border-foreground/10 bg-background text-foreground text-xs uppercase tracking-wider appearance-none cursor-pointer pr-6"
-                  style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E\")", backgroundRepeat: 'no-repeat', backgroundPosition: 'right 8px center' }}>
-                  <option value="en-tmz">English → Tamazight</option>
-                  <option value="fr-tmz">French → Tamazight</option>
-                  <option value="tmz-en">Tamazight → English</option>
-                  <option value="tmz-fr">Tamazight → French</option>
+                  className="px-2.5 py-1.5 border border-[#E4E4E0] bg-[#F1F1EE] font-mono text-[11px] uppercase tracking-wider appearance-none cursor-pointer pr-6 rounded-sm text-[#1C1C1A]"
+                  style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23767670' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E\")", backgroundRepeat: 'no-repeat', backgroundPosition: 'right 8px center' }}
+                >
+                  <option value="en-tmz">Lexicon: English → Tamazight</option>
+                  <option value="fr-tmz">Lexicon: French → Tamazight</option>
+                  <option value="tmz-en">Lexicon: Tamazight → English</option>
+                  <option value="tmz-fr">Lexicon: Tamazight → French</option>
                 </select>
-                <button onClick={handleSwapDirection}
-                  className="p-1.5 border border-foreground/10 hover:border-foreground/30 hover:bg-foreground/5 transition-all"
-                  aria-label="Swap languages">
-                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <button 
+                  onClick={handleSwapDirection}
+                  className="p-2 border border-[#E4E4E0] bg-[#F1F1EE] hover:bg-[#E4E4E0] transition-colors rounded-sm"
+                  aria-label="Swap lexicon translation fields"
+                >
+                  <svg className="w-3.5 h-3.5 text-[#767670]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
                   </svg>
                 </button>
               </div>
 
               <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-accent" />
-                <span className="text-[10px] text-muted-foreground uppercase tracking-wider">Tachelhit</span>
+                <div className="w-1.5 h-1.5 rounded-full bg-[#c53a1a]" />
+                <span className="text-[10px] font-mono text-[#767670] uppercase tracking-wider">Sub-Content Index: Tachelhit</span>
               </div>
             </div>
 
-            {/* Search Input — underline style, matches darija.io */}
             <div className="relative">
-              <input ref={inputRef} type="text" value={query}
+              <input 
+                ref={inputRef} 
+                type="text" 
+                value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder={directionLabels[direction].placeholder}
-                autoFocus
-                className="w-full bg-transparent outline-none transition-colors py-3 md:pt-0 md:pb-4 text-xl md:text-2xl border-b-2 border-neutral-200 dark:border-neutral-800 focus:border-[#c53a1a] font-display placeholder:font-display placeholder:text-neutral-400" />
+                className="w-full bg-transparent outline-none py-2 text-lg border-b border-[#E4E4E0] focus:border-[#1C1C1A] font-sans placeholder:text-[#767670]/60 text-[#1C1C1A]" 
+              />
               {(direction === 'tmz-en' || direction === 'tmz-fr') && (
                 <div className="absolute right-12 top-1/2 -translate-y-1/2">
                   <TifinaghToggle isActive={showKeyboard} onClick={() => setShowKeyboard(!showKeyboard)} />
                 </div>
               )}
               {query && (
-                <button onClick={() => setQuery('')}
-                  aria-label="Clear"
-                  className="absolute right-0 inset-y-0 my-auto h-11 w-11 inline-flex items-center justify-center text-neutral-400 hover:text-black dark:hover:text-white">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                <button 
+                  onClick={() => setQuery('')}
+                  aria-label="Clear term search"
+                  className="absolute right-0 inset-y-0 my-auto h-10 w-10 inline-flex items-center justify-center text-[#767670] hover:text-[#1C1C1A]"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </button>
@@ -258,48 +253,32 @@ export default function Home() {
                 <TifinaghKeyboard onInsert={handleKeyboardInsert} onClose={() => setShowKeyboard(false)} />
               </div>
             )}
-
-            {/* Try chips */}
-            {!query && !showKeyboard && (
-              <div className="flex flex-wrap items-baseline gap-x-5 gap-y-2 mt-4">
-                <span className="text-xs uppercase tracking-[0.2em] text-neutral-400">Try</span>
-                {((direction === 'tmz-en' || direction === 'tmz-fr')
-                  ? ['aman', 'tafukt', 'akal', 'azul']
-                  : ['water', 'sun', 'freedom', 'love']
-                ).map(word => (
-                  <button key={word} onClick={() => setQuery(word)}
-                    className="text-sm text-neutral-500 hover:text-[#c53a1a] transition-colors font-display italic">
-                    {word}
-                  </button>
-                ))}
-              </div>
-            )}
           </div>
         </div>
       </section>
 
-      {/* ============ RESULTS ============ */}
+      {/* ============ LIVE TRANSLATION LOOKUP OVERLAY ============ */}
       {hasResults && (
-        <section className="py-16 px-6">
+        <section className="py-16 px-6 border-b border-[#E4E4E0] bg-white">
           <div className="max-w-5xl mx-auto">
             {wordResults.length > 0 && (
               <div className="mb-12">
-                <div className="flex items-baseline gap-3 mb-6">
-                  <span className="font-serif text-3xl">{wordResults.length}</span>
-                  <span className="text-xs uppercase tracking-widest text-muted-foreground">words found</span>
+                <div className="flex items-baseline gap-2 mb-6 border-b border-[#E4E4E0] pb-2">
+                  <span className="font-mono text-xs font-semibold text-[#1C1C1A]">{wordResults.length}</span>
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-[#767670]">Lexical vocabulary terms resolved</span>
                 </div>
-                <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                   {wordResults.map(renderWordResult)}
                 </div>
               </div>
             )}
             {phraseResults.length > 0 && (
               <div>
-                <div className="flex items-baseline gap-3 mb-6">
-                  <span className="font-serif text-3xl">{phraseResults.length}</span>
-                  <span className="text-xs uppercase tracking-widest text-muted-foreground">phrases found</span>
+                <div className="flex items-baseline gap-2 mb-6 border-b border-[#E4E4E0] pb-2">
+                  <span className="font-mono text-xs font-semibold text-[#1C1C1A]">{phraseResults.length}</span>
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-[#767670]">Phonetic contextual records resolved</span>
                 </div>
-                <div className="grid gap-3 md:grid-cols-2">
+                <div className="grid gap-4 md:grid-cols-2">
                   {phraseResults.map(p => renderPhraseResult(p))}
                 </div>
               </div>
@@ -308,179 +287,162 @@ export default function Home() {
         </section>
       )}
 
-      {/* No Results */}
       {noResults && (
-        <section className="py-20 px-6">
+        <section className="py-20 px-6 bg-white border-b border-[#E4E4E0]">
           <div className="max-w-2xl mx-auto text-center">
-            <span className="tifinagh text-6xl text-foreground/10 block mb-6">ⵅ</span>
-            <p className="font-serif text-2xl mb-2">No matches for &ldquo;{query}&rdquo;</p>
-            <p className="text-sm text-muted-foreground">Try a different word, or browse common phrases below.</p>
+            <span className="tifinagh text-5xl text-[#767670]/20 block mb-4">ⵅ</span>
+            <p className="font-serif text-xl mb-1 text-[#1C1C1A]">No lexical entries match &ldquo;{query}&rdquo;</p>
+            <p className="text-xs font-mono text-[#767670]">Check your linguistic parameters or navigate structural nodes below.</p>
           </div>
         </section>
       )}
 
-      {/* ============ RECENTLY VIEWED ============ */}
-      {!query && <RecentlyViewed />}
-
-      {/* ============ WORD OF THE DAY ============ */}
-      {!query && <WordOfTheDay />}
-
-      {/* ============ FIRST DAY ESSENTIALS ============ */}
-      {!query && <FirstDaySection />}
-
-      {/* ============ FROM THE TRADITION ============ */}
-      {!query && <WisdomSection />}
-
-      {/* ============ PHRASES DISCOVERY ============ */}
+      {/* ============ CORE ARCHITECTURAL REPOSITORY VAULTS ============ */}
       {!query && (
-        <section className="py-20 md:py-28 px-6">
-          <div className="max-w-6xl mx-auto">
-            {/* Section header - asymmetric */}
-            <div className="grid md:grid-cols-12 gap-6 mb-12">
-              <div className="md:col-span-7">
-                <span className="text-xs uppercase tracking-[0.2em] text-accent mb-3 block">Essential Tachelhit</span>
-                <h2 className="font-serif text-4xl md:text-5xl leading-tight">Common<br/>Phrases</h2>
-              </div>
-              <div className="md:col-span-5 flex items-end">
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {phrasesMetadata.totalPhrases} phrases across {phrasesMetadata.categoryCount} categories — greetings, farewells, courtesy, directions, and everyday conversation.
+        <section className="py-16 px-6 max-w-7xl mx-auto">
+          <span className="text-[10px] font-mono uppercase tracking-widest text-[#767670] block mb-2">Vault Directories</span>
+          <h2 className="text-2xl font-serif text-[#1C1C1A] mb-8">Primary Sub-Content Registries</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            {/* 1. Heritage Index Entrypoint */}
+            <Link href="/heritage" className="group border border-[#E4E4E0] p-6 bg-white hover:border-[#1C1C1A] transition-all flex flex-col justify-between min-h-[220px]">
+              <div>
+                <div className="w-8 h-8 rounded bg-[#F1F1EE] flex items-center justify-center text-[#1C1C1A] mb-4 border border-[#E4E4E0]">
+                  <LayoutGrid size={16} />
+                </div>
+                <h3 className="font-serif text-xl text-[#1C1C1A] group-hover:underline mb-2">Material Heritage Catalog</h3>
+                <p className="text-xs text-[#767670] leading-relaxed">
+                  Statically structured data tracking physical objects, fibulas, architectural motifs, and physical relics.
                 </p>
               </div>
-            </div>
+              <span className="text-[10px] font-mono text-[#1C1C1A] uppercase tracking-wider pt-4 block">Access Specimen Ledger →</span>
+            </Link>
 
-            {/* Category pills */}
-            <div className="flex flex-wrap gap-2 mb-10">
-              <button onClick={() => setSelectedCategory(null)}
-                className={`text-xs px-4 py-2 transition-all ${
-                  selectedCategory === null
-                    ? 'bg-foreground text-background'
-                    : 'border border-foreground/10 hover:border-foreground/30'
-                }`}>
-                Featured
-              </button>
-              {categories.slice(0, 10).map(cat => (
-                <button key={cat.id} onClick={() => setSelectedCategory(cat.id as PhraseCategory)}
-                  className={`text-xs px-4 py-2 transition-all ${
-                    selectedCategory === cat.id
-                      ? 'bg-foreground text-background'
-                      : 'border border-foreground/10 hover:border-foreground/30'
-                  }`}>
-                  {cat.name}
-                </button>
-              ))}
-            </div>
+            {/* 2. Atlas Mapping Entrypoint */}
+            <Link href="/map" className="group border border-[#E4E4E0] p-6 bg-white hover:border-[#1C1C1A] transition-all flex flex-col justify-between min-h-[220px]">
+              <div>
+                <div className="w-8 h-8 rounded bg-[#F1F1EE] flex items-center justify-center text-[#1C1C1A] mb-4 border border-[#E4E4E0]">
+                  <Compass size={16} />
+                </div>
+                <h3 className="font-serif text-xl text-[#1C1C1A] group-hover:underline mb-2">Linguistic Atlas</h3>
+                <p className="text-xs text-[#767670] leading-relaxed">
+                  Cartographic rendering mapping {regions.length} distinct tribal sub-dialects across regional zones.
+                </p>
+              </div>
+              <span className="text-[10px] font-mono text-[#1C1C1A] uppercase tracking-wider pt-4 block">Launch Geographic Matrix →</span>
+            </Link>
 
-            {/* Phrases Grid */}
-            <div className="grid gap-3 md:grid-cols-2">
-              {(selectedCategory ? categoryPhrases : randomPhrases).map(phrase =>
-                renderPhraseResult(phrase, !selectedCategory)
-              )}
-            </div>
+            {/* 3. Symbolic System Entrypoint */}
+            <Link href="/symbols" className="group border border-[#E4E4E0] p-6 bg-white hover:border-[#1C1C1A] transition-all flex flex-col justify-between min-h-[220px]">
+              <div>
+                <div className="w-8 h-8 rounded bg-[#F1F1EE] flex items-center justify-center text-[#1C1C1A] mb-4 border border-[#E4E4E0]">
+                  <Bookmark size={16} />
+                </div>
+                <h3 className="font-serif text-xl text-[#1C1C1A] group-hover:underline mb-2">Semiotics & Symbol Index</h3>
+                <p className="text-xs text-[#767670] leading-relaxed">
+                  Catalog indexing structural geometry meanings parsed directly from traditional Amazigh weaving patterns.
+                </p>
+              </div>
+              <span className="text-[10px] font-mono text-[#1C1C1A] uppercase tracking-wider pt-4 block">View Sign Index →</span>
+            </Link>
           </div>
         </section>
       )}
 
-      {/* ============ EXPLORE MORE ============ */}
+      {/* ============ SYSTEM SECONDARY COMPONENTS ============ */}
       {!query && (
-        <section className="py-20 md:py-28 px-6 relative">
-          {/* Large background letter */}
-          <div className="absolute right-0 top-0 tifinagh-deco text-[28rem] leading-none -translate-y-20 translate-x-20" aria-hidden="true">
-            ⵣ
-          </div>
+        <>
+          <RecentlyViewed />
+          <WordOfTheDay />
+          <FirstDaySection />
+          <WisdomSection />
+          
+          {/* ============ PHRASES REPOSITORY PANEL ============ */}
+          <section className="py-16 px-6 border-t border-[#E4E4E0] bg-white">
+            <div className="max-w-7xl mx-auto">
+              <div className="grid md:grid-cols-12 gap-6 mb-12">
+                <div className="md:col-span-7">
+                  <span className="text-xs font-mono uppercase tracking-widest text-[#767670] mb-2 block">Phonetic Database Node</span>
+                  <h2 className="font-serif text-3xl text-[#1C1C1A]">Vernacular Syntactical Formulations</h2>
+                </div>
+                <div className="md:col-span-5 flex items-end">
+                  <p className="text-xs text-[#767670] leading-normal font-mono">
+                    {phrasesMetadata.totalPhrases} total expressions sorted inside {phrasesMetadata.categoryCount} functional classifications.
+                  </p>
+                </div>
+              </div>
 
-          <div className="max-w-6xl mx-auto relative z-10">
-            {/* Stats — oversized numbers */}
-            <div className="grid grid-cols-3 gap-4 md:gap-8 mb-20 md:mb-28">
-              <div className="text-center md:text-left">
-                <div className="font-serif text-6xl md:text-8xl leading-none mb-2">{allEntries.length}</div>
-                <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Words</div>
+              {/* Functional Filtering Track */}
+              <div className="flex flex-wrap gap-2 mb-8">
+                <button 
+                  onClick={() => setSelectedCategory(null)}
+                  className={`text-[11px] font-mono uppercase tracking-wider px-3 py-1.5 border rounded-sm transition-all ${
+                    selectedCategory === null ? 'bg-[#1C1C1A] text-white border-[#1C1C1A]' : 'bg-[#F1F1EE] text-[#767670] border-[#E4E4E0] hover:border-[#767670]'
+                  }`}
+                >
+                  Featured Samples
+                </button>
+                {categories.slice(0, 7).map(cat => (
+                  <button 
+                    key={cat.id} 
+                    onClick={() => setSelectedCategory(cat.id as PhraseCategory)}
+                    className={`text-[11px] font-mono uppercase tracking-wider px-3 py-1.5 border rounded-sm transition-all ${
+                      selectedCategory === cat.id ? 'bg-[#1C1C1A] text-white border-[#1C1C1A]' : 'bg-[#F1F1EE] text-[#767670] border-[#E4E4E0] hover:border-[#767670]'
+                    }`}
+                  >
+                    {cat.name}
+                  </button>
+                ))}
               </div>
-              <div className="text-center">
-                <div className="font-serif text-6xl md:text-8xl leading-none mb-2">{phrasesMetadata.totalPhrases}</div>
-                <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Phrases</div>
-              </div>
-              <div className="text-center md:text-right">
-                <div className="font-serif text-6xl md:text-8xl leading-none mb-2">{regions.length}</div>
-                <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Dialects</div>
+
+              {/* Active Matrix Items Grid */}
+              <div className="grid gap-4 md:grid-cols-2">
+                {(selectedCategory ? categoryPhrases : randomPhrases).map(phrase =>
+                  renderPhraseResult(phrase, !selectedCategory)
+                )}
               </div>
             </div>
+          </section>
 
-            {/* Explore cards — varied sizes */}
-            <div className="grid md:grid-cols-12 gap-4">
-              {/* Map — large */}
-              <Link href="/map" className="md:col-span-7 group">
-                <div className="border border-foreground/8 p-8 md:p-10 hover:border-foreground/25 transition-all hover-lift h-full relative overflow-hidden">
-                  <div className="absolute -right-6 -bottom-6 opacity-[0.04]">
-                    <svg viewBox="0 0 200 200" className="w-40 h-40"><circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" strokeWidth="2"/>
-                      <circle cx="100" cy="60" r="4" fill="currentColor"/><circle cx="80" cy="120" r="4" fill="currentColor"/>
-                      <circle cx="130" cy="100" r="4" fill="currentColor"/><circle cx="60" cy="80" r="4" fill="currentColor"/>
-                    </svg>
-                  </div>
-                  <div className="flex -space-x-1.5 mb-6">
-                    {regions.slice(0, 7).map((region, i) => (
-                      <div key={region.id} className="w-5 h-5 rounded-full border-2 border-background"
-                        style={{ backgroundColor: region.color, zIndex: 7 - i }} />
-                    ))}
-                  </div>
-                  <h3 className="font-serif text-3xl md:text-4xl mb-3 group-hover:text-accent transition-colors">Linguistic Atlas</h3>
-                  <p className="text-sm text-muted-foreground max-w-sm">{regions.length} dialect regions mapped across North Africa — from the Rif to the Sahara.</p>
-                </div>
+          {/* ============ SYSTEM DATA AGGREGATES ============ */}
+          <section className="py-16 px-6 max-w-7xl mx-auto border-t border-[#E4E4E0]">
+            <div className="grid grid-cols-3 gap-6 text-center md:text-left border border-[#E4E4E0] bg-[#F1F1EE] p-8 rounded-sm">
+              <div>
+                <div className="font-serif text-4xl sm:text-6xl text-[#1C1C1A] leading-none mb-1">{allEntries.length}</div>
+                <div className="text-[10px] font-mono uppercase tracking-wider text-[#767670]">Lexical Roots</div>
+              </div>
+              <div className="border-x border-[#E4E4E0] px-4">
+                <div className="font-serif text-4xl sm:text-6xl text-[#1C1C1A] leading-none mb-1">{phrasesMetadata.totalPhrases}</div>
+                <div className="text-[10px] font-mono uppercase tracking-wider text-[#767670]">Syntactical Maps</div>
+              </div>
+              <div>
+                <div className="font-serif text-4xl sm:text-6xl text-[#1C1C1A] leading-none mb-1">{regions.length}</div>
+                <div className="text-[10px] font-mono uppercase tracking-wider text-[#767670]">Dialect Sectors</div>
+              </div>
+            </div>
+            
+            {/* Global Auxiliary Modules Sub-Track */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+              <Link href="/alphabet" className="p-4 border border-[#E4E4E0] bg-white hover:border-[#1C1C1A] transition-colors font-mono text-xs text-[#767670] flex justify-between items-center">
+                <span>[01] Tifinagh Alphabetic Glyph Matrix</span>
+                <span className="text-[#1C1C1A]">→</span>
               </Link>
-
-              {/* Symbols — medium */}
-              <Link href="/symbols" className="md:col-span-5 group">
-                <div className="border border-foreground/8 p-8 md:p-10 hover:border-foreground/25 transition-all hover-lift h-full">
-                  <div className="tifinagh text-5xl mb-6 text-accent/70 group-hover:text-accent transition-colors">ⴰ ⵣ ⵯ</div>
-                  <h3 className="font-serif text-3xl md:text-4xl mb-3 group-hover:text-accent transition-colors">Symbol Dictionary</h3>
-                  <p className="text-sm text-muted-foreground">30 Amazigh symbols — geometry, nature, and the visual language of a civilization.</p>
-                </div>
+              <Link href="/conjugation" className="p-4 border border-[#E4E4E0] bg-white hover:border-[#1C1C1A] transition-colors font-mono text-xs text-[#767670] flex justify-between items-center">
+                <span>[02] Structural Morphological Verb Tense Engine</span>
+                <span className="text-[#1C1C1A]">→</span>
               </Link>
-
-              {/* Alphabet — medium */}
-              <Link href="/alphabet" className="md:col-span-5 group">
-                <div className="border border-foreground/8 p-8 md:p-10 hover:border-foreground/25 transition-all hover-lift h-full">
-                  <div className="flex gap-3 mb-6">
-                    {['ⵢ','ⴰ','ⵣ','ⵎ','ⵏ'].map((ch, i) => (
-                      <span key={i} className="tifinagh text-2xl text-foreground/20">{ch}</span>
-                    ))}
-                  </div>
-                  <h3 className="font-serif text-3xl md:text-4xl mb-3 group-hover:text-accent transition-colors">Tifinagh Alphabet</h3>
-                  <p className="text-sm text-muted-foreground">33 letters. One of the oldest writing systems still in use — over 2,500 years of marks on stone and skin.</p>
-                </div>
-              </Link>
-
-              {/* Conjugation — narrow */}
-              <Link href="/conjugation" className="md:col-span-4 group">
-                <div className="border border-foreground/8 p-8 md:p-10 hover:border-foreground/25 transition-all hover-lift h-full">
-                  <div className="font-serif text-lg text-muted-foreground mb-6 space-y-1">
-                    <div>ddu → <span className="text-foreground">iddú</span></div>
-                    <div>awi → <span className="text-foreground">iwí</span></div>
-                  </div>
-                  <h3 className="font-serif text-2xl mb-2 group-hover:text-accent transition-colors">Verb Conjugation</h3>
-                  <p className="text-sm text-muted-foreground">Aorist, preterite, imperative.</p>
-                </div>
-              </Link>
-
-              {/* About — full width accent strip */}
-              <Link href="/about" className="md:col-span-3 group">
-                <div className="bg-foreground text-background p-8 md:p-10 hover:opacity-90 transition-all h-full flex flex-col justify-between">
-                  <div>
-                    <h3 className="font-serif text-2xl mb-3">About</h3>
-                    <p className="text-sm text-background/60">The story behind Amawal and the Tamazight language.</p>
-                  </div>
-                  <span className="text-xs uppercase tracking-widest text-background/40 mt-6">Learn more →</span>
-                </div>
+              <Link href="/about" className="p-4 border border-[#E4E4E0] bg-white hover:border-[#1C1C1A] transition-colors font-mono text-xs text-[#767670] flex justify-between items-center">
+                <span>[03] Institutional Project Documentation</span>
+                <span className="text-[#1C1C1A]">→</span>
               </Link>
             </div>
-          </div>
-        </section>
+          </section>
+
+          <NewsletterSignup />
+          <MapPreview />
+        </>
       )}
-
-      {/* ============ NEWSLETTER ============ */}
-      {!query && <NewsletterSignup />}
-
-      {/* ============ MAP PREVIEW (above footer) ============ */}
-      {!query && <MapPreview />}
     </div>
   );
 }

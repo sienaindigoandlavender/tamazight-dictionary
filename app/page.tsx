@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
+import Map, { NavigationControl } from 'react-map-gl';
 import { searchEntries, searchByLanguage, getAllEntries, getEntryByWord } from '@/lib/dictionary';
 import {
   searchEnglishToTamazight,
@@ -19,15 +20,16 @@ import { AMAWAL_LOCALE_KEY, AMAWAL_LOCALE_EVENT, type AmawalLocale } from '@/com
 import WordOfTheDay from './_home/WordOfTheDay';
 import FirstDaySection from './_home/FirstDaySection';
 import WisdomSection from './_home/WisdomSection';
-import MapPreview from './_home/MapPreview';
 import RecentlyViewed from '@/components/RecentlyViewed';
 import NewsletterSignup from '@/components/NewsletterSignup';
-import { LayoutGrid, BookOpen, Compass, ShieldCheck, ShoppingBag, ArrowRight } from 'lucide-react';
+import { LayoutGrid, BookOpen, Compass, ShieldCheck, Globe, ArrowRight } from 'lucide-react';
+
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 type TranslationDirection = 'en-tmz' | 'fr-tmz' | 'tmz-en' | 'tmz-fr';
 
 const directionLabels: Record<TranslationDirection, { from: string; to: string; placeholder: string }> = {
-  'en-tmz': { from: 'English', to: 'Tamazight', placeholder: 'Query lexical entries...' },
+  'en-tmz': { from: 'English', to: 'Tamazight', placeholder: 'Query pan-Tamazgha lexical entries...' },
   'fr-tmz': { from: 'French', to: 'Tamazight', placeholder: 'Rechercher un mot...' },
   'tmz-en': { from: 'Tamazight', to: 'English', placeholder: 'Aru awal s Tmazight...' },
   'tmz-fr': { from: 'Tamazight', to: 'French', placeholder: 'Aru awal s Tmazight...' },
@@ -47,6 +49,13 @@ export default function Home() {
   const regions = regionsData.regions;
   const allEntries = useMemo(() => getAllEntries('tachelhit'), []);
   const phrasesMetadata = useMemo(() => getPhrasesMetadata(), []);
+
+  // Center the viewport over the macro-region of Tamazgha (North Africa broad view)
+  const [viewport, setViewport] = useState({
+    latitude: 26.0000,
+    longitude: 10.0000,
+    zoom: 3.8
+  });
 
   useEffect(() => {
     const apply = (loc: AmawalLocale) => {
@@ -172,21 +181,21 @@ export default function Home() {
       <section className="relative px-6 md:px-[8%] lg:px-[12%] pt-24 md:pt-36 pb-12 md:pb-20 overflow-hidden border-b border-[#E4E4E0] bg-[#F1F1EE]">
         <div aria-hidden="true" className="absolute -bottom-32 -right-16 md:-right-32 pointer-events-none select-none">
           <span className="tifinagh text-[28vw] md:text-[20vw] leading-none text-[#1C1C1A]/[0.02]">
-            ⴰⵎⴰⵡⴰⵍ
+            ⵜⴰⵎⴰⵣⵖⴰ
           </span>
         </div>
 
         <div className="relative z-10 max-w-5xl">
           <span className="text-xs font-mono uppercase tracking-[0.25em] text-[#c53a1a] block mb-4 font-bold">
-            Premium Cultural Network & Market
+            Premium Cultural Network & Market • Tamazgha Sovereignty
           </span>
 
           <h1 className="font-serif text-[clamp(2.5rem,7vw,5.5rem)] leading-[1.0] text-[#1C1C1A] tracking-tight mb-6">
-            The Amazigh Heritage Registry & Collection.
+            The Tamazgha Heritage Registry & Collection.
           </h1>
 
           <p className="text-[#767670] text-base md:text-lg max-w-2xl mb-12 leading-relaxed font-sans">
-            A private architectural collection and marketplace consolidating premium physical acquisitions, linguistic data vaults, trade networks, and curated travel operations.
+            A private cross-border architectural collection and marketplace consolidating premium physical acquisitions, trade networks, maps, and curated travel operations across the historical Amazigh world.
           </p>
 
           {/* UTILITY MODULE: Sub-Content Lexicon Engine */}
@@ -291,7 +300,7 @@ export default function Home() {
         <section className="py-20 px-6 bg-white border-b border-[#E4E4E0]">
           <div className="max-w-2xl mx-auto text-center">
             <span className="tifinagh text-5xl text-[#767670]/20 block mb-4">ⵅ</span>
-            <p className="font-serif text-xl mb-1 text-[#1C1C1A]">No lexical results correspond to &ldquo;{query}&rdquo;</p>
+            <p className="font-serif text-xl mb-1 text-[#1C1C1A]">No lexical entries match &ldquo;{query}&rdquo;</p>
             <p className="text-xs font-mono text-[#767670]">Adjust query metrics or explore commercial vaults directly below.</p>
           </div>
         </section>
@@ -354,7 +363,7 @@ export default function Home() {
                   <span className="text-[9px] font-mono bg-[#767670]/10 text-[#767670] px-1.5 py-0.5 rounded-sm font-bold">Paywall</span>
                 </div>
                 <p className="text-xs text-[#767670] leading-relaxed">
-                  Metered and locked access modules. Complete specialized monographs, rare dialect audio recordings, documentation files, and print editions available behind content-gate layers.
+                  Blended content frameworks. Complete specialized monographs, rare dialect audio recordings, documentation files, and print editions available behind direct monetization gateways.
                 </p>
               </div>
               <span className="text-[10px] font-mono text-[#1C1C1A] uppercase tracking-wider pt-4 block flex items-center group-hover:text-[#c53a1a]">
@@ -365,7 +374,45 @@ export default function Home() {
         </section>
       )}
 
-      {/* ============ SECONDARY AUXILIARY NODES ============ */}
+      {/* ============ DYNAMIC PORTAL MATRIX: TAMAZGHA MAPBOX CANVAS ============ */}
+      {!query && (
+        <section className="py-12 px-6 max-w-7xl mx-auto border-t border-[#E4E4E0]">
+          <div className="flex items-baseline justify-between mb-6">
+            <div>
+              <span className="text-[10px] font-mono uppercase tracking-widest text-[#767670] block mb-1">Geographic Matrix Node</span>
+              <h2 className="text-2xl font-serif text-[#1C1C1A]">Continental Trade & Dialect Sectors</h2>
+            </div>
+            <div className="hidden sm:flex items-center gap-2 text-[10px] font-mono text-[#767670] uppercase">
+              <Globe size={12} className="text-[#c53a1a]" /> Full View Mapping Active
+            </div>
+          </div>
+
+          {/* Mapbox Render Sandbox — Wrapped in a gorgeous custom window container */}
+          <div className="w-full h-[500px] bg-[#F1F1EE] border border-[#E4E4E0] rounded shadow-sm overflow-hidden relative">
+            <Map
+              initialViewState={{
+                latitude: viewport.latitude,
+                longitude: viewport.longitude,
+                zoom: viewport.zoom
+              }}
+              mapStyle="mapbox://styles/mapbox/light-v11"
+              reuseMaps
+            >
+              <NavigationControl position="top-right" showCompass={false} />
+            </Map>
+            
+            {/* Legend Tag Overlay */}
+            <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur border border-[#E4E4E0] p-4 rounded-sm font-mono text-[10px] space-y-1.5 max-w-xs pointer-events-none shadow-sm text-[#1C1C1A]">
+              <div className="font-bold border-b border-[#E4E4E0] pb-1 mb-1 uppercase tracking-wider text-xs">Tamazgha Cartography</div>
+              <div className="flex items-center"><span className="w-2 h-2 bg-[#c53a1a] rounded-full mr-2"></span> High-Value Rug Trade Routes</div>
+              <div className="flex items-center"><span className="w-2 h-2 bg-neutral-900 rounded-full mr-2"></span> Slow Morocco Luxury Itineraries</div>
+              <div className="flex items-center"><span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span> Secondary Language Spheres</div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ============ SYSTEM SECONDARY COMPONENTS ============ */}
       {!query && (
         <>
           <RecentlyViewed />
@@ -373,22 +420,22 @@ export default function Home() {
           <FirstDaySection />
           <WisdomSection />
           
-          {/* ============ CONTEXTUAL PHRASE SEGMENTS ============ */}
+          {/* ============ PHRASES REPOSITORY PANEL ============ */}
           <section className="py-16 px-6 border-t border-[#E4E4E0] bg-white">
             <div className="max-w-7xl mx-auto">
               <div className="grid md:grid-cols-12 gap-6 mb-12">
                 <div className="md:col-span-7">
-                  <span className="text-xs font-mono uppercase tracking-widest text-[#767670] mb-2 block">Linguistic Data Node</span>
-                  <h2 className="font-serif text-3xl text-[#1C1C1A]">Vernacular Phrase Classification</h2>
+                  <span className="text-xs font-mono uppercase tracking-widest text-[#767670] mb-2 block">Phonetic Database Node</span>
+                  <h2 className="font-serif text-3xl text-[#1C1C1A]">Vernacular Syntactical Formulations</h2>
                 </div>
                 <div className="md:col-span-5 flex items-end">
                   <p className="text-xs text-[#767670] leading-normal font-mono">
-                    {phrasesMetadata.totalPhrases} statements cataloged across {phrasesMetadata.categoryCount} contextual filters. Premium database access tracks are metered.
+                    {phrasesMetadata.totalPhrases} expressions logged. Advanced syntax trees and terminology are metered behind authorization networks.
                   </p>
                 </div>
               </div>
 
-              {/* Mobile Filter Pill Rows */}
+              {/* Functional Filtering Track */}
               <div className="flex flex-wrap gap-2 mb-8">
                 <button 
                   onClick={() => setSelectedCategory(null)}
@@ -396,7 +443,7 @@ export default function Home() {
                     selectedCategory === null ? 'bg-[#1C1C1A] text-white border-[#1C1C1A]' : 'bg-[#F1F1EE] text-[#767670] border-[#E4E4E0] hover:border-[#767670]'
                   }`}
                 >
-                  Featured General List
+                  Featured Samples
                 </button>
                 {categories.slice(0, 7).map(cat => (
                   <button 
@@ -411,7 +458,7 @@ export default function Home() {
                 ))}
               </div>
 
-              {/* Phrases Yield Block */}
+              {/* Active Matrix Items Grid */}
               <div className="grid gap-4 md:grid-cols-2">
                 {(selectedCategory ? categoryPhrases : randomPhrases).map(phrase =>
                   renderPhraseResult(phrase, !selectedCategory)
@@ -420,43 +467,25 @@ export default function Home() {
             </div>
           </section>
 
-          {/* ============ SYSTEM CAPACITY PORTAL ============ */}
+          {/* ============ DATA AGGREGATES & SUBSIDIARY PATHS ============ */}
           <section className="py-16 px-6 max-w-7xl mx-auto border-t border-[#E4E4E0]">
-            <div className="grid grid-cols-3 gap-6 text-center md:text-left border border-[#E4E4E0] bg-[#F1F1EE] p-8 rounded-sm">
-              <div>
-                <div className="font-serif text-4xl sm:text-6xl text-[#1C1C1A] leading-none mb-1">{allEntries.length}</div>
-                <div className="text-[10px] font-mono uppercase tracking-wider text-[#767670]">Lexical Root Nodes</div>
-              </div>
-              <div className="border-x border-[#E4E4E0] px-4">
-                <div className="font-serif text-4xl sm:text-6xl text-[#1C1C1A] leading-none mb-1">{phrasesMetadata.totalPhrases}</div>
-                <div className="text-[10px] font-mono uppercase tracking-wider text-[#767670]">Contextual Transcripts</div>
-              </div>
-              <div>
-                <div className="font-serif text-4xl sm:text-6xl text-[#1C1C1A] leading-none mb-1">{regions.length}</div>
-                <div className="text-[10px] font-mono uppercase tracking-wider text-[#767670]">Dialect Zones Mapped</div>
-              </div>
-            </div>
-            
-            {/* Bottom Secondary Directory Nodes */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               <Link href="/alphabet" className="p-4 border border-[#E4E4E0] bg-white hover:border-[#1C1C1A] transition-colors font-mono text-xs text-[#767670] flex justify-between items-center">
-                <span>[01] Tifinagh Native Script Typographic Matrix</span>
+                <span>[01] Tifinagh Alphabetic Glyph Matrix</span>
                 <span className="text-[#1C1C1A]">→</span>
               </Link>
               <Link href="/conjugation" className="p-4 border border-[#E4E4E0] bg-white hover:border-[#1C1C1A] transition-colors font-mono text-xs text-[#767670] flex justify-between items-center">
-                <span>[02] Structural Morphological Verb Conjugator</span>
+                <span>[02] Morphological Verb Conjugation System</span>
                 <span className="text-[#1C1C1A]">→</span>
               </Link>
               <Link href="/about" className="p-4 border border-[#E4E4E0] bg-white hover:border-[#1C1C1A] transition-colors font-mono text-xs text-[#767670] flex justify-between items-center">
-                <span>[03] Corporate Network Profile & Credentials</span>
+                <span>[03] Institutional Project Documentation</span>
                 <span className="text-[#1C1C1A]">→</span>
               </Link>
             </div>
           </section>
 
-          {/* Core Lead Capture & Interactive Geographical Atlas Previews */}
           <NewsletterSignup />
-          <MapPreview />
         </>
       )}
     </div>

@@ -22,7 +22,7 @@ import FirstDaySection from './_home/FirstDaySection';
 import WisdomSection from './_home/WisdomSection';
 import RecentlyViewed from '@/components/RecentlyViewed';
 import NewsletterSignup from '@/components/NewsletterSignup';
-import { LayoutGrid, BookOpen, Compass, ShieldCheck, Globe, ArrowRight } from 'lucide-react';
+import { LayoutGrid, BookOpen, Compass, Globe, ArrowRight } from 'lucide-react';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 
@@ -50,7 +50,6 @@ export default function Home() {
   const allEntries = useMemo(() => getAllEntries('tachelhit'), []);
   const phrasesMetadata = useMemo(() => getPhrasesMetadata(), []);
 
-  // Center the viewport over the macro-region of Tamazgha (North Africa broad view)
   const [viewport, setViewport] = useState({
     latitude: 26.0000,
     longitude: 10.0000,
@@ -176,7 +175,6 @@ export default function Home() {
 
   return (
     <div className="overflow-hidden bg-[#F9F9F7]">
-
       {/* ============ HERO DESK & CONVERTER NODE ============ */}
       <section className="relative px-6 md:px-[8%] lg:px-[12%] pt-24 md:pt-36 pb-12 md:pb-20 overflow-hidden border-b border-[#E4E4E0] bg-[#F1F1EE]">
         <div aria-hidden="true" className="absolute -bottom-32 -right-16 md:-right-32 pointer-events-none select-none">
@@ -313,7 +311,6 @@ export default function Home() {
           <h2 className="text-2xl font-serif text-[#1C1C1A] mb-8">Acquisitions & Premium Experiences</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
             {/* Sector 1: High-End Material Heritage Acquisitions (Rugs / Objects) */}
             <Link href="/heritage" className="group border border-[#E4E4E0] p-6 bg-white hover:border-[#1C1C1A] transition-all flex flex-col justify-between min-h-[240px]">
               <div>
@@ -350,7 +347,7 @@ export default function Home() {
               <span className="text-[10px] font-mono text-[#1C1C1A] uppercase tracking-wider pt-4 block flex items-center group-hover:text-[#c53a1a]">
                 Book Private Itinerary <ArrowRight size={10} className="ml-1" />
               </span>
-            </Link>
+            </a>
 
             {/* Sector 3: Premium Content Books & Monograph Paywalls */}
             <Link href="/library" className="group border border-[#E4E4E0] p-6 bg-white hover:border-[#1C1C1A] transition-all flex flex-col justify-between min-h-[240px]">
@@ -387,7 +384,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Mapbox Render Sandbox — Wrapped in a gorgeous custom window container */}
           <div className="w-full h-[500px] bg-[#F1F1EE] border border-[#E4E4E0] rounded shadow-sm overflow-hidden relative">
             <Map
               initialViewState={{
@@ -401,7 +397,6 @@ export default function Home() {
               <NavigationControl position="top-right" showCompass={false} />
             </Map>
             
-            {/* Legend Tag Overlay */}
             <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur border border-[#E4E4E0] p-4 rounded-sm font-mono text-[10px] space-y-1.5 max-w-xs pointer-events-none shadow-sm text-[#1C1C1A]">
               <div className="font-bold border-b border-[#E4E4E0] pb-1 mb-1 uppercase tracking-wider text-xs">Tamazgha Cartography</div>
               <div className="flex items-center"><span className="w-2 h-2 bg-[#c53a1a] rounded-full mr-2"></span> High-Value Rug Trade Routes</div>
@@ -435,7 +430,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Functional Filtering Track */}
               <div className="flex flex-wrap gap-2 mb-8">
                 <button 
                   onClick={() => setSelectedCategory(null)}
@@ -458,7 +452,6 @@ export default function Home() {
                 ))}
               </div>
 
-              {/* Active Matrix Items Grid */}
               <div className="grid gap-4 md:grid-cols-2">
                 {(selectedCategory ? categoryPhrases : randomPhrases).map(phrase =>
                   renderPhraseResult(phrase, !selectedCategory)
